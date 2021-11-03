@@ -1,7 +1,7 @@
 "use strict";
 
 const { appConfig } = require("./app.config");
-const { plugin } = require("interactive-commit");
+const { plugin } = require("@bird-studio/interactive-message");
 
 const notSelected = { description: "_NotSelected_", value: "" };
 

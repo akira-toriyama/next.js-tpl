@@ -948,6 +948,20 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@bird-studio/interactive-message@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@bird-studio/interactive-message/-/interactive-message-1.0.2.tgz#c3ca3acffdc838ea934280e0de86ac5f967f0951"
+  integrity sha512-XYkR29YwnsJ50/gj9jIa4/2mcEgj1gXYAuSnjrQduRp/KclyfE+h1NcGMb7c3ThJfuKxy/gXvVQnurjqaURNsA==
+  dependencies:
+    "@octokit/rest" "18.12.0"
+    cac "6.7.11"
+    chalk "4.1.2"
+    cosmiconfig "7.0.1"
+    gitmojis "3.6.0"
+    inquirer "8.2.0"
+    inquirer-search-list "1.2.6"
+    table "6.7.2"
+
 "@emotion/is-prop-valid@^0.8.8":
   version "0.8.8"
   resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz#db28b1c4368a259b60a97311d6a952d4fd01ac1a"
