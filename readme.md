@@ -1,4 +1,8 @@
-# next.js template
+<p align="center">
+  <a href="https://github.com/akira-toriyama/next.js-tpl">
+    <img src="https://github.com/akira-toriyama/next.js-tpl/blob/main/media/logo.png"/>
+  </a>
+</p>
 
 <p align="center">
   <a href="https://semantic-release.gitbook.io/semantic-release/">
