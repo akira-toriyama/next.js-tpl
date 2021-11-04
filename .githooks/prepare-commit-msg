@@ -2,5 +2,5 @@
 
 if [[ "$(git config --get my.interactive)" = yes ]];then
     # git -c my.interactive=yes commit
-    exec < /dev/tty yarn interactive-message commit --hook
+    exec < /dev/tty yarn interactive-message commit
 fi

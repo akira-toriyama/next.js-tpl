@@ -21,7 +21,7 @@
     "styled-components": "5.3.3"
   },
   "devDependencies": {
-    "@bird-studio/interactive-message": "1.0.2",
+    "@bird-studio/interactive-message": "1.1.0",
     "@semantic-release/git": "10.0.1",
     "@stylelint/postcss-css-in-js": "0.37.2",
     "@testing-library/react": "12.1.2",

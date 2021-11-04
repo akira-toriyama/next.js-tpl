@@ -948,10 +948,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@bird-studio/interactive-message@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@bird-studio/interactive-message/-/interactive-message-1.0.2.tgz#c3ca3acffdc838ea934280e0de86ac5f967f0951"
-  integrity sha512-XYkR29YwnsJ50/gj9jIa4/2mcEgj1gXYAuSnjrQduRp/KclyfE+h1NcGMb7c3ThJfuKxy/gXvVQnurjqaURNsA==
+"@bird-studio/interactive-message@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@bird-studio/interactive-message/-/interactive-message-1.1.0.tgz#a231aa7c93dbf64fc9a0b0e4a6e83b24d69d5e42"
+  integrity sha512-1/ZmstF88sToTAZu+pZw+S2plkOmGcFhmhq0gLUtgyHMlxegdlbVdCVG1oLrXqPAoJ6qw12F3jFnkqEsyBgSSw==
   dependencies:
     "@octokit/rest" "18.12.0"
     cac "6.7.11"
