@@ -948,19 +948,15 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@bird-studio/eslint-config@1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@bird-studio/eslint-config/-/eslint-config-1.2.0.tgz#8e822a6bab76cdfc584511caf8b5d6c7765c2ebf"
-  integrity sha512-+WlXjHJlKffK3P42+9ZsTTOGsiDEeOofyQOdAanXeA8BsadyPp307mjYkMutqK3/uQXIJ9cUef8OB8glsD/gGg==
+"@bird-studio/eslint-config@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@bird-studio/eslint-config/-/eslint-config-1.2.1.tgz#3f61e6ef4989622382ecaacb423d5e2812da6d5a"
+  integrity sha512-g/UJdmuFVa+QpdO0Oxgf4dMeD9bKGzp0ZB2rEZzDwAhn6SOiplZGbw34AC0zRPlYe2RxFNgTt/+jGTCVOn3/nA==
   dependencies:
-    "@stylelint/postcss-css-in-js" "0.37.2"
     "@typescript-eslint/eslint-plugin" "5.3.0"
     "@typescript-eslint/parser" "5.3.0"
     eslint-config-prettier "8.3.0"
     eslint-plugin-jest "25.2.2"
-    stylelint-config-prettier "9.0.3"
-    stylelint-config-recess-order "2.5.0"
-    stylelint-config-standard "23.0.0"
 
 "@bird-studio/interactive-message@1.1.3":
   version "1.1.3"
@@ -982,6 +978,16 @@
   integrity sha512-/zKvlTg5zU2oT6xG63XuaK8Zb9FXmfABTjVg1dG/Bm5jb/3JevfPNCf7xStsTABu0N1AnrYDDGAGqw9SqSP86Q==
   dependencies:
     cosmiconfig "7.0.1"
+
+"@bird-studio/stylelint-config@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@bird-studio/stylelint-config/-/stylelint-config-1.0.0.tgz#4bcd850c034a9af28bd21c92acab0333604b0a31"
+  integrity sha512-t1/wRLjduHIgq9THoKs9v5+7aYoaJJ6clfzQY0bX2R7F0gAT4U6UczD9lBzBNN6kzTp5uhzKgDskoKNysllsdQ==
+  dependencies:
+    "@stylelint/postcss-css-in-js" "0.37.2"
+    stylelint-config-prettier "9.0.3"
+    stylelint-config-recess-order "2.5.0"
+    stylelint-config-standard "23.0.0"
 
 "@emotion/is-prop-valid@^0.8.8":
   version "0.8.8"
