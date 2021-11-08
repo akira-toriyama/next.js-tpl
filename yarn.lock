@@ -979,10 +979,10 @@
   dependencies:
     cosmiconfig "7.0.1"
 
-"@bird-studio/js-config@1.13.1":
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/@bird-studio/js-config/-/js-config-1.13.1.tgz#abcfac17ef4bd7367128688069f0bece3382c7e8"
-  integrity sha512-KgeT//8W53r4pz4gwbJLfXukLjCiw/z/zyf/Dnu7IVhMZfY9Idu6MsrZmDGXuuIxNGPbSNzhgFH49OVg2ziA/Q==
+"@bird-studio/js-config@1.14.0":
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/@bird-studio/js-config/-/js-config-1.14.0.tgz#00ea72a613878ad683b42d5843c7a035c3da6d45"
+  integrity sha512-vYLl8DSW7ZGlMePGdlsJfStb9uL5HzUcfpPwgnrIxvfS+YOT1ZIy9FXCtgDWi2CnHkrGoga8I04WKgLmgQdW7w==
   dependencies:
     cosmiconfig "7.0.1"
 
