@@ -7,18 +7,36 @@ permissions:
 jobs:
   dependabot:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node: ["14.x"]
+    name: Node ${{ matrix.node }}
+
     if: ${{ github.actor == 'dependabot[bot]' }}
+
     steps:
+      - uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install
+        run: yarn
+
+      - name: Quality check
+        run: yarn qualityCheck
+
       - name: Dependabot metadata
         id: metadata
         uses: dependabot/fetch-metadata@v1.1.1
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
+
       - name: Enable auto-merge for Dependabot PRs
         # if: ${{steps.metadata.outputs.update-type == 'version-update:semver-patch'}}
-        run: |
-          yarn qualityCheck
-          gh pr merge --auto --merge "$PR_URL"
+        run: gh pr merge --auto --merge "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
