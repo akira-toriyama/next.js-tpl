@@ -3,7 +3,6 @@
   "editor.formatOnType": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": [
-    "source.organizeImports",
     "source.fixAll.eslint",
     "source.fixAll.stylelint"
   ],
