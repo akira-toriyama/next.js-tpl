@@ -948,15 +948,15 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@bird-studio/eslint-config@1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@bird-studio/eslint-config/-/eslint-config-1.2.1.tgz#3f61e6ef4989622382ecaacb423d5e2812da6d5a"
-  integrity sha512-g/UJdmuFVa+QpdO0Oxgf4dMeD9bKGzp0ZB2rEZzDwAhn6SOiplZGbw34AC0zRPlYe2RxFNgTt/+jGTCVOn3/nA==
+"@bird-studio/eslint-config@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@bird-studio/eslint-config/-/eslint-config-1.2.2.tgz#519eecceccd70c949df61c35751288aa7d0cdde9"
+  integrity sha512-1uFnemg4JxmTF+GQZlvnkxGZDkF+FVWMr+6TkZb8dTWO7hY7r23B2tpY1Pc0UarD4epSY7S4QHFLfHW6zVXCkQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "5.3.0"
     "@typescript-eslint/parser" "5.3.0"
     eslint-config-prettier "8.3.0"
-    eslint-plugin-jest "25.2.2"
+    eslint-plugin-jest "25.2.3"
 
 "@bird-studio/interactive-message@1.2.1":
   version "1.2.1"
@@ -980,10 +980,10 @@
   dependencies:
     cosmiconfig "7.0.1"
 
-"@bird-studio/js-config@1.14.0":
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/@bird-studio/js-config/-/js-config-1.14.0.tgz#00ea72a613878ad683b42d5843c7a035c3da6d45"
-  integrity sha512-vYLl8DSW7ZGlMePGdlsJfStb9uL5HzUcfpPwgnrIxvfS+YOT1ZIy9FXCtgDWi2CnHkrGoga8I04WKgLmgQdW7w==
+"@bird-studio/js-config@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@bird-studio/js-config/-/js-config-2.1.1.tgz#8f187ca2e2000c8e79c46edffa9ab5ae826d5e98"
+  integrity sha512-Hqt1UGM5wHzWzCDFukEDDPbc67Bwc4X5f9FsxZ0X+NyTgAr9HJmHqFq3F/9DYN0rEaz27rxtrld0y4POLvv1CA==
   dependencies:
     cosmiconfig "7.0.1"
 
@@ -4097,10 +4097,10 @@ eslint-plugin-import@^2.22.1:
     resolve "^1.20.0"
     tsconfig-paths "^3.11.0"
 
-eslint-plugin-jest@25.2.2:
-  version "25.2.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-25.2.2.tgz#aada85113268e79d4e7423f8ad4e1b740f112e71"
-  integrity sha512-frn5yhOF60U4kcqozO3zKTNZQUk+mfx037XOy2iiYL8FhorEkuCuL3/flzKcY1ECDP2WYT9ydmvlO3fRW9o4mg==
+eslint-plugin-jest@25.2.3:
+  version "25.2.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-25.2.3.tgz#7a841eca91b4e21f31fe0a5403f55bc7779dd7b3"
+  integrity sha512-Yoa0at3euTjERDvPGPWiItY1uuqKYQ5Ov2SmkSLmKRq9OFiVdEehw0rWuK4PA538k7CNqnvmkztjAB9l+HJ7kQ==
   dependencies:
     "@typescript-eslint/experimental-utils" "^5.0.0"
 
