@@ -1,8 +1,7 @@
-import type { ErrorInfo, ReactNode } from "react";
 import React from "react";
 
 type Props = {
-  children: ReactNode;
+  children: React.ReactNode;
 };
 type State = {
   hasError: boolean;
@@ -19,12 +18,12 @@ export class ErrorBoundary extends React.Component<Props, State> {
     hasError: false,
   };
 
-  componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
+  componentDidCatch(error: Error, errorInfo: React.ErrorInfo): void {
     console.error({ error });
     console.error({ errorInfo });
   }
 
-  render(): ReactNode {
+  render(): React.ReactNode {
     return this.state.hasError ? (
       <h1>Something went wrong.</h1>
     ) : (
