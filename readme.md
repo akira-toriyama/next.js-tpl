@@ -15,9 +15,3 @@
     <img src="https://codecov.io/gh/akira-toriyama/next.js-tpl/branch/main/graph/badge.svg?token=1Y8LEB2EAH"/>
   </a>
 </p>
-
-## doc
-
-### UI 関連のよく使う名称
-
-- https://github.com/akira-toriyama/next.js-tpl/tree/main/doc/styles.md
