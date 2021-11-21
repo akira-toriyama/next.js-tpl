@@ -11,7 +11,7 @@
     "qualityCheck:findDeadCode": "ts-prune -e",
     "qualityCheck:esLint": "eslint --ignore-path .gitignore .",
     "qualityCheck:fmt": "prettier  --check --ignore-path .gitignore .",
-    "qualityCheck:stylesLint": "stylelint --fix --ignore-path .gitignore '**/styles.ts'",
+    "qualityCheck:stylesLint": "stylelint --ignore-path .gitignore '**/styles.ts'",
     "prepare": "git config --local core.hooksPath .githooks"
   },
   "dependencies": {
