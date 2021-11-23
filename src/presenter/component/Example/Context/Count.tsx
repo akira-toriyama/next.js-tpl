@@ -1,3 +1,4 @@
+// jscpd:ignore-start
 import React, { useState, useContext } from "react";
 
 type CntType = {
@@ -24,13 +25,13 @@ export const CountProvider: React.FC = (props) => {
 };
 
 export const Count: React.VFC = () => {
-  console.log("Count");
+  console.log("Count"); // 検証用
   const { i } = useContext(CountStateContext);
   return <p>cnt: {i}</p>;
 };
 
 export const Counter: React.VFC = () => {
-  console.log("Counter");
+  console.log("Counter"); // 検証用
   const dispatch = useContext(CountDispatchContext);
   return (
     <>
@@ -39,3 +40,4 @@ export const Counter: React.VFC = () => {
     </>
   );
 };
+// jscpd:ignore-end
