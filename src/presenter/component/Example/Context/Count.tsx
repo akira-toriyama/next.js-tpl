@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 // jscpd:ignore-start
 import React, { useState, useContext } from "react";
 
