@@ -1342,17 +1342,6 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@jest/types@^27.4.2":
-  version "27.4.2"
-  resolved "https://registry.yarnpkg.com/@jest/types/-/types-27.4.2.tgz#96536ebd34da6392c2b7c7737d693885b5dd44a5"
-  integrity sha512-j35yw0PMTPpZsUoOBiuHzr1zTYoad1cVIE0ajEjcrJONxxrko/IRGKkXx3os0Nsi4Hu3+5VmDbVfq5WhG/pWAg==
-  dependencies:
-    "@types/istanbul-lib-coverage" "^2.0.0"
-    "@types/istanbul-reports" "^3.0.0"
-    "@types/node" "*"
-    "@types/yargs" "^16.0.0"
-    chalk "^4.0.0"
-
 "@jscpd/core@^3.4.1":
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/@jscpd/core/-/core-3.4.1.tgz#8a8c6761331833928ad8a8239e264696a299aea5"
@@ -5822,7 +5811,7 @@ jest-config@^27.3.1:
     micromatch "^4.0.4"
     pretty-format "^27.3.1"
 
-jest-diff@^27.0.0, jest-diff@^27.4.0:
+jest-diff@^27.0.0, jest-diff@^27.4.0, jest-diff@^27.4.2:
   version "27.4.2"
   resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-27.4.2.tgz#786b2a5211d854f848e2dcc1e324448e9481f36f"
   integrity sha512-ujc9ToyUZDh9KcqvQDkk/gkbf6zSaeEg9AiBxtttXW59H/AcqEYp1ciXAtJp+jXWva5nAf/ePtSsgWwE5mqp4Q==
@@ -5954,14 +5943,14 @@ jest-leak-detector@^27.3.1:
     pretty-format "^27.3.1"
 
 jest-matcher-utils@^27.3.1, jest-matcher-utils@^27.4.0:
-  version "27.4.0"
-  resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-27.4.0.tgz#0c9fee411f0450f045f9b49ec52aba231528b1fc"
-  integrity sha512-vBy1tEyuKiItYgV9x9ubccyadOy5xAAmDBgXk8dMppXBXG4glggrGcZvE+8l1r+te477bRcFLB/hRyGm5Tdxzw==
+  version "27.4.2"
+  resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-27.4.2.tgz#d17c5038607978a255e0a9a5c32c24e984b6c60b"
+  integrity sha512-jyP28er3RRtMv+fmYC/PKG8wvAmfGcSNproVTW2Y0P/OY7/hWUOmsPfxN1jOhM+0u2xU984u2yEagGivz9OBGQ==
   dependencies:
     chalk "^4.0.0"
-    jest-diff "^27.4.0"
+    jest-diff "^27.4.2"
     jest-get-type "^27.4.0"
-    pretty-format "^27.4.0"
+    pretty-format "^27.4.2"
 
 jest-message-util@^27.3.1, jest-message-util@^27.4.0:
   version "27.4.0"
