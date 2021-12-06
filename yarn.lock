@@ -1331,10 +1331,10 @@
     source-map "^0.6.1"
     write-file-atomic "^3.0.0"
 
-"@jest/types@^27.2.5", "@jest/types@^27.4.0":
-  version "27.4.0"
-  resolved "https://registry.yarnpkg.com/@jest/types/-/types-27.4.0.tgz#ac5c04d29ce47e0b96439dfd44ec3cd930fc9f86"
-  integrity sha512-jIsLdASXMf8GS7P7oGFGwobNse/6Ewq3GBPHoo0i6XRmja+NrUoDqJm4a1ffF2bHGleKJizxokcp1sCqSktP3g==
+"@jest/types@^27.2.5", "@jest/types@^27.4.0", "@jest/types@^27.4.2":
+  version "27.4.2"
+  resolved "https://registry.yarnpkg.com/@jest/types/-/types-27.4.2.tgz#96536ebd34da6392c2b7c7737d693885b5dd44a5"
+  integrity sha512-j35yw0PMTPpZsUoOBiuHzr1zTYoad1cVIE0ajEjcrJONxxrko/IRGKkXx3os0Nsi4Hu3+5VmDbVfq5WhG/pWAg==
   dependencies:
     "@types/istanbul-lib-coverage" "^2.0.0"
     "@types/istanbul-reports" "^3.0.0"
@@ -2096,9 +2096,9 @@
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
 "@types/node@*":
-  version "16.11.10"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.10.tgz#2e3ad0a680d96367103d3e670d41c2fed3da61ae"
-  integrity sha512-3aRnHa1KlOEEhJ6+CvyHKK5vE9BcLGjtUpwvqYLRvYNQKMfabu3BwfJaA/SLW8dxe28LsNDjtHwePTuzn3gmOA==
+  version "16.11.11"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.11.tgz#6ea7342dfb379ea1210835bada87b3c512120234"
+  integrity sha512-KB0sixD67CeecHC33MYn+eYARkqTheIRNuu97y2XMjR7Wu3XibO1vaY6VBV6O/a89SPI81cEUIYT87UqUWlZNw==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -8041,11 +8041,11 @@ pretty-bytes@^5.3.0, pretty-bytes@^5.4.1:
   integrity sha512-FFw039TmrBqFK8ma/7OL3sDz/VytdtJr044/QUJtH0wK9lb9jLq9tJyIxUwtQJHwar2BqtiA4iCWSwo9JLkzFg==
 
 pretty-format@^27.0.0, pretty-format@^27.0.2, pretty-format@^27.3.1, pretty-format@^27.4.0:
-  version "27.4.0"
-  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-27.4.0.tgz#440a7b86612a18b0865831a6d8585d989a5420e9"
-  integrity sha512-n0QR6hMREfp6nLzfVksXMAfIxk1ffOOfbb/FzKHFmRtn9iJKaZXB8WMzLr8a72IASShEAhqK06nlwp1gVWgqKg==
+  version "27.4.2"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-27.4.2.tgz#e4ce92ad66c3888423d332b40477c87d1dac1fb8"
+  integrity sha512-p0wNtJ9oLuvgOQDEIZ9zQjZffK7KtyR6Si0jnXULIDwrlNF8Cuir3AZP0hHv0jmKuNN/edOnbMjnzd4uTcmWiw==
   dependencies:
-    "@jest/types" "^27.4.0"
+    "@jest/types" "^27.4.2"
     ansi-regex "^5.0.1"
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
