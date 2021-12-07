@@ -5,6 +5,6 @@ updates:
     # 「root」ディレクトリで「package.json」と「lock」ファイルを探す
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
     allow:
       - dependency-type: "all"
