@@ -2896,11 +2896,11 @@ babel-plugin-polyfill-corejs3@^0.4.0:
     core-js-compat "^3.18.0"
 
 babel-plugin-polyfill-regenerator@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-polyfill-regenerator/-/babel-plugin-polyfill-regenerator-0.3.0.tgz#9ebbcd7186e1a33e21c5e20cae4e7983949533be"
-  integrity sha512-dhAPTDLGoMW5/84wkgwiLRwMnio2i1fUe53EuvtKMv0pn2p3S8OCoV1xAzfJPl0KOX7IB89s2ib85vbYiea3jg==
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-polyfill-regenerator/-/babel-plugin-polyfill-regenerator-0.3.1.tgz#2c0678ea47c75c8cc2fbb1852278d8fb68233990"
+  integrity sha512-Y2B06tvgHYt1x0yz17jGkGeeMr5FeKUu+ASJ+N6nB5lQ8Dapfg42i0OVrf8PNGJ3zKL4A23snMi1IRwrqqND7A==
   dependencies:
-    "@babel/helper-define-polyfill-provider" "^0.3.0"
+    "@babel/helper-define-polyfill-provider" "^0.3.1"
 
 babel-plugin-styled-components@2.0.2, "babel-plugin-styled-components@>= 1.12.0":
   version "2.0.2"
