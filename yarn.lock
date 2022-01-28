@@ -5955,12 +5955,12 @@ libnpmfund@*:
     "@npmcli/arborist" "^4.0.0"
 
 libnpmhook@*:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/libnpmhook/-/libnpmhook-7.0.0.tgz#61ba6778aed080761b780b99d1a6e3424e8d8aa0"
-  integrity sha512-4ssUN06HZ33ig7lUFYslwqX9BhMtHDCmiRF/cnWqBgy1baz0WoOWYySh8wGEQbx3DXghWbgOo4Av/kvC+1Q4gw==
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/libnpmhook/-/libnpmhook-7.0.1.tgz#f633a7cc647e8dbc689654e3734f055db13a8be9"
+  integrity sha512-b7UwPmuW47/vdEhVGVKV8DqO26lWvYwU+qJB18xeN0KgWzGT4hpQNRTdAZ3LR0zdvWm3VYpHix2gb9pyuMrs5Q==
   dependencies:
     aproba "^2.0.0"
-    npm-registry-fetch "^11.0.0"
+    npm-registry-fetch "^12.0.1"
 
 libnpmorg@*:
   version "3.0.0"
@@ -6677,7 +6677,7 @@ npm-profile@*:
   dependencies:
     npm-registry-fetch "^12.0.0"
 
-npm-registry-fetch@*, npm-registry-fetch@^12.0.0:
+npm-registry-fetch@*, npm-registry-fetch@^12.0.0, npm-registry-fetch@^12.0.1:
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/npm-registry-fetch/-/npm-registry-fetch-12.0.1.tgz#211eff2483b1e71706c9a7ce891182ab3ea9168b"
   integrity sha512-ricy4ezH3Uv0d4am6RSwHjCYTWJI74NJjurIigWMAG7Vs3PFyd0TUlkrez5L0AgaPzDLRsEzqb5cOZ/Ue01bmA==
