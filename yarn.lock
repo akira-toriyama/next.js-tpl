@@ -5991,11 +5991,11 @@ libnpmpublish@*:
     ssri "^8.0.1"
 
 libnpmsearch@*:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/libnpmsearch/-/libnpmsearch-4.0.0.tgz#3d65a0eace4356fe7230ff0dfdc6dfd44968ad99"
-  integrity sha512-bzr8L7nfJ1FtYJ9Cq4p2qRTLWR2EuxVXH0X4WBjuiAGDcORmvlL2+9ODaplcKGpbtvwSTSOvKnM9u0AbUVIgeg==
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/libnpmsearch/-/libnpmsearch-4.0.1.tgz#bf6c96339aadb552c007373623322642a9078512"
+  integrity sha512-uSKYwVUNbI8ZOAiZIdfDL60F2MelnqVzLUdkLlAoQnK0CnlU8tsdyX+nRDCTPGqOHq0inh5DyCJKbyMxf6ibBA==
   dependencies:
-    npm-registry-fetch "^11.0.0"
+    npm-registry-fetch "^12.0.1"
 
 libnpmteam@*:
   version "3.0.0"
@@ -6677,7 +6677,7 @@ npm-profile@*:
   dependencies:
     npm-registry-fetch "^12.0.0"
 
-npm-registry-fetch@*, npm-registry-fetch@^12.0.0:
+npm-registry-fetch@*, npm-registry-fetch@^12.0.0, npm-registry-fetch@^12.0.1:
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/npm-registry-fetch/-/npm-registry-fetch-12.0.1.tgz#211eff2483b1e71706c9a7ce891182ab3ea9168b"
   integrity sha512-ricy4ezH3Uv0d4am6RSwHjCYTWJI74NJjurIigWMAG7Vs3PFyd0TUlkrez5L0AgaPzDLRsEzqb5cOZ/Ue01bmA==
