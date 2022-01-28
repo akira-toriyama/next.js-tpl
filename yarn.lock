@@ -5998,12 +5998,12 @@ libnpmsearch@*:
     npm-registry-fetch "^11.0.0"
 
 libnpmteam@*:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/libnpmteam/-/libnpmteam-3.0.0.tgz#0f86dc0b9623a9c95e40e2f146d1cc2cf00de044"
-  integrity sha512-pxL/a19riZj1gHOuQqJ1KJvJ3qCRqXBe+P3QouZ+bE8B79C+oKXPe2wX2BIgdLd230zbBR+g9+4PPOsKpQJseQ==
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/libnpmteam/-/libnpmteam-3.0.1.tgz#6cde5b7b262bf384661d1fd6ff03b3cfd378c6bc"
+  integrity sha512-qnUs2oXMYcB8AREl41Q7IUuklY5rSFW4VeVgCwE3TF+vdnsCATW4GAc/vIUZ6gWDA3lUdjqcXHlBJi8g09RRDw==
   dependencies:
     aproba "^2.0.0"
-    npm-registry-fetch "^11.0.0"
+    npm-registry-fetch "^12.0.1"
 
 libnpmversion@*:
   version "2.0.2"
@@ -6677,7 +6677,7 @@ npm-profile@*:
   dependencies:
     npm-registry-fetch "^12.0.0"
 
-npm-registry-fetch@*, npm-registry-fetch@^12.0.0:
+npm-registry-fetch@*, npm-registry-fetch@^12.0.0, npm-registry-fetch@^12.0.1:
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/npm-registry-fetch/-/npm-registry-fetch-12.0.1.tgz#211eff2483b1e71706c9a7ce891182ab3ea9168b"
   integrity sha512-ricy4ezH3Uv0d4am6RSwHjCYTWJI74NJjurIigWMAG7Vs3PFyd0TUlkrez5L0AgaPzDLRsEzqb5cOZ/Ue01bmA==
