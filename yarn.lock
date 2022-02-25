@@ -6026,14 +6026,14 @@ levn@~0.3.0:
     type-check "~0.3.2"
 
 libnpmaccess@*:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/libnpmaccess/-/libnpmaccess-5.0.1.tgz#c0309abe73839dd37c52986b7abb89e46c4cf42d"
-  integrity sha512-luyxx6eKhjcOfDH8JQFNyuXEi1vQ/4GOtGAAk3U+G42mPNraQXXrYVUgcSdQjDK/4AGI7nrIbfUpqKttJAgY8g==
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/libnpmaccess/-/libnpmaccess-6.0.0.tgz#a34fdfbf50be2f06d7deef0717becfc0b41e2268"
+  integrity sha512-D9B2aPxHoA/ciQnIhLcM0l5bFtbFxe5ck9gQFFcEmkzXbMCPoTy56n23Z+6sNijA0hlG7bf9v5KT0l1t9jG0cQ==
   dependencies:
     aproba "^2.0.0"
     minipass "^3.1.1"
-    npm-package-arg "^8.1.2"
-    npm-registry-fetch "^12.0.1"
+    npm-package-arg "^9.0.0"
+    npm-registry-fetch "^13.0.0"
 
 libnpmdiff@*:
   version "3.0.0"
@@ -6257,9 +6257,9 @@ lru-cache@^6.0.0:
     yallist "^4.0.0"
 
 lru-cache@^7.3.1:
-  version "7.3.1"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.3.1.tgz#7702e80694ec2bf19865567a469f2b081fcf53f5"
-  integrity sha512-nX1x4qUrKqwbIAhv4s9et4FIUVzNOpeY07bsjGUy8gwJrXH/wScImSQqXErmo/b2jZY2r0mohbLA9zVj7u1cNw==
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.4.0.tgz#2830a779b483e9723e20f26fa5278463c50599d8"
+  integrity sha512-YOfuyWa/Ee+PXbDm40j9WXyJrzQUynVbgn4Km643UYcWNcrSfRkKL0WaiUcxcIbkXcVTgNpDqSnPXntWXT75cw==
 
 lz-string@^1.4.4:
   version "1.4.4"
