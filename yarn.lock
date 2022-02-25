@@ -6074,12 +6074,12 @@ libnpmfund@*:
     "@npmcli/arborist" "^4.0.0"
 
 libnpmhook@*:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/libnpmhook/-/libnpmhook-7.0.1.tgz#f633a7cc647e8dbc689654e3734f055db13a8be9"
-  integrity sha512-b7UwPmuW47/vdEhVGVKV8DqO26lWvYwU+qJB18xeN0KgWzGT4hpQNRTdAZ3LR0zdvWm3VYpHix2gb9pyuMrs5Q==
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/libnpmhook/-/libnpmhook-8.0.0.tgz#94c22e2c39d81df778043a6372fd0954fddb09bc"
+  integrity sha512-RsY9jqbhscdfPVKDB+D2sCAeSRVpLY0rQqZIowbZYm684198ghXc674wRxUxoF/1Q/FK/O6g0suRmNTtfqW4hw==
   dependencies:
     aproba "^2.0.0"
-    npm-registry-fetch "^12.0.1"
+    npm-registry-fetch "^13.0.0"
 
 libnpmorg@*:
   version "3.0.1"
@@ -6257,9 +6257,9 @@ lru-cache@^6.0.0:
     yallist "^4.0.0"
 
 lru-cache@^7.3.1:
-  version "7.3.1"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.3.1.tgz#7702e80694ec2bf19865567a469f2b081fcf53f5"
-  integrity sha512-nX1x4qUrKqwbIAhv4s9et4FIUVzNOpeY07bsjGUy8gwJrXH/wScImSQqXErmo/b2jZY2r0mohbLA9zVj7u1cNw==
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.4.0.tgz#2830a779b483e9723e20f26fa5278463c50599d8"
+  integrity sha512-YOfuyWa/Ee+PXbDm40j9WXyJrzQUynVbgn4Km643UYcWNcrSfRkKL0WaiUcxcIbkXcVTgNpDqSnPXntWXT75cw==
 
 lz-string@^1.4.4:
   version "1.4.4"
