@@ -10,5 +10,7 @@
     {
       "mode": "auto"
     }
-  ]
+  ],
+  // typescript-plugin-css-modules用
+  "typescript.tsdk": "./node_modules/typescript/lib"
 }

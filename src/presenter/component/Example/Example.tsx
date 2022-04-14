@@ -1,22 +1,15 @@
 import React from "react";
-import * as S from "./styles";
 import { useExample } from "./useExample";
-import { Count, Counter } from "~/presenter/component/Example/Context/Count";
-import { Count2, Counter2 } from "~/presenter/component/Example/Context/Count2";
+import type { Props } from "./Example.type";
+import classes from "./Example.module.css";
 
-export const Example: React.VFC = () => {
-  const state = useExample();
+export const ExampleComponent: React.FC<Props> = (props) => (
+  <>
+    {props.isSome && <>some</>}
+    <div data-testid="Example" className={classes.txt}>
+      Example
+    </div>
+  </>
+);
 
-  return (
-    <>
-      <Count />
-      <Counter />
-      <Count2 />
-      <Counter2 />
-      {state.isSome && <>some</>}
-      <div data-test-id="Example">
-        <S.Txt>ExampleComponent</S.Txt>
-      </div>
-    </>
-  );
-};
+export const Example: React.FC = () => <ExampleComponent {...useExample()} />;
