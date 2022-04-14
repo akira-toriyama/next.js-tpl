@@ -10,10 +10,13 @@ const CountDispatchContext = React.createContext<
   React.Dispatch<React.SetStateAction<CntType>>
 >(() => undefined);
 
+type Props = {
+  children: React.ReactNode;
+};
 /**
  * stateとdispatchを分割する事でdispatch分の再レンダリングをが軽くなる
  */
-export const CountProvider: React.FC = (props) => {
+export const CountProvider: React.FC<Props> = (props) => {
   const [state, dispatch] = useState<CntType>({ i: 0 });
 
   return (
