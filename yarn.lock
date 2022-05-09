@@ -1030,10 +1030,10 @@
     inquirer-search-list "1.2.6"
     table "6.8.0"
 
-"@bird-studio/js-config@2.1.4":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@bird-studio/js-config/-/js-config-2.1.4.tgz#a998b6139dbfa7a3a7af9f522da4c19f57176ea2"
-  integrity sha512-YT5/T/TdCmnQT89jzYG50+CIq7AERjy4uDDKFBd4X5G0qUkONDqW6AOsL6A996AVumwpTsoi57oLyWBLQxtj9A==
+"@bird-studio/js-config@2.1.5":
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/@bird-studio/js-config/-/js-config-2.1.5.tgz#940f4b4835e4851ea6031df93ca8e1251e506f86"
+  integrity sha512-C0z048+4tk/e1GZEIdAo8FZFHOdfUqQF3NMRRwHNAMhQIglfcMX+KGPODulPeGcyKiuzfOhxLdZbJhmPA68gVQ==
   dependencies:
     cosmiconfig "7.0.1"
 
@@ -2696,11 +2696,6 @@ babel-plugin-jest-hoist@^28.0.2:
     "@babel/types" "^7.3.3"
     "@types/babel__core" "^7.1.14"
     "@types/babel__traverse" "^7.0.6"
-
-babel-plugin-jsx-remove-data-test-id@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-jsx-remove-data-test-id/-/babel-plugin-jsx-remove-data-test-id-3.0.0.tgz#15c95f97ce0ff60d72b29e403bde245f86393288"
-  integrity sha512-E4uM/LIUizjy2Z5tVAfa8pSXsYgoKWJ97kzuEMfsIxSLSNDWsAhgFVPkgNuakViX5dkNjw1DKIi0VpWP6djqbw==
 
 babel-plugin-polyfill-corejs2@^0.3.0:
   version "0.3.1"
