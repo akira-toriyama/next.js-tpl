@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-export const ButtonsWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 export const Button = styled.button`
   background: palevioletred;
   color: white;
