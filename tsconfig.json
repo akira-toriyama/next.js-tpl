@@ -1,23 +1,10 @@
 {
-  "extends": "@bird-studio/js-config/tsConfig/tsconfig.base.json",
+  "extends": "@tsconfig/next/tsconfig.json",
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
       "~/*": ["./*"]
-    },
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "incremental": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve"
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
