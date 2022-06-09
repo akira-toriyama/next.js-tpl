@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
+    "build": "next build && next export",
     "qualityCheck": "run-s qualityCheck:*",
     "qualityCheck:type": "tsc --project ./tsconfig.json --noEmit",
     "qualityCheck:unitTest": "jest --testPathIgnorePatterns .gitignore",
@@ -14,7 +15,7 @@
     "prepare": "git config --local core.hooksPath .githooks"
   },
   "dependencies": {
-    "jest-environment-jsdom": "28.1.0",
+    "jest-environment-jsdom": "28.1.1",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
@@ -23,24 +24,24 @@
   "devDependencies": {
     "@bird-studio/eslint-config": "1.3.0",
     "@bird-studio/interactive-message": "2.0.1",
-    "@bird-studio/js-config": "2.2.0",
+    "@bird-studio/js-config": "2.3.0",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.4",
     "@testing-library/jest-dom": "5.16.4",
-    "@testing-library/react": "13.2.0",
+    "@testing-library/react": "13.3.0",
     "@testing-library/react-hooks": "8.0.0",
     "@tsconfig/next": "1.0.2",
-    "@types/react": "18.0.9",
+    "@types/react": "18.0.12",
     "@types/styled-components": "5.1.25",
-    "conventional-changelog-conventionalcommits": "4.6.3",
-    "eslint": "8.16.0",
+    "conventional-changelog-conventionalcommits": "5.0.0",
+    "eslint": "8.17.0",
     "eslint-config-next": "12.1.6",
-    "jest": "28.1.0",
+    "jest": "28.1.1",
     "jscpd": "3.4.5",
     "npm-run-all": "4.1.5",
     "prettier": "2.6.2",
-    "semantic-release": "19.0.2",
+    "semantic-release": "19.0.3",
     "ts-prune": "0.10.3",
-    "typescript": "4.7.2"
+    "typescript": "4.7.3"
   }
 }
