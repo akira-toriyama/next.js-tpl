@@ -8363,9 +8363,9 @@ symbol-tree@^3.2.4:
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
 tabbable@^5.3.1:
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/tabbable/-/tabbable-5.3.1.tgz#059f2a19b829efce2a0ec05785a47dd3bcd0a25b"
-  integrity sha512-NtO7I7eoAHR+JwwcNsi/PipamtAEebYDnur/k9wM6n238HHy/+1O4+7Zx7e/JaDAbKJPlIFYsfsV/6tPqTOQvg==
+  version "5.3.3"
+  resolved "https://registry.yarnpkg.com/tabbable/-/tabbable-5.3.3.tgz#aac0ff88c73b22d6c3c5a50b1586310006b47fbf"
+  integrity sha512-QD9qKY3StfbZqWOPLp0++pOrAVb/HbUi5xCc8cUo4XjP19808oaMiDzn0leBY5mCespIBM0CIZePzZjgzR83kA==
 
 table@6.8.0:
   version "6.8.0"
