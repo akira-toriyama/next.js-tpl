@@ -7,7 +7,6 @@ permissions:
 jobs:
   dependabot:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node: ["16.x"]
@@ -16,17 +15,16 @@ jobs:
     if: ${{ github.actor == 'dependabot[bot]' }}
 
     steps:
-      - uses: actions/checkout@v2
+      - name: "Checkout"
+        uses: actions/checkout@v2
+
       - name: Setup node
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node }}
 
-      - name: Install
-        run: yarn
-
       - name: Quality check
-        run: yarn qualityCheck
+        uses: ./.github/actions/qualityCheck
 
       - name: Dependabot metadata
         id: metadata

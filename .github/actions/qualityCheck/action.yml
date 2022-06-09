@@ -1,0 +1,15 @@
+name: "Quality check"
+
+runs:
+  using: "composite"
+  steps:
+    - name: "Checkout"
+      uses: actions/checkout@v2
+
+    - name: Install
+      shell: bash
+      run: yarn
+
+    - name: Quality check
+      shell: bash
+      run: yarn qualityCheck

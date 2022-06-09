@@ -4,7 +4,6 @@ on:
       - main
 jobs:
   release:
-    # 基本部分
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -12,19 +11,17 @@ jobs:
     name: Node ${{ matrix.node }}
 
     steps:
-      - uses: actions/checkout@v2
+      - name: "Checkout"
+        uses: actions/checkout@v2
+
       - name: Setup node
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node }}
 
-      - name: Install
-        run: yarn
-
       - name: Quality check
-        run: yarn qualityCheck
+        uses: ./.github/actions/qualityCheck
 
-      # カスタム
       - name: Release
         run: yarn semantic-release
         env:
