@@ -7,7 +7,7 @@ export const ExampleComponent: React.FC<Props> = (props) => (
   <>
     {props.isSome && <>some</>}
     <div data-testid="Example">Example</div>
-    <S.Button>ボタン</S.Button>
+    <S.Button type="button">ボタン</S.Button>
   </>
 );
 
