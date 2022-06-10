@@ -10,7 +10,7 @@
     "qualityCheck:type": "tsc --project ./tsconfig.json --noEmit",
     "qualityCheck:unitTest": "jest --testPathIgnorePatterns .gitignore",
     "qualityCheck:redundancy": "jscpd .",
-    "qualityCheck:findDeadCode": "ts-prune -e",
+    "qualityCheck:findDeadCode": "ts-prune -e -i '(.d.ts|.stories.tsx|.page.tsx)'",
     "qualityCheck:esLint": "eslint --ignore-path .gitignore .",
     "qualityCheck:fmt": "prettier  --check --ignore-path .gitignore .",
     "prepare": "git config --local core.hooksPath .githooks"
@@ -21,7 +21,6 @@
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "react-use": "17.4.0",
     "styled-components": "5.3.5"
   },
   "devDependencies": {

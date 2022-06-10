@@ -1,10 +1,8 @@
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
 import React from "react";
-import { ErrorBoundary } from "~/presenter/component/ErrorBoundary";
 import Head from "next/head";
-import { App } from "~/presenter/context/App";
-import { Theme } from "~/presenter/context/Theme";
+import { Wrapper } from "~/presenter/component/provider/Wrapper";
 
 const Page: NextPage<AppProps> = (props) => (
   <>
@@ -12,15 +10,10 @@ const Page: NextPage<AppProps> = (props) => (
       {/* レスポンシブ用設定 */}
       <meta name="viewport" content="width=device-width" />
     </Head>
-    <ErrorBoundary>
-      <App>
-        <Theme>
-          <props.Component {...props.pageProps} />
-        </Theme>
-      </App>
-    </ErrorBoundary>
+    <Wrapper>
+      <props.Component {...props.pageProps} />
+    </Wrapper>
   </>
 );
 
-// ts-prune-ignore-next
 export default Page;

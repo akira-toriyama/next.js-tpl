@@ -15,3 +15,15 @@
     <img src="https://codecov.io/gh/akira-toriyama/next.js-tpl/branch/main/graph/badge.svg?token=1Y8LEB2EAH"/>
   </a>
 </p>
+
+# Memo
+
+## SP や PC などのデザイン管理について
+
+### css の media query を使う
+
+SSR OK だが、読みづらい
+
+### URL を pc/ sp/ に分ける
+
+嫌いじゃない

@@ -1,5 +1,5 @@
 import "styled-components";
-import { theme } from "~/presenter/component/GlobalStyle";
+import { theme } from "~/presenter/component/provider/Theme";
 
 type Theme = typeof theme;
 
