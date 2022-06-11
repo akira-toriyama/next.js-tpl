@@ -1,6 +1,6 @@
 import React from "react";
 import type { Props } from "./Example.type";
-import { useApp } from "~/presenter/hooks/useApp";
+import { useApp } from "~/ui/hooks/useApp";
 
 type UseExample = () => Props;
 export const useExample: UseExample = () => {

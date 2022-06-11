@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import * as config from "~/presenter/config";
+import * as config from "~/ui/config";
 
 export const Button = styled.button`
   background: palevioletred;
