@@ -12,7 +12,6 @@ export const fetchUser: Repository.FetchUser = async () =>
             __type: "success",
             data: {
               ...rr.data,
-              id: rr.data.id.toString(),
             },
           } as const)
       )
