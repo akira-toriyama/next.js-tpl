@@ -9,7 +9,7 @@ export const fetchUser: WorkFlow.FetchUser = (p) => () =>
         (rr) =>
           ({
             __type: rr.__type,
-            data: { ...rr.data, nickname: rr.data.name },
+            data: { id: rr.data.id.toString(), nickname: rr.data.name },
           } as const)
       )
       .with(
