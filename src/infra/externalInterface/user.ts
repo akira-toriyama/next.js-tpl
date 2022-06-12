@@ -1,7 +1,11 @@
+type APIResponse = {
+  id: number;
+  name: string;
+};
 const f = () =>
   Math.random() < 0.5
     ? Promise.reject()
-    : Promise.resolve({ id: 1, name: "dummy" });
+    : Promise.resolve<APIResponse>({ id: 1, name: "dummy" });
 
 type FetchUser = () => Promise<
   | {
