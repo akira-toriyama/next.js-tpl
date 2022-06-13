@@ -1423,10 +1423,10 @@
     reprism "^0.0.11"
     spark-md5 "^3.0.1"
 
-"@ladle/react@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@ladle/react/-/react-1.0.1.tgz#1b93a0b4e243186439910dc80b4e605934baaf8f"
-  integrity sha512-hXT1wsHpQN0svMB12QmGKDO8Amt1vdqKDU7bnETXAw5YfLJ9362SfyeUYbz3JQ1fW1JHOC92ljSXfNP+RSKIFA==
+"@ladle/react@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@ladle/react/-/react-1.1.0.tgz#19e362f6b97513655c93af78b42da5e373d86824"
+  integrity sha512-/k48BEYUE7xzBHsibcCUrwsdHuhwWgFd+aLKAM4Dj07unOh+2aR7K2f9Y/Qz5TZ2pqqe/BycoaGrtIrPrHAjow==
   dependencies:
     "@babel/code-frame" "^7.16.7"
     "@babel/core" "^7.17.8"
@@ -1446,6 +1446,7 @@
     chokidar "^3.5.3"
     classnames "^2.3.1"
     commander "^8.3.0"
+    cross-spawn "^7.0.3"
     debug "^4.3.4"
     express "^4.18.0"
     get-port "^5.0.0"
