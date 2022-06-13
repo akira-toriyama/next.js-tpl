@@ -15,3 +15,18 @@ export const Button = styled.button`
     width: 100px;
   }
 `;
+
+export const Items = styled.ul`
+  display: flex;
+`;
+export const Item = styled.li`
+  list-style: none;
+`;
+
+export const Items2 = styled.ul`
+  display: flex;
+
+  > li {
+    list-style: none;
+  }
+`;

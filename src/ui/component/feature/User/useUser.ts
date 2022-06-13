@@ -1,7 +1,7 @@
 import * as workFlow from "~/useCase/user/workFlow";
+import * as repository from "~/useCase/user/repository";
 import useSWR from "swr";
 import { match, P } from "ts-pattern";
-import * as repository from "~/infra/repository/user";
 import * as type from "./User.type";
 
 type UseUser = () => type.Props;
