@@ -1423,10 +1423,10 @@
     reprism "^0.0.11"
     spark-md5 "^3.0.1"
 
-"@ladle/react@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@ladle/react/-/react-1.1.0.tgz#19e362f6b97513655c93af78b42da5e373d86824"
-  integrity sha512-/k48BEYUE7xzBHsibcCUrwsdHuhwWgFd+aLKAM4Dj07unOh+2aR7K2f9Y/Qz5TZ2pqqe/BycoaGrtIrPrHAjow==
+"@ladle/react@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@ladle/react/-/react-1.1.1.tgz#219cb82ddc41acc04d1c385ce21351efc7fd3983"
+  integrity sha512-kkHm26jnuMGqs4UULDwIBZWmk84QX/77od2dRU9yhn9x2I7brjHk5TEps25/j3qMxSFdIa94YR0n/6VYSHWq4w==
   dependencies:
     "@babel/code-frame" "^7.16.7"
     "@babel/core" "^7.17.8"
