@@ -38,7 +38,7 @@
     "@types/react": "18.0.14",
     "@types/styled-components": "5.1.25",
     "conventional-changelog-conventionalcommits": "5.0.0",
-    "eslint": "8.17.0",
+    "eslint": "8.18.0",
     "eslint-config-next": "12.1.6",
     "jest": "28.1.1",
     "jscpd": "3.4.5",
