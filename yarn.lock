@@ -1048,10 +1048,10 @@
     inquirer-search-list "1.2.6"
     table "6.8.0"
 
-"@bird-studio/js-config@2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@bird-studio/js-config/-/js-config-2.3.0.tgz#98c7dd1fa412dda7a1f099960bb15bb8cc24b025"
-  integrity sha512-6Lf7kwWtB9vrBARwtDeUY31s0StCfxHGCC5zGok+3qixfkCLKopO7+Cm0pRWxFX0iwtORpFv+8gMv3THkAkQmw==
+"@bird-studio/js-config@2.3.2":
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/@bird-studio/js-config/-/js-config-2.3.2.tgz#a1af8c617f12458b2d7e9ea5ce4357601a4f6b20"
+  integrity sha512-xiWVgbSasLBk92ucX7XFVxbw1tWj7uP3SJ+I4RllwtbnB+p8hraDJ3qBzzoyClUoqjGDJqzxH6sNeXp+GYkByw==
   dependencies:
     cosmiconfig "7.0.1"
 
