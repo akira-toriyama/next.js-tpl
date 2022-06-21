@@ -1423,10 +1423,15 @@
     reprism "^0.0.11"
     spark-md5 "^3.0.1"
 
-"@ladle/react@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@ladle/react/-/react-1.1.1.tgz#219cb82ddc41acc04d1c385ce21351efc7fd3983"
-  integrity sha512-kkHm26jnuMGqs4UULDwIBZWmk84QX/77od2dRU9yhn9x2I7brjHk5TEps25/j3qMxSFdIa94YR0n/6VYSHWq4w==
+"@ladle/react-context@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@ladle/react-context/-/react-context-1.0.1.tgz#007ea641e4a1b25cafb8f5672977fdd1f9bb6f91"
+  integrity sha512-xVQ8siyOEQG6e4Knibes1uA3PTyXnqiMmfSmd5pIbkzeDty8NCBtYHhTXSlfmcDNEsw/G8OzNWo4VbyQAVDl2A==
+
+"@ladle/react@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@ladle/react/-/react-1.1.2.tgz#a85fc4db8004635e857f7376acb46c8b3d3c8796"
+  integrity sha512-vEg/aiu4K5Zg4SE7iPYia3Ufei8lxiXs8ET0Zbs8YAww6Nf/hAfOE4b5DY5l5lmNoH3w8e9W4bl1llEvDXmSWg==
   dependencies:
     "@babel/code-frame" "^7.16.7"
     "@babel/core" "^7.17.8"
@@ -1440,6 +1445,7 @@
     "@babel/template" "^7.16.7"
     "@babel/traverse" "^7.17.3"
     "@babel/types" "^7.17.0"
+    "@ladle/react-context" "^1.0.1"
     "@vitejs/plugin-react" "^1.3.0"
     axe-core "^4.4.1"
     boxen "^5.1.2"
