@@ -6515,12 +6515,12 @@ libnpmteam@^4.0.2:
     npm-registry-fetch "^13.0.0"
 
 libnpmversion@^3.0.1:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/libnpmversion/-/libnpmversion-3.0.4.tgz#a30f563416ea1e2dd69878b4a9edf4eb4a070ef8"
-  integrity sha512-q5hvZlso0SMLgKm4AMtleRWtq4pERprebEGV6OwKi24efgAOgNDP98+jNUX2mIR2wp9eAa6ybkNNWu4yMaCsVw==
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/libnpmversion/-/libnpmversion-3.0.5.tgz#0c31d6f101f1d9fef1e6f1cd8f3ffd9f396cc4f0"
+  integrity sha512-BPTriVaVMHywfc0F16VsSvI9VGAAr8gaatIo6i7oLQF7toawSoU24dEnCScOCIONKC1thx47Sf+ooweyo5/OWQ==
   dependencies:
     "@npmcli/git" "^3.0.0"
-    "@npmcli/run-script" "^3.0.0"
+    "@npmcli/run-script" "^4.1.0"
     json-parse-even-better-errors "^2.3.1"
     proc-log "^2.0.0"
     semver "^7.3.7"
