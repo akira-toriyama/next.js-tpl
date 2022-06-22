@@ -6420,9 +6420,9 @@ libnpmaccess@^6.0.2:
     npm-registry-fetch "^13.0.0"
 
 libnpmdiff@^4.0.2:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/libnpmdiff/-/libnpmdiff-4.0.3.tgz#ad3997330c887c1098ac42682f1e5ad014d49cec"
-  integrity sha512-AiwBtXtH7HjfmT7FbTf9LFzJB347RrIA4I+IewMfhq8vYXaUveHwJMVNgMM2H/o2J+7Hf12JCBoOF5bTwlmGyw==
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/libnpmdiff/-/libnpmdiff-4.0.4.tgz#487ccb609dacd7f558f089feef3153933e157d02"
+  integrity sha512-bUz12309DdkeFL/K0sKhW1mbg8DARMbNI0vQKrJp1J8lxhxqkAjzSQ3eQCacFjSwCz4xaf630ogwuOkSt61ZEQ==
   dependencies:
     "@npmcli/disparity-colors" "^2.0.0"
     "@npmcli/installed-package-contents" "^1.0.7"
@@ -6430,7 +6430,7 @@ libnpmdiff@^4.0.2:
     diff "^5.0.0"
     minimatch "^5.0.1"
     npm-package-arg "^9.0.1"
-    pacote "^13.0.5"
+    pacote "^13.6.1"
     tar "^6.1.0"
 
 libnpmexec@^4.0.2:
