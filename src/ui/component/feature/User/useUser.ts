@@ -12,11 +12,21 @@ export const useUser: UseUser = () => {
       repository: {
         ...repository,
       },
-    })
+    }),
+    {
+      suspense: true,
+    }
   );
 
   return match(r)
-    .with({ data: P.nullish }, () => ({ __type: "loading" } as const))
+    .with(
+      { data: { __type: "success" } },
+      (rr) =>
+        ({
+          __type: "success",
+          data: rr.data.data,
+        } as const)
+    )
     .with(
       { data: { __type: "error" } },
       (ee) =>
@@ -25,14 +35,6 @@ export const useUser: UseUser = () => {
           error: {
             msg: ee.data.error.msg,
           },
-        } as const)
-    )
-    .with(
-      { data: { __type: "success" } },
-      (rr) =>
-        ({
-          __type: "success",
-          data: rr.data.data,
         } as const)
     )
     .with(

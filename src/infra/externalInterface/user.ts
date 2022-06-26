@@ -7,6 +7,8 @@ const f = () =>
     ? Promise.reject()
     : Promise.resolve<APIResponse>({ id: 1, name: "dummy" });
 
+const sleep = () => new Promise((resolve) => setTimeout(resolve, 1000));
+
 type FetchUser = () => Promise<
   | {
       __type: "success";
@@ -20,8 +22,9 @@ type FetchUser = () => Promise<
       error: unknown;
     }
 >;
-export const fetchUser: FetchUser = () =>
-  f()
+export const fetchUser: FetchUser = async () => {
+  await sleep();
+  return f()
     .then(
       (v) =>
         ({
@@ -33,3 +36,4 @@ export const fetchUser: FetchUser = () =>
       __type: "error",
       error: e,
     }));
+};
