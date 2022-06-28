@@ -1,5 +1,5 @@
 import type { GlobalProvider } from "@ladle/react";
-import { Wrapper } from "~/presenter/component/provider/Wrapper";
+import { Wrapper } from "~/ui/component/provider/Wrapper";
 
 export const Provider: GlobalProvider = ({ children }) => (
   <Wrapper>{children}</Wrapper>
