@@ -9578,10 +9578,10 @@ ts-morph@^13.0.1:
     "@ts-morph/common" "~0.12.3"
     code-block-writer "^11.0.0"
 
-ts-pattern@4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/ts-pattern/-/ts-pattern-4.0.3.tgz#4b5a08ff61fcd5a9bbfe3c1e686c35420ef87bda"
-  integrity sha512-OxQStbr1MKcYYz3YaXsFSBkMo3zjFODVkV8kaLfOak+sWSfx4B+jkOm/VoaWLhnMP+icnIcJ7ENYEnmpAv3jLg==
+ts-pattern@4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/ts-pattern/-/ts-pattern-4.0.4.tgz#95bae7be40851628f93c6fd647cb0183c27c23a7"
+  integrity sha512-gDKHf3T+4X2w5k5IpD4FQ6P5b0LRYW7sJdf/yG7uAdxKitgk2Z8UZLdSBjrXs5mI0Vq6E/hRQd6+Kh3FbdjBzw==
 
 ts-prune@0.10.3:
   version "0.10.3"
