@@ -8,4 +8,12 @@ module.exports = {
   rules: {
     "use-encapsulation/prefer-custom-hooks": ["error"],
   },
+  overrides: [
+    {
+      files: ["*.stories.tsx"],
+      rules: {
+        "use-encapsulation/prefer-custom-hooks": ["off"],
+      },
+    },
+  ],
 };
