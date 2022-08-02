@@ -4373,9 +4373,9 @@ co@^4.6.0:
   integrity sha512-QVb0dM5HvG+uaxitm8wONl7jltx8dqhfU33DcqtOZcLSVIKSDDLDi7+0LbAKiyI8hD9u42m2YxXSkMGWThaecQ==
 
 code-block-writer@^11.0.0:
-  version "11.0.1"
-  resolved "https://registry.yarnpkg.com/code-block-writer/-/code-block-writer-11.0.1.tgz#53920acb587af3f7be57101c0248d98f372d73ac"
-  integrity sha512-0ch9DeCY8v/BWA9n1/Qu1ALG3lpesel4PYL2eNlGLgvGl+J7k74i+dSXSF3wLvF5SYII8/GUT/Ic+fycBR/DUQ==
+  version "11.0.3"
+  resolved "https://registry.yarnpkg.com/code-block-writer/-/code-block-writer-11.0.3.tgz#9eec2993edfb79bfae845fbc093758c0a0b73b76"
+  integrity sha512-NiujjUFB4SwScJq2bwbYUtXbZhBSlY6vYzm++3Q6oC+U+injTqfPYFK8wS9COOmb2lueqp0ZRB4nK1VYeHgNyw==
 
 collect-v8-coverage@^1.0.0:
   version "1.0.1"
