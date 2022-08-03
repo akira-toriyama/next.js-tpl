@@ -2,10 +2,21 @@ type APIResponse = {
   id: number;
   name: string;
 };
-const f = () =>
-  Math.random() < 0.5
-    ? Promise.reject()
-    : Promise.resolve<APIResponse>({ id: 1, name: "dummy" });
+
+const f = () => {
+  if (Math.random() < 0.5) {
+    return Promise.reject();
+  }
+
+  if (Math.random() < 0.5) {
+    return Promise.reject();
+  }
+
+  return Promise.resolve<APIResponse>({ id: 1, name: "dummy" });
+};
+
+// const f = () => Promise.reject();
+// const f = () => Promise.resolve<APIResponse>({ id: 1, name: "dummy" });
 
 const sleep = () => new Promise((resolve) => setTimeout(resolve, 1000));
 

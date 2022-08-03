@@ -4,21 +4,33 @@ import useSWR from "swr";
 import { match, P } from "ts-pattern";
 import * as type from "./User.type";
 
+const f = async () => {
+  const r = await workFlow.fetchUser({
+    repository: {
+      ...repository,
+    },
+  })();
+
+  return r.__type === "error" ? Promise.reject<typeof r>(r) : r;
+};
+
 type UseUser = () => type.Props;
 export const useUser: UseUser = () => {
-  const r = useSWR(
-    "fetchUser",
-    workFlow.fetchUser({
-      repository: {
-        ...repository,
-      },
-    }),
-    {
-      suspense: true,
-    }
-  );
+  const r = useSWR("/api/fetchUser", f, {
+    errorRetryCount: 10,
+    errorRetryInterval: 100,
+  });
+
+  console.log(r.data.__type);
 
   return match(r)
+    .with(
+      { data: undefined, error: undefined },
+      () =>
+        ({
+          __type: "loading",
+        } as const)
+    )
     .with(
       { data: { __type: "success" } },
       (rr) =>

@@ -19,4 +19,7 @@ export type UIData =
       error: {
         msg: string;
       };
+    }
+  | {
+      __type: "loading";
     };
