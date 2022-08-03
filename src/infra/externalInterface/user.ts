@@ -12,6 +12,7 @@ const mock = () => {
     return Promise.reject();
   }
 
+  // return Promise.reject();
   return Promise.resolve<APIResponse>({ id: 1, name: "dummy" });
 };
 

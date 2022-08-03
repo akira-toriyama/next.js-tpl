@@ -7,11 +7,11 @@ import * as Util from "~/domain/core/Util";
 
 const Loading: React.FC = () => <p>取得中</p>;
 
-const Err: React.FC<Util.LookUp<type.Props, "error">> = (props) => (
+const Err: React.FC<Util.Lookup<type.Props, "error">> = (props) => (
   <>エラー: {JSON.stringify(props)}</>
 );
 
-const Success: React.FC<Util.LookUp<type.Props, "success">> = (props) => (
+const Success: React.FC<Util.Lookup<type.Props, "success">> = (props) => (
   <>
     成功: {JSON.stringify(props)}
     <hr />

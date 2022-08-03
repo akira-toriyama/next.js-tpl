@@ -5,26 +5,22 @@ import { match, P } from "ts-pattern";
 import * as type from "./User.type";
 import { toFetcher } from "~/ui/util/toFetcher";
 import { swrPath } from "~/ui/util/swrPath";
+import type { SWRResponse } from "swr";
+import * as Util from "~/domain/core/Util";
 
-type UseUser = () => type.Props;
-export const useUser: UseUser = () => {
-  const r = useSWR(
+const useFetch = () =>
+  useSWR(
     swrPath["/fetchUser"],
-    () =>
-      toFetcher({
-        fetcher: workFlow.fetchUser({
-          repository: {
-            ...repository,
-          },
-        }),
-      }),
+    toFetcher({
+      fetcher: workFlow.fetchUser({ repository }),
+    }),
     {
-      errorRetryCount: 10,
-      errorRetryInterval: 1000,
+      refreshInterval: 10,
     }
   );
 
-  return match(r)
+const toUIData = (p: SWRResponse<type.Props>) =>
+  match(p)
     .with(
       { data: undefined, error: undefined },
       () =>
@@ -56,9 +52,14 @@ export const useUser: UseUser = () => {
         ({
           __type: "error",
           error: {
-            message: "想定外エラー",
+            message: "エラーです。再取得をしています。",
           },
         } as const)
     )
     .exhaustive();
+
+type UseUser = () => type.Props;
+export const useUser: UseUser = () => {
+  const r = useFetch();
+  return toUIData(r);
 };
