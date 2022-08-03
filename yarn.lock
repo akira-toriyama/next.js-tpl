@@ -6946,9 +6946,9 @@ lru-cache@^7.4.4:
   integrity sha512-OIP3DwzRZDfLg9B9VP/huWBlpvbkmbfiBy8xmsXp4RPmE4A3MhwNozc5ZJ3fWnSg8fDcdlE/neRTPG2ycEKliw==
 
 lru-cache@^7.5.1, lru-cache@^7.7.1:
-  version "7.13.1"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.13.1.tgz#267a81fbd0881327c46a81c5922606a2cfe336c4"
-  integrity sha512-CHqbAq7NFlW3RSnoWXLJBxCWaZVBrfa9UEHId2M3AW8iEBurbqduNexEUCGc3SHc6iCYXNJCDi903LajSVAEPQ==
+  version "7.13.2"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.13.2.tgz#bb5d3f1deea3f3a7a35c1c44345566a612e09cd0"
+  integrity sha512-VJL3nIpA79TodY/ctmZEfhASgqekbT574/c4j3jn4bKXbSCnTTCH/KltZyvL2GlV+tGSMtsWyem8DCX7qKTMBA==
 
 lru-queue@^0.1.0:
   version "0.1.0"
@@ -7503,9 +7503,9 @@ npm-pick-manifest@^7.0.0, npm-pick-manifest@^7.0.1:
     semver "^7.3.5"
 
 npm-profile@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/npm-profile/-/npm-profile-6.1.0.tgz#2f32431c487cb21ef5882c9511f8be8a0b602d35"
-  integrity sha512-JHnBzSqS9xPa0M3g90zhaGElSVdxoAipGkraBaM6Jph2XiSiwFN1HmfRTqndYhDkXia2hWRWl8O5RbDvae++GA==
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/npm-profile/-/npm-profile-6.2.1.tgz#975c31ec75a6ae029ab5b8820ffdcbae3a1e3d5e"
+  integrity sha512-Tlu13duByHyDd4Xy0PgroxzxnBYWbGGL5aZifNp8cx2DxUrHSoETXtPKg38aRPsBWMRfDtvcvVfJNasj7oImQQ==
   dependencies:
     npm-registry-fetch "^13.0.1"
     proc-log "^2.0.0"
