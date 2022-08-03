@@ -3,25 +3,26 @@ import * as repository from "~/useCase/user/repository";
 import useSWR from "swr";
 import { match, P } from "ts-pattern";
 import * as type from "./User.type";
-
-const f = async () => {
-  const r = await workFlow.fetchUser({
-    repository: {
-      ...repository,
-    },
-  })();
-
-  return r.__type === "error" ? Promise.reject<typeof r>(r) : r;
-};
+import { toFetcher } from "~/ui/util/toFetcher";
+import { swrPath } from "~/ui/util/swrPath";
 
 type UseUser = () => type.Props;
 export const useUser: UseUser = () => {
-  const r = useSWR("/api/fetchUser", f, {
-    errorRetryCount: 10,
-    errorRetryInterval: 100,
-  });
-
-  console.log(r.data.__type);
+  const r = useSWR(
+    swrPath["/fetchUser"],
+    () =>
+      toFetcher({
+        fetcher: workFlow.fetchUser({
+          repository: {
+            ...repository,
+          },
+        }),
+      }),
+    {
+      errorRetryCount: 10,
+      errorRetryInterval: 1000,
+    }
+  );
 
   return match(r)
     .with(
@@ -45,7 +46,7 @@ export const useUser: UseUser = () => {
         ({
           __type: "error",
           error: {
-            msg: ee.data.error.msg,
+            message: ee.data.error.message,
           },
         } as const)
     )
@@ -55,7 +56,7 @@ export const useUser: UseUser = () => {
         ({
           __type: "error",
           error: {
-            msg: "想定外エラー",
+            message: "想定外エラー",
           },
         } as const)
     )

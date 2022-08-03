@@ -10,9 +10,7 @@ export const fetchUser: Repository.FetchUser = async () =>
         (rr) =>
           ({
             __type: "success",
-            data: {
-              ...rr.data,
-            },
+            data: rr.data,
           } as const)
       )
       .with(
@@ -20,7 +18,9 @@ export const fetchUser: Repository.FetchUser = async () =>
         () =>
           ({
             __type: "error",
-            error: "取得失敗",
+            error: {
+              message: "取得失敗",
+            },
           } as const)
       )
       .exhaustive()

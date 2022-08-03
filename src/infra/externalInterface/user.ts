@@ -3,7 +3,7 @@ type APIResponse = {
   name: string;
 };
 
-const f = () => {
+const mock = () => {
   if (Math.random() < 0.5) {
     return Promise.reject();
   }
@@ -15,10 +15,7 @@ const f = () => {
   return Promise.resolve<APIResponse>({ id: 1, name: "dummy" });
 };
 
-// const f = () => Promise.reject();
-// const f = () => Promise.resolve<APIResponse>({ id: 1, name: "dummy" });
-
-const sleep = () => new Promise((resolve) => setTimeout(resolve, 1000));
+const sleep = () => new Promise((resolve) => setTimeout(resolve, 300));
 
 type FetchUser = () => Promise<
   | {
@@ -35,7 +32,7 @@ type FetchUser = () => Promise<
 >;
 export const fetchUser: FetchUser = async () => {
   await sleep();
-  return f()
+  return mock()
     .then(
       (v) =>
         ({

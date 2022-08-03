@@ -2,19 +2,28 @@ import { useUser } from "./useUser";
 import * as type from "./User.type";
 import React from "react";
 import { Example } from "~/ui/component/general/Example";
-import { match, P } from "ts-pattern";
+import { match } from "ts-pattern";
+import * as Util from "~/domain/core/Util";
+
+const Loading: React.FC = () => <p>取得中</p>;
+
+const Err: React.FC<Util.LookUp<type.Props, "error">> = (props) => (
+  <>エラー: {JSON.stringify(props)}</>
+);
+
+const Success: React.FC<Util.LookUp<type.Props, "success">> = (props) => (
+  <>
+    成功: {JSON.stringify(props)}
+    <hr />
+    <Example />
+  </>
+);
 
 const UserComponent: React.FC<type.Props> = (props) =>
   match(props)
-    .with({ __type: "loading" }, () => <>取得中</>)
-    .with({ __type: "error" }, () => <>エラー: {JSON.stringify(props)}</>)
-    .with({ __type: "success" }, () => (
-      <>
-        成功: {JSON.stringify(props)}
-        <hr />
-        <Example />
-      </>
-    ))
+    .with({ __type: "loading" }, () => <Loading />)
+    .with({ __type: "error" }, (p) => <Err {...p} />)
+    .with({ __type: "success" }, (p) => <Success {...p} />)
     .exhaustive();
 
 const UserContainer: React.FC = () => <UserComponent {...useUser()} />;

@@ -8,13 +8,14 @@ export const fetchUser: WorkFlow.FetchUser = (p) => () =>
         { __type: "success" },
         (rr) =>
           ({
-            __type: rr.__type,
+            __type: "success",
             data: { id: rr.data.id.toString(), nickname: rr.data.name },
           } as const)
       )
       .with(
         { __type: "error" },
-        (ee) => ({ __type: ee.__type, error: { msg: "xxx" } } as const)
+        (ee) =>
+          ({ __type: "error", error: { message: ee.error.message } } as const)
       )
       .exhaustive()
   );
