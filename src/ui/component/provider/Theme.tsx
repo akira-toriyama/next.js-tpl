@@ -1,5 +1,8 @@
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 
+/**
+ * refs https://mui.com/material-ui/customization/default-theme/
+ */
 export const theme = {
   palette: {
     default: {
