@@ -6,7 +6,6 @@ import * as type from "./User.type";
 import { toFetcher } from "~/ui/util/toFetcher";
 import { swrPath } from "~/ui/util/swrPath";
 import type { SWRResponse } from "swr";
-import * as Util from "~/domain/core/Util";
 
 const useFetch = () =>
   useSWR(
