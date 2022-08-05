@@ -5,7 +5,7 @@ import { match, P } from "ts-pattern";
 import * as type from "./User.type";
 import { toFetcher } from "~/ui/util/toFetcher";
 import { swrPath } from "~/ui/util/swrPath";
-import type { SWRResponse } from "swr";
+import { useMap } from "~/ui/hooks/useMap";
 
 const useFetch = () =>
   useSWR(
@@ -18,7 +18,7 @@ const useFetch = () =>
     }
   );
 
-const toUIData = (p: SWRResponse<type.Props>) =>
+const toUIData = (p: ReturnType<typeof useFetch>) =>
   match(p)
     .with(
       { data: undefined, error: undefined },
@@ -58,7 +58,5 @@ const toUIData = (p: SWRResponse<type.Props>) =>
     .exhaustive();
 
 type UseUser = () => type.Props;
-export const useUser: UseUser = () => {
-  const r = useFetch();
-  return toUIData(r);
-};
+export const useUser: UseUser = () =>
+  useMap({ useHook: useFetch }).map(toUIData);
