@@ -7,7 +7,10 @@ const createJestConfig = nextJest({
 
 /** @type {import('@jest/types/build/Config').InitialOptions} */
 const customJestConfig = {
-  ...require("@bird-studio/js-config").jestConfig.nextJs,
+  moduleNameMapper: {
+    "^~/(.*)$": "<rootDir>/src/$1",
+  },
+  testEnvironment: "jest-environment-jsdom",
 };
 
 module.exports = createJestConfig(customJestConfig);
