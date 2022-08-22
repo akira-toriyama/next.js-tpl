@@ -1049,17 +1049,17 @@
     eslint-config-prettier "8.5.0"
     eslint-plugin-jest "26.1.4"
 
-"@bird-studio/interactive-message@5.0.2":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@bird-studio/interactive-message/-/interactive-message-5.0.2.tgz#8d7c5ed305e58459e2148ec06e1992d333ad2446"
-  integrity sha512-/RjFqCx/1wU6xKcgvW4x9Nc2QNtjNLN1zTOA6y/oAviLPANw8FNkr/dut0aILHswLfR+hrwzuL5XYqdwmGRQhg==
+"@bird-studio/interactive-message@5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@bird-studio/interactive-message/-/interactive-message-5.0.3.tgz#52b0d769b2a08eea1cd61eaa0c9761748c3024b2"
+  integrity sha512-1SSZy3nsiSC9dOypRxqqB+KmvhGDsGJxVbmkErbmNJLW2b9BUtsKnffWwE4RKg4KipC0+ci12ovsS/eTl1xvQQ==
   dependencies:
     "@nut-tree/nut-js" "2.1.1"
-    "@octokit/rest" "19.0.3"
+    "@octokit/rest" "19.0.4"
     cac "6.7.12"
     cli-color "2.0.3"
     cosmiconfig "7.0.1"
-    deepl-node "1.3.1"
+    deepl-node "1.5.0"
     gitmojis "3.12.0"
     ini "3.0.0"
     inquirer "~8"
@@ -2151,12 +2151,17 @@
   resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-12.11.0.tgz#da5638d64f2b919bca89ce6602d059f1b52d3ef0"
   integrity sha512-VsXyi8peyRq9PqIz/tpqiL2w3w80OgVMwBHltTml3LmVvXiphgeqmY9mvBw9Wu7e0QWk/fqD37ux8yP5uVekyQ==
 
-"@octokit/plugin-paginate-rest@^3.0.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@octokit/plugin-paginate-rest/-/plugin-paginate-rest-3.1.0.tgz#86f8be759ce2d6d7c879a31490fd2f7410b731f0"
-  integrity sha512-+cfc40pMzWcLkoDcLb1KXqjX0jTGYXjKuQdFQDc6UAknISJHnZTiBqld6HDwRJvD4DsouDKrWXNbNV0lE/3AXA==
+"@octokit/openapi-types@^13.4.0":
+  version "13.4.0"
+  resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-13.4.0.tgz#06fe8fda93bf21bdd397fe7ef8805249efda6c06"
+  integrity sha512-2mVzW0X1+HDO3jF80/+QFZNzJiTefELKbhMu6yaBYbp/1gSMkVDm4rT472gJljTokWUlXaaE63m7WrWENhMDLw==
+
+"@octokit/plugin-paginate-rest@^4.0.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@octokit/plugin-paginate-rest/-/plugin-paginate-rest-4.1.0.tgz#670ac9ac369448c69a2371bfcd7e2b37d95534f2"
+  integrity sha512-2O5K5fpajYG5g62wjzHR7/cWYaCA88CextAW3vFP+yoIHD0KEdlVMHfM5/i5LyV+JMmqiYW7w5qfg46FR+McNw==
   dependencies:
-    "@octokit/types" "^6.41.0"
+    "@octokit/types" "^7.1.1"
 
 "@octokit/plugin-request-log@^1.0.4":
   version "1.0.4"
@@ -2204,13 +2209,13 @@
     node-fetch "^2.6.7"
     universal-user-agent "^6.0.0"
 
-"@octokit/rest@19.0.3", "@octokit/rest@^19.0.0":
-  version "19.0.3"
-  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-19.0.3.tgz#b9a4e8dc8d53e030d611c053153ee6045f080f02"
-  integrity sha512-5arkTsnnRT7/sbI4fqgSJ35KiFaN7zQm0uQiQtivNQLI8RQx8EHwJCajcTUwmaCMNDg7tdCvqAnc7uvHHPxrtQ==
+"@octokit/rest@19.0.4", "@octokit/rest@^19.0.0":
+  version "19.0.4"
+  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-19.0.4.tgz#fd8bed1cefffa486e9ae46a9dc608ce81bcfcbdd"
+  integrity sha512-LwG668+6lE8zlSYOfwPj4FxWdv/qFXYBpv79TWIQEpBLKA9D/IMcWsF/U9RGpA3YqMVDiTxpgVpEW3zTFfPFTA==
   dependencies:
     "@octokit/core" "^4.0.0"
-    "@octokit/plugin-paginate-rest" "^3.0.0"
+    "@octokit/plugin-paginate-rest" "^4.0.0"
     "@octokit/plugin-request-log" "^1.0.4"
     "@octokit/plugin-rest-endpoint-methods" "^6.0.0"
 
@@ -2227,6 +2232,13 @@
   integrity sha512-eJ2jbzjdijiL3B4PrSQaSjuF2sPEQPVCPzBvTHJD9Nz+9dw2SGH4K4xeQJ77YfTq5bRQ+bD8wT11JbeDPmxmGg==
   dependencies:
     "@octokit/openapi-types" "^12.11.0"
+
+"@octokit/types@^7.1.1":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-7.1.1.tgz#a30fd6ca3279d59d532fa75583d65d93b7588e6d"
+  integrity sha512-Dx6cNTORyVaKY0Yeb9MbHksk79L8GXsihbG6PtWqTpkyA2TY1qBWE26EQXVG3dHwY9Femdd/WEeRUEiD0+H3TQ==
+  dependencies:
+    "@octokit/openapi-types" "^13.4.0"
 
 "@rushstack/eslint-patch@^1.1.3":
   version "1.1.3"
@@ -4209,10 +4221,10 @@ deep-is@^0.1.3, deep-is@~0.1.3:
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.4.tgz#a6f2dce612fadd2ef1f519b73551f17e85199831"
   integrity sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==
 
-deepl-node@1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/deepl-node/-/deepl-node-1.3.1.tgz#1cc05affdc3af12fb393e295c5333cdcc2b10c22"
-  integrity sha512-Q41JzD/nxDhDZcJ5RqQfQY8hphX/ZadO/khH4H0WsAGdEwwpZ9By+dqD2si338Qajj7a9ePYYVGmCl9nIxx+wA==
+deepl-node@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/deepl-node/-/deepl-node-1.5.0.tgz#63f5ba5813e5237167561b105652de2c2866ff9d"
+  integrity sha512-VyIKL9TKUg3SbkRYi+sNkBZUgbNf8BQ59rH8AZU5LqzhbTnibvKgrybTlgza6k3wo/wuYYntkRQwv+CFIUk9Qg==
   dependencies:
     "@types/node" ">=12.0"
     axios ">=0.21.2"
