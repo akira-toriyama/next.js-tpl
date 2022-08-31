@@ -32,7 +32,7 @@
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.18.13.tgz#6aff7b350a1e8c3e40b029e46cbe78e24a913483"
   integrity sha512-5yUzC5LqyTFp2HLmDoxGQelcdYgSpP9xsnMWBphAscOdFrHSAVbLNzWiy32sVNDqJRDiJK6klfDnAgu6PAGSHw==
 
-"@babel/core@^7.11.6", "@babel/core@^7.12.3", "@babel/core@^7.18.10":
+"@babel/core@^7.11.6", "@babel/core@^7.12.3", "@babel/core@^7.18.10", "@babel/core@^7.18.13":
   version "7.18.13"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.18.13.tgz#9be8c44512751b05094a4d3ab05fc53a47ce00ac"
   integrity sha512-ZisbOvRRusFktksHSG6pjj1CSvkPkcZq/KHD45LAkVP/oiHJkNBZWfpvlLmX8OtHDG8IuzsFlVRWo08w7Qxn0A==
@@ -53,7 +53,7 @@
     json5 "^2.2.1"
     semver "^6.3.0"
 
-"@babel/generator@^7.18.12", "@babel/generator@^7.18.13", "@babel/generator@^7.7.2":
+"@babel/generator@^7.18.13", "@babel/generator@^7.7.2":
   version "7.18.13"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.18.13.tgz#59550cbb9ae79b8def15587bdfbaa388c4abf212"
   integrity sha512-CkPg8ySSPuHTYPJYo7IRALdqyjM9HCbt/3uOBEFbzyGVP6Mn8bwFPB0jX6982JVNBlYzM1nnPkfjuXSOPtQeEQ==
@@ -286,7 +286,7 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.18.10", "@babel/parser@^7.18.11", "@babel/parser@^7.18.13", "@babel/parser@^7.6.0", "@babel/parser@^7.9.6":
+"@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.18.10", "@babel/parser@^7.18.13", "@babel/parser@^7.6.0", "@babel/parser@^7.9.6":
   version "7.18.13"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.18.13.tgz#5b2dd21cae4a2c5145f1fbd8ca103f9313d3b7e4"
   integrity sha512-dgXcIfMuQ0kgzLB2b9tRZs7TTFFaGM2AbtA4fJgUUYukzGH4jwsS7hzQHEGs67jdehpm22vkgKwvbU+aEflgwg==
@@ -1014,7 +1014,7 @@
     "@babel/parser" "^7.18.10"
     "@babel/types" "^7.18.10"
 
-"@babel/traverse@^7.18.10", "@babel/traverse@^7.18.11", "@babel/traverse@^7.18.13", "@babel/traverse@^7.18.9", "@babel/traverse@^7.4.5", "@babel/traverse@^7.7.2":
+"@babel/traverse@^7.18.10", "@babel/traverse@^7.18.13", "@babel/traverse@^7.18.9", "@babel/traverse@^7.4.5", "@babel/traverse@^7.7.2":
   version "7.18.13"
   resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.18.13.tgz#5ab59ef51a997b3f10c4587d648b9696b6cb1a68"
   integrity sha512-N6kt9X1jRMLPxxxPYWi7tgvJRH/rtoU+dbKAPDM44RFHiMH8igdsaSBgFeskhSl/kLWLDUvIh1RXCrTmg0/zvA==
@@ -1758,23 +1758,23 @@
   resolved "https://registry.yarnpkg.com/@ladle/react-context/-/react-context-1.0.1.tgz#007ea641e4a1b25cafb8f5672977fdd1f9bb6f91"
   integrity sha512-xVQ8siyOEQG6e4Knibes1uA3PTyXnqiMmfSmd5pIbkzeDty8NCBtYHhTXSlfmcDNEsw/G8OzNWo4VbyQAVDl2A==
 
-"@ladle/react@2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@ladle/react/-/react-2.4.0.tgz#b41a00ebca91472685c7e2a6782feb6baa1cc20c"
-  integrity sha512-1Nas1Is9LXvxcS3BBl6KGgTwOoFWSJVfcZbFEhwcylJAi9CH5kMmli2j5897jo9GK1hnYTA9DdqwuaDkdL7vug==
+"@ladle/react@2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@ladle/react/-/react-2.4.2.tgz#51b5f96779edf29351909a29244b2d5449a4610f"
+  integrity sha512-XvdDxLFu7/529/lo2egkC3JSud6BzfdcH3Cs4BUOH1cMcSIEwMj2Vw2El2tIYehRAjmGGhVu3i1zqXkeZoF2BQ==
   dependencies:
     "@babel/code-frame" "^7.18.6"
-    "@babel/core" "^7.18.10"
-    "@babel/generator" "^7.18.12"
-    "@babel/parser" "^7.18.11"
+    "@babel/core" "^7.18.13"
+    "@babel/generator" "^7.18.13"
+    "@babel/parser" "^7.18.13"
     "@babel/plugin-proposal-class-properties" "^7.18.6"
     "@babel/preset-env" "^7.18.10"
     "@babel/preset-react" "^7.18.6"
     "@babel/preset-typescript" "^7.18.6"
     "@babel/runtime" "^7.18.9"
     "@babel/template" "^7.18.10"
-    "@babel/traverse" "^7.18.11"
-    "@babel/types" "^7.18.10"
+    "@babel/traverse" "^7.18.13"
+    "@babel/types" "^7.18.13"
     "@ladle/react-context" "^1.0.1"
     "@vitejs/plugin-react" "^2.0.1"
     axe-core "^4.4.3"
@@ -1796,7 +1796,7 @@
     query-string "^7.1.1"
     react-frame-component "^5.2.3"
     react-inspector "^6.0.1"
-    vite "^3.0.8"
+    vite "^3.0.9"
     vite-tsconfig-paths "^3.5.0"
 
 "@next/env@12.2.5":
@@ -10612,7 +10612,7 @@ vite-tsconfig-paths@^3.5.0:
     recrawl-sync "^2.0.3"
     tsconfig-paths "^4.0.0"
 
-vite@^3.0.8:
+vite@^3.0.9:
   version "3.0.9"
   resolved "https://registry.yarnpkg.com/vite/-/vite-3.0.9.tgz#45fac22c2a5290a970f23d66c1aef56a04be8a30"
   integrity sha512-waYABTM+G6DBTCpYAxvevpG50UOlZuynR0ckTK5PawNVt7ebX6X7wNXHaGIO6wYYFXSM7/WcuFuO2QzhBB6aMw==
