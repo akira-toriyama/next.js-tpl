@@ -1897,10 +1897,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@npmcli/arborist@^5.0.0", "@npmcli/arborist@^5.0.4":
-  version "5.6.0"
-  resolved "https://registry.yarnpkg.com/@npmcli/arborist/-/arborist-5.6.0.tgz#ace635279d0d548df164ac83464237fd5f0175ad"
-  integrity sha512-gM2AxWCaXTZRZnKOHT6uIUHTkvRf+UPU2iC/3nC1Bj21zemnoKyJh2NvcG69UCcfs+r1jpx6hZ0dL9s2yPssJQ==
+"@npmcli/arborist@^5.0.0", "@npmcli/arborist@^5.0.4", "@npmcli/arborist@^5.6.1":
+  version "5.6.1"
+  resolved "https://registry.yarnpkg.com/@npmcli/arborist/-/arborist-5.6.1.tgz#8371fe6e38f2d9ebc57a77be9ac0a8276564aa07"
+  integrity sha512-bFEihRTSzIpJY+EJjyUUiTHkuZfFyn6ROlPzyVVDsHmysN8JRZ0LdgA/cwNuTGndb1ddsUxhSENhLp5pJHhX3Q==
   dependencies:
     "@isaacs/string-locale-compare" "^1.1.0"
     "@npmcli/installed-package-contents" "^1.0.7"
@@ -1910,10 +1910,10 @@
     "@npmcli/name-from-folder" "^1.0.1"
     "@npmcli/node-gyp" "^2.0.0"
     "@npmcli/package-json" "^2.0.0"
-    "@npmcli/query" "^1.1.1"
+    "@npmcli/query" "^1.2.0"
     "@npmcli/run-script" "^4.1.3"
-    bin-links "^3.0.0"
-    cacache "^16.0.6"
+    bin-links "^3.0.3"
+    cacache "^16.1.3"
     common-ancestor-path "^1.0.1"
     json-parse-even-better-errors "^2.3.1"
     json-stringify-nice "^1.1.4"
@@ -1923,7 +1923,7 @@
     nopt "^6.0.0"
     npm-install-checks "^5.0.0"
     npm-package-arg "^9.0.0"
-    npm-pick-manifest "^7.0.0"
+    npm-pick-manifest "^7.0.2"
     npm-registry-fetch "^13.0.0"
     npmlog "^6.0.2"
     pacote "^13.6.1"
@@ -2048,7 +2048,7 @@
   dependencies:
     infer-owner "^1.0.4"
 
-"@npmcli/query@^1.1.1":
+"@npmcli/query@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@npmcli/query/-/query-1.2.0.tgz#46468d583cf013aa92102970700f9555314aabe4"
   integrity sha512-uWglsUM3PjBLgTSmZ3/vygeGdvWEIZ3wTUnzGFbprC/RtvQSaT+GAXu1DXmSFj2bD3oOZdcRm1xdzsV2z1YWdw==
@@ -3348,7 +3348,7 @@ big-integer@^1.6.17, big-integer@^1.6.44:
   resolved "https://registry.yarnpkg.com/big-integer/-/big-integer-1.6.51.tgz#0df92a5d9880560d3ff2d5fd20245c889d130686"
   integrity sha512-GPEid2Y9QU1Exl1rpO9B2IPJGHPSupF5GnVIP0blYvNOMer2bTvSWs1jGOUg04hTmu67nmLsQ9TBo1puaotBHg==
 
-bin-links@^3.0.0:
+bin-links@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/bin-links/-/bin-links-3.0.3.tgz#3842711ef3db2cd9f16a5f404a996a12db355a6e"
   integrity sha512-zKdnMPWEdh4F5INR07/eBrodC7QrF5JKvqskjz/ZZRXg5YSAZIbn8zGhbhUrElzHBZ2fvEQdOU59RHcTG3GiwA==
@@ -3553,7 +3553,7 @@ cac@6.7.12:
   resolved "https://registry.yarnpkg.com/cac/-/cac-6.7.12.tgz#6fb5ea2ff50bd01490dbda497f4ae75a99415193"
   integrity sha512-rM7E2ygtMkJqD9c7WnFU6fruFcN3xe4FM5yUmgxhZzIKJk4uHl9U/fhwdajGFQbQuv43FAUo1Fe8gX/oIKDeSA==
 
-cacache@^16.0.0, cacache@^16.0.6, cacache@^16.1.0, cacache@^16.1.1:
+cacache@^16.0.0, cacache@^16.1.0, cacache@^16.1.1, cacache@^16.1.3:
   version "16.1.3"
   resolved "https://registry.yarnpkg.com/cacache/-/cacache-16.1.3.tgz#a02b9f34ecfaf9a78c9f4bc16fceb94d5d67a38e"
   integrity sha512-/+Emcj9DAXxX4cwlLmRI9c166RuL3w30zp4R7Joiv2cQTtTtA+jeuCAjH3ZlGnYS3tKENSrKhAzVVP9GVyzeYQ==
@@ -7143,11 +7143,11 @@ libnpmexec@^4.0.2:
     walk-up-path "^1.0.0"
 
 libnpmfund@^3.0.1:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/libnpmfund/-/libnpmfund-3.0.2.tgz#7da0827950f0db2cce0acb0dc7652d1834a8b239"
-  integrity sha512-wmFMP/93Wjy+jDg5LaSldDgAhSgCyA64JUUmp806Kae7y3YP9Qv5m1vUhPxT4yebxgB2v/I6G1/RUcNb1y0kVg==
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/libnpmfund/-/libnpmfund-3.0.3.tgz#334a3bb58c64ad18803056373545f6528b04dceb"
+  integrity sha512-vIlrudn2vzCQ8YRiImh/Kcf6/igjITDNqJPm2ifQDLJIrtqHc22BQb1SCyH+bajHL/DVHzGKD4VuxUtLHT641w==
   dependencies:
-    "@npmcli/arborist" "^5.0.0"
+    "@npmcli/arborist" "^5.6.1"
 
 libnpmhook@^8.0.2:
   version "8.0.3"
@@ -7960,7 +7960,7 @@ npm-packlist@^5.1.0:
     npm-bundled "^2.0.0"
     npm-normalize-package-bin "^2.0.0"
 
-npm-pick-manifest@^7.0.0, npm-pick-manifest@^7.0.1:
+npm-pick-manifest@^7.0.0, npm-pick-manifest@^7.0.1, npm-pick-manifest@^7.0.2:
   version "7.0.2"
   resolved "https://registry.yarnpkg.com/npm-pick-manifest/-/npm-pick-manifest-7.0.2.tgz#1d372b4e7ea7c6712316c0e99388a73ed3496e84"
   integrity sha512-gk37SyRmlIjvTfcYl6RzDbSmS9Y4TOBXfsPnoYqTHARNgWbyDiCSMLUpmALDj4jjcTZpURiEfsSHJj9k7EV4Rw==
