@@ -7158,9 +7158,9 @@ libnpmhook@^8.0.2:
     npm-registry-fetch "^13.0.0"
 
 libnpmorg@^4.0.2:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/libnpmorg/-/libnpmorg-4.0.3.tgz#a85cbdb3665ad4f7c7279d239a4581ec2eeef5a6"
-  integrity sha512-r4CpmCEF+e5PbFMBi64xSXmqn0uGgV4T7NWpGL4/A6KT/DTtIxALILQZq+l0ZdN1xm4RjOvqSDR22oT4il8rAQ==
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/libnpmorg/-/libnpmorg-4.0.4.tgz#2a01d49372cf0df90d79a61e69bddaf2ed704311"
+  integrity sha512-1bTpD7iub1rDCsgiBguhJhiDufLQuc8DEti20euqsXz9O0ncXVpCYqf2SMmHR4GEdmAvAj2r7FMiyA9zGdaTpA==
   dependencies:
     aproba "^2.0.0"
     npm-registry-fetch "^13.0.0"
