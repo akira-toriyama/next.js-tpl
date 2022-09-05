@@ -1,3 +1,3 @@
-// ts-prune-ignore-next
 // SomeがSuccessなどをexportしているが、ここでカバー
+// ts-prune-ignore-next
 export { Some } from "./Some";
