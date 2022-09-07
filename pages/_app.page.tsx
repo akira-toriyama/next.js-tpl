@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
-import React from "react";
 import Head from "next/head";
 import { Wrapper } from "~/ui/component/provider/Wrapper";
 

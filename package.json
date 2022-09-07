@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "designSystem": "ladle serve",
-    "build": "NODE_ENV=test yarn qualityCheck && NODE_ENV=production next build && next export",
+    "prebuild": "NODE_ENV=test yarn qualityCheck",
+    "build": "NODE_ENV=production next build && next export",
     "qualityCheck": "run-s qualityCheck:*",
     "qualityCheck:type": "tsc --project ./tsconfig.json --noEmit",
     "qualityCheck:unitTest": "jest --testPathIgnorePatterns .gitignore",

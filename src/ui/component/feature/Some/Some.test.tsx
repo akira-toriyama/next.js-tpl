@@ -1,4 +1,3 @@
-import React from "react";
 import { Some, SomeContainer, Success, Loading, Failure } from "./Some";
 import { render } from "@testing-library/react";
 

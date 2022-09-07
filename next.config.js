@@ -3,7 +3,7 @@ module.exports = {
   reactStrictMode: true,
   pageExtensions: ["page.tsx"],
   compiler: {
-    reactRemoveProperties,
+    reactRemoveProperties: true,
     styledComponents: true,
   },
 };

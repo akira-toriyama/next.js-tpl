@@ -1,4 +1,3 @@
-import React from "react";
 import { useExample } from "./useExample";
 import type { Props } from "./Example.type";
 import * as S from "./Example.style";

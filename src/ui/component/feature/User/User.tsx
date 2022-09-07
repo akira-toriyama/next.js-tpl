@@ -1,6 +1,5 @@
 import { useUser } from "./useUser";
 import * as type from "./User.type";
-import React from "react";
 import { Example } from "~/ui/component/general/Example";
 import { match } from "ts-pattern";
 import * as Util from "~/domain/core/Util";

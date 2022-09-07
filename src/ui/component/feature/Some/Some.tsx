@@ -1,4 +1,3 @@
-import React from "react";
 import { useSome } from "./useSome";
 import type { Props } from "./type";
 // Styledを毎回つけるのは、手間になるのでこのようにする
