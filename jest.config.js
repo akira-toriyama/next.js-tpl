@@ -11,6 +11,13 @@ const customJestConfig = {
     "^~/(.*)$": "<rootDir>/src/$1",
   },
   testEnvironment: "jest-environment-jsdom",
+  collectCoverageFrom: [
+    "src/**/*.{ts,tsx}",
+
+    "!src/**/*.gql.generated.ts",
+    "!src/**/*.stories.tsx",
+    "!src/**/index.ts",
+  ],
 };
 
 module.exports = createJestConfig(customJestConfig);
