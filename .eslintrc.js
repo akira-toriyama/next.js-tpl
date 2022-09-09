@@ -1,19 +1,4 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: [
-    "@bird-studio/eslint-config/preset/standard",
-    "next/core-web-vitals",
-  ],
-  plugins: ["use-encapsulation"],
-  rules: {
-    "use-encapsulation/prefer-custom-hooks": ["error"],
-  },
-  overrides: [
-    {
-      files: ["*.stories.tsx"],
-      rules: {
-        "use-encapsulation/prefer-custom-hooks": ["off"],
-      },
-    },
-  ],
+  extends: ["@bird-studio/eslint-config/preset/nextJs"],
 };
