@@ -3,6 +3,7 @@ import type { Props } from "./type";
 import { match, P } from "ts-pattern";
 import { fetchSome } from "./fetchSome";
 import type { SomeResponse } from "./fetchSome";
+import { swrPath } from "~/ui/util/swrPath";
 
 // useSome内にあるとテスタビリティが下がるので切り出す。別ファイルでも良い
 type SomeReducer = (p: SWRResponse<SomeResponse>) => Props;
@@ -24,6 +25,6 @@ export const someReducer: SomeReducer = (p) =>
 // ここにロジックをなるべく書かない
 type UseSome = () => Props;
 export const useSome: UseSome = () => {
-  const r = useSWR("/some", fetchSome);
+  const r = useSWR(swrPath["/fetchUser"], fetchSome);
   return someReducer(r);
 };
