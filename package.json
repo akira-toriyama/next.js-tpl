@@ -11,7 +11,7 @@
     "qualityCheck:type": "tsc --project ./tsconfig.json --noEmit",
     "qualityCheck:unitTest": "jest --testPathIgnorePatterns .gitignore",
     "qualityCheck:redundancy": "jscpd .",
-    "qualityCheck:findDeadCode": "ts-prune -e -i '(.d.ts|.stories.tsx|.page.tsx)'",
+    "qualityCheck:findDeadCode": "ts-prune -e",
     "qualityCheck:esLint": "eslint --ignore-path .gitignore .",
     "qualityCheck:fmt": "prettier  --check --ignore-path .gitignore .",
     "prepare": "git config --local core.hooksPath .githooks"
