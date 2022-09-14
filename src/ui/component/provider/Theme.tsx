@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-restricted-paths
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 
 /**
