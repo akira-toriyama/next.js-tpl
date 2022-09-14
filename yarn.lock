@@ -2167,10 +2167,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@npmcli/arborist@^5.6.1":
-  version "5.6.1"
-  resolved "https://registry.yarnpkg.com/@npmcli/arborist/-/arborist-5.6.1.tgz#8371fe6e38f2d9ebc57a77be9ac0a8276564aa07"
-  integrity sha512-bFEihRTSzIpJY+EJjyUUiTHkuZfFyn6ROlPzyVVDsHmysN8JRZ0LdgA/cwNuTGndb1ddsUxhSENhLp5pJHhX3Q==
+"@npmcli/arborist@^5.6.1", "@npmcli/arborist@^5.6.2":
+  version "5.6.2"
+  resolved "https://registry.yarnpkg.com/@npmcli/arborist/-/arborist-5.6.2.tgz#552b554f34777e5dcc8e68ad86cdaeebc0788790"
+  integrity sha512-Lyj2g+foWKzrwW2bT/RGO982VR9vb5tlvfD88n4PwWJRrDttQbJoIdcQzN9b+NIBhI1/8iEhC5b8far9U0fQxA==
   dependencies:
     "@isaacs/string-locale-compare" "^1.1.0"
     "@npmcli/installed-package-contents" "^1.0.7"
@@ -8001,11 +8001,11 @@ libnpmexec@^4.0.12:
     walk-up-path "^1.0.0"
 
 libnpmfund@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/libnpmfund/-/libnpmfund-3.0.3.tgz#334a3bb58c64ad18803056373545f6528b04dceb"
-  integrity sha512-vIlrudn2vzCQ8YRiImh/Kcf6/igjITDNqJPm2ifQDLJIrtqHc22BQb1SCyH+bajHL/DVHzGKD4VuxUtLHT641w==
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/libnpmfund/-/libnpmfund-3.0.4.tgz#be1fd46bcfa9432660f98d935135d7ee3e620239"
+  integrity sha512-azKUVFkL27AsvzEzLKMHX/L8j/GE2TL6eZ6KIdc9hsvleoNLT+Y6XO9w9v7JWwg03smZK9dbqwvnYZzO3vzrIA==
   dependencies:
-    "@npmcli/arborist" "^5.6.1"
+    "@npmcli/arborist" "^5.6.2"
 
 libnpmhook@^8.0.4:
   version "8.0.4"
