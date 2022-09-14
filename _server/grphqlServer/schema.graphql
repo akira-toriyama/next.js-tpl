@@ -1,7 +1,0 @@
-type Query {
-  text: Text
-}
-
-type Text {
-  textData: String
-}
