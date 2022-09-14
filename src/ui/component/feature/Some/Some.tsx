@@ -1,7 +1,7 @@
 import { useSome } from "./useSome";
 import type { Props } from "./type";
 // Styledを毎回つけるのは、手間になるのでこのようにする
-import * as S from "./style";
+import * as S from "./Some.style";
 
 // 個別に書く
 export const Success: React.FC<Props> = () => (

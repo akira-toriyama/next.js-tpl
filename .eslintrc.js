@@ -105,5 +105,72 @@ module.exports = {
         ],
       },
     },
+    {
+      files: ["src/ui/**/*.ts"],
+      rules: {
+        "import/no-restricted-paths": [
+          "error",
+          {
+            zones: [
+              {
+                target: "**/*",
+                from: "node_modules/",
+              },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      files: ["src/ui/**/use*.ts"],
+      rules: {
+        "import/no-restricted-paths": [
+          "error",
+          {
+            zones: [
+              {
+                target: "**/*",
+                from: "node_modules/",
+                except: ["swr", "ts-pattern", "react"],
+              },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      files: ["src/ui/**/*.test.ts"],
+      rules: {
+        "import/no-restricted-paths": [
+          "error",
+          {
+            zones: [
+              {
+                target: "**/*",
+                from: "node_modules/",
+                except: ["@testing-library/react"],
+              },
+            ],
+          },
+        ],
+      },
+    },
+    {
+      files: ["src/ui/**/*.style.ts"],
+      rules: {
+        "import/no-restricted-paths": [
+          "error",
+          {
+            zones: [
+              {
+                target: "**/*",
+                from: "node_modules/",
+                except: ["styled-components"],
+              },
+            ],
+          },
+        ],
+      },
+    },
   ],
 };
