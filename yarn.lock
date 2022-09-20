@@ -1137,10 +1137,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@bird-studio/eslint-config@1.3.3":
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/@bird-studio/eslint-config/-/eslint-config-1.3.3.tgz#2ce928dbd27d26b3700e7daa004f60a438444e4f"
-  integrity sha512-iFyG8HXggByzVGL5RRVEFjsMHjje5MisB0gPoXdZmC8EOdi/lPb59HP7xG/3S+inCX9WaJlo5V5cIq1OxkbiyQ==
+"@bird-studio/eslint-config@1.3.5":
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/@bird-studio/eslint-config/-/eslint-config-1.3.5.tgz#606a83110f923653d1cec21bdbb9fd8d74f6b64a"
+  integrity sha512-Dquf9GlIlsIbEBT/p+PDocsnr4Jl/4gHWOFU16+YZdX/twgzu13aPQaaarKin1sWqHQ2eNT/ggXQe0bCNxX/sg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "5.37.0"
     "@typescript-eslint/parser" "5.37.0"
@@ -3147,7 +3147,7 @@
     semver "^7.3.7"
     tsutils "^3.21.0"
 
-"@typescript-eslint/parser@5.37.0":
+"@typescript-eslint/parser@5.37.0", "@typescript-eslint/parser@^5.21.0":
   version "5.37.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.37.0.tgz#c382077973f3a4ede7453fb14cadcad3970cbf3b"
   integrity sha512-01VzI/ipYKuaG5PkE5+qyJ6m02fVALmMPY3Qq5BHflDx3y4VobbLdHQkSMg9VPRS4KdNt4oYTMaomFoHonBGAw==
@@ -3155,16 +3155,6 @@
     "@typescript-eslint/scope-manager" "5.37.0"
     "@typescript-eslint/types" "5.37.0"
     "@typescript-eslint/typescript-estree" "5.37.0"
-    debug "^4.3.4"
-
-"@typescript-eslint/parser@^5.21.0":
-  version "5.27.1"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.27.1.tgz#3a4dcaa67e45e0427b6ca7bb7165122c8b569639"
-  integrity sha512-7Va2ZOkHi5NP+AZwb5ReLgNF6nWLGTeUJfxdkVUAPPSaAdbWNnFZzLZ4EGGmmiCTg+AwlbE1KyUYTBglosSLHQ==
-  dependencies:
-    "@typescript-eslint/scope-manager" "5.27.1"
-    "@typescript-eslint/types" "5.27.1"
-    "@typescript-eslint/typescript-estree" "5.27.1"
     debug "^4.3.4"
 
 "@typescript-eslint/scope-manager@5.27.1":
