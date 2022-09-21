@@ -1166,10 +1166,10 @@
     textgears-api "1.1.3"
     typo-js "1.2.2"
 
-"@bird-studio/js-config@3.6.29":
-  version "3.6.29"
-  resolved "https://registry.yarnpkg.com/@bird-studio/js-config/-/js-config-3.6.29.tgz#f54dc92c66a696910a86058f46ca46b23fa8073c"
-  integrity sha512-N+65lIw/TxQo8mF13K6vnQrNAY5dUf5pdWUtcKD2qyqdPt4EhSATjrr781IbHwCOnhpIn0rwbMgkOsBOZct8Kg==
+"@bird-studio/js-config@3.6.30":
+  version "3.6.30"
+  resolved "https://registry.yarnpkg.com/@bird-studio/js-config/-/js-config-3.6.30.tgz#31f3d7768c4454c086dd25f97623a1f5d18e6d2d"
+  integrity sha512-D330UDg1fgT3CL3jx6FnY8k6XI4uHlBPhD7yqxoYekOiOADXrl5L6zM8mUOZsI9Zun6r+ufQzptSisYCAiOMhw==
   dependencies:
     cosmiconfig "7.0.1"
 
