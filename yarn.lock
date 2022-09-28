@@ -7509,12 +7509,12 @@ jest-regex-util@^29.0.0:
   integrity sha512-BV7VW7Sy0fInHWN93MMPtlClweYv2qrSCwfeFWmpribGZtQPWNvRSq9XOVgOEjU1iBGRKXUZil0o2AH7Iy9Lug==
 
 jest-resolve-dependencies@^29.0.3:
-  version "29.0.3"
-  resolved "https://registry.yarnpkg.com/jest-resolve-dependencies/-/jest-resolve-dependencies-29.0.3.tgz#f23a54295efc6374b86b198cf8efed5606d6b762"
-  integrity sha512-KzuBnXqNvbuCdoJpv8EanbIGObk7vUBNt/PwQPPx2aMhlv/jaXpUJsqWYRpP/0a50faMBY7WFFP8S3/CCzwfDw==
+  version "29.1.1"
+  resolved "https://registry.yarnpkg.com/jest-resolve-dependencies/-/jest-resolve-dependencies-29.1.1.tgz#03104a866fb133cffd8a6fe7fc198b0de9a17232"
+  integrity sha512-AMRTJyiK8caRXq3pa9i4oXX6yH+am5v0HwCUq1yk9lxI3ARihyT2OfEySJJo3ER7xpxf3b6isfp1sO6PQY3N0Q==
   dependencies:
     jest-regex-util "^29.0.0"
-    jest-snapshot "^29.0.3"
+    jest-snapshot "^29.1.0"
 
 jest-resolve@^29.0.3, jest-resolve@^29.1.0:
   version "29.1.0"
