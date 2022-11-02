@@ -20,6 +20,8 @@ jobs:
         uses: ./.github/actions/qualityCheck
         env:
           SCHEMA_DOWNLOAD_URL: ${{ secrets.SCHEMA_DOWNLOAD_URL }}
+          NEXT_PUBLIC_GRAPHQL_ENDPOINT: ${{ secrets.NEXT_PUBLIC_GRAPHQL_ENDPOINT }}
+          NEXT_PUBLIC_GRAPHQL_ENDPOINT_AUTHORIZATION: ${{ secrets.NEXT_PUBLIC_GRAPHQL_ENDPOINT_AUTHORIZATION }}
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
