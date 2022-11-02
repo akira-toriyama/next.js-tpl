@@ -14,8 +14,6 @@
     "prequalityCheck": "yarn generate:fromGQL",
     "qualityCheck": "run-s qualityCheck:*",
     "qualityCheck:type": "tsc --project ./tsconfig.json --noEmit",
-    "qualityCheck:unitTest": "yarn vitest run --coverage",
-    "_qualityCheck:snapshotTest": "npx playwright install chromium && ladle build && ladle preview -p 61000",
     "qualityCheck:snapshotTest": "start-server-and-test _qualityCheck:snapshotTest 61000 'yarn playwright test snapshot/snapshot.test.ts'",
     "qualityCheck:redundancy": "jscpd src",
     "qualityCheck:findDeadCode": "ts-prune -e",
