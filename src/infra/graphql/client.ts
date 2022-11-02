@@ -1,5 +1,5 @@
 import { GraphQLClient } from "graphql-request";
-import { env } from "~/infra/env";
+import { env } from "~/env";
 
 export const graphQLClient = new GraphQLClient(
   env.resources.endpoint

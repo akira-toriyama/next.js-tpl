@@ -1,7 +1,8 @@
 import type { CodegenConfig } from "@graphql-codegen/cli";
 
 const config: CodegenConfig = {
-  schema: "_server/grphqlServer/schema.graphql",
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  schema: process.env["SCHEMA_DOWNLOAD_URL"]!,
   hooks: {
     afterOneFileWrite: ["prettier --write"],
   },

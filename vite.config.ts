@@ -12,7 +12,6 @@ export default defineConfig({
   define: {
     "process.env": process.env,
   },
-  // @ts-expect-error -- ???
   plugins: [react()],
   test: {
     environment: "jsdom",
@@ -29,7 +28,7 @@ export default defineConfig({
         "src/ui/provider/Wrapper.tsx",
         "src/ui/provider/ReactQuery.tsx",
         "src/ui/provider/ErrorBoundary.tsx",
-        "src/infra/env.ts",
+        "src/env.ts",
       ],
       provider: "istanbul",
     },
