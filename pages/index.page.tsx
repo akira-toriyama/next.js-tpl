@@ -4,7 +4,7 @@ import NextLink from "next/link";
 const Page: NextPage = () => (
   <ul>
     <li>
-      <NextLink href="/user">user</NextLink>
+      <NextLink href="/items">items</NextLink>
     </li>
   </ul>
 );

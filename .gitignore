@@ -39,6 +39,8 @@ yarn-error.log*
 
 # codegen
 *.gql.generated.ts
+gql.generated.ts
+/src/infra/graphql/types.ts
 
-#
 _server/grphqlServer/schema.graphql
+/snapshotReport

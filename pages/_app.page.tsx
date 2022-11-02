@@ -1,15 +1,16 @@
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { Wrapper } from "~/ui/component/provider/Wrapper";
+import { Wrapper } from "~/ui/provider/Wrapper";
 
-const Page: NextPage<AppProps> = (props) => (
+type Props = AppProps<{ dehydratedState: unknown }>;
+const Page: NextPage<Props> = (props) => (
   <>
     <Head>
       {/* レスポンシブ用設定 */}
       <meta name="viewport" content="width=device-width" />
     </Head>
-    <Wrapper>
+    <Wrapper {...props.pageProps}>
       <props.Component {...props.pageProps} />
     </Wrapper>
   </>

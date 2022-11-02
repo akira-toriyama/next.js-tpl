@@ -4,6 +4,5 @@ module.exports = {
   pageExtensions: ["page.tsx"],
   compiler: {
     reactRemoveProperties: true,
-    styledComponents: true,
   },
 };
