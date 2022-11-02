@@ -20,3 +20,9 @@ open "http://localhost:3000"
 yarn designSystem
 open "http://localhost:6006"
 ```
+
+## generate component
+
+```bash
+yarn generate:ui/general
+```
