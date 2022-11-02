@@ -20,25 +20,3 @@ open "http://localhost:3000"
 yarn designSystem
 open "http://localhost:6006"
 ```
-
----
-
-- haygen
-- ストーリーブック デプロイ
-  - bot 除外
-- start
-
-  - 初期設定
-
-- nex13
-  suspenc
-
----
-
----
-
-- 別リポジトリで
-  - tailwind
-  - ISR, SSG
-- 認証
-  - next auth
