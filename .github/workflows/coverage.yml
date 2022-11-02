@@ -18,6 +18,8 @@ jobs:
 
       - name: Quality check
         uses: ./.github/actions/qualityCheck
+        env:
+          SCHEMA_DOWNLOAD_URL: ${{ secrets.SCHEMA_DOWNLOAD_URL }}
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
