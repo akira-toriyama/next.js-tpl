@@ -1,175 +1,40 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: ["@bird-studio/eslint-config/preset/nextJs"],
+  reportUnusedDisableDirectives: true,
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals",
+    "prettier",
+  ],
+  plugins: ["use-encapsulation", "vitest"],
+  rules: {
+    complexity: ["error", 2],
+  },
   overrides: [
     {
-      files: ["src/domain/**/*"],
+      files: ["*.tsx"],
       rules: {
-        "import/no-restricted-paths": [
-          "error",
-          {
-            zones: [
-              {
-                target: "**/*",
-                from: "node_modules/",
-                message: "Do not rely on libraries",
-              },
-            ],
-          },
-        ],
+        "use-encapsulation/prefer-custom-hooks": ["error"],
       },
     },
     {
-      files: ["src/useCase/**/*"],
+      files: ["*.stories.tsx"],
       rules: {
-        "import/no-restricted-paths": [
-          "error",
-          {
-            zones: [
-              {
-                target: "**/*",
-                from: "node_modules/",
-                except: ["ts-pattern"],
-                message: "Do not rely on libraries",
-              },
-            ],
-          },
-        ],
+        "use-encapsulation/prefer-custom-hooks": ["off"],
       },
     },
     {
-      files: ["src/infra/**/*"],
+      files: [".eslintrc.js", "*.config.js"],
       rules: {
-        "import/no-restricted-paths": [
-          "error",
-          {
-            zones: [
-              {
-                target: "**/*",
-                from: "node_modules/",
-                message: "Do not rely on libraries",
-              },
-            ],
-          },
-        ],
+        "no-undef": "off",
+        "@typescript-eslint/no-var-requires": "off",
       },
     },
     {
-      files: ["src/ui/**/*.tsx"],
+      files: ["*.test.ts"],
       rules: {
-        "import/no-restricted-paths": [
-          "error",
-          {
-            zones: [
-              {
-                target: "**/*",
-                from: "node_modules/",
-                except: ["react", "ts-pattern"],
-              },
-            ],
-          },
-        ],
-      },
-    },
-    {
-      files: ["src/ui/**/*.test.tsx"],
-      rules: {
-        "import/no-restricted-paths": [
-          "error",
-          {
-            zones: [
-              {
-                target: "**/*",
-                from: "node_modules/",
-                except: ["@testing-library/react"],
-              },
-            ],
-          },
-        ],
-      },
-    },
-    {
-      files: ["src/ui/**/*.stories.tsx"],
-      rules: {
-        "import/no-restricted-paths": [
-          "error",
-          {
-            zones: [
-              {
-                target: "**/*",
-                from: "node_modules/",
-                except: ["@ladle/react"],
-              },
-            ],
-          },
-        ],
-      },
-    },
-    {
-      files: ["src/ui/**/*.ts"],
-      rules: {
-        "import/no-restricted-paths": [
-          "error",
-          {
-            zones: [
-              {
-                target: "**/*",
-                from: "node_modules/",
-              },
-            ],
-          },
-        ],
-      },
-    },
-    {
-      files: ["src/ui/**/use*.ts"],
-      rules: {
-        "import/no-restricted-paths": [
-          "error",
-          {
-            zones: [
-              {
-                target: "**/*",
-                from: "node_modules/",
-                except: ["swr", "ts-pattern", "react"],
-              },
-            ],
-          },
-        ],
-      },
-    },
-    {
-      files: ["src/ui/**/*.test.ts"],
-      rules: {
-        "import/no-restricted-paths": [
-          "error",
-          {
-            zones: [
-              {
-                target: "**/*",
-                from: "node_modules/",
-                except: ["@testing-library/react"],
-              },
-            ],
-          },
-        ],
-      },
-    },
-    {
-      files: ["src/ui/**/*.style.ts"],
-      rules: {
-        "import/no-restricted-paths": [
-          "error",
-          {
-            zones: [
-              {
-                target: "**/*",
-                from: "node_modules/",
-                except: ["styled-components"],
-              },
-            ],
-          },
-        ],
+        "@typescript-eslint/ban-ts-comment": "off",
       },
     },
   ],

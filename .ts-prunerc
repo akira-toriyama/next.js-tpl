@@ -1,3 +1,3 @@
 {
-  "ignore": ".d.ts|.stories.tsx|.page.tsx"
+  "ignore": ".d.ts|.stories.tsx|.page.tsx|src/infra/graphql/types.ts|codegen.ts|.config.ts|gql.ts"
 }

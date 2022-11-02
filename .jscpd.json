@@ -1,5 +1,4 @@
 {
   "threshold": 0,
-  "gitignore": true,
-  "ignore": [".github/**/*.yml", ".next"]
+  "gitignore": true
 }
