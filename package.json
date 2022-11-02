@@ -11,7 +11,7 @@
     "mockServer": "ts-node-dev --project _server/grphqlServer/tsconfig.json --respawn --transpile-only _server/grphqlServer/grphqlServer.ts",
     "updateSnapshot": "start-server-and-test _qualityCheck:snapshotTest 61000 'yarn playwright test snapshot/snapshot.test.ts -u'",
     "// qualityCheck": "",
-    "prequalityCheck": "yarn downloadGQLSchema && yarn generate:fromGQL",
+    "prequalityCheck": "yarn generate:fromGQL",
     "qualityCheck": "run-s qualityCheck:*",
     "qualityCheck:type": "tsc --project ./tsconfig.json --noEmit",
     "qualityCheck:unitTest": "yarn vitest run --coverage",

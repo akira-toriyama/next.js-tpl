@@ -1,7 +1,28 @@
 import type { CodegenConfig } from "@graphql-codegen/cli";
 
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+
 const config: CodegenConfig = {
-  schema: "_server/grphqlServer/schema.graphql",
+  schema: process.env["SCHEMA_DOWNLOAD_URL"]!,
   hooks: {
     afterOneFileWrite: ["prettier --write"],
   },
