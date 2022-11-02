@@ -20,6 +20,8 @@ console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
 console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
 console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
 console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]);
+console.log("SCHEMA_DOWNLOAD_URL", process.env["SCHEMA_DOWNLOAD_URL"]?.length);
+console.log("SCHEMA_DOWNLOAD_URL", typeof process.env["SCHEMA_DOWNLOAD_URL"]);
 
 const config: CodegenConfig = {
   schema: process.env["SCHEMA_DOWNLOAD_URL"]!,
