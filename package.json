@@ -38,7 +38,7 @@
     "@bird-studio/interactive-message": "5.0.9",
     "@bird-studio/js-config": "3.6.30",
     "@faker-js/faker": "7.6.0",
-    "@graphql-codegen/cli": "2.13.10",
+    "@graphql-codegen/cli": "2.13.11",
     "@graphql-codegen/introspection": "2.2.1",
     "@graphql-codegen/near-operation-file-preset": "2.4.4",
     "@graphql-codegen/typed-document-node": "2.3.6",
