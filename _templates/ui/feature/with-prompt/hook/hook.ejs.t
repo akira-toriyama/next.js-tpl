@@ -13,5 +13,5 @@ export const use<%= h.changeCase.upperCaseFirst(name) %>: Use<%= h.changeCase.up
   const { id } = useRouter().query;
   const { fetcher, opt } = service.determineFetcher({ id });
 
-  return service.toProps(useQuery(["Item", { id }], fetcher, opt));
+  return service.toProps(useQuery([<%= h.changeCase.upperCaseFirst(name) %>, { id }], fetcher, opt));
 };
