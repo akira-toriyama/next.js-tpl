@@ -14,7 +14,7 @@ open "http://localhost:4000/voyager"
 open "http://localhost:3000"
 ```
 
-## designSystem
+## design system
 
 ```bash
 yarn designSystem
@@ -24,5 +24,7 @@ open "http://localhost:6006"
 ## generate component
 
 ```bash
+# Please git commit in advance.
 yarn generate:ui/general
+yarn generate:ui/feature
 ```

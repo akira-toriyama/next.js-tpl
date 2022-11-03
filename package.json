@@ -7,6 +7,7 @@
     "dev": "next dev",
     "generate:fromGQL": "graphql-codegen --config codegen.ts",
     "generate:ui/general": "hygen ui/general with-prompt",
+    "generate:ui/feature": "hygen ui/feature with-prompt",
     "designSystem": "ladle serve",
     "premockServer": "yarn --silent get-graphql-schema ${SCHEMA_DOWNLOAD_URL} > _server/grphqlServer/schema.graphql",
     "mockServer": "ts-node-dev --project _server/grphqlServer/tsconfig.json --respawn --transpile-only _server/grphqlServer/grphqlServer.ts",

@@ -1,12 +1,12 @@
 ---
-to: src/ui/general/<%= directory %>/<%= h.changeCase.upperCaseFirst(component) %>/<%= h.changeCase.upperCaseFirst(component) %>.stories.tsx
-sh: yarn prettier --write src/ui/general/<%= directory %>/<%= h.changeCase.upperCaseFirst(component) %>/<%= h.changeCase.upperCaseFirst(component) %>.stories.tsx
+to: src/ui/general/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/<%= h.changeCase.upperCaseFirst(name) %>.stories.tsx
+sh: yarn prettier --write src/ui/general/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/<%= h.changeCase.upperCaseFirst(name) %>.stories.tsx
 ---
 
-import * as <%= component %> from "./<%= h.changeCase.upperCaseFirst(component) %>";
+import * as <%= name %> from "./<%= h.changeCase.upperCaseFirst(name) %>";
 
-export const <%= h.changeCase.upperCaseFirst(component) %>: React.FC = () => (
+export const <%= h.changeCase.upperCaseFirst(name) %>: React.FC = () => (
   <>
-    <<%= component %>.<%= h.changeCase.upperCaseFirst(component) %> {...{ name: "<%= h.changeCase.upperCaseFirst(component) %>" }} />
+    <<%= name %>.<%= h.changeCase.upperCaseFirst(name) %> {...{ name: "<%= h.changeCase.upperCaseFirst(name) %>" }} />
   </>
 );
