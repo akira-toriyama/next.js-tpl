@@ -5,7 +5,10 @@ const url = "http://localhost:61000";
 const stories = fetch(`${url}/meta.json`).json().stories;
 
 Object.keys(stories).forEach((storyKey) => {
-  test(`${storyKey} - compare snapshots`, async ({ page }) => {
+  test(`${storyKey} - compare snapshots`, async ({ page }, testinfo) => {
+    // https://github.com/microsoft/playwright/issues/14218#issuecomment-1128855221
+    testinfo.snapshotSuffix = "";
+
     await page.goto(`${url}/?story=${storyKey}&mode=preview`);
     await page.waitForSelector("[data-storyloaded]");
     await expect(page).toHaveScreenshot(`${storyKey}.png`);
