@@ -11,6 +11,8 @@ Object.keys(stories).forEach((storyKey) => {
 
     await page.goto(`${url}/?story=${storyKey}&mode=preview`);
     await page.waitForSelector("[data-storyloaded]");
-    await expect(page).toHaveScreenshot(`${storyKey}.png`);
+    await expect(page).toHaveScreenshot(`${storyKey}.png`, {
+      threshold: 0.02,
+    });
   });
 });
