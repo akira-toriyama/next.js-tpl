@@ -23,6 +23,7 @@
     "// build": "",
     "prebuild": "NODE_ENV=test yarn qualityCheck",
     "build": "NODE_ENV=production next build && next export",
+    "build:designSystem": "yarn ladle build",
     "// other": "",
     "prepare": "git config --local core.hooksPath .githooks"
   },
