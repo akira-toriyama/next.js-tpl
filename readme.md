@@ -4,10 +4,14 @@
 
 ### start
 
+install
+https://github.com/asdf-vm/asdf
+
 ```bash
 mv .env.example .env
-mv server/grphqlServer/_schema copy.graphql.example server/grphqlServer/_schema copy.graphql
+mv _server/grphqlServer/schema.graphql.example _server/grphqlServer/schema.graphql
 direnv allow
+yarn
 ```
 
 ### develop
@@ -36,5 +40,3 @@ open "http://localhost:6006"
 yarn generate:ui/general
 yarn generate:ui/feature
 ```
-
-## feature
