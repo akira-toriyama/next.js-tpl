@@ -6,7 +6,7 @@
 
 ```bash
 mv .env.example .env
-mv server/grphqlServer/_schema copy.graphql.example server/grphqlServer/_schema copy.graphql
+mv _server/grphqlServer/schema.graphql.example _server/grphqlServer/schema.graphql
 direnv allow
 ```
 
