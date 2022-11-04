@@ -44,3 +44,4 @@ gql.generated.ts
 
 _server/grphqlServer/schema.graphql
 /snapshotReport
+/test-results
