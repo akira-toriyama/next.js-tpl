@@ -1,8 +1,16 @@
 # Next.js template
 
-# usage
+## usage
 
-## develop
+### start
+
+```bash
+mv .env.example .env
+mv server/grphqlServer/_schema copy.graphql.example server/grphqlServer/_schema copy.graphql
+direnv allow
+```
+
+### develop
 
 ```bash
 yarn mockServer
@@ -14,17 +22,19 @@ open "http://localhost:4000/voyager"
 open "http://localhost:3000"
 ```
 
-## design system
+### design system
 
 ```bash
 yarn designSystem
 open "http://localhost:6006"
 ```
 
-## generate component
+### generate component
 
 ```bash
 # Please git commit in advance.
 yarn generate:ui/general
 yarn generate:ui/feature
 ```
+
+## feature
