@@ -4,10 +4,14 @@
 
 ### start
 
+install
+https://github.com/asdf-vm/asdf
+
 ```bash
 mv .env.example .env
 mv _server/grphqlServer/schema.graphql.example _server/grphqlServer/schema.graphql
 direnv allow
+yarn
 ```
 
 ### develop
