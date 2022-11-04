@@ -40,5 +40,3 @@ open "http://localhost:6006"
 yarn generate:ui/general
 yarn generate:ui/feature
 ```
-
-## feature
