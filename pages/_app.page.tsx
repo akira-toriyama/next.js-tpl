@@ -7,7 +7,6 @@ type Props = AppProps<{ dehydratedState: unknown }>;
 const Page: NextPage<Props> = (props) => (
   <>
     <Head>
-      {/* レスポンシブ用設定 */}
       <meta name="viewport" content="width=device-width" />
     </Head>
     <Wrapper {...props.pageProps}>
