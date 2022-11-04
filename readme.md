@@ -2,10 +2,12 @@
 
 ## usage
 
-### start
+### install
 
-install
-https://github.com/asdf-vm/asdf
+- https://github.com/asdf-vm/asdf
+  - https://github.com/akira-toriyama/next.js-tpl/blob/main/.tool-versions
+
+### start
 
 ```bash
 mv .env.example .env
