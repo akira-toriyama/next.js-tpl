@@ -11,7 +11,7 @@
     "designSystem": "ladle serve",
     "premockServer": "yarn --silent get-graphql-schema ${SCHEMA_DOWNLOAD_URL} > _server/grphqlServer/schema.graphql",
     "mockServer": "ts-node-dev --project _server/grphqlServer/tsconfig.json --respawn --transpile-only _server/grphqlServer/grphqlServer.ts",
-    "updateSnapshot": "start-server-and-test _qualityCheck:snapshotTest 61000 'yarn playwright test snapshot/snapshot.test.ts -u'",
+    "updateSnapshot": "yarn && start-server-and-test _qualityCheck:snapshotTest 61000 'yarn playwright test snapshot/snapshot.test.ts -u'",
     "// qualityCheck": "",
     "prequalityCheck": "yarn generate:fromGQL",
     "qualityCheck": "run-s qualityCheck:*",

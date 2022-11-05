@@ -43,3 +43,12 @@ open "http://localhost:6006"
 yarn generate:ui/general
 yarn generate:ui/feature
 ```
+
+### update snapshot
+
+```bash
+# It takes time.
+
+docker run --env-file=".env" --rm --network host -v $(pwd):/work/ -w /work/ -it mcr.microsoft.com/playwright /bin/bash
+yarn updateSnapshot
+```
