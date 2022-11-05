@@ -1,9 +1,8 @@
 # Next.js template
 
+- App
 - Design system
   - https://next-js-tpl-designsystem-1cq9u10a7-akira-toriyama.vercel.app/
-- Headless CMS
-  - https://app.hygraph.com
 
 ## usage
 
