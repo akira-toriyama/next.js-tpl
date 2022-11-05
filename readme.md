@@ -1,11 +1,17 @@
 # Next.js template
 
+- Design system
+  - https://next-js-tpl-designsystem-1cq9u10a7-akira-toriyama.vercel.app/
+- Headless CMS
+  - https://app.hygraph.com
+
 ## usage
 
 ### install
 
 - https://github.com/asdf-vm/asdf
   - https://github.com/akira-toriyama/next.js-tpl/blob/main/.tool-versions
+- https://docs.docker.com/engine/install/
 
 ### start
 
