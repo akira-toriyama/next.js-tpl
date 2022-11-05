@@ -1,8 +1,7 @@
 # Next.js template
 
-- App
-- Design system
-  - https://next-js-tpl-designsystem-1cq9u10a7-akira-toriyama.vercel.app/
+- [App](https://vercel.com/akira-toriyama/next-js-tpl-app/EACVFoBPLrvscxKL2HRHSaJ1fyGr)
+- [Design system](https://next-js-tpl-designsystem-1cq9u10a7-akira-toriyama.vercel.app)
 
 ## usage
 
