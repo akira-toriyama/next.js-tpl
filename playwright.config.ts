@@ -1,5 +1,6 @@
 import type { PlaywrightTestConfig } from "@playwright/test";
 import { devices } from "playwright";
+import "~/env";
 
 const config: PlaywrightTestConfig = {
   projects: [
