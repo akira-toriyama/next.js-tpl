@@ -7,9 +7,8 @@
 
 ### install
 
-- https://github.com/asdf-vm/asdf
-  - https://github.com/akira-toriyama/next.js-tpl/blob/main/.tool-versions
-- https://docs.docker.com/engine/install/
+- [asdf](https://github.com/asdf-vm/asdf)
+- [docker](https://docs.docker.com/engine/install)
 
 ### start
 
