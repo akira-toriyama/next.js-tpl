@@ -52,6 +52,5 @@ yarn generate:ui/feature
 ```bash
 # It takes time.
 
-docker run --env-file=".env" --rm --network host -v $(pwd):/work/ -w /work/ -it mcr.microsoft.com/playwright /bin/bash
 yarn updateSnapshot
 ```
