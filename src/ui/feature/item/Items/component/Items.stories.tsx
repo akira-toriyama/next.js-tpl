@@ -6,7 +6,7 @@ export const All: React.FC = () => (
   <>
     <items.Success
       {...{
-        data: [{ title: "title", id: "id" }],
+        data: [{ title: "title", id: "1" }],
         ...tag.pattern.ui.success,
       }}
     />
