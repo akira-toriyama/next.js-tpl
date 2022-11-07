@@ -6,10 +6,7 @@ export const All: React.FC = () => (
   <>
     <items.Success
       {...{
-        data: [...Array(3)].map((_, i) => ({
-          title: `タイトル${i}`,
-          id: `${i}`,
-        })),
+        data: [{ title: "title", id: "1" }],
         ...tag.pattern.ui.success,
       }}
     />
