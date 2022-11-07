@@ -3,14 +3,14 @@
 - [App](https://next-js-tpl-62l80d57r-akira-toriyama.vercel.app/)
 - [Design system](https://next-js-tpl-designsystem-1cq9u10a7-akira-toriyama.vercel.app)
 
-## usage
+## Usage
 
-### install
+### Install
 
 - [asdf](https://github.com/asdf-vm/asdf)
 - [docker](https://docs.docker.com)
 
-### start
+### First
 
 ```bash
 mv .env.example .env
@@ -19,7 +19,7 @@ direnv allow
 yarn
 ```
 
-### develop
+### Develop
 
 ```bash
 yarn mockServer
@@ -31,14 +31,14 @@ open "http://localhost:4000/voyager"
 open "http://localhost:3000"
 ```
 
-### design system
+### Design system
 
 ```bash
 yarn designSystem
 open "http://localhost:6006"
 ```
 
-### generate component
+### Generate component
 
 ```bash
 # Please git commit in advance.
@@ -47,7 +47,7 @@ yarn generate:ui/general
 yarn generate:ui/feature
 ```
 
-### update snapshot
+### Update snapshot
 
 ```bash
 # It takes time.
