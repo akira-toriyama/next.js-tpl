@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Item } from "~/ui/feature/item/Item";
+import { Item } from "~/ui/domain/item/Item";
 
 const Page: NextPage = () => <Item />;
 

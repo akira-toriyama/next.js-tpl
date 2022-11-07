@@ -1,6 +1,6 @@
 ---
-to: src/ui/feature/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/hook/<%= name %>.hook.ts
-sh: yarn prettier --write src/ui/feature/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/hook/<%= name %>.hook.ts
+to: src/ui/domain/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/hook/<%= name %>.hook.ts
+sh: yarn prettier --write src/ui/domain/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/hook/<%= name %>.hook.ts
 ---
 
 import { useQuery } from "@tanstack/react-query";

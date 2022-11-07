@@ -1,6 +1,6 @@
 ---
-to: src/ui/feature/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/hook/service/service.test.ts
-sh: yarn prettier --write src/ui/feature/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/hook/service/service.test.ts
+to: src/ui/domain/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/hook/service/service.test.ts
+sh: yarn prettier --write src/ui/domain/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/hook/service/service.test.ts
 ---
 
 import { describe, test, expect, vi } from "vitest";

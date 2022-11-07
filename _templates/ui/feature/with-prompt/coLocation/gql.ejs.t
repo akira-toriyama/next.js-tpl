@@ -1,6 +1,6 @@
 ---
-to: src/ui/feature/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/coLocation/<%= h.changeCase.upperCaseFirst(name) %>.gql.ts
-sh: yarn prettier --write src/ui/feature/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/coLocation/<%= h.changeCase.upperCaseFirst(name) %>.gql.ts && yarn generate:fromGQL
+to: src/ui/domain/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/coLocation/<%= h.changeCase.upperCaseFirst(name) %>.gql.ts
+sh: yarn prettier --write src/ui/domain/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/coLocation/<%= h.changeCase.upperCaseFirst(name) %>.gql.ts && yarn generate:fromGQL
 ---
 
 import { gql } from "graphql-request";
