@@ -1,6 +1,6 @@
 ---
-to: src/ui/feature/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/component/<%= h.changeCase.upperCaseFirst(name) %>.test.tsx
-sh: yarn prettier --write src/ui/feature/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/component/<%= h.changeCase.upperCaseFirst(name) %>.test.tsx
+to: src/ui/domain/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/component/<%= h.changeCase.upperCaseFirst(name) %>.test.tsx
+sh: yarn prettier --write src/ui/domain/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/component/<%= h.changeCase.upperCaseFirst(name) %>.test.tsx
 ---
 import { describe, test, expect, vi } from "vitest";
 import { render } from "@testing-library/react";

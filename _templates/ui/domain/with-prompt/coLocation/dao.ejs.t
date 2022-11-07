@@ -1,6 +1,6 @@
 ---
-to: src/ui/feature/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/coLocation/dao.ts
-sh: yarn prettier --write src/ui/feature/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/coLocation/dao.ts
+to: src/ui/domain/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/coLocation/dao.ts
+sh: yarn prettier --write src/ui/domain/<%= directory %>/<%= h.changeCase.upperCaseFirst(name) %>/coLocation/dao.ts
 ---
 
 import * as client from "~/infra/graphql/client";
