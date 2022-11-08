@@ -228,6 +228,7 @@ const Cat: React.FC = () => {
 ### 状態
 
 `ts-pattern` や、型の絞り込み、状態が増えた場合などを考慮すると、`isXxx`よりは、`__tag`のほうが Typescript や SPA と相性が良いです。
+[例](https://www.typescriptlang.org/play?ssl=32&ssc=1&pln=33&pc=1#code/C4TwDgpgBAQghgEwAoCcD2YDOUC8UDeAUFFAJaYAyaipAdgOYBcUARmmgDYRy0DcxZTAGUArgGMxETJmZtO3PgIRxgcZpmAo69KAB8otERw78Avv0Ji0tDa0QAxWrigAKMM3jJ0WAJS4AfAQCpABmrmAAdORUNAx+RCQkAPRJJAAqABYQKNCYGWhGCAZowKzQyqoRAsmpMCKlGloMegZGHNVQkRVw-IlQKVAAegD8AqaEwWFuUcLiktLxHQOZ2bn5hWVQ3VV9A3UNmtothsYdXSo9S6kjY4TmE6CQUADi7F4Y2DgC+gl9UAD6-1UTCgACIONQENpQb0-t1mCcTB1xiQfh0SIDgcxQZg5lJMDD0VsLupDgxYSR7pZrLZ6G9HM43MxXmh3r4AkESKFwhFMXAdDhBWCIbF6KDFrtUt1BK1Tn1zqoKf1rqNKRMuVNInyBUKcXjpOLOYkBtLyFBGtozhFukqBjc1fcgA)
 
 ```ts
 # Bad
