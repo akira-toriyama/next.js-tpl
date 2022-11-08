@@ -175,14 +175,14 @@ SPA は、UI とロジックや UI と保存処理が密結合になります。
 ```
 # Bad
 
-src/infra/animal/cat/gql.ts
+src/graphql/animal/cat.gql.ts
 src/component/animal/Cat.tsx
 ```
 
 ```
 # Good
 
-src/ui/domain/animal/cat/coLocation/dao.ts
+src/ui/domain/animal/cat/coLocation/cat.gql.ts
 src/ui/domain/animal/cat/component/Cat.tsx
 ```
 
