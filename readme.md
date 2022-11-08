@@ -147,3 +147,116 @@ src
          ├── tag.test.ts
          └── tag.ts # ts-patternと合わせて使用します。
 ```
+
+## 開発フロー
+
+**main** ブランチにプルリクをだすと、GithubActions が実行されます。([例](https://github.com/akira-toriyama/next.js-tpl/pull/883))  
+型チェック, lint, 未使用コードの検出, スナップショットなどを実行します。プルリク単位で、App と Design system も公開されます。
+
+## 実装方針
+
+### ディレクトリ構成
+
+src/ 直下は、レイヤードアーキテクチャを参考にしています。Web アプリは外部と ほぼ必ず API 通信します。その処理をどこに実装するかを意識してください。
+src/graphql, src/component などとすると技術駆動の構成になるため避けてください。
+
+### mock server
+
+開発時は、実際のリソースと通信する必要はありません。\_server/grphqlServer/mocks.ts に都合の良いデータを返す[モック](https://www.the-guild.dev/graphql/tools/docs/mocking)を準備してください。
+
+### テンプレート
+
+`yarn generate:ui/general`, `yarn generate:ui/domain`を使用し、基本的な実装を揃えてください。
+
+### domain component
+
+SPA は、UI とロジックや UI と保存処理が密結合になります。同名のディレクトリを準備せずに、拡張子やディレクトリ構成で役割を表現してください。
+
+```
+# Bad
+
+src/infra/animal/cat/gql.ts
+src/component/animal/Cat.tsx
+```
+
+```
+# Good
+
+src/ui/domain/animal/cat/coLocation/dao.ts
+src/ui/domain/animal/cat/component/Cat.tsx
+```
+
+すべてがこのルールにあてはまりませんが、src/ui/domain/に関心事をすべて実装してください。
+
+### tsx
+
+テスト不能なコンポーネントを実装しないでください。
+[eslint-plugin-use-encapsulation](https://github.com/kyleshevlin/eslint-plugin-use-encapsulation)を参考にしてください。
+
+```tsx
+# Bad
+
+const Cat: React.FC = () => {
+  const [v, setV] = useState("たま");
+
+  return <>猫の名前{v}</>;
+};
+```
+
+```tsx
+# Good
+
+const useCat = () => {
+  const [v, setV] = useState("たま");
+
+  return {
+    name: v,
+  };
+};
+
+const Cat: React.FC = () => {
+  const cat = useCat();
+
+  return <>猫の名前{cat.name}</>;
+};
+```
+
+### テスト
+
+単体テストをしっかり書いてください。`import`しているファイルの処理を知りすぎてテストを書かないでください。
+
+### 状態
+
+`ts-pattern` や、型の絞り込み、状態が増えた場合などを考慮すると、`isXxx`よりは、`__tag`のほうが Typescript や SPA と相性が良いです。
+
+```ts
+# Bad
+
+const toProps = (p) => {
+  if (p === "loading") {
+    return {
+      isLoading: true,
+    };
+  }
+
+  return {
+    isSuccess: true,
+  };
+};
+```
+
+```ts
+# Good
+
+const toProps = (p) => {
+  if (p === "loading") {
+    return {
+      __tag: "loading",
+    } as const;
+  }
+
+  return {
+    __tag: "success",
+  } as const;
+};
+```
