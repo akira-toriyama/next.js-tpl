@@ -1,7 +1,5 @@
 # Next.js template
 
-開発を始めやすいように、開発を勧めやすいように等を目的として作りました。
-
 [App](https://next-js-tpl-62l80d57r-akira-toriyama.vercel.app/)  
 **Hygraph**に登録しているデータを表示しています。
 
