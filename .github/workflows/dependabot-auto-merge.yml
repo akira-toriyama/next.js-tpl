@@ -29,6 +29,13 @@ jobs:
           NEXT_PUBLIC_GRAPHQL_ENDPOINT: ${{ secrets.NEXT_PUBLIC_GRAPHQL_ENDPOINT }}
           NEXT_PUBLIC_GRAPHQL_ENDPOINT_AUTHORIZATION: ${{ secrets.NEXT_PUBLIC_GRAPHQL_ENDPOINT_AUTHORIZATION }}
 
+      - uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: playwright-report
+          path: snapshotReport/
+          retention-days: 1
+
       - name: Dependabot metadata
         id: metadata
         uses: dependabot/fetch-metadata@v1.1.1
