@@ -41,3 +41,6 @@ jobs:
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          SCHEMA_DOWNLOAD_URL: ${{ secrets.SCHEMA_DOWNLOAD_URL }}
+          NEXT_PUBLIC_GRAPHQL_ENDPOINT: ${{ secrets.NEXT_PUBLIC_GRAPHQL_ENDPOINT }}
+          NEXT_PUBLIC_GRAPHQL_ENDPOINT_AUTHORIZATION: ${{ secrets.NEXT_PUBLIC_GRAPHQL_ENDPOINT_AUTHORIZATION }}
