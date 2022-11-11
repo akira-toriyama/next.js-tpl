@@ -1054,10 +1054,10 @@
     eslint-config-prettier "8.5.0"
     eslint-plugin-jest "27.1.3"
 
-"@bird-studio/interactive-message@5.0.9":
-  version "5.0.9"
-  resolved "https://registry.yarnpkg.com/@bird-studio/interactive-message/-/interactive-message-5.0.9.tgz#4d5ac84288d65cce3a6d22d1478a75cfce3d9a29"
-  integrity sha512-b2hIS8bba24C6lWyCK/Dx9h1mA2OpX1nWSM5MzTJ06NJ0XnYxa6dSnzZG6WVfufo4LbjuHp3CFoX1UDCUecAvw==
+"@bird-studio/interactive-message@5.0.10":
+  version "5.0.10"
+  resolved "https://registry.yarnpkg.com/@bird-studio/interactive-message/-/interactive-message-5.0.10.tgz#d9f472d569f6963c2e34be6321cb58a486293b1a"
+  integrity sha512-9jKy0i7Ue1Nwm1KD9LF3KvvjWNP45lrHeyHStFlMT8ItFA2xbWnamfPdl/zX3zw7B7kQcGzg0S/hNyT7+dtIWA==
   dependencies:
     "@nut-tree/nut-js" "2.3.0"
     "@octokit/rest" "19.0.5"
@@ -1065,11 +1065,11 @@
     cli-color "2.0.3"
     cosmiconfig "7.0.1"
     deepl-node "1.7.1"
-    gitmojis "3.12.0"
+    gitmojis "3.13.0"
     ini "3.0.1"
     inquirer "~8"
     inquirer-search-list "1.2.6"
-    table "6.8.0"
+    table "6.8.1"
     textgears-api "1.1.3"
     typo-js "1.2.2"
 
@@ -6807,10 +6807,10 @@ gitignore-to-glob@^0.3.0:
   resolved "https://registry.yarnpkg.com/gitignore-to-glob/-/gitignore-to-glob-0.3.0.tgz#59f32ab3d9b66ce50299c3ed24cb0ef42a094ceb"
   integrity sha512-mk74BdnK7lIwDHnotHddx1wsjMOFIThpLY3cPNniJ/2fA/tlLzHnFxIdR+4sLOu5KGgQJdij4kjJ2RoUNnCNMA==
 
-gitmojis@3.12.0:
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/gitmojis/-/gitmojis-3.12.0.tgz#df2e5d3c03a6ce46cc8edc846513ad1ddc0737cb"
-  integrity sha512-07dBXkB1PZkOxs4BEJfcMCubWkNo34YEslGLMmnlkbIxtU7PqMjitUT1k73jpNrUck33LjXR1T7KEsoM5zBSbw==
+gitmojis@3.13.0:
+  version "3.13.0"
+  resolved "https://registry.yarnpkg.com/gitmojis/-/gitmojis-3.13.0.tgz#4723017832f0b97b284a1aed32cc384cc35f2c7e"
+  integrity sha512-vBRPLpEakxS6oJrX7IoJqEEigNFgXdLCnGv9EaH0+txozhpvat+PvdDH3h+mM4adgGAA932Za3Hgeupt5/XqyQ==
 
 glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"
@@ -11818,10 +11818,10 @@ sync-fetch@0.4.2:
     buffer "^5.7.1"
     node-fetch "^2.6.1"
 
-table@6.8.0:
-  version "6.8.0"
-  resolved "https://registry.yarnpkg.com/table/-/table-6.8.0.tgz#87e28f14fa4321c3377ba286f07b79b281a3b3ca"
-  integrity sha512-s/fitrbVeEyHKFa7mFdkuQMWlH1Wgw/yEXMt5xACT4ZpzWFluehAxRtUUQKPuWhaLAWhFcVx6w3oC8VKaUfPGA==
+table@6.8.1:
+  version "6.8.1"
+  resolved "https://registry.yarnpkg.com/table/-/table-6.8.1.tgz#ea2b71359fe03b017a5fbc296204471158080bdf"
+  integrity sha512-Y4X9zqrCftUhMeH2EptSSERdVKt/nEdijTOacGD/97EKjhQ/Qs8RTlEGABSJNNN8lac9kheH+af7yAkEWlgneA==
   dependencies:
     ajv "^8.0.1"
     lodash.truncate "^4.4.2"
