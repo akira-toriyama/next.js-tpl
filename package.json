@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@bird-studio/eslint-config": "1.4.0",
-    "@bird-studio/interactive-message": "5.0.9",
+    "@bird-studio/interactive-message": "5.0.10",
     "@bird-studio/js-config": "3.6.30",
     "@faker-js/faker": "7.6.0",
     "@graphql-codegen/cli": "2.13.11",
