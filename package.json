@@ -24,8 +24,7 @@
     "_qualityCheck:snapshotTest": "npx playwright install chromium && ladle build && ladle preview -p 61000",
     "qualityCheck:snapshotTest": "start-server-and-test _qualityCheck:snapshotTest 61000 'yarn playwright test snapshot/snapshot.test.ts'",
     "// build": "",
-    "prebuild:app": "NODE_ENV=test yarn qualityCheck",
-    "build:app": "NODE_ENV=production next build",
+    "build:app": "next build",
     "build:designSystem": "yarn ladle build",
     "// other": "",
     "prepare": "git config --local core.hooksPath .githooks"
