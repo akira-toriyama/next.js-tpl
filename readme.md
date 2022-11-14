@@ -1,9 +1,9 @@
 # Next.js template
 
-[App](https://next-js-tpl-62l80d57r-akira-toriyama.vercel.app/)  
+[App](https://next-js-tpl-app.vercel.app/)  
 **Hygraph**に登録しているデータを表示しています。
 
-[Design system](https://next-js-tpl-designsystem-1cq9u10a7-akira-toriyama.vercel.app)  
+[Design system](https://next-js-tpl.vercel.app/)  
 デザインシステムですが、スタイルを使用していません。  
 **React**は、**css in js**, **css module**, **コンポート ライブラリ**, など様々なスタイル適用方法があり、ベストプラクティスがありません。アプリの内容などを考慮して、スタイルを検討してください。
 
