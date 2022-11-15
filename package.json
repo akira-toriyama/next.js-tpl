@@ -70,7 +70,7 @@
     "get-graphql-schema": "2.1.2",
     "graphql": "16.6.0",
     "graphql-voyager": "1.0.0-rc.31",
-    "graphql-yoga": "2.13.13",
+    "graphql-yoga": "3.0.0",
     "hygen": "6.2.11",
     "jscpd": "3.5.1",
     "jsdom": "20.0.2",
