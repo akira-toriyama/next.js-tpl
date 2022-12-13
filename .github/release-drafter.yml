@@ -1,5 +1,5 @@
-name-template: 'v$RESOLVED_VERSION'
-tag-template: 'v$RESOLVED_VERSION'
+name-template: "v$RESOLVED_VERSION"
+tag-template: "v$RESOLVED_VERSION"
 
 template: |
   # What's Changed
@@ -8,18 +8,18 @@ template: |
   **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
 
 include-labels:
-  - 'o.x.x'
-  - 'x.o.x'
-  - 'x.x.o'
-  - 'x.x.x'
+  - "o.x.x"
+  - "x.o.x"
+  - "x.x.o"
+  - "x.x.x"
 
 version-resolver:
   major:
     labels:
-      - 'o.x.x'
+      - "o.x.x"
   minor:
     labels:
-      - 'x.o.x'
+      - "x.o.x"
   patch:
     labels:
-      - 'x.x.o'
+      - "x.x.o"

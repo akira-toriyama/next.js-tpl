@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
-      
+
       - name: actions-ecosystem/action-get-merged-pull-request
         uses: actions-ecosystem/action-get-merged-pull-request@v1
         id: get-merged-pull-request
