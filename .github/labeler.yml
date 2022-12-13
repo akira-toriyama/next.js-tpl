@@ -1,0 +1,18 @@
+version: v1
+
+labels:
+  - label: "o.x.x"
+    matcher:
+      commits: ":\\[o.x.x\\]: .*"
+
+  - label: "x.o.x"
+    matcher:
+      commits: ":\\[x.o.x\\]: .*"
+
+  - label: "x.x.o"
+    matcher:
+      commits: ":\\[x.x.o\\]: .*"
+
+  - label: "x.x.x"
+    matcher:
+      commits: ":\\[x.x.x\\]: .*"
