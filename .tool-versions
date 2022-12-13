@@ -1,3 +1,4 @@
-nodejs 16.14.0
+nodejs 18.11.0
 yarn 1.22.18
 direnv 2.32.1
+deno 1.28.3
