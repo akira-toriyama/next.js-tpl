@@ -8,8 +8,8 @@ runs:
 
     - name: Install
       shell: bash
-      run: yarn
+      run: npm i --legacy-peer-deps
 
     - name: Quality check
       shell: bash
-      run: yarn qualityCheck
+      run: npm run qualityCheck

@@ -23,7 +23,7 @@
 mv .env.example .env
 mv _server/grphqlServer/schema.graphql.example _server/grphqlServer/schema.graphql
 direnv allow
-yarn
+npm i --legacy-peer-deps
 ```
 
 ### 開発
@@ -31,9 +31,9 @@ yarn
 開発時は、モックサーバと通信しながら開発します。
 
 ```bash
-yarn mockServer
-yarn generate:fromGQL
-yarn dev
+npm run mockServer
+npm run generate:fromGQL
+npm run dev
 
 open "http://localhost:4000/graphql"
 open "http://localhost:4000/voyager"
@@ -45,7 +45,7 @@ open "http://localhost:3000"
 `storybook` が有名ですが、`ladle` を使用しています。
 
 ```bash
-yarn designSystem
+npm run designSystem
 open "http://localhost:6006"
 ```
 
@@ -56,8 +56,8 @@ open "http://localhost:6006"
 ```bash
 # Please git commit in advance.
 
-yarn generate:ui/general
-yarn generate:ui/domain
+npm run generate:ui/general
+npm run generate:ui/domain
 ```
 
 ### スナップショット更新
@@ -67,7 +67,7 @@ yarn generate:ui/domain
 ```bash
 # It takes time.
 
-yarn updateSnapshot
+npm run updateSnapshot
 ```
 
 ## ディレクトリ構成
@@ -166,7 +166,7 @@ src/graphql, src/component などとすると技術駆動の構成になるた�
 
 ### テンプレート
 
-`yarn generate:ui/general`, `yarn generate:ui/domain`を使用し、基本的な実装を揃えてください。
+`npm run generate:ui/general`, `npm run generate:ui/domain`を使用し、基本的な実装を揃えてください。
 
 ### domain component
 
