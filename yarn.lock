@@ -2915,10 +2915,10 @@
     magic-string "^0.26.7"
     react-refresh "^0.14.0"
 
-"@vitest/coverage-istanbul@0.25.8":
-  version "0.25.8"
-  resolved "https://registry.yarnpkg.com/@vitest/coverage-istanbul/-/coverage-istanbul-0.25.8.tgz#d2cb376abb68f53e9398b590d6666dd4af7229d9"
-  integrity sha512-dll4gIr5by1+wHZsB9o6gxbOKKmpW7MSJD59fn0XrTBpsG2vJcGho8XekMFjZqilqa0xItQ+wv8lVc/K6dqhaw==
+"@vitest/coverage-istanbul@0.26.0":
+  version "0.26.0"
+  resolved "https://registry.yarnpkg.com/@vitest/coverage-istanbul/-/coverage-istanbul-0.26.0.tgz#8b586cf3134988dab0fbe4b118c2aa2bbe754672"
+  integrity sha512-rmXjOipkwnmhAyJ8wCLY0bJBUI/MjA3yMElnGIBTQbEQsgJVUQoLKkwZNYg1RD/yiuq7wpqRXF2pU4+b5DpOgw==
   dependencies:
     istanbul-lib-coverage "^3.2.0"
     istanbul-lib-instrument "^5.2.1"
@@ -2926,7 +2926,7 @@
     istanbul-lib-source-maps "^4.0.1"
     istanbul-reports "^3.1.5"
     test-exclude "^6.0.0"
-    vitest "0.25.8"
+    vitest "0.26.0"
 
 "@whatwg-node/events@0.0.2":
   version "0.0.2"
@@ -9505,26 +9505,6 @@ vite@^3.0.9:
     rollup "^2.79.1"
   optionalDependencies:
     fsevents "~2.3.2"
-
-vitest@0.25.8:
-  version "0.25.8"
-  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.25.8.tgz#9b57e0b41cd6f2d2d92aa94a39b35c36f715f8cc"
-  integrity sha512-X75TApG2wZTJn299E/TIYevr4E9/nBo1sUtZzn0Ci5oK8qnpZAZyhwg0qCeMSakGIWtc6oRwcQFyFfW14aOFWg==
-  dependencies:
-    "@types/chai" "^4.3.4"
-    "@types/chai-subset" "^1.3.3"
-    "@types/node" "*"
-    acorn "^8.8.1"
-    acorn-walk "^8.2.0"
-    chai "^4.3.7"
-    debug "^4.3.4"
-    local-pkg "^0.4.2"
-    source-map "^0.6.1"
-    strip-literal "^1.0.0"
-    tinybench "^2.3.1"
-    tinypool "^0.3.0"
-    tinyspy "^1.0.2"
-    vite "^3.0.0 || ^4.0.0"
 
 vitest@0.26.0:
   version "0.26.0"
