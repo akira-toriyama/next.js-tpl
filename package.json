@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@tanstack/react-query": "4.20.4",
-    "graphql-request": "5.0.0",
+    "graphql-request": "5.1.0",
     "next": "13.0.7",
     "normalize.css": "8.0.1",
     "react": "18.2.0",
