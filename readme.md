@@ -4,8 +4,8 @@
 **Hygraph**に登録しているデータを表示しています。
 
 [Design system](https://next-js-tpl.vercel.app/)  
-デザインシステムですが、スタイルを使用していません。  
-**React**は、**css in js**, **css module**, **コンポート ライブラリ**, など様々なスタイル適用方法があり、ベストプラクティスがありません。アプリの内容などを考慮して、スタイルを検討してください。
+**React**は、**css in js**, **css module**, **コンポート ライブラリ**, など様々なスタイル適用方法があります。
+必要に応じて適切なスタイルを適用してください。
 
 ## 使用方法
 
@@ -54,8 +54,6 @@ open "http://localhost:6006"
 `hygen`でコンポートを生成します。
 
 ```bash
-# Please git commit in advance.
-
 yarn generate:ui/general
 yarn generate:ui/domain
 ```
@@ -65,8 +63,6 @@ yarn generate:ui/domain
 `stories.tsx`を追加や更新時時にスナップショットを更新します。
 
 ```bash
-# It takes time.
-
 yarn updateSnapshot
 ```
 
@@ -150,15 +146,10 @@ src
 
 ## 開発フロー
 
-**main** ブランチにプルリクをだすと、GithubActions が実行されます。([例](https://github.com/akira-toriyama/next.js-tpl/pull/883))  
+**main** ブランチにプルリクをだすと、GitHub Actions が実行されます。([例](https://github.com/akira-toriyama/next.js-tpl/pull/883))  
 型チェック, lint, 未使用コードの検出, スナップショットなどを実行します。プルリク単位で、App と Design system も公開されます。
 
-## 実装方針
-
-### ディレクトリ構成
-
-src/ 直下は、レイヤードアーキテクチャを参考にしています。Web アプリは外部と ほぼ必ず API 通信します。その処理をどこに実装するかを意識してください。
-src/graphql, src/component などとすると技術駆動の構成になるため避けてください。
+## 特徴
 
 ### mock server
 
