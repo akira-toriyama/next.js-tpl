@@ -30,7 +30,7 @@
     "prepare": "git config --local core.hooksPath .githooks"
   },
   "dependencies": {
-    "@tanstack/react-query": "4.20.4",
+    "@tanstack/react-query": "4.20.9",
     "graphql-request": "5.1.0",
     "next": "13.1.1",
     "normalize.css": "8.0.1",
