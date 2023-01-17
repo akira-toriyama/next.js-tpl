@@ -63,7 +63,7 @@ export type PropsStruct<
       } & { __tag: "loading" };
     };
 
-type __Tag = typeof pattern["ui"][keyof typeof pattern["ui"]]["__tag"];
+type __Tag = (typeof pattern)["ui"][keyof (typeof pattern)["ui"]]["__tag"];
 export type Lookup<
   T extends { __tag: __Tag },
   Type extends T["__tag"]
