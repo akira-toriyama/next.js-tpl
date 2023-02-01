@@ -5423,10 +5423,10 @@ graphql-ws@5.11.2:
   resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.11.2.tgz#d5e0acae8b4d4a4cf7be410a24135cfcefd7ddc0"
   integrity sha512-4EiZ3/UXYcjm+xFGP544/yW1+DVI8ZpKASFbzrV5EDTFWJp0ZvLl4Dy2fSZAzz9imKp5pZMIcjB0x/H69Pv/6w==
 
-graphql-yoga@3.4.1:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-3.4.1.tgz#5e12efeb5f17a46fc0a084499deb0ae7a5090a90"
-  integrity sha512-iiXIvqOmyTccHpzyQ3xabksgjh0U19e4wiWal/QyCqpC6HQXjIWZZkGHyquxlIkwa/j8i7iPnC2gmbvzIp5cvA==
+graphql-yoga@3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-3.5.1.tgz#46eed5ca162f153cf37a5074d22214505c241be4"
+  integrity sha512-DVn/r4L9XJs5XeVJY9BqOHXk6P2Z1iNB9vXfChcEGNpfxJCbY6pKBstGdlDY+93U0lq5aLVspeOTvBWXAN90/w==
   dependencies:
     "@envelop/core" "3.0.4"
     "@envelop/parser-cache" "^5.0.4"
