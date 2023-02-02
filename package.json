@@ -48,7 +48,7 @@
     "@graphql-codegen/typed-document-node": "2.3.13",
     "@graphql-codegen/typescript": "2.8.8",
     "@graphql-codegen/typescript-operations": "2.5.13",
-    "@graphql-tools/mock": "8.7.16",
+    "@graphql-tools/mock": "8.7.17",
     "@ladle/react": "2.5.2",
     "@playwright/test": "1.30.0",
     "@testing-library/react": "13.4.0",

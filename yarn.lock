@@ -1782,13 +1782,13 @@
     "@graphql-tools/utils" "9.0.0"
     tslib "^2.4.0"
 
-"@graphql-tools/mock@8.7.16":
-  version "8.7.16"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/mock/-/mock-8.7.16.tgz#6509f2bdd04a7092886ef7de0871e0a61fdae568"
-  integrity sha512-g1BcIk6OKeqDwezbn6QOQ+UkbzfZDvcolomXOoGTaE+KNw5JV9EKKIt1COyWtKeNrwtIdPPBS/zcLAqOw1MUdQ==
+"@graphql-tools/mock@8.7.17":
+  version "8.7.17"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/mock/-/mock-8.7.17.tgz#1d087724f4cc18cec32f1a4b398e0204e0d82ead"
+  integrity sha512-yo3o2fxii3lQ+xwht6ZSYukPb+k81WXmfTX+1TTvj2ylSVuAdFpfRDQrACAqXRDPtXqCWvknN1ReRmnrOpUHrg==
   dependencies:
-    "@graphql-tools/schema" "9.0.14"
-    "@graphql-tools/utils" "9.1.4"
+    "@graphql-tools/schema" "9.0.15"
+    "@graphql-tools/utils" "9.2.0"
     fast-json-stable-stringify "^2.1.0"
     tslib "^2.4.0"
 
@@ -1896,14 +1896,14 @@
   dependencies:
     tslib "^2.4.0"
 
-"@graphql-tools/utils@9.1.4", "@graphql-tools/utils@^9.0.0", "@graphql-tools/utils@^9.0.1", "@graphql-tools/utils@^9.1.1":
+"@graphql-tools/utils@9.1.4":
   version "9.1.4"
   resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-9.1.4.tgz#2c9e0aefc9655dd73247667befe3c850ec014f3f"
   integrity sha512-hgIeLt95h9nQgQuzbbdhuZmh+8WV7RZ/6GbTj6t3IU4Zd2zs9yYJ2jgW/krO587GMOY8zCwrjNOMzD40u3l7Vg==
   dependencies:
     tslib "^2.4.0"
 
-"@graphql-tools/utils@9.2.0":
+"@graphql-tools/utils@9.2.0", "@graphql-tools/utils@^9.0.0", "@graphql-tools/utils@^9.0.1", "@graphql-tools/utils@^9.1.1":
   version "9.2.0"
   resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-9.2.0.tgz#d74d0376231c0e8bf897a715fafaf53d0f6bf06c"
   integrity sha512-s3lEG1iYkyYEnKCWrIFECX3XH2wmZvbg6Ir3udCvIDynq+ydaO7JQXobclpPtwSJtjlS353haF//6V7mnBQ4bg==
