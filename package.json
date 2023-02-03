@@ -42,7 +42,7 @@
   "devDependencies": {
     "@bird-studio/eslint-config": "1.4.0",
     "@faker-js/faker": "7.6.0",
-    "@graphql-codegen/cli": "2.16.5",
+    "@graphql-codegen/cli": "3.0.0",
     "@graphql-codegen/introspection": "3.0.0",
     "@graphql-codegen/near-operation-file-preset": "2.5.0",
     "@graphql-codegen/typed-document-node": "2.3.13",
