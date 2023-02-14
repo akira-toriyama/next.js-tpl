@@ -67,7 +67,7 @@
     "graphql": "16.6.0",
     "graphql-tools": "8.3.18",
     "graphql-voyager": "1.0.0-rc.31",
-    "graphql-yoga": "3.5.1",
+    "graphql-yoga": "3.6.0",
     "hygen": "6.2.11",
     "jscpd": "3.5.3",
     "jsdom": "21.1.0",
