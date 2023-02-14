@@ -1579,10 +1579,10 @@
   resolved "https://registry.yarnpkg.com/@ladle/react-context/-/react-context-1.0.1.tgz#007ea641e4a1b25cafb8f5672977fdd1f9bb6f91"
   integrity sha512-xVQ8siyOEQG6e4Knibes1uA3PTyXnqiMmfSmd5pIbkzeDty8NCBtYHhTXSlfmcDNEsw/G8OzNWo4VbyQAVDl2A==
 
-"@ladle/react@2.6.3":
-  version "2.6.3"
-  resolved "https://registry.yarnpkg.com/@ladle/react/-/react-2.6.3.tgz#b48c0dea01e7dff90c9680b55702e76f981a394e"
-  integrity sha512-vHQgxtE2dxavBcKIGrQFUMh4BYOO7ye84yUYilxq9XPr79Laig4lKV+f1Nhlxx7tojEZz0XMVCCRcM0rJpOfCA==
+"@ladle/react@2.6.4":
+  version "2.6.4"
+  resolved "https://registry.yarnpkg.com/@ladle/react/-/react-2.6.4.tgz#1dae74d1265986e61d7b7f0e342aaf9f7903f4d6"
+  integrity sha512-yJS4pjDb6Qoo4hDoAK9EBeDTvLCSGVCdzgW3RK9kbyabKh7ywEEvX37XUdDkYp/BGHqC31LULz2lmkYggCdJWw==
   dependencies:
     "@babel/code-frame" "^7.18.6"
     "@babel/core" "^7.20.12"
