@@ -608,13 +608,15 @@
   dependencies:
     tslib "^2.4.0"
 
-"@envelop/validation-cache@^5.0.5":
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/@envelop/validation-cache/-/validation-cache-5.0.5.tgz#9be1c1ba178460dcaf6d277136a381833cc4f931"
-  integrity sha512-69sq5H7hvxE+7VV60i0bgnOiV1PX9GEJHKrBrVvyEZAXqYojKO3DP9jnLGryiPgVaBjN5yw12ge0l0s2gXbolQ==
+"@envelop/validation-cache@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@envelop/validation-cache/-/validation-cache-5.1.2.tgz#bc21fa6b41178d4dff04c2c3ba3750cd959a5007"
+  integrity sha512-APofOvjaHrF+IW71VCXdyG+EbA6EQJXdunUe1EECU9vZzGKYUuQXfVeCOD6IYNF44KKSQArTfU8RhnUlW6VyOQ==
   dependencies:
+    fast-json-stable-stringify "^2.1.0"
     lru-cache "^6.0.0"
-    tslib "^2.4.0"
+    sha1-es "^1.8.2"
+    tslib "^2.5.0"
 
 "@esbuild/android-arm64@0.16.17":
   version "0.16.17"
@@ -5157,13 +5159,13 @@ graphql-ws@5.11.3:
   resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.11.3.tgz#eaf8e6baf669d167975cff13ad86abca4ecfe82f"
   integrity sha512-fU8zwSgAX2noXAsuFiCZ8BtXeXZOzXyK5u1LloCdacsVth4skdBMPO74EG51lBoWSIZ8beUocdpV8+cQHBODnQ==
 
-graphql-yoga@3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-3.6.0.tgz#b77df99670d0244f5969f684e6fa819fa5a625f1"
-  integrity sha512-CY4k6/+EPwy/QXfMMkjdcHaUhWEUm7Djd+UxIoY6aJDGfxLF9D3OpBeD7pyxV4pvlRrxp9MEGKZ6kN6LTiVJ/A==
+graphql-yoga@3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-3.7.0.tgz#40729798a8ed9c274dc16f3aa85ab5f97ed62f49"
+  integrity sha512-yL5oAD1VnK2J8qZFNVy+T2Z5t7YByv7HmCB1fzE26hoILEgY97eKvDYZwXRcPxoN/OhzbN8I42ffCf0dv9Dp8g==
   dependencies:
     "@envelop/core" "^3.0.4"
-    "@envelop/validation-cache" "^5.0.5"
+    "@envelop/validation-cache" "^5.1.2"
     "@graphql-tools/executor" "^0.0.14"
     "@graphql-tools/schema" "^9.0.0"
     "@graphql-tools/utils" "^9.2.1"
@@ -8563,6 +8565,11 @@ setprototypeof@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/setprototypeof/-/setprototypeof-1.2.0.tgz#66c9a24a73f9fc28cbe66b09fed3d33dcaf1b424"
   integrity sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==
+
+sha1-es@^1.8.2:
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/sha1-es/-/sha1-es-1.8.2.tgz#6957c79749f67bf056732abbe53d424ff4205286"
+  integrity sha512-7gzO0Y7RBt1Qsq8D1fC+So6zsnkwRcZas8sGO9Xp4bOkDhG5s4fzSP0i9yUs6aVzSH7+urqqh6uk0z+dMDeF9A==
 
 shebang-command@^1.2.0:
   version "1.2.0"
