@@ -31,6 +31,11 @@ export default defineConfig({
         "src/env.ts",
       ],
       provider: "istanbul",
+      statements: 100,
+      branches: 100,
+      functions: 100,
+      lines: 100,
+      thresholdAutoUpdate: true,
     },
   },
   resolve: {
@@ -52,6 +57,3 @@ export default defineConfig({
     open: "none",
   },
 });
-
-// TODO カバレッジしきい値
-// https://github.com/vitest-dev/vitest/issues/1241
