@@ -9259,9 +9259,9 @@ ts-prune@0.10.3:
     ts-morph "^13.0.1"
 
 tsconfck@^2.0.1:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/tsconfck/-/tsconfck-2.0.2.tgz#860a488f9acd024a85b2db458888410009b5383d"
-  integrity sha512-H3DWlwKpow+GpVLm/2cpmok72pwRr1YFROV3YzAmvzfGFiC1zEM/mc9b7+1XnrxuXtEbhJ7xUSIqjPFbedp7aQ==
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/tsconfck/-/tsconfck-2.0.3.tgz#47b79fc6be3c5ec6ec9b3862d1c959e85038b117"
+  integrity sha512-o3DsPZO1+C98KqHMdAbWs30zpxD30kj8r9OLA4ML1yghx4khNDzaaShNalfluh8ZPPhzKe3qyVCP1HiZszSAsw==
 
 tsconfig-paths@^3.14.1:
   version "3.14.1"
