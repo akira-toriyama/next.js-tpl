@@ -1224,12 +1224,12 @@
     unixify "^1.0.0"
 
 "@graphql-tools/load@^7.5.5", "@graphql-tools/load@^7.8.0":
-  version "7.8.11"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/load/-/load-7.8.11.tgz#b9026dd15729dec1e4c318c67d0d3036b583fd1f"
-  integrity sha512-pVn3fYP/qZ3m2NE86gSexyZpEmvTSUe+OIRfWBM60a4L/SycMxgVfYB5+PyDCzruFZg/didIG3v7RfPlZ7zNTQ==
+  version "7.8.12"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/load/-/load-7.8.12.tgz#6457fe6ec8cd2e2b5ca0d2752464bc937d186cca"
+  integrity sha512-JwxgNS2c6i6oIdKttcbXns/lpKiyN7c6/MkkrJ9x2QE9rXk5HOhSJxRvPmOueCuAin1542xUrcDRGBXJ7thSig==
   dependencies:
-    "@graphql-tools/schema" "9.0.15"
-    "@graphql-tools/utils" "9.2.0"
+    "@graphql-tools/schema" "9.0.16"
+    "@graphql-tools/utils" "9.2.1"
     p-limit "3.1.0"
     tslib "^2.4.0"
 
