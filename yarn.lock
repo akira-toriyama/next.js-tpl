@@ -52,7 +52,7 @@
     signedsource "^1.0.0"
     yargs "^15.3.1"
 
-"@ardatan/sync-fetch@0.0.1":
+"@ardatan/sync-fetch@0.0.1", "@ardatan/sync-fetch@^0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@ardatan/sync-fetch/-/sync-fetch-0.0.1.tgz#3385d3feedceb60a896518a1db857ec1e945348f"
   integrity sha512-xhlTqH0m31mnsG0tIP4ETgfSB6gXDaYYsUWTrlUV93fFQPI9dd8hE0Ot6MHLCtqgB32hwJAC3YZMWlXZw7AleA==
@@ -1159,14 +1159,14 @@
     unixify "^1.0.0"
 
 "@graphql-tools/github-loader@^7.3.20":
-  version "7.3.22"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/github-loader/-/github-loader-7.3.22.tgz#28aff4f33ffcd4e2d6b0836115fb41df8addd755"
-  integrity sha512-JE5F/ObbwknO7+gDfeuKAZtLS831WV8/SsLzQLMGY0hdgTbsAg2/xziAGprNToK4GMSD7ygCer9ZryvxBKMwbQ==
+  version "7.3.27"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/github-loader/-/github-loader-7.3.27.tgz#77a2fbaeb7bf5f8edc4a865252ecb527a5399e01"
+  integrity sha512-fFFC35qenyhjb8pfcYXKknAt0CXP5CkQYtLfJXgTXSgBjIsfAVMrqxQ/Y0ejeM19XNF/C3VWJ7rE308yOX6ywA==
   dependencies:
-    "@ardatan/sync-fetch" "0.0.1"
-    "@graphql-tools/graphql-tag-pluck" "7.4.2"
-    "@graphql-tools/utils" "9.1.3"
-    "@whatwg-node/fetch" "^0.5.0"
+    "@ardatan/sync-fetch" "^0.0.1"
+    "@graphql-tools/graphql-tag-pluck" "^7.4.6"
+    "@graphql-tools/utils" "^9.2.1"
+    "@whatwg-node/fetch" "^0.8.0"
     tslib "^2.4.0"
 
 "@graphql-tools/graphql-file-loader@^7.3.7", "@graphql-tools/graphql-file-loader@^7.5.0":
@@ -1202,6 +1202,18 @@
     "@babel/traverse" "^7.16.8"
     "@babel/types" "^7.16.8"
     "@graphql-tools/utils" "9.2.0"
+    tslib "^2.4.0"
+
+"@graphql-tools/graphql-tag-pluck@^7.4.6":
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/graphql-tag-pluck/-/graphql-tag-pluck-7.5.0.tgz#be99bc6b5e8331a2379ab4585d71b057eb981497"
+  integrity sha512-76SYzhSlH50ZWkhWH6OI94qrxa8Ww1ZeOU04MdtpSeQZVT2rjGWeTb3xM3kjTVWQJsr/YJBhDeNPGlwNUWfX4Q==
+  dependencies:
+    "@babel/parser" "^7.16.8"
+    "@babel/plugin-syntax-import-assertions" "7.20.0"
+    "@babel/traverse" "^7.16.8"
+    "@babel/types" "^7.16.8"
+    "@graphql-tools/utils" "9.2.1"
     tslib "^2.4.0"
 
 "@graphql-tools/import@6.7.16":
