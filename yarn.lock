@@ -401,11 +401,11 @@
     "@babel/helper-plugin-utils" "^7.18.9"
 
 "@babel/plugin-transform-destructuring@^7.0.0":
-  version "7.20.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-destructuring/-/plugin-transform-destructuring-7.20.0.tgz#712829ef4825d9cc04bb379de316f981e9a6f648"
-  integrity sha512-1dIhvZfkDVx/zn2S1aFwlruspTt4189j7fEkH0Y0VyuDM6bQt7bD6kLcz3l4IlLG+e5OReaBz9ROAbttRtUHqA==
+  version "7.20.7"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-destructuring/-/plugin-transform-destructuring-7.20.7.tgz#8bda578f71620c7de7c93af590154ba331415454"
+  integrity sha512-Xwg403sRrZb81IVB79ZPqNQME23yhugYVqgTxAhT99h485F4f+GMELFhhOsscDUB7HCswepKeCKLn/GZvUKoBA==
   dependencies:
-    "@babel/helper-plugin-utils" "^7.19.0"
+    "@babel/helper-plugin-utils" "^7.20.2"
 
 "@babel/plugin-transform-flow-strip-types@^7.0.0":
   version "7.19.0"
