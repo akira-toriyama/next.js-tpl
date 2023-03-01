@@ -52,7 +52,7 @@
     signedsource "^1.0.0"
     yargs "^15.3.1"
 
-"@ardatan/sync-fetch@0.0.1":
+"@ardatan/sync-fetch@0.0.1", "@ardatan/sync-fetch@^0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@ardatan/sync-fetch/-/sync-fetch-0.0.1.tgz#3385d3feedceb60a896518a1db857ec1e945348f"
   integrity sha512-xhlTqH0m31mnsG0tIP4ETgfSB6gXDaYYsUWTrlUV93fFQPI9dd8hE0Ot6MHLCtqgB32hwJAC3YZMWlXZw7AleA==
@@ -971,13 +971,13 @@
     tslib "~2.5.0"
 
 "@graphql-tools/apollo-engine-loader@^7.3.6":
-  version "7.3.16"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/apollo-engine-loader/-/apollo-engine-loader-7.3.16.tgz#ac3bd32b53aae7233051ac6307024fdc484395be"
-  integrity sha512-OPgIUR2EkpQEEuZtBiV9GmTe6msHFGsvlzV8+cFJMkVGGOxG+yrOPGtAwGRGVQUiFnhA9vUTH+1I/MQIAOtyMQ==
+  version "7.3.26"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/apollo-engine-loader/-/apollo-engine-loader-7.3.26.tgz#91e54460d5579933e42a2010b8688c3459c245d8"
+  integrity sha512-h1vfhdJFjnCYn9b5EY1Z91JTF0KB3hHVJNQIsiUV2mpQXZdeOXQoaWeYEKaiI5R6kwBw5PP9B0fv3jfUIG8LyQ==
   dependencies:
-    "@ardatan/sync-fetch" "0.0.1"
-    "@graphql-tools/utils" "9.0.0"
-    "@whatwg-node/fetch" "^0.5.0"
+    "@ardatan/sync-fetch" "^0.0.1"
+    "@graphql-tools/utils" "^9.2.1"
+    "@whatwg-node/fetch" "^0.8.0"
     tslib "^2.4.0"
 
 "@graphql-tools/batch-execute@8.5.14":
