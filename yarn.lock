@@ -1279,12 +1279,12 @@
     yaml-ast-parser "^0.0.43"
 
 "@graphql-tools/relay-operation-optimizer@^6.5.0":
-  version "6.5.9"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/relay-operation-optimizer/-/relay-operation-optimizer-6.5.9.tgz#d970fb1872aa8434d7fd3f474ace871a9924b864"
-  integrity sha512-nHat8IwwVrFwDVMNU3T9+9IcSTRPsBblTuDRqDQjz5KySvMJbr9OMke5/bDmZxBEFtur5wLDVrC2bky3bJQiNg==
+  version "6.5.17"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/relay-operation-optimizer/-/relay-operation-optimizer-6.5.17.tgz#4e4e2675d696a2a31f106b09ed436c43f7976f37"
+  integrity sha512-hHPEX6ccRF3+9kfVz0A3In//Dej7QrHOLGZEokBmPDMDqn9CS7qUjpjyGzclbOX0tRBtLfuFUZ68ABSac3P1nA==
   dependencies:
     "@ardatan/relay-compiler" "12.0.0"
-    "@graphql-tools/utils" "9.0.0"
+    "@graphql-tools/utils" "9.2.1"
     tslib "^2.4.0"
 
 "@graphql-tools/schema@9.0.15":
@@ -1344,13 +1344,6 @@
     tslib "^2.4.0"
     value-or-promise "^1.0.11"
     ws "8.12.0"
-
-"@graphql-tools/utils@9.0.0":
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-9.0.0.tgz#4e75680d29e866b3de293b4bc9fa4a40aeae0085"
-  integrity sha512-kaCwyWnURxMsYbxzkfylLqFFelu83jKk3BJOOy0GIuxEtgXVS9v7Y/tojljo69Q+jaZ2YxAi3+d8IpM+hx768A==
-  dependencies:
-    tslib "^2.4.0"
 
 "@graphql-tools/utils@9.2.0":
   version "9.2.0"
