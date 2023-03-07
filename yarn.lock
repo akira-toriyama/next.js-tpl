@@ -1288,12 +1288,12 @@
     tslib "^2.4.0"
 
 "@graphql-tools/wrap@^9.3.6":
-  version "9.3.7"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/wrap/-/wrap-9.3.7.tgz#97d7efdb8dfee41624e154b2de4499397634422e"
-  integrity sha512-gavfiWLKgvmC2VPamnMzml3zmkBoo0yt+EmOLIHY6O92o4uMTR281WGM77tZIfq+jzLtjoIOThUSjC/cN/6XKg==
+  version "9.3.8"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/wrap/-/wrap-9.3.8.tgz#c6f53b7bc98cf3fa3d91e41be3b99254ae99b409"
+  integrity sha512-MGsExYPiILMw4Qff7HcvE9MMSYdjb/tr5IQYJbxJIU4/TrBHox1/smne8HG+Bd7kmDlTTj7nU/Z8sxmoRd0hOQ==
   dependencies:
     "@graphql-tools/delegate" "9.0.28"
-    "@graphql-tools/schema" "9.0.16"
+    "@graphql-tools/schema" "9.0.17"
     "@graphql-tools/utils" "9.2.1"
     tslib "^2.4.0"
     value-or-promise "1.0.12"
