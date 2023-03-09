@@ -46,7 +46,7 @@
     "@graphql-codegen/introspection": "3.0.1",
     "@graphql-codegen/near-operation-file-preset": "2.5.0",
     "@graphql-codegen/typed-document-node": "3.0.2",
-    "@graphql-codegen/typescript": "3.0.1",
+    "@graphql-codegen/typescript": "3.0.2",
     "@graphql-codegen/typescript-operations": "3.0.1",
     "@graphql-tools/mock": "8.7.19",
     "@ladle/react": "2.10.1",
