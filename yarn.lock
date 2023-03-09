@@ -2838,9 +2838,9 @@ body-parser@1.20.1:
     unpipe "1.0.0"
 
 boxen@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/boxen/-/boxen-7.0.1.tgz#cd84db4364a8bae65f1f016ce94a21ec2c832c16"
-  integrity sha512-8k2eH6SRAK00NDl1iX5q17RJ8rfl53TajdYxE3ssMLehbg487dEVgsad4pIsZb/QqBgYWIl6JOauMTLGX2Kpkw==
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/boxen/-/boxen-7.0.2.tgz#465dd03e846c11f2d4c7eb0d1b3a39d66bd7057e"
+  integrity sha512-1Z4UJabXUP1/R9rLpoU3O2lEMnG3pPLAs/ZD2lF3t2q7qD5lM8rqbtnvtvm4N0wEyNlE+9yZVTVAGmd1V5jabg==
   dependencies:
     ansi-align "^3.0.1"
     camelcase "^7.0.0"
