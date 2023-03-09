@@ -2466,9 +2466,9 @@
     tslib "^2.3.1"
 
 "@whatwg-node/server@^0.7.3":
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/@whatwg-node/server/-/server-0.7.3.tgz#21601e46373116d5c783631963a48012f350879d"
-  integrity sha512-ToaxdIXka8WHre92b1n9Wne/jXPOgg5w17Hx/UqFtL+HM2+0M+AAEz31kY9bjHGaKBfWE8YZwVVIYvGMgb3ARA==
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@whatwg-node/server/-/server-0.7.4.tgz#b8cce364461bbb489302d1d2a2692db96be20646"
+  integrity sha512-0+c3Y1tmMTIz3+cM8GCOXZuJclHlOZrq2uWb9WVnv1sd98pcFQBW9163nmN7cUTyD84c/yMJmEW3F+Ka6zRZgQ==
   dependencies:
     "@whatwg-node/fetch" "^0.8.2"
     tslib "^2.3.1"
