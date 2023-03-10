@@ -3,11 +3,37 @@ import * as hoipoiCapsule from "https://deno.land/x/hoipoi_capsule/mod.ts";
 const o =
   await hoipoiCapsule.preset.fillInCommitMessage.gitmojiStyle.initialize();
 
+const line = {
+  name: hoipoiCapsule.userInterface.prompt.colors.yellow("---------"),
+  value: "",
+  disabled: true,
+};
+
 const gitmojiQ = () =>
   hoipoiCapsule.userInterface.prompt.Select.prompt({
     message: "Select gitmoji.",
     search: true,
     options: o.gitmojis,
+  });
+
+const scopeQ = () =>
+  hoipoiCapsule.userInterface.prompt.Select.prompt({
+    message: "Select scope.",
+    search: true,
+    options: [
+      { name: "_", value: "_" },
+
+      line,
+      { name: "domain", value: "domain" },
+      { name: "general", value: "general" },
+      { name: "provider", value: "provider" },
+
+      line,
+      { name: "infra", value: "infra" },
+
+      line,
+      { name: "util", value: "util" },
+    ],
   });
 
 const issueQ = () =>
@@ -17,7 +43,7 @@ const issueQ = () =>
     options: o.issues,
   });
 
-const commitMessageTemplate = `{{gitmoji}}: {{summary}} Close #{{issue}}
+const commitMessageTemplate = `{{gitmoji}}({{scope}}): {{summary}} Close #{{issue}}
 
 {{body}}`;
 
@@ -27,6 +53,10 @@ hoipoiCapsule.useCase.fillInCommitMessage.run({
     {
       target: "gitmoji",
       q: gitmojiQ,
+    },
+    {
+      target: "scope",
+      q: scopeQ,
     },
     {
       target: "summary",
