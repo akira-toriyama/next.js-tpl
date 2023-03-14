@@ -4918,10 +4918,10 @@ graphql-ws@5.12.0:
   resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.12.0.tgz#d06fe38916334b4a4c827f73268cbf4359a32ed7"
   integrity sha512-PA3ImUp8utrpEjoxBMhvxsjkStvFEdU0E1gEBREt8HZIWkxOUymwJBhFnBL7t/iHhUq1GVPeZevPinkZFENxTw==
 
-graphql-yoga@3.7.2:
-  version "3.7.2"
-  resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-3.7.2.tgz#e0731c33b10fe51efc273d7c141cdd7fbfbcf516"
-  integrity sha512-T7Uxrf2Mc8RTqcSrVz69Fwek4VHwLEhxjgkiX6VVtO76ngWBCp6kNQGmcw06LGQz4PRkhMg9dbM3XAGxfCB73A==
+graphql-yoga@3.7.3:
+  version "3.7.3"
+  resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-3.7.3.tgz#6b26b3bf4b8d87005cbdfdef34f4c0e7fc1e9286"
+  integrity sha512-u0Xs4iUfsCcZPVTM1kwd+zVJsX0IsYQ0N8s/aU6Ch/Ez2P1cppLRrFPb7WqN0eK+pMipUuyVC9Wm/cIbQdprkA==
   dependencies:
     "@envelop/core" "^3.0.4"
     "@envelop/validation-cache" "^5.1.2"
@@ -4933,7 +4933,7 @@ graphql-yoga@3.7.2:
     "@whatwg-node/fetch" "^0.8.2"
     "@whatwg-node/server" "^0.7.3"
     dset "^3.1.1"
-    lru-cache "^7.14.1"
+    lru-cache "^8.0.0"
     tslib "^2.3.1"
 
 graphql@16.6.0:
@@ -6254,10 +6254,10 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-lru-cache@^7.14.1:
-  version "7.14.1"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.14.1.tgz#8da8d2f5f59827edb388e63e459ac23d6d408fea"
-  integrity sha512-ysxwsnTKdAx96aTRdhDOCQfDgbHnt8SK0KY8SEjO0wHinhWOFTESbjVCMPbU1uGXg/ch4lifqx0wfjOawU2+WA==
+lru-cache@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-8.0.0.tgz#152bf98daafa6a46a5905694fccd6f5f7f6095fe"
+  integrity sha512-pMu1vSJIwJPS/YuMJAJFjvKA2OC7rvgKqJHr90JmZ1kv/hO+MuzqHRSWqyn730vlOwc1Bx/c8+3izTGzmKyXNQ==
 
 lz-string@^1.5.0:
   version "1.5.0"
