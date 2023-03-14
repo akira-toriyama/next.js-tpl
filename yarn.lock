@@ -2397,9 +2397,9 @@
     web-streams-polyfill "^3.2.1"
 
 "@whatwg-node/node-fetch@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@whatwg-node/node-fetch/-/node-fetch-0.3.1.tgz#491ac6c5a367ab6dbff78756c0487afc32f70dee"
-  integrity sha512-/U4onp5eBkRHfFe/VL+ppyupqj7z6iBtjcuPSosQNH2/y+LxRn5lyFb7Vqhb5DokjrDMjssLcqiVYnx+UABFsw==
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@whatwg-node/node-fetch/-/node-fetch-0.3.2.tgz#47d993c34990b811f3c22f1d62e7d68b780425bd"
+  integrity sha512-MFPehIybgtPJG7vN4+wNk2i5ek4/qIl+1hzchGCdq7gObWsXWH+L+rvyazIoj8lo8Mt8EZeES8Cg+aPsl+7gPw==
   dependencies:
     "@whatwg-node/events" "^0.0.2"
     busboy "^1.6.0"
