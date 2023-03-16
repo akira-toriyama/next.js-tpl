@@ -2323,10 +2323,10 @@
     magic-string "^0.27.0"
     react-refresh "^0.14.0"
 
-"@vitest/coverage-istanbul@0.29.2":
-  version "0.29.2"
-  resolved "https://registry.yarnpkg.com/@vitest/coverage-istanbul/-/coverage-istanbul-0.29.2.tgz#adbd50a38e04e513f61dde99db559dbd60f48568"
-  integrity sha512-Wf0WOqviYRqP0nrD0oq12u+W5PqGKER1WSz22sOLSaKeU97R0DcMIqs6CSUdp4Jvd8YGrxHodt7d+RMC65ckCA==
+"@vitest/coverage-istanbul@0.29.3":
+  version "0.29.3"
+  resolved "https://registry.yarnpkg.com/@vitest/coverage-istanbul/-/coverage-istanbul-0.29.3.tgz#f98b76192acb33fdd9973912397966af07037a33"
+  integrity sha512-CZklCjj1kd1/h0jLiqnPXexm1diJjqK3iCyggyIv+MLzwbFtRbaTOTt4/YeAsLCuovz4bYiwOY7iqCQZWoiTQQ==
   dependencies:
     istanbul-lib-coverage "^3.2.0"
     istanbul-lib-instrument "^5.2.1"
