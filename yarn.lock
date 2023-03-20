@@ -6392,9 +6392,9 @@ jiti@^1.17.1:
   integrity sha512-Xf0nU8+8wuiQpLcqdb2HRyHqYwGk2Pd+F7kstyp20ZuqTyCmB9dqpX2NxaxFc1kovraa2bG6c1RL3W7XfapiZg==
 
 joi@^17.7.0:
-  version "17.8.4"
-  resolved "https://registry.yarnpkg.com/joi/-/joi-17.8.4.tgz#f2d91ab8acd3cca4079ba70669c65891739234aa"
-  integrity sha512-jjdRHb5WtL+KgSHvOULQEPPv4kcl+ixd1ybOFQq3rWLgEEqc03QMmilodL0GVJE14U/SQDXkUhQUSZANGDH/AA==
+  version "17.9.0"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-17.9.0.tgz#52e161b6c91fc229799c3c948f0d219628423393"
+  integrity sha512-PWirKfKoZL3kWHfkGKzdCLGv23c00rI31PKVDMg33b/ANe+bMC/ZPdEnHAoHzn5Hy6BTg3J0A2yRVKzT64e6Xw==
   dependencies:
     "@hapi/hoek" "^9.0.0"
     "@hapi/topo" "^5.0.0"
