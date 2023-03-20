@@ -817,9 +817,9 @@
   integrity sha512-ph0twaRoV+ylui022clEO1dZ35QbeEQaKTaV2sPOsdwIokABPIiK09oWwGK9qg7jRGQwVaRPEq0Vp+IG1GpqSQ==
 
 "@cspell/dict-software-terms@^3.1.5":
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/@cspell/dict-software-terms/-/dict-software-terms-3.1.5.tgz#9000ba07df6d868df257ca2438df36a0eb74acc6"
-  integrity sha512-wmkWHHkp2AN9EDWNBLB0VASB5OtsC3KnhoAHxCJzC6AB3xjYoBfKsvgI/o50gfbsCVQceHpqXjOEYSw/xxTKNw==
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/@cspell/dict-software-terms/-/dict-software-terms-3.1.6.tgz#27a6fd2919e7118bb793e541960ea1eeed6d0b3c"
+  integrity sha512-w46+pIMRVtrDuTZXK/YxDP5NL5yVoX0ImEPO0s9WbxdyyfhzAF3sGYHBGN/50OGLHExcqe6Idb9feoRC9mCLxw==
 
 "@cspell/dict-sql@^2.1.0":
   version "2.1.0"
