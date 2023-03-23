@@ -4,6 +4,5 @@ import * as dao from "../coLocation/dao";
 import * as service from "./service";
 
 type UseItems = () => type.Props;
-export const useItems: UseItems = () => {
-  return service.toProps(useQuery(["Items"], dao.fetchItems));
-};
+export const useItems: UseItems = () =>
+  service.toProps(useQuery(["Items"], dao.fetchItems));

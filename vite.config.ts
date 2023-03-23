@@ -12,7 +12,6 @@ export default defineConfig({
   define: {
     "process.env": process.env,
   },
-  // @ts-expect-error -- ???
   plugins: [react()],
   test: {
     environment: "jsdom",
@@ -38,6 +37,7 @@ export default defineConfig({
       lines: 100,
       thresholdAutoUpdate: true,
     },
+    setupFiles: ["./vitestSetup.ts"],
   },
   resolve: {
     alias: {

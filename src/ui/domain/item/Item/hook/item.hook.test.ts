@@ -1,15 +1,15 @@
 import { describe, test, expect, vi } from "vitest";
 import { renderHook } from "@testing-library/react";
 import { useItem } from "./item.hook";
+import { server } from "~/mock/server";
+import { wrapper } from "~/mock/wrapper";
+import * as ItemGql from "~/ui/domain/item/Item/coLocation/Item.gql.generated";
+import { graphql } from "msw";
 
 describe.concurrent("useItem", () => {
   vi.mock("./service", () => ({
     toProps: () => null,
-    determineFetcher: () => ({ fetcher: null, opt: null }),
-  }));
-
-  vi.mock("@tanstack/react-query", () => ({
-    useQuery: () => null,
+    determineFetcher: () => ({ fetcher: () => null, opt: null }),
   }));
 
   vi.mock("next/router", () => ({
@@ -17,6 +17,19 @@ describe.concurrent("useItem", () => {
   }));
 
   test.concurrent("test", () => {
-    expect(renderHook(useItem)).toBeDefined();
+    server.use(
+      graphql.query(ItemGql.ItemDocument, (_, res, ctx) =>
+        res.once(
+          ctx.data({
+            item: {
+              id: "",
+              title: "",
+              body: "",
+            },
+          })
+        )
+      )
+    );
+    expect(renderHook(() => useItem(), { wrapper })).toBeDefined();
   });
 });
