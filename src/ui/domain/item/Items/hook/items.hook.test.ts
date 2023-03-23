@@ -1,8 +1,8 @@
 import { describe, test, expect } from "vitest";
 import { renderHook } from "@testing-library/react";
 import { useItems } from "./items.hook";
-import { server } from "~/mock/server";
-import { wrapper } from "~/mock/wrapper";
+import { server } from "~/mock/test/server";
+import { wrapper } from "~/mock/test/wrapper";
 import * as ItemsGql from "~/ui/domain/item/Items/coLocation/Items.gql.generated";
 import { graphql } from "msw";
 

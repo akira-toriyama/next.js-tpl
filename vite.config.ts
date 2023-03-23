@@ -29,6 +29,7 @@ export default defineConfig({
         "src/ui/provider/ReactQuery.tsx",
         "src/ui/provider/ErrorBoundary.tsx",
         "src/env.ts",
+        "src/mock/**",
       ],
       provider: "istanbul",
       statements: 100,

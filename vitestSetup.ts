@@ -1,4 +1,4 @@
-import { server } from "./src/mock/server";
+import { server } from "./src/mock/test/server";
 import { beforeAll, afterEach, afterAll } from "vitest";
 
 beforeAll(() => server.listen());
