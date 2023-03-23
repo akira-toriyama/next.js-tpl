@@ -24,6 +24,7 @@ mv .env.example .env
 mv _server/grphqlServer/schema.graphql.example _server/grphqlServer/schema.graphql
 direnv allow
 yarn
+yarn msw init public
 ```
 
 ### 開発
