@@ -20,4 +20,6 @@ export const ItemContainer: React.FC<type.Props> = (props) =>
     .with(tag.pattern.ui.success, Success)
     .exhaustive();
 
-export const Item: React.FC = () => <ItemContainer {...useItem()} />;
+export const Item: React.FC<type.OuterProps> = (props) => (
+  <ItemContainer {...useItem(props)} />
+);

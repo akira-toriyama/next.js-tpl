@@ -22,17 +22,9 @@ const scopeQ = () =>
     search: true,
     options: [
       { name: "_", value: "_" },
-
       line,
-      { name: "domain", value: "domain" },
-      { name: "general", value: "general" },
-      { name: "provider", value: "provider" },
-
-      line,
-      { name: "infra", value: "infra" },
-
-      line,
-      { name: "util", value: "util" },
+      { name: "item", value: "item" },
+      { name: "items", value: "items" },
     ],
   });
 

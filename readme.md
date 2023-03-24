@@ -24,17 +24,19 @@ mv .env.example .env
 mv _server/grphqlServer/schema.graphql.example _server/grphqlServer/schema.graphql
 direnv allow
 yarn
-yarn msw init public
 ```
 
 ### 開発
 
-開発時は、msw を使用して開発します。
+開発時は、モックサーバと通信しながら開発します。
 
 ```bash
+yarn mockServer
 yarn generate:fromGQL
 yarn dev
 
+open "http://localhost:4000/graphql"
+open "http://localhost:4000/voyager"
 open "http://localhost:3000"
 ```
 
@@ -45,15 +47,6 @@ open "http://localhost:3000"
 ```bash
 yarn designSystem
 open "http://localhost:6006"
-```
-
-### GQL プレイグラウンド & ドキュメント
-
-```bash
-yarn mockServer
-
-open "http://localhost:4000/graphql"
-open "http://localhost:4000/voyager"
 ```
 
 ### コンポート生成

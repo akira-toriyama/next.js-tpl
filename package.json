@@ -38,7 +38,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-error-boundary": "4.0.2",
-    "ts-pattern": "4.2.2"
+    "ts-pattern": "4.2.2",
+    "zod": "3.21.4"
   },
   "devDependencies": {
     "@bird-studio/eslint-config": "1.4.0",

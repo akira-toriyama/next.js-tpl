@@ -64,6 +64,6 @@ describe.concurrent("Item", () => {
   }));
 
   test.concurrent("test", () => {
-    expect(render(<Item />)).toBeDefined();
+    expect(render(<Item {...{ id: "" }} />)).toBeDefined();
   });
 });

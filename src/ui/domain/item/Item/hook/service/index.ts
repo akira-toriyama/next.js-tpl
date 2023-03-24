@@ -1,1 +1,1 @@
-export { toProps, determineFetcher } from "./service";
+export { isValidParam } from "./service";

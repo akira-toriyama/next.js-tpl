@@ -1,15 +1,24 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      retry: false,
+export const wrapper: React.FC<{ children: React.ReactNode }> = (props) => {
+  // https://github.com/TanStack/query/discussions/1441#discussioncomment-217134
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: {
+        retry: false,
+        staleTime: 0,
+        cacheTime: 0,
+      },
     },
-  },
-});
-
-export const wrapper: React.FC<{ children: React.ReactNode }> = (props) => (
-  <QueryClientProvider client={queryClient}>
-    {props.children}
-  </QueryClientProvider>
-);
+    logger: {
+      log: () => null,
+      warn: () => null,
+      error: () => null,
+    },
+  });
+  return (
+    <QueryClientProvider client={queryClient}>
+      {props.children}
+    </QueryClientProvider>
+  );
+};
