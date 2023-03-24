@@ -1666,9 +1666,9 @@
     "@jridgewell/sourcemap-codec" "1.4.14"
 
 "@jscpd/core@^3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@jscpd/core/-/core-3.5.0.tgz#7895a667ec70704730f44a64246bcd68a8ceac00"
-  integrity sha512-ddts7g3oany+N7LDculkfvN+B/n0BjGkIKFKU/ZOvJ/KmuUycFGC6xufM73Peo1fpwEecVko+uINUsyNU3bNzw==
+  version "3.5.4"
+  resolved "https://registry.yarnpkg.com/@jscpd/core/-/core-3.5.4.tgz#0dff08af5e071d22ba35dcb5701fb008338d2b32"
+  integrity sha512-jf37O5C8/Pe4/FbSvgW+IDBwWkRfBCDzJGx4c+zrbq52CIY4ZvREfi1kw6BaE6C6Xz84FgfpKYOuSW/8gTk83A==
   dependencies:
     eventemitter3 "^4.0.4"
 
