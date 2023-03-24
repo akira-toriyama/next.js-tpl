@@ -1,1 +1,0 @@
-export { toProps } from "./service";
