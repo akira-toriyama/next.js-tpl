@@ -692,9 +692,9 @@
   integrity sha512-tKSSUf9BJEV+GJQAYGw5e+ouhEe2ZXE620S7BLKe3ZmpnjlNG9JqlnaBhkIMxKnNFkLY2BP/EARzw31AZnOv4g==
 
 "@cspell/dict-en_us@^4.3.1":
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/@cspell/dict-en_us/-/dict-en_us-4.3.1.tgz#88ae0fb555897ed77810867b849cc3495298f362"
-  integrity sha512-akfx/Q+4J3rfawtGaqe1Yp+fNyCGJCKmTQT14LXxGLN7DEjGvOFzlYoS+DdD3aDwAJih79bEFGiG+Lqs0zOauA==
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/@cspell/dict-en_us/-/dict-en_us-4.3.2.tgz#ffe6e9a4decc453a0673f8e9a49a3a53ee020d2d"
+  integrity sha512-o8xtHDLPNzW6hK5b1TaDTWt25vVi9lWlL6/dZ9YoS+ZMj+Dy/yuXatqfOgeGyU3a9+2gxC0kbr4oufMUQXI2mQ==
 
 "@cspell/dict-filetypes@^3.0.0":
   version "3.0.0"
