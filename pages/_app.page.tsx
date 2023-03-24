@@ -4,9 +4,6 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { Wrapper } from "~/ui/provider/Wrapper";
 
-// https://github.com/vercel/next.js/blob/canary/examples/with-msw/pages/_app.tsx
-process.env.NODE_ENV === "development" && require("~/mock/dev/server");
-
 type Props = AppProps<{ dehydratedState: unknown }>;
 const Page: NextPage<Props> = (props) => (
   <>
