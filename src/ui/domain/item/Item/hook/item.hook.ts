@@ -1,12 +1,28 @@
 import { useQuery } from "@tanstack/react-query";
-import { useRouter } from "next/router";
 import type * as type from "../Item.type";
-import * as service from "./service";
+import * as dao from "../coLocation/dao";
+import { match, P } from "ts-pattern";
+import * as tag from "~/ui/util/tag";
 
-type UseItem = () => type.Props;
-export const useItem: UseItem = () => {
-  const { id } = useRouter().query;
-  const { fetcher, opt } = service.determineFetcher({ id });
+type UseItem = (p: type.OuterProps) => type.Props;
+export const useItem: UseItem = (p) => {
+  const r = useQuery(["Item", { id: p.id }], () => dao.find(p));
 
-  return service.toProps(useQuery(["Item", { id }], fetcher, opt));
+  return match(r)
+    .with(tag.pattern.query.failure, () => ({
+      item: tag.to.failureProps(null),
+    }))
+    .with(tag.pattern.query.loading, () => ({
+      item: tag.to.loadingProps(null),
+    }))
+    .with({ ...tag.pattern.query.success, data: { item: null } }, () => ({
+      item: tag.to.emptyProps(null),
+    }))
+    .with(
+      { ...tag.pattern.query.success, data: { item: P.not(P.nullish) } },
+      (rr) => ({
+        item: tag.to.successProps(rr.data.item),
+      })
+    )
+    .exhaustive();
 };
