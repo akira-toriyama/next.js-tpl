@@ -1,1 +1,1 @@
-export { toProps, isValidParam } from "./service";
+export { isValidParam } from "./service";
