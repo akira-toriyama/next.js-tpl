@@ -49,15 +49,6 @@ yarn designSystem
 open "http://localhost:6006"
 ```
 
-### コンポート生成
-
-`hygen`でコンポートを生成します。
-
-```bash
-yarn generate:ui/general
-yarn generate:ui/domain
-```
-
 ### スナップショット更新
 
 `stories.tsx`を追加や更新時時にスナップショットを更新します。
@@ -154,10 +145,6 @@ src
 ### mock server
 
 開発時は、実際のリソースと通信する必要はありません。\_server/grphqlServer/mocks.ts に都合の良いデータを返す[モック](https://www.the-guild.dev/graphql/tools/docs/mocking)を準備してください。
-
-### テンプレート
-
-`yarn generate:ui/general`, `yarn generate:ui/domain`を使用し、基本的な実装を揃えてください。
 
 ### domain component
 
