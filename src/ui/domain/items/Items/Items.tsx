@@ -3,8 +3,8 @@ import NextLink from "next/link";
 import type * as tag from "~/ui/util/tag/tag";
 import { pattern } from "~/ui/util/tag";
 import * as list from "~/ui/general/List";
-import type * as type from "../Items.type";
-import { useItems } from "../hook";
+import type * as type from "./Items.type";
+import { useItems } from "./hook";
 
 export const Success: React.FC<tag.Lookup<type.Props["items"], "success">> = (
   props
