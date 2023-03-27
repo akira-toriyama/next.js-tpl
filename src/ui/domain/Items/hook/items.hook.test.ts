@@ -3,7 +3,7 @@ import { renderHook, waitFor } from "@testing-library/react";
 import { useItems } from "./items.hook";
 import { server } from "~/mock/test/server";
 import { wrapper } from "~/mock/test/wrapper";
-import * as ItemsGql from "~/ui/domain/item/Items/coLocation/Items.gql.generated";
+import * as ItemsGql from "./coLocation/Items.gql.generated";
 import { graphql } from "msw";
 import * as tag from "~/ui/util/tag";
 
