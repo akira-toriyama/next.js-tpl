@@ -1,26 +1,25 @@
 import { describe, test, expect } from "vitest";
 import { renderHook, waitFor } from "@testing-library/react";
-import { useItems } from "./items.hook";
+import { useItem } from "./item.hook";
 import { server } from "~/mock/test/server";
 import { wrapper } from "~/mock/test/wrapper";
-import * as ItemsGql from "~/ui/domain/item/Items/coLocation/Items.gql.generated";
+import * as ItemGql from "./coLocation/Item.gql.generated";
 import { graphql } from "msw";
 import * as tag from "~/ui/util/tag";
 
 describe.concurrent("useItem", () => {
-  const renderHookFn = () => renderHook(() => useItems(), { wrapper });
+  const renderHookFn = () => renderHook(() => useItem({ id: "" }), { wrapper });
 
   test.concurrent("success", async () => {
     server.use(
-      graphql.query(ItemsGql.ItemsDocument, (_, res, ctx) =>
+      graphql.query(ItemGql.ItemDocument, (_, res, ctx) =>
         res.once(
           ctx.data({
-            items: [
-              {
-                id: "",
-                title: "",
-              },
-            ],
+            item: {
+              id: "",
+              title: "",
+              body: "",
+            },
           })
         )
       )
@@ -29,13 +28,13 @@ describe.concurrent("useItem", () => {
     const r = renderHookFn();
 
     await waitFor(() =>
-      expect(r.result.current.items).toMatchObject(tag.pattern.ui.success)
+      expect(r.result.current.item).toMatchObject(tag.pattern.ui.success)
     );
   });
 
   test.concurrent("loading", async () => {
     server.use(
-      graphql.query(ItemsGql.ItemsDocument, (_, res, ctx) =>
+      graphql.query(ItemGql.ItemDocument, (_, res, ctx) =>
         res.once(ctx.delay("infinite"))
       )
     );
@@ -43,13 +42,13 @@ describe.concurrent("useItem", () => {
     const r = renderHookFn();
 
     await waitFor(() =>
-      expect(r.result.current.items).toMatchObject(tag.pattern.ui.loading)
+      expect(r.result.current.item).toMatchObject(tag.pattern.ui.loading)
     );
   });
 
   test.concurrent("failure", async () => {
     server.use(
-      graphql.query(ItemsGql.ItemsDocument, (_, res, ctx) =>
+      graphql.query(ItemGql.ItemDocument, (_, res, ctx) =>
         res.once(ctx.errors([]))
       )
     );
@@ -57,16 +56,16 @@ describe.concurrent("useItem", () => {
     const r = renderHookFn();
 
     await waitFor(() =>
-      expect(r.result.current.items).toMatchObject(tag.pattern.ui.failure)
+      expect(r.result.current.item).toMatchObject(tag.pattern.ui.failure)
     );
   });
 
-  test.concurrent("empty -- array", async () => {
+  test.concurrent("empty", async () => {
     server.use(
-      graphql.query(ItemsGql.ItemsDocument, (_, res, ctx) =>
+      graphql.query(ItemGql.ItemDocument, (_, res, ctx) =>
         res.once(
           ctx.data({
-            items: [],
+            item: null,
           })
         )
       )
@@ -75,7 +74,7 @@ describe.concurrent("useItem", () => {
     const r = renderHookFn();
 
     await waitFor(() =>
-      expect(r.result.current.items).toMatchObject(tag.pattern.ui.empty)
+      expect(r.result.current.item).toMatchObject(tag.pattern.ui.empty)
     );
   });
 });

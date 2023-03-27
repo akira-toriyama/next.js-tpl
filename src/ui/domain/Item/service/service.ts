@@ -1,5 +1,5 @@
 import { z } from "zod";
-import type * as type from "../../Item.type";
+import type * as type from "../Item.type";
 
 const schema: z.ZodSchema<type.OuterProps> = z.object({
   id: z.string(),

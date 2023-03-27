@@ -57,84 +57,6 @@ open "http://localhost:6006"
 yarn updateSnapshot
 ```
 
-## ディレクトリ構成
-
-```bash
-src
-├── env.ts
-├── infra # APIクライアントを配置しています。
-│  └── graphql
-│     ├── client.ts
-│     ├── types.ts
-│     └── util
-│        ├── index.ts
-│        ├── util.test.ts
-│        └── util.ts
-└── ui
-   ├── domain
-   │  └── item
-   │     ├── Item
-   │     │  ├── coLocation # DAO, GQLなどを配置しています。UI と密結合ですが、src/infra に配置するより管理しやすいです。
-   │     │  │  ├── dao.ts
-   │     │  │  ├── Item.gql.generated.ts
-   │     │  │  └── Item.gql.ts
-   │     │  ├── component
-   │     │  │  ├── index.ts
-   │     │  │  ├── Item.stories.tsx # すべてプレゼンテーショナルコンポートにしている為`.stories.tsx`も配置しています。
-   │     │  │  ├── Item.test.tsx
-   │     │  │  └── Item.tsx # eslint-plugin-use-encapsulationに準拠した実装しています。
-   │     │  ├── hook # component用hook
-   │     │  │  ├── index.ts
-   │     │  │  ├── item.hook.test.ts
-   │     │  │  ├── item.hook.ts
-   │     │  │  └── service # hook用のロジックなどです。Reduxのreducerのような役目です。hookでは無いためテスタビリティが高いです。
-   │     │  │     ├── index.ts
-   │     │  │     ├── service.test.ts
-   │     │  │     └── service.ts
-   │     │  ├── index.ts
-   │     │  └── Item.type.ts
-   │     └── Items
-   │        ├── coLocation
-   │        │  ├── dao.ts
-   │        │  ├── Items.gql.generated.ts
-   │        │  └── Items.gql.ts
-   │        ├── component
-   │        │  ├── index.ts
-   │        │  ├── Items.stories.tsx
-   │        │  ├── Items.test.tsx
-   │        │  └── Items.tsx
-   │        ├── hook
-   │        │  ├── index.ts
-   │        │  ├── items.hook.test.ts
-   │        │  ├── items.hook.ts
-   │        │  └── service
-   │        │     ├── index.ts
-   │        │     ├── service.test.ts
-   │        │     └── service.ts
-   │        ├── index.ts
-   │        └── Items.type.ts
-   ├── general # 汎用的なコンポートです。
-   │  ├── Card
-   │  │  ├── Card.stories.tsx
-   │  │  ├── Card.test.tsx
-   │  │  ├── Card.tsx
-   │  │  └── index.ts
-   │  └── List
-   │     ├── index.ts
-   │     ├── List.stories.tsx
-   │     ├── List.test.tsx
-   │     └── List.tsx
-   ├── provider
-   │  ├── ErrorBoundary.tsx
-   │  ├── ReactQuery.tsx
-   │  └── Wrapper.tsx
-   └── util
-      └── tag
-         ├── index.ts
-         ├── tag.test.ts
-         └── tag.ts # ts-patternと合わせて使用します。
-```
-
 ## 開発フロー
 
 **main** ブランチにプルリクをだすと、GitHub Actions が実行されます。([例](https://github.com/akira-toriyama/next.js-tpl/pull/883))  
@@ -145,24 +67,6 @@ src
 ### mock server
 
 開発時は、実際のリソースと通信する必要はありません。\_server/grphqlServer/mocks.ts に都合の良いデータを返す[モック](https://www.the-guild.dev/graphql/tools/docs/mocking)を準備してください。
-
-### domain component
-
-SPA は、UI とロジックや UI と保存処理が密結合になります。同名のディレクトリを準備せずに、拡張子やディレクトリ構成で役割を表現してください。
-
-```
-# Bad
-
-src/graphql/animal/cat.gql.ts
-src/component/animal/Cat.tsx
-```
-
-```
-# Good
-
-src/ui/domain/animal/cat/coLocation/cat.gql.ts
-src/ui/domain/animal/cat/component/Cat.tsx
-```
 
 すべてがこのルールにあてはまりませんが、src/ui/domain/に関心事をすべて実装してください。
 

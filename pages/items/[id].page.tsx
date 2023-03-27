@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import { Item, isValidParam } from "~/ui/domain/item/Item";
-import type { OuterProps } from "~/ui/domain/item/Item";
+import { Item, isValidParam } from "~/ui/domain/Item";
+import type { OuterProps } from "~/ui/domain/Item";
 import { GetServerSideProps } from "next";
 
 export const getServerSideProps: GetServerSideProps<OuterProps> = async (
