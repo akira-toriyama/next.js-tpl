@@ -4129,10 +4129,10 @@ eslint-plugin-use-encapsulation@1.1.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-use-encapsulation/-/eslint-plugin-use-encapsulation-1.1.0.tgz#a7a155c181f9cf1ad41e825916fcb10c04eaffe2"
   integrity sha512-pYRh3krpHLPiYDOpmwuCSlmc4nbK4rGnepcpiLhxdal5fO8mfWVsS74NmMnxTMwOPmTAJTp6klBHukuvXp7I7A==
 
-eslint-plugin-vitest@0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-vitest/-/eslint-plugin-vitest-0.0.54.tgz#7cf3633e100f57bfa1315af601fec934e2ad1fd0"
-  integrity sha512-6ZR52LJ2pNe3aVaWkDBR7Cg8FlpEe9XDWnvtHU0kbl01IgijPRL3tVSfjiBSfpYUF8kzC0W9XjhzHttElOsXiQ==
+eslint-plugin-vitest@0.0.57:
+  version "0.0.57"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-vitest/-/eslint-plugin-vitest-0.0.57.tgz#e7be4827b0c0bb276432ed2acedee83ef352d7e1"
+  integrity sha512-+Ab+QrgjkqwIu7DqtW6D+/F+HmlyQ0dV78jOWs12RscKsFdXdX4IU0u3zM/sXN6ju2DJN4wwxx2/i+eIHkcWpg==
   dependencies:
     "@typescript-eslint/utils" "^5.53.0"
 
