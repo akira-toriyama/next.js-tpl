@@ -63,7 +63,7 @@ describe.concurrent("ItemsContainer", () => {
 });
 
 describe.concurrent("Items", () => {
-  vi.mock("../hook/items.hook", () => ({
+  vi.mock("./hook/items.hook", () => ({
     useItems: () => ({ items: { ...tag.pattern.ui.loading } }),
   }));
 
