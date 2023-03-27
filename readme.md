@@ -68,24 +68,6 @@ yarn updateSnapshot
 
 開発時は、実際のリソースと通信する必要はありません。\_server/grphqlServer/mocks.ts に都合の良いデータを返す[モック](https://www.the-guild.dev/graphql/tools/docs/mocking)を準備してください。
 
-### domain component
-
-SPA は、UI とロジックや UI と保存処理が密結合になります。同名のディレクトリを準備せずに、拡張子やディレクトリ構成で役割を表現してください。
-
-```
-# Bad
-
-src/graphql/animal/cat.gql.ts
-src/component/animal/Cat.tsx
-```
-
-```
-# Good
-
-src/ui/domain/animal/cat/coLocation/cat.gql.ts
-src/ui/domain/animal/cat/component/Cat.tsx
-```
-
 すべてがこのルールにあてはまりませんが、src/ui/domain/に関心事をすべて実装してください。
 
 ### tsx
