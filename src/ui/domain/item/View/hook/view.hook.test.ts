@@ -3,9 +3,9 @@ import { renderHook } from "@testing-library/react";
 import { useView } from "./view.hook";
 import { wrapper } from "~/mock/test/wrapper";
 import * as tag from "~/ui/util/tag";
-import { useFetch } from "../../common/hook/useFetch";
+import { useFetch } from "../../common/hook/fetch";
 
-vi.mock("../../common/hook/useFetch");
+vi.mock("../../common/hook/fetch");
 
 describe.concurrent("useView", () => {
   const renderHookFn = () => renderHook(() => useView({ id: "" }), { wrapper });

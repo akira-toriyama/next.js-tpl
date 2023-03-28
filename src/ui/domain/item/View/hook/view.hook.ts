@@ -2,7 +2,7 @@ import type * as type from "../View.type";
 import { match, P } from "ts-pattern";
 import * as tag from "~/ui/util/tag";
 import type * as commonType from "../../common/common.type";
-import { useFetch } from "../../common/hook/useFetch";
+import { useFetch } from "../../common/hook/fetch";
 
 type UseView = (p: commonType.OuterProps) => type.Props;
 export const useView: UseView = (p) => {
