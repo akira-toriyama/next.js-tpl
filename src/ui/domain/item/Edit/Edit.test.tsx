@@ -4,6 +4,6 @@ import { Edit } from "./Edit";
 
 describe.concurrent("Edit", () => {
   test.concurrent("test", () => {
-    expect(render(<Edit {...{ id: "" }} />)).toBeDefined();
+    expect(render(<Edit />)).toBeDefined();
   });
 });
