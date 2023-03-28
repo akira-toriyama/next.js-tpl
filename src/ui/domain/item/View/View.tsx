@@ -2,6 +2,7 @@ import { match } from "ts-pattern";
 import * as tag from "~/ui/util/tag";
 import * as card from "~/ui/general/Card";
 import type * as type from "./View.type";
+import type * as commonType from "../common/common.type";
 import { useView } from "./hook";
 import NextLink from "next/link";
 
@@ -26,6 +27,6 @@ export const ViewContainer: React.FC<type.Props> = (props) =>
     .with(tag.pattern.ui.success, Success)
     .exhaustive();
 
-export const View: React.FC<type.OuterProps> = (props) => (
+export const View: React.FC<commonType.OuterProps> = (props) => (
   <ViewContainer {...useView(props)} />
 );
