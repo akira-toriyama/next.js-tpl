@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Edit } from "~/ui/domain/item/Edit";
+import { Edit } from "~/ui/domain/item/detail/Edit";
 
 const Page: NextPage = (props) => <Edit {...props} />;
 

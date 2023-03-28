@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { View } from "~/ui/domain/item/View";
+import { View } from "~/ui/domain/item/detail/View";
 import { isValidParam } from "~/ui/domain/item/detail/common/service";
 import type { OuterProps } from "~/ui/domain/item/detail/common/common.type";
 import { GetServerSideProps } from "next";
