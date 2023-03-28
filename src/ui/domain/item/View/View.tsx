@@ -3,10 +3,16 @@ import * as tag from "~/ui/util/tag";
 import * as card from "~/ui/general/Card";
 import type * as type from "./View.type";
 import { useView } from "./hook";
+import NextLink from "next/link";
 
 export const Success: React.FC<tag.Lookup<type.Props["item"], "success">> = (
   props
-) => <card.Card {...props.data} />;
+) => (
+  <>
+    <NextLink href={`/items/${props.data.id}/edit`}>edit</NextLink>
+    <card.Card {...props.data} />
+  </>
+);
 
 export const Loading: React.FC = () => <>item: Loading</>;
 export const Failure: React.FC = () => <>item: Failure</>;
