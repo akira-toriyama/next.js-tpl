@@ -1,5 +1,5 @@
 import { z } from "zod";
-import type * as type from "../View.type";
+import type * as type from "../common.type";
 
 const schema: z.ZodSchema<type.OuterProps> = z.object({
   id: z.string(),
