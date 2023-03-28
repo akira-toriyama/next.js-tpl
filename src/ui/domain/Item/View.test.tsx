@@ -1,7 +1,7 @@
 import { describe, test, expect, vi } from "vitest";
 import { render } from "@testing-library/react";
 import * as tag from "~/ui/util/tag";
-import { Success, Item, ItemContainer } from "./Item";
+import { Success, Item, ItemContainer } from "./VIew";
 
 describe.concurrent("Success", () => {
   vi.mock("~/ui/general/Card", () => ({

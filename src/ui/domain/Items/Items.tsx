@@ -12,7 +12,7 @@ export const Success: React.FC<tag.Lookup<type.Props["items"], "success">> = (
   <list.Items>
     {props.data.map((v) => (
       <list.Item data-testid="item" key={v.id}>
-        <NextLink href={`/items/${v.id}`}>{v.title}</NextLink>
+        <NextLink href={`/items/${v.id}/view`}>{v.title}</NextLink>
       </list.Item>
     ))}
   </list.Items>

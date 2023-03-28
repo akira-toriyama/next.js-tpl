@@ -1,6 +1,6 @@
 import { describe, test, expect } from "vitest";
 import { renderHook, waitFor } from "@testing-library/react";
-import { useItem } from "./item.hook";
+import { useItem } from "./view.hook";
 import { server } from "~/mock/test/server";
 import { wrapper } from "~/mock/test/wrapper";
 import * as ItemGql from "./coLocation/Item.gql.generated";

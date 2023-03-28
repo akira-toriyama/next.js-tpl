@@ -1,3 +1,3 @@
-export { Item } from "./Item";
-export type { OuterProps } from "./Item.type";
+export { View } from "./View";
+export type { OuterProps } from "./View.type";
 export { isValidParam } from "./service";

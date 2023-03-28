@@ -1,5 +1,5 @@
 import * as tag from "~/ui/util/tag";
-import * as item from "./Item";
+import * as item from "./View";
 import type { Story } from "@ladle/react";
 
 export const All: React.FC = () => (

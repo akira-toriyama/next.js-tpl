@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import type * as type from "../Item.type";
+import type * as type from "../View.type";
 import * as dao from "./coLocation/dao";
 import { match, P } from "ts-pattern";
 import * as tag from "~/ui/util/tag";
