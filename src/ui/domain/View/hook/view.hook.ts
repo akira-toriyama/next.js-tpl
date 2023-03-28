@@ -4,9 +4,9 @@ import * as dao from "./coLocation/dao";
 import { match, P } from "ts-pattern";
 import * as tag from "~/ui/util/tag";
 
-type UseItem = (p: type.OuterProps) => type.Props;
-export const useItem: UseItem = (p) => {
-  const r = useQuery(["Item", { id: p.id }], () => dao.find(p));
+type UseView = (p: type.OuterProps) => type.Props;
+export const useView: UseView = (p) => {
+  const r = useQuery(["View", { id: p.id }], () => dao.find(p));
 
   return match(r)
     .with(tag.pattern.query.failure, () => ({

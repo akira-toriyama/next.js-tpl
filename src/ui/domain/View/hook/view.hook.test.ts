@@ -1,18 +1,18 @@
 import { describe, test, expect } from "vitest";
 import { renderHook, waitFor } from "@testing-library/react";
-import { useItem } from "./view.hook";
+import { useView } from "./view.hook";
 import { server } from "~/mock/test/server";
 import { wrapper } from "~/mock/test/wrapper";
-import * as ItemGql from "./coLocation/Item.gql.generated";
+import * as GQL from "./coLocation/View.gql.generated";
 import { graphql } from "msw";
 import * as tag from "~/ui/util/tag";
 
-describe.concurrent("useItem", () => {
-  const renderHookFn = () => renderHook(() => useItem({ id: "" }), { wrapper });
+describe.concurrent("useView", () => {
+  const renderHookFn = () => renderHook(() => useView({ id: "" }), { wrapper });
 
   test.concurrent("success", async () => {
     server.use(
-      graphql.query(ItemGql.ItemDocument, (_, res, ctx) =>
+      graphql.query(GQL.ViewDocument, (_, res, ctx) =>
         res.once(
           ctx.data({
             item: {
@@ -34,7 +34,7 @@ describe.concurrent("useItem", () => {
 
   test.concurrent("loading", async () => {
     server.use(
-      graphql.query(ItemGql.ItemDocument, (_, res, ctx) =>
+      graphql.query(GQL.ViewDocument, (_, res, ctx) =>
         res.once(ctx.delay("infinite"))
       )
     );
@@ -48,9 +48,7 @@ describe.concurrent("useItem", () => {
 
   test.concurrent("failure", async () => {
     server.use(
-      graphql.query(ItemGql.ItemDocument, (_, res, ctx) =>
-        res.once(ctx.errors([]))
-      )
+      graphql.query(GQL.ViewDocument, (_, res, ctx) => res.once(ctx.errors([])))
     );
 
     const r = renderHookFn();
@@ -62,7 +60,7 @@ describe.concurrent("useItem", () => {
 
   test.concurrent("empty", async () => {
     server.use(
-      graphql.query(ItemGql.ItemDocument, (_, res, ctx) =>
+      graphql.query(GQL.ViewDocument, (_, res, ctx) =>
         res.once(
           ctx.data({
             item: null,
