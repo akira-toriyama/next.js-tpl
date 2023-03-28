@@ -17,5 +17,3 @@ const Page: NextPage<Props> = (props) => (
 );
 
 export default Page;
-
-// TODO tsconfig bump https://github.com/tsconfig/bases/pull/161
