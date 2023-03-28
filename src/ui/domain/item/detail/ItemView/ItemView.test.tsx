@@ -7,9 +7,11 @@ vi.mock("~/ui/general/Card", () => ({
   Card: () => null,
 }));
 
+/* jscpd:ignore-start */
 vi.mock("./hook/itemView.hook", () => ({
   useItemView: () => ({ item: { ...tag.pattern.ui.loading } }),
 }));
+/* jscpd:ignore-end */
 
 describe.concurrent("Success", () => {
   const renderFn = (props: React.ComponentProps<typeof Success>) =>
