@@ -3,8 +3,8 @@ import NextLink from "next/link";
 import type * as tag from "~/ui/util/tag/tag";
 import { pattern } from "~/ui/util/tag";
 import * as list from "~/ui/general/List";
-import type * as type from "./ItemList.type";
-import { useItemList } from "./hook";
+import type * as type from "./Items.type";
+import { useItems } from "./hook";
 
 export const Success: React.FC<tag.Lookup<type.Props["items"], "success">> = (
   props
@@ -22,7 +22,7 @@ export const Loading: React.FC = () => <>items: Loading</>;
 export const Failure: React.FC = () => <>items: Failure</>;
 export const Empty: React.FC = () => <>items: Empty</>;
 
-export const ItemListContainer: React.FC<type.Props> = (props) =>
+export const ItemsContainer: React.FC<type.Props> = (props) =>
   match(props.items)
     .with(pattern.ui.failure, Failure)
     .with(pattern.ui.empty, Empty)
@@ -30,6 +30,4 @@ export const ItemListContainer: React.FC<type.Props> = (props) =>
     .with(pattern.ui.success, Success)
     .exhaustive();
 
-export const ItemList: React.FC = () => (
-  <ItemListContainer {...useItemList()} />
-);
+export const Items: React.FC = () => <ItemsContainer {...useItems()} />;

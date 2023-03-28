@@ -1,7 +1,7 @@
 import { gql } from "graphql-request";
 
-export const ItemList = gql`
-  query ItemList {
+export const Items = gql`
+  query Items {
     items {
       id
       title

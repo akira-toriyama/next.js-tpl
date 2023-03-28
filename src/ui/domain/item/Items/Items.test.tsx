@@ -1,7 +1,7 @@
 import { describe, test, expect, vi } from "vitest";
 import { render } from "@testing-library/react";
 import * as tag from "~/ui/util/tag";
-import { Success, ItemList, ItemListContainer } from "./ItemList";
+import { Success, Items, ItemsContainer } from "./Items";
 
 vi.mock("~/ui/general/List", async () => ({
   ...(await vi.importActual<typeof import("~/ui/general/List")>(
@@ -11,8 +11,8 @@ vi.mock("~/ui/general/List", async () => ({
   Item: (props: any) => <div {...props} />,
 }));
 
-vi.mock("./hook/itemList.hook", () => ({
-  useItemList: () => ({ items: { ...tag.pattern.ui.loading } }),
+vi.mock("./hook/items.hook", () => ({
+  useItems: () => ({ items: { ...tag.pattern.ui.loading } }),
 }));
 
 describe.concurrent("Success", () => {
@@ -35,9 +35,9 @@ describe.concurrent("Success", () => {
   );
 });
 
-describe.concurrent("ItemListContainer", () => {
-  const renderFn = (props: React.ComponentProps<typeof ItemListContainer>) =>
-    render(<ItemListContainer {...props} />);
+describe.concurrent("ItemsContainer", () => {
+  const renderFn = (props: React.ComponentProps<typeof ItemsContainer>) =>
+    render(<ItemsContainer {...props} />);
 
   test.concurrent("failure", () => {
     expect(
@@ -66,8 +66,8 @@ describe.concurrent("ItemListContainer", () => {
   });
 });
 
-describe.concurrent("ItemList", () => {
+describe.concurrent("Items", () => {
   test.concurrent("test", () => {
-    expect(render(<ItemList />)).toBeDefined();
+    expect(render(<Items />)).toBeDefined();
   });
 });
