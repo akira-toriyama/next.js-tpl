@@ -1,6 +1,10 @@
 import * as tag from "~/ui/util/tag";
 import * as list from "./List";
-import type { Story } from "@ladle/react";
+import type { StoryDefault, Story } from "@ladle/react";
+
+export default {
+  title: "domain/List",
+} satisfies StoryDefault;
 
 export const All: React.FC = () => (
   <>
