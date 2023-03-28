@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { View } from "~/ui/domain/item/detail/View";
+import { ItemView } from "~/ui/domain/item/detail/ItemView";
 import { isValidParam } from "~/ui/domain/item/detail/common/service";
 import type { OuterProps } from "~/ui/domain/item/detail/common/common.type";
 import { GetServerSideProps } from "next";
@@ -21,6 +21,6 @@ export const getServerSideProps: GetServerSideProps<OuterProps> = async (
   };
 };
 
-const Page: NextPage<OuterProps> = (props) => <View {...props} />;
+const Page: NextPage<OuterProps> = (props) => <ItemView {...props} />;
 
 export default Page;

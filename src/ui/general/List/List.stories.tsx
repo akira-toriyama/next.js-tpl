@@ -1,9 +1,5 @@
 import * as list from "./List";
-import type { StoryDefault, Story } from "@ladle/react";
-
-export default {
-  title: "general/List",
-} satisfies StoryDefault;
+import type { Story } from "@ladle/react";
 
 export const All: React.FC = () => (
   <list.Items>

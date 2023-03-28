@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import { List } from "~/ui/domain/item/List";
+import { ItemList } from "~/ui/domain/item/ItemList";
 
-const Page: NextPage = () => <List />;
+const Page: NextPage = () => <ItemList />;
 
 export default Page;

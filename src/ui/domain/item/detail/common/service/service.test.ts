@@ -32,6 +32,10 @@ describe.concurrent("isValidParam", () => {
       param: { id: true },
       expected: false,
     },
+    {
+      param: {},
+      expected: false,
+    },
   ];
 
   test.each(testData)("No.%#: %o", ({ param, expected }) => {

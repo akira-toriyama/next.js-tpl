@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import { Edit } from "~/ui/domain/item/detail/Edit";
+import { ItemEdit } from "~/ui/domain/item/detail/ItemEdit";
 
-const Page: NextPage = (props) => <Edit {...props} />;
+const Page: NextPage = (props) => <ItemEdit {...props} />;
 
 export default Page;

@@ -1,5 +1,5 @@
 import { createQueryKeyStore } from "@lukemorales/query-key-factory";
-import * as itemList from "~/ui/domain/item/List/hook/coLocation/dao";
+import * as itemList from "~/ui/domain/item/ItemList/hook/coLocation/dao";
 import * as itemDetail from "~/ui/domain/item/detail/common/hook/fetch/coLocation/dao";
 
 export const queryKeys = createQueryKeyStore({
