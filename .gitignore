@@ -42,7 +42,7 @@ yarn-error.log*
 gql.generated.ts
 /src/infra/graphql/types.ts
 
-_server/grphqlServer/schema.graphql
+_server/graphqlServer/schema.graphql
 /snapshotReport
 /test-results
 
