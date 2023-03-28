@@ -2513,7 +2513,7 @@
   resolved "https://registry.yarnpkg.com/@whatwg-node/events/-/events-0.0.2.tgz#7b7107268d2982fc7b7aff5ee6803c64018f84dd"
   integrity sha512-WKj/lI4QjnLuPrim0cfO7i+HsDSXHxNv1y0CrJhdntuO3hxWZmnXCwNDnwOvry11OjRin6cgWNF+j/9Pn8TN4w==
 
-"@whatwg-node/fetch@^0.8.0", "@whatwg-node/fetch@^0.8.1", "@whatwg-node/fetch@^0.8.2", "@whatwg-node/fetch@^0.8.3":
+"@whatwg-node/fetch@^0.8.0", "@whatwg-node/fetch@^0.8.1", "@whatwg-node/fetch@^0.8.3", "@whatwg-node/fetch@^0.8.4":
   version "0.8.4"
   resolved "https://registry.yarnpkg.com/@whatwg-node/fetch/-/fetch-0.8.4.tgz#ae1c306d1e4f5ba5cf9badf070de259f04c2cda8"
   integrity sha512-xK0NGWt49P+JmsdfN+8zmHzZoscENrV0KL1SyyncvWkc6vbFmSqGSpvItEBuhj1PAfTGFEUpyiRMCsut2hLy/Q==
@@ -4916,10 +4916,10 @@ graphql-ws@5.12.0:
   resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.12.0.tgz#d06fe38916334b4a4c827f73268cbf4359a32ed7"
   integrity sha512-PA3ImUp8utrpEjoxBMhvxsjkStvFEdU0E1gEBREt8HZIWkxOUymwJBhFnBL7t/iHhUq1GVPeZevPinkZFENxTw==
 
-graphql-yoga@3.7.3:
-  version "3.7.3"
-  resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-3.7.3.tgz#6b26b3bf4b8d87005cbdfdef34f4c0e7fc1e9286"
-  integrity sha512-u0Xs4iUfsCcZPVTM1kwd+zVJsX0IsYQ0N8s/aU6Ch/Ez2P1cppLRrFPb7WqN0eK+pMipUuyVC9Wm/cIbQdprkA==
+graphql-yoga@3.8.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-3.8.0.tgz#329bcf960eb4e954106e7b5974edbb60ccff8a04"
+  integrity sha512-tCjPeVL+IiTXi9s3oKtLxHTqML/foBhoO4FTuNzosWAsgNybUX7HSnGyPAKoHv0OusYW8KwiU/xFR95wFHvcFw==
   dependencies:
     "@envelop/core" "^3.0.4"
     "@envelop/validation-cache" "^5.1.2"
@@ -4928,10 +4928,10 @@ graphql-yoga@3.7.3:
     "@graphql-tools/utils" "^9.2.1"
     "@graphql-yoga/logger" "^0.0.1"
     "@graphql-yoga/subscription" "^3.1.0"
-    "@whatwg-node/fetch" "^0.8.2"
+    "@whatwg-node/fetch" "^0.8.4"
     "@whatwg-node/server" "^0.7.3"
     dset "^3.1.1"
-    lru-cache "^8.0.0"
+    lru-cache "^7.14.1"
     tslib "^2.3.1"
 
 graphql@16.6.0, "graphql@^15.0.0 || ^16.0.0":
@@ -6082,10 +6082,10 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-lru-cache@^8.0.0:
-  version "8.0.4"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-8.0.4.tgz#49fbbc46c0b4cedc36258885247f93dba341e7ec"
-  integrity sha512-E9FF6+Oc/uFLqZCuZwRKUzgFt5Raih6LfxknOSAVTjNkrCZkBf7DQCwJxZQgd9l4eHjIJDGR+E+1QKD1RhThPw==
+lru-cache@^7.14.1:
+  version "7.18.3"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.18.3.tgz#f793896e0fd0e954a59dfdd82f0773808df6aa89"
+  integrity sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==
 
 lz-string@^1.5.0:
   version "1.5.0"
