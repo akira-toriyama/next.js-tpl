@@ -6,7 +6,7 @@ import { queryKeys } from "~/ui/util/queryKeys";
 
 type UseItems = () => type.Props;
 export const useItems: UseItems = () => {
-  const r = useQuery(queryKeys.item.list);
+  const r = useQuery(queryKeys.item.items);
 
   return match(r)
     .with(tag.pattern.query.failure, () => ({

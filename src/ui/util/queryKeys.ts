@@ -5,12 +5,12 @@ import * as client from "~/infra/graphql/client";
 
 export const queryKeys = createQueryKeyStore({
   item: {
-    detail: (p: ItemDetailGQL.ItemDetailQueryVariables) => ({
+    item: (p: ItemDetailGQL.ItemDetailQueryVariables) => ({
       queryKey: ["item", p],
       queryFn: () =>
         client.graphQLClient.request(ItemDetailGQL.ItemDetailDocument, p),
     }),
-    list: {
+    items: {
       queryKey: ["items"],
       queryFn: () => client.graphQLClient.request(ItemsGQL.ItemsDocument),
     },
