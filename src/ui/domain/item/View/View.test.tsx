@@ -59,7 +59,7 @@ describe.concurrent("ViewContainer", () => {
 });
 
 describe.concurrent("View", () => {
-  vi.mock("./hook/item.hook", () => ({
+  vi.mock("./hook/view.hook", () => ({
     useView: () => ({ item: { ...tag.pattern.ui.loading } }),
   }));
 
