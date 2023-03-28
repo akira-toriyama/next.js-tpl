@@ -21,7 +21,7 @@
 
 ```bash
 mv .env.example .env
-mv _server/grphqlServer/schema.graphql.example _server/grphqlServer/schema.graphql
+mv _server/graphqlServer/schema.graphql.example _server/graphqlServer/schema.graphql
 direnv allow
 yarn
 ```
@@ -66,7 +66,7 @@ yarn updateSnapshot
 
 ### mock server
 
-開発時は、実際のリソースと通信する必要はありません。\_server/grphqlServer/mocks.ts に都合の良いデータを返す[モック](https://www.the-guild.dev/graphql/tools/docs/mocking)を準備してください。
+開発時は、実際のリソースと通信する必要はありません。\_server/graphqlServer/mocks.ts に都合の良いデータを返す[モック](https://www.the-guild.dev/graphql/tools/docs/mocking)を準備してください。
 
 すべてがこのルールにあてはまりませんが、src/ui/domain/に関心事をすべて実装してください。
 
