@@ -4,14 +4,15 @@ import type React from "react";
 import * as tag from "~/ui/util/tag";
 import { Success, Items, ItemsContainer } from "./Items";
 
-describe.concurrent("Success", () => {
-  vi.mock("~/ui/general/List", async () => ({
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    ...(await vi.importActual<any>("~/ui/general/List")),
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    Item: (props: any) => <div {...props} />,
-  }));
+vi.mock("~/ui/general/List", async () => ({
+  ...(await vi.importActual<typeof import("~/ui/general/List")>(
+    "~/ui/general/List"
+  )),
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  Item: (props: any) => <div {...props} />,
+}));
 
+describe.concurrent("Success", () => {
   const renderFn = (props: React.ComponentProps<typeof Success>) =>
     render(<Success {...props} />);
 

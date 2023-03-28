@@ -3,11 +3,15 @@ import { render } from "@testing-library/react";
 import * as tag from "~/ui/util/tag";
 import { Success, View, ViewContainer } from "./View";
 
-describe.concurrent("Success", () => {
-  vi.mock("~/ui/general/Card", () => ({
-    Card: () => null,
-  }));
+vi.mock("~/ui/general/Card", () => ({
+  Card: () => null,
+}));
 
+vi.mock("./hook/view.hook", () => ({
+  useView: () => ({ item: { ...tag.pattern.ui.loading } }),
+}));
+
+describe.concurrent("Success", () => {
   const renderFn = (props: React.ComponentProps<typeof Success>) =>
     render(<Success {...props} />);
 
@@ -44,9 +48,6 @@ describe.concurrent("ViewContainer", () => {
   });
 
   test.concurrent("Success", () => {
-    vi.mock("~/ui/general/Card", () => ({
-      Card: () => null,
-    }));
     expect(
       renderFn({
         item: {
@@ -59,10 +60,6 @@ describe.concurrent("ViewContainer", () => {
 });
 
 describe.concurrent("View", () => {
-  vi.mock("./hook/view.hook", () => ({
-    useView: () => ({ item: { ...tag.pattern.ui.loading } }),
-  }));
-
   test.concurrent("test", () => {
     expect(render(<View {...{ id: "" }} />)).toBeDefined();
   });

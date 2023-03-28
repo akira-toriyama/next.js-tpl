@@ -1,78 +1,50 @@
-import { describe, test, expect } from "vitest";
-import { renderHook, waitFor } from "@testing-library/react";
+import { describe, test, expect, vi } from "vitest";
+import { renderHook } from "@testing-library/react";
 import { useView } from "./view.hook";
-import { server } from "~/mock/test/server";
 import { wrapper } from "~/mock/test/wrapper";
-import * as GQL from "./coLocation/View.gql.generated";
-import { graphql } from "msw";
 import * as tag from "~/ui/util/tag";
+import { useFetch } from "../../common/hook/useFetch";
+
+vi.mock("../../common/hook/useFetch");
 
 describe.concurrent("useView", () => {
   const renderHookFn = () => renderHook(() => useView({ id: "" }), { wrapper });
 
-  test.concurrent("success", async () => {
-    server.use(
-      graphql.query(GQL.ViewDocument, (_, res, ctx) =>
-        res.once(
-          ctx.data({
-            item: {
-              id: "",
-              title: "",
-              body: "",
-            },
-          })
-        )
-      )
-    );
+  test.concurrent("loading", () => {
+    // @ts-expect-error
+    vi.mocked(useFetch).mockReturnValueOnce(tag.pattern.query.loading);
 
     const r = renderHookFn();
-
-    await waitFor(() =>
-      expect(r.result.current.item).toMatchObject(tag.pattern.ui.success)
-    );
+    expect(r.result.current.item).toMatchObject(tag.pattern.ui.loading);
   });
 
-  test.concurrent("loading", async () => {
-    server.use(
-      graphql.query(GQL.ViewDocument, (_, res, ctx) =>
-        res.once(ctx.delay("infinite"))
-      )
-    );
+  test.concurrent("failure", () => {
+    // @ts-expect-error
+    vi.mocked(useFetch).mockReturnValueOnce(tag.pattern.query.failure);
 
     const r = renderHookFn();
-
-    await waitFor(() =>
-      expect(r.result.current.item).toMatchObject(tag.pattern.ui.loading)
-    );
+    expect(r.result.current.item).toMatchObject(tag.pattern.ui.failure);
   });
 
-  test.concurrent("failure", async () => {
-    server.use(
-      graphql.query(GQL.ViewDocument, (_, res, ctx) => res.once(ctx.errors([])))
-    );
+  test.concurrent("empty", () => {
+    // @ts-expect-error
+    vi.mocked(useFetch).mockReturnValueOnce({
+      ...tag.pattern.query.success,
+      data: { item: null },
+    });
 
     const r = renderHookFn();
-
-    await waitFor(() =>
-      expect(r.result.current.item).toMatchObject(tag.pattern.ui.failure)
-    );
+    expect(r.result.current.item).toMatchObject(tag.pattern.ui.empty);
   });
 
-  test.concurrent("empty", async () => {
-    server.use(
-      graphql.query(GQL.ViewDocument, (_, res, ctx) =>
-        res.once(
-          ctx.data({
-            item: null,
-          })
-        )
-      )
-    );
+  test.concurrent("success", () => {
+    vi.mocked(useFetch).mockReturnValueOnce({
+      ...tag.pattern.query.success,
+      // @ts-expect-error
+      data: { item: true },
+    });
 
     const r = renderHookFn();
-
-    await waitFor(() =>
-      expect(r.result.current.item).toMatchObject(tag.pattern.ui.empty)
-    );
+    expect(r.result.current.item).toMatchObject(tag.pattern.ui.success);
   });
 });

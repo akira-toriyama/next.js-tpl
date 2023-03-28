@@ -1,7 +1,7 @@
 import { gql } from "graphql-request";
 
-export const View = gql`
-  query View($id: ID!) {
+export const Common = gql`
+  query Common($id: ID!) {
     item(where: { id: $id }) {
       id
       title
