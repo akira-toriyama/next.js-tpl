@@ -30,6 +30,7 @@ export default defineConfig({
         "src/ui/provider/ErrorBoundary.tsx",
         "src/env.ts",
         "src/mock/**",
+        "src/ui/util/queryKeys.ts",
       ],
       provider: "istanbul",
       statements: 100,

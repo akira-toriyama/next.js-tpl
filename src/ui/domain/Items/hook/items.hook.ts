@@ -1,12 +1,12 @@
 import { useQuery } from "@tanstack/react-query";
 import type * as type from "../Items.type";
-import * as dao from "./coLocation/dao";
 import * as tag from "~/ui/util/tag";
 import { match, P } from "ts-pattern";
+import { queryKeys } from "~/ui/util/queryKeys";
 
 type UseItems = () => type.Props;
 export const useItems: UseItems = () => {
-  const r = useQuery(["Items"], dao.fetchItems);
+  const r = useQuery(queryKeys.item.list);
 
   return match(r)
     .with(tag.pattern.query.failure, () => ({

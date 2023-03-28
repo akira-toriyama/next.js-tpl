@@ -1,7 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import * as dao from "./coLocation/dao";
 import type * as commonType from "../../common.type";
+import { queryKeys } from "~/ui/util/queryKeys";
 
-// TODO keys.ts
 export const useFetch = (p: commonType.OuterProps) =>
-  useQuery(["Common", { id: p.id }], () => dao.find(p));
+  useQuery(queryKeys.item.detail(p));
