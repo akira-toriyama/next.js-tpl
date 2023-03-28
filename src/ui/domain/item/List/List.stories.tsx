@@ -1,24 +1,24 @@
 import * as tag from "~/ui/util/tag";
-import * as items from "./Items";
+import * as list from "./List";
 import type { Story } from "@ladle/react";
 
 export const All: React.FC = () => (
   <>
-    <items.Success
+    <list.Success
       {...{
         data: [{ title: "title", id: "1" }],
         ...tag.pattern.ui.success,
       }}
     />
-    <items.Empty />
-    <items.Loading />
-    <items.Failure />
+    <list.Empty />
+    <list.Loading />
+    <list.Failure />
   </>
 );
 
-type SuccessProps = React.ComponentProps<typeof items.Success>;
+type SuccessProps = React.ComponentProps<typeof list.Success>;
 export const Success: Story<SuccessProps> = (props) => (
-  <items.Success {...props} />
+  <list.Success {...props} />
 );
 
 Success.args = ((): SuccessProps => ({
@@ -29,6 +29,6 @@ Success.args = ((): SuccessProps => ({
   ...tag.pattern.ui.success,
 }))();
 
-export const Empty: React.FC = () => <items.Empty />;
-export const Loading: React.FC = () => <items.Loading />;
-export const Failure: React.FC = () => <items.Failure />;
+export const Empty: React.FC = () => <list.Empty />;
+export const Loading: React.FC = () => <list.Loading />;
+export const Failure: React.FC = () => <list.Failure />;

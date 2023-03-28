@@ -1,11 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
-import type * as type from "../Items.type";
+import type * as type from "../List.type";
 import * as tag from "~/ui/util/tag";
 import { match, P } from "ts-pattern";
 import { queryKeys } from "~/ui/util/queryKeys";
 
-type UseItems = () => type.Props;
-export const useItems: UseItems = () => {
+type UseList = () => type.Props;
+export const useList: UseList = () => {
   const r = useQuery(queryKeys.item.list);
 
   return match(r)

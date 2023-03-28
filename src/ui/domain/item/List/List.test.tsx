@@ -2,7 +2,7 @@ import { describe, test, expect, vi } from "vitest";
 import { render } from "@testing-library/react";
 import type React from "react";
 import * as tag from "~/ui/util/tag";
-import { Success, Items, ItemsContainer } from "./Items";
+import { Success, List, ListContainer } from "./List";
 
 vi.mock("~/ui/general/List", async () => ({
   ...(await vi.importActual<typeof import("~/ui/general/List")>(
@@ -10,6 +10,10 @@ vi.mock("~/ui/general/List", async () => ({
   )),
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   Item: (props: any) => <div {...props} />,
+}));
+
+vi.mock("./hook/list.hook", () => ({
+  useList: () => ({ items: { ...tag.pattern.ui.loading } }),
 }));
 
 describe.concurrent("Success", () => {
@@ -32,9 +36,9 @@ describe.concurrent("Success", () => {
   );
 });
 
-describe.concurrent("ItemsContainer", () => {
-  const renderFn = (props: React.ComponentProps<typeof ItemsContainer>) =>
-    render(<ItemsContainer {...props} />);
+describe.concurrent("ListContainer", () => {
+  const renderFn = (props: React.ComponentProps<typeof ListContainer>) =>
+    render(<ListContainer {...props} />);
 
   test.concurrent("failure", () => {
     expect(
@@ -63,12 +67,8 @@ describe.concurrent("ItemsContainer", () => {
   });
 });
 
-describe.concurrent("Items", () => {
-  vi.mock("./hook/items.hook", () => ({
-    useItems: () => ({ items: { ...tag.pattern.ui.loading } }),
-  }));
-
+describe.concurrent("List", () => {
   test.concurrent("test", () => {
-    expect(render(<Items />)).toBeDefined();
+    expect(render(<List />)).toBeDefined();
   });
 });
