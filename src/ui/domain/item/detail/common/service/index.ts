@@ -1,1 +1,1 @@
-export { isValidParam } from "./service";
+export { parameterSchema } from "./service";
