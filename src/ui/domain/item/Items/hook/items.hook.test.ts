@@ -5,7 +5,6 @@ import { server } from "~/mock/test/server";
 import { wrapper } from "~/mock/test/wrapper";
 import * as GQL from "./coLocation/Items.gql.generated";
 import { graphql } from "msw";
-import * as tag from "~/ui/util/tag";
 
 describe.concurrent("useItem", () => {
   const renderHookFn = () => renderHook(() => useItems(), { wrapper });
@@ -29,7 +28,7 @@ describe.concurrent("useItem", () => {
     const r = renderHookFn();
 
     await waitFor(() =>
-      expect(r.result.current.items).toMatchObject(tag.pattern.ui.success)
+      expect(r.result.current).toMatchObject({ __tag: "success" })
     );
   });
 
@@ -43,7 +42,7 @@ describe.concurrent("useItem", () => {
     const r = renderHookFn();
 
     await waitFor(() =>
-      expect(r.result.current.items).toMatchObject(tag.pattern.ui.loading)
+      expect(r.result.current).toMatchObject({ __tag: "loading" })
     );
   });
 
@@ -57,7 +56,7 @@ describe.concurrent("useItem", () => {
     const r = renderHookFn();
 
     await waitFor(() =>
-      expect(r.result.current.items).toMatchObject(tag.pattern.ui.failure)
+      expect(r.result.current).toMatchObject({ __tag: "failure" })
     );
   });
 
@@ -75,7 +74,7 @@ describe.concurrent("useItem", () => {
     const r = renderHookFn();
 
     await waitFor(() =>
-      expect(r.result.current.items).toMatchObject(tag.pattern.ui.empty)
+      expect(r.result.current).toMatchObject({ __tag: "empty" })
     );
   });
 });

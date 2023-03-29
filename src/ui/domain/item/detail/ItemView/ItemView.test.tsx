@@ -1,17 +1,14 @@
 import { describe, test, expect, vi } from "vitest";
 import { render } from "@testing-library/react";
-import * as tag from "~/ui/util/tag";
 import { Success, ItemView, ItemViewContainer } from "./ItemView";
 
 vi.mock("~/ui/general/Card", () => ({
   Card: () => null,
 }));
 
-/* jscpd:ignore-start */
 vi.mock("./hook/itemView.hook", () => ({
-  useItemView: () => ({ item: { ...tag.pattern.ui.loading } }),
+  useItemView: () => ({ __tag: "loading" }),
 }));
-/* jscpd:ignore-end */
 
 describe.concurrent("Success", () => {
   const renderFn = (props: React.ComponentProps<typeof Success>) =>
@@ -20,8 +17,8 @@ describe.concurrent("Success", () => {
   test.concurrent("test", () => {
     expect(
       renderFn({
-        ...tag.pattern.ui.success,
-        data: { id: "", title: "", body: "" },
+        __tag: "success",
+        selectors: { id: "", title: "", body: "" },
       })
     ).toBeDefined();
   });
@@ -32,30 +29,22 @@ describe.concurrent("ItemViewContainer", () => {
     render(<ItemViewContainer {...props} />);
 
   test.concurrent("failure", () => {
-    expect(
-      renderFn({ item: { ...tag.pattern.ui.failure, data: null } })
-    ).toBeDefined();
+    expect(renderFn({ __tag: "failure" })).toBeDefined();
   });
 
   test.concurrent("Empty", () => {
-    expect(
-      renderFn({ item: { ...tag.pattern.ui.empty, data: null } })
-    ).toBeDefined();
+    expect(renderFn({ __tag: "empty" })).toBeDefined();
   });
 
   test.concurrent("Loading", () => {
-    expect(
-      renderFn({ item: { ...tag.pattern.ui.loading, data: null } })
-    ).toBeDefined();
+    expect(renderFn({ __tag: "loading" })).toBeDefined();
   });
 
   test.concurrent("Success", () => {
     expect(
       renderFn({
-        item: {
-          ...tag.pattern.ui.success,
-          data: { id: "", title: "", body: "" },
-        },
+        __tag: "success",
+        selectors: { id: "", title: "", body: "" },
       })
     ).toBeDefined();
   });

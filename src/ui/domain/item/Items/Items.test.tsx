@@ -1,6 +1,5 @@
 import { describe, test, expect, vi } from "vitest";
 import { render } from "@testing-library/react";
-import * as tag from "~/ui/util/tag";
 import { Success, Items, ItemsContainer } from "./Items";
 
 vi.mock("~/ui/general/List", async () => ({
@@ -12,7 +11,7 @@ vi.mock("~/ui/general/List", async () => ({
 }));
 
 vi.mock("./hook/items.hook", () => ({
-  useItems: () => ({ items: { ...tag.pattern.ui.loading } }),
+  useItems: () => ({ __tag: "loading" }),
 }));
 
 describe.concurrent("Success", () => {
@@ -27,8 +26,8 @@ describe.concurrent("Success", () => {
 
       expect(
         renderFn({
-          ...tag.pattern.ui.success,
-          data: [...Array(n)].map((_, i) => ({ id: `${i}`, title: "" })),
+          __tag: "success",
+          selectors: [...Array(n)].map((_, i) => ({ id: `${i}`, title: "" })),
         }).getAllByTestId(target).length
       ).toEqual(3);
     }
@@ -40,27 +39,22 @@ describe.concurrent("ItemsContainer", () => {
     render(<ItemsContainer {...props} />);
 
   test.concurrent("failure", () => {
-    expect(
-      renderFn({ items: { ...tag.pattern.ui.failure, data: null } })
-    ).toBeDefined();
+    expect(renderFn({ __tag: "failure" })).toBeDefined();
   });
 
   test.concurrent("Empty", () => {
-    expect(
-      renderFn({ items: { ...tag.pattern.ui.empty, data: null } })
-    ).toBeDefined();
+    expect(renderFn({ __tag: "empty" })).toBeDefined();
   });
 
   test.concurrent("Loading", () => {
-    expect(
-      renderFn({ items: { ...tag.pattern.ui.loading, data: null } })
-    ).toBeDefined();
+    expect(renderFn({ __tag: "loading" })).toBeDefined();
   });
 
   test.concurrent("Success", () => {
     expect(
       renderFn({
-        items: { ...tag.pattern.ui.success, data: [] },
+        __tag: "success",
+        selectors: [{ title: "", id: "" }],
       })
     ).toBeDefined();
   });

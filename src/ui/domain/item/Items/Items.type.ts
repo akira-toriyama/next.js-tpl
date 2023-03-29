@@ -1,6 +1,14 @@
-import type * as tag from "~/ui/util/tag";
-
-export type Props = tag.PropsStruct<
-  "items",
-  ReadonlyArray<{ id: string; title: string }>
->;
+export type Props =
+  | {
+      __tag: "success";
+      selectors: Array<{ title: string; id: string }>;
+    }
+  | {
+      __tag: "failure";
+    }
+  | {
+      __tag: "loading";
+    }
+  | {
+      __tag: "empty";
+    };
