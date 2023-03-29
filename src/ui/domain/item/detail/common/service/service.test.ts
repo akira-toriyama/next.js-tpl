@@ -1,10 +1,10 @@
 import { describe, test, expect } from "vitest";
-import { isValidParam } from "./service";
+import { parameterSchema } from "./service";
 
 describe.concurrent("isValidParam", () => {
   type TestData = {
-    param: Parameters<typeof isValidParam>[0];
-    expected: ReturnType<typeof isValidParam>;
+    param: unknown;
+    expected: boolean;
   };
 
   const testData: TestData[] = [
@@ -39,6 +39,6 @@ describe.concurrent("isValidParam", () => {
   ];
 
   test.each(testData)("No.%#: %o", ({ param, expected }) => {
-    expect(isValidParam(param)).toEqual(expected);
+    expect(parameterSchema.safeParse(param).success).toEqual(expected);
   });
 });

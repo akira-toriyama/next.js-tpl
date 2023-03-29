@@ -1,34 +1,24 @@
 import { useQuery } from "@tanstack/react-query";
 import type * as type from "../Items.type";
-import * as tag from "~/ui/util/tag";
 import { match, P } from "ts-pattern";
 import { queryKeys } from "~/ui/util/queryKeys";
+import type { UseQueryResult } from "@tanstack/react-query";
+import type * as GQL from "./coLocation/Items.gql.generated";
 
 type UseItems = () => type.Props;
 export const useItems: UseItems = () => {
-  const r = useQuery(queryKeys.item.list);
+  const r = useQuery(queryKeys.item.items);
 
-  return match(r)
-    .with(tag.pattern.query.failure, () => ({
-      items: tag.to.failureProps(null),
-    }))
-    .with(tag.pattern.query.loading, () => ({
-      items: tag.to.loadingProps(null),
-    }))
+  return match<UseQueryResult<GQL.ItemsQuery>, type.Props>(r)
+    .with({ isError: true }, () => ({ __tag: "failure" }))
+    .with({ isLoading: true }, () => ({ __tag: "loading" }))
     .with(
-      {
-        ...tag.pattern.query.success,
-        data: { items: P.when((v) => v.length === 0) },
-      },
-      () => ({
-        items: tag.to.emptyProps(null),
-      })
+      { isSuccess: true, data: { items: P.when((v) => v.length === 0) } },
+      () => ({ __tag: "empty" })
     )
-    .with(
-      { ...tag.pattern.query.success, data: { items: P.not(P.nullish) } },
-      (rr) => ({
-        items: tag.to.successProps(rr.data.items),
-      })
-    )
+    .with({ isSuccess: true, data: { items: P.not(P.nullish) } }, (rr) => ({
+      __tag: "success",
+      selectors: [...rr.data.items],
+    }))
     .exhaustive();
 };

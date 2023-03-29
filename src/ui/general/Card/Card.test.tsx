@@ -1,6 +1,5 @@
 import { describe, test, expect } from "vitest";
 import { render } from "@testing-library/react";
-import type React from "react";
 import { Card } from "./Card";
 
 describe.concurrent("Card", () => {

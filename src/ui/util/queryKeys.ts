@@ -1,16 +1,18 @@
 import { createQueryKeyStore } from "@lukemorales/query-key-factory";
-import * as itemList from "~/ui/domain/item/Items/hook/coLocation/dao";
-import * as itemDetail from "~/ui/domain/item/detail/common/hook/fetch/coLocation/dao";
+import * as ItemsGQL from "~/ui/domain/item/Items/hook/coLocation/Items.gql.generated";
+import * as ItemDetailGQL from "~/ui/domain/item/detail/common/hook/fetch/coLocation/ItemDetail.gql.generated";
+import * as client from "~/infra/graphql/client";
 
 export const queryKeys = createQueryKeyStore({
   item: {
-    detail: (p: { id: string }) => ({
-      queryKey: ["item-detail", p],
-      queryFn: () => itemDetail.fetchDetail(p),
+    item: (p: ItemDetailGQL.ItemDetailQueryVariables) => ({
+      queryKey: ["item", p],
+      queryFn: () =>
+        client.graphQLClient.request(ItemDetailGQL.ItemDetailDocument, p),
     }),
-    list: {
-      queryKey: ["item-list"],
-      queryFn: itemList.fetchList,
+    items: {
+      queryKey: ["items"],
+      queryFn: () => client.graphQLClient.request(ItemsGQL.ItemsDocument),
     },
   },
 });

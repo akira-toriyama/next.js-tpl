@@ -2,7 +2,6 @@ import { describe, test, expect, vi } from "vitest";
 import { renderHook } from "@testing-library/react";
 import { useItemView } from "./itemView.hook";
 import { wrapper } from "~/mock/test/wrapper";
-import * as tag from "~/ui/util/tag";
 import { useFetch } from "../../common/hook/fetch";
 
 vi.mock("../../common/hook/fetch");
@@ -13,39 +12,39 @@ describe.concurrent("useItemView", () => {
 
   test.concurrent("loading", () => {
     // @ts-expect-error
-    vi.mocked(useFetch).mockReturnValueOnce(tag.pattern.query.loading);
+    vi.mocked(useFetch).mockReturnValueOnce({ isLoading: true });
 
     const r = renderHookFn();
-    expect(r.result.current.item).toMatchObject(tag.pattern.ui.loading);
+    expect(r.result.current).toMatchObject({ __tag: "loading" });
   });
 
   test.concurrent("failure", () => {
     // @ts-expect-error
-    vi.mocked(useFetch).mockReturnValueOnce(tag.pattern.query.failure);
+    vi.mocked(useFetch).mockReturnValueOnce({ isError: true });
 
     const r = renderHookFn();
-    expect(r.result.current.item).toMatchObject(tag.pattern.ui.failure);
+    expect(r.result.current).toMatchObject({ __tag: "failure" });
   });
 
   test.concurrent("empty", () => {
     // @ts-expect-error
     vi.mocked(useFetch).mockReturnValueOnce({
-      ...tag.pattern.query.success,
+      isSuccess: true,
       data: { item: null },
     });
 
     const r = renderHookFn();
-    expect(r.result.current.item).toMatchObject(tag.pattern.ui.empty);
+    expect(r.result.current).toMatchObject({ __tag: "empty" });
   });
 
   test.concurrent("success", () => {
     vi.mocked(useFetch).mockReturnValueOnce({
-      ...tag.pattern.query.success,
+      isSuccess: true,
       // @ts-expect-error
       data: { item: true },
     });
 
     const r = renderHookFn();
-    expect(r.result.current.item).toMatchObject(tag.pattern.ui.success);
+    expect(r.result.current).toMatchObject({ __tag: "success" });
   });
 });

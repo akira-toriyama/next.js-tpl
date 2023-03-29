@@ -1,4 +1,5 @@
 {
   "threshold": 0,
-  "gitignore": true
+  "gitignore": true,
+  "ignore": ["**/*.tsx"]
 }

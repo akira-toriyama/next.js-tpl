@@ -1,15 +1,17 @@
 import type { NextPage } from "next";
 import { ItemView } from "~/ui/domain/item/detail/ItemView";
-import { isValidParam } from "~/ui/domain/item/detail/common/service";
+import { parameterSchema } from "~/ui/domain/item/detail/common/service";
 import type { OuterProps } from "~/ui/domain/item/detail/common/common.type";
 import { GetServerSideProps } from "next";
 
 export const getServerSideProps: GetServerSideProps<OuterProps> = async (
   ctx
 ) => {
-  if (isValidParam(ctx.query)) {
+  const r = parameterSchema.safeParse(ctx.query);
+
+  if (r.success) {
     return {
-      props: { id: ctx.query.id },
+      props: { id: r.data.id },
     };
   }
 
