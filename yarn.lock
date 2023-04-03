@@ -6437,9 +6437,9 @@ micromark-extension-gfm-tagfilter@^1.0.0:
     micromark-util-types "^1.0.0"
 
 micromark-extension-gfm-task-list-item@^1.0.0:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/micromark-extension-gfm-task-list-item/-/micromark-extension-gfm-task-list-item-1.0.3.tgz#7683641df5d4a09795f353574d7f7f66e47b7fc4"
-  integrity sha512-PpysK2S1Q/5VXi72IIapbi/jliaiOFzv7THH4amwXeYXLq3l1uo8/2Be0Ac1rEwK20MQEsGH2ltAZLNY2KI/0Q==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/micromark-extension-gfm-task-list-item/-/micromark-extension-gfm-task-list-item-1.0.4.tgz#4b66d87847de40cef2b5ceddb9f9629a6dfe7472"
+  integrity sha512-9XlIUUVnYXHsFF2HZ9jby4h3npfX10S1coXTnV035QGPgrtNYQq3J6IfIvcCIUAJrrqBVi5BqA/LmaOMJqPwMQ==
   dependencies:
     micromark-factory-space "^1.0.0"
     micromark-util-character "^1.0.0"
