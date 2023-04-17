@@ -1,13 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import type * as type from "../Items.type";
 import { match, P } from "ts-pattern";
-import { queryKeys } from "~/ui/util/queryKeys";
+import { queries } from "~/ui/util/graphql/queries";
 import type { UseQueryResult } from "@tanstack/react-query";
 import type * as GQL from "./coLocation/Items.gql.generated";
 
 type UseItems = () => type.Props;
 export const useItems: UseItems = () => {
-  const r = useQuery(queryKeys.item.items);
+  const r = useQuery(queries.item.items);
 
   return match<UseQueryResult<GQL.ItemsQuery>, type.Props>(r)
     .with({ isError: true }, () => ({ __tag: "failure" }))
