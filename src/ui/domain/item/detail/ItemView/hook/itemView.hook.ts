@@ -9,13 +9,19 @@ type UseItemView = (p: commonType.OuterProps) => type.Props;
 export const useItemView: UseItemView = (p) => {
   const r = useFetch(p);
 
-  return match<UseQueryResult<GQL.ItemDetailQuery>, type.Props>(r)
-    .with({ isError: true }, () => ({ __tag: "failure" }))
-    .with({ isLoading: true }, () => ({ __tag: "loading" }))
-    .with({ isSuccess: true, data: { item: null } }, () => ({ __tag: "empty" }))
-    .with({ isSuccess: true, data: { item: P.not(P.nullish) } }, (rr) => ({
-      __tag: "success",
-      selectors: rr.data.item,
-    }))
-    .exhaustive();
+  return (
+    match<UseQueryResult<GQL.ItemDetailQuery>, type.Props>(r)
+      /* jscpd:ignore-start */
+      .with({ isError: true }, () => ({ __tag: "failure" }))
+      .with({ isLoading: true }, () => ({ __tag: "loading" }))
+      .with({ isSuccess: true, data: { item: null } }, () => ({
+        __tag: "empty",
+      }))
+      /* jscpd:ignore-end */
+      .with({ isSuccess: true, data: { item: P.not(P.nullish) } }, (rr) => ({
+        __tag: "success",
+        selectors: rr.data.item,
+      }))
+      .exhaustive()
+  );
 };
