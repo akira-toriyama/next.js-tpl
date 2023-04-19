@@ -6,7 +6,21 @@ describe.concurrent("Card", () => {
   const renderFn = (props: React.ComponentProps<typeof Input>) =>
     render(<Input {...props} />);
 
-  test.concurrent("test", () => {
-    expect(renderFn({})).toBeDefined();
+  test.concurrent("required", () => {
+    expect(
+      renderFn({
+        id: "test",
+        wrapper: {
+          label: "label",
+          required: true,
+          error: {
+            messages: [""],
+          },
+          helper: {
+            texts: [""],
+          },
+        },
+      }).getByTestId("required")
+    ).toBeDefined();
   });
 });
