@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 import { configDefaults } from "vitest/config";
 
 import react from "@vitejs/plugin-react";
+// @ts-expect-error -- ???
 import path from "path";
 
 export default defineConfig({
@@ -12,6 +13,7 @@ export default defineConfig({
   define: {
     "process.env": process.env,
   },
+  // @ts-expect-error -- ???
   plugins: [react()],
   test: {
     environment: "jsdom",
