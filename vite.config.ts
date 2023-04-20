@@ -3,8 +3,7 @@ import { defineConfig } from "vite";
 import { configDefaults } from "vitest/config";
 
 import react from "@vitejs/plugin-react";
-// @ts-expect-error -- ???
-import path from "path";
+import * as path from "path";
 
 export default defineConfig({
   /**
