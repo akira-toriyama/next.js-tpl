@@ -1721,18 +1721,7 @@
   resolved "https://registry.yarnpkg.com/@mui/types/-/types-7.2.4.tgz#b6fade19323b754c5c6de679a38f068fd50b9328"
   integrity sha512-LBcwa8rN84bKF+f5sDyku42w1NTxaPgPyYKODsh01U1fVstTClbUoSA96oyRBnSNyEiAVjKm6Gwx9vjR+xyqHA==
 
-"@mui/utils@^5.11.13", "@mui/utils@^5.11.2":
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/@mui/utils/-/utils-5.12.0.tgz#284db48b36ac26f3d34076379072c1dc8aed1ad0"
-  integrity sha512-RmQwgzF72p7Yr4+AAUO6j1v2uzt6wr7SWXn68KBsnfVpdOHyclCzH2lr/Xu6YOw9su4JRtdAIYfJFXsS6Cjkmw==
-  dependencies:
-    "@babel/runtime" "^7.21.0"
-    "@types/prop-types" "^15.7.5"
-    "@types/react-is" "^16.7.1 || ^17.0.0"
-    prop-types "^15.8.1"
-    react-is "^18.2.0"
-
-"@mui/utils@^5.12.0":
+"@mui/utils@^5.11.13", "@mui/utils@^5.11.2", "@mui/utils@^5.12.0":
   version "5.12.0"
   resolved "https://registry.yarnpkg.com/@mui/utils/-/utils-5.12.0.tgz#284db48b36ac26f3d34076379072c1dc8aed1ad0"
   integrity sha512-RmQwgzF72p7Yr4+AAUO6j1v2uzt6wr7SWXn68KBsnfVpdOHyclCzH2lr/Xu6YOw9su4JRtdAIYfJFXsS6Cjkmw==
@@ -9533,10 +9522,10 @@ vite@4.2.1:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vite@4.3.0, "vite@^3.0.0 || ^4.0.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-4.3.0.tgz#1fb9432e1980cf254e1ae1b7b8981fd262c6aa49"
-  integrity sha512-JTGFgDh3dVxeGBpuQX04Up+JZmuG6wu9414Ei36vQzaEruY/M4K0AgwtuB2b4HaBgB7R8l+LHxjB0jcgz4d2qQ==
+vite@4.3.1, "vite@^3.0.0 || ^4.0.0":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-4.3.1.tgz#9badb1377f995632cdcf05f32103414db6fbb95a"
+  integrity sha512-EPmfPLAI79Z/RofuMvkIS0Yr091T2ReUoXQqc5ppBX/sjFRhHKiPPF/R46cTdoci/XgeQpB23diiJxq5w30vdg==
   dependencies:
     esbuild "^0.17.5"
     postcss "^8.4.21"
