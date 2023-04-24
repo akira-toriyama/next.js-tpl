@@ -64,7 +64,7 @@ export const useItemEdit: UseItemEdit = (p) => {
                 queryClient.refetchQueries({
                   queryKey: queries.item.item({ id: p.id }).queryKey,
                 });
-                router.push(`/items/${p.id}/view`);
+                router.push("/items");
               },
               onError: () => setServerErrorMessage("Update failed."),
             }
