@@ -1056,14 +1056,14 @@
     tslib "^2.4.0"
 
 "@graphql-tools/batch-execute@^8.5.19":
-  version "8.5.19"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/batch-execute/-/batch-execute-8.5.19.tgz#b204cc5bded1b1d12088b399d3b72eaf38d63132"
-  integrity sha512-eqofTMYPygg9wVPdA+p8lk4NBpaPTcDut6SlnDk9IiYdY23Yfo6pY7mzZ3b27GugI7HDtB2OZUxzZJSGsk6Qew==
+  version "8.5.21"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/batch-execute/-/batch-execute-8.5.21.tgz#dce327cab43bf6d7389e607f603369724c93ce06"
+  integrity sha512-DDyCPUSUjc0he/I9byguxohW/owQyVEO/gJcXLFAbHtTjORci3gRaRwLw24j0WaP+ZAlxYTMQs1HSlyJFaUArA==
   dependencies:
     "@graphql-tools/utils" "^9.2.1"
-    dataloader "2.2.2"
+    dataloader "^2.2.2"
     tslib "^2.4.0"
-    value-or-promise "1.0.12"
+    value-or-promise "^1.0.12"
 
 "@graphql-tools/code-file-loader@^7.3.17":
   version "7.3.22"
@@ -3708,7 +3708,7 @@ data-urls@^4.0.0:
     whatwg-mimetype "^3.0.0"
     whatwg-url "^12.0.0"
 
-dataloader@2.2.2, dataloader@^2.2.2:
+dataloader@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/dataloader/-/dataloader-2.2.2.tgz#216dc509b5abe39d43a9b9d97e6e5e473dfbe3e0"
   integrity sha512-8YnDaaf7N3k/q5HnTJVuzSyLETjoZjVmHc4AeKAzOvKHEFQKcn64OKBfzHYtE9zGjctNM7V9I0MfnUVLpi7M5g==
