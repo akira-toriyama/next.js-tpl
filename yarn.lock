@@ -1581,10 +1581,10 @@
   resolved "https://registry.yarnpkg.com/@ladle/react-context/-/react-context-1.0.1.tgz#007ea641e4a1b25cafb8f5672977fdd1f9bb6f91"
   integrity sha512-xVQ8siyOEQG6e4Knibes1uA3PTyXnqiMmfSmd5pIbkzeDty8NCBtYHhTXSlfmcDNEsw/G8OzNWo4VbyQAVDl2A==
 
-"@ladle/react@2.12.1":
-  version "2.12.1"
-  resolved "https://registry.yarnpkg.com/@ladle/react/-/react-2.12.1.tgz#a9bf247586a166bb3310d227581eb1f46e74602d"
-  integrity sha512-hgikd9n7N2Dh6OMFaUiJBBKnd7NUfwpZi4PsBSGVLHnf6AaxajDPUmbEFn9Eo5gPRAP8HbbuH1U9BVEdc9ENsQ==
+"@ladle/react@2.12.2":
+  version "2.12.2"
+  resolved "https://registry.yarnpkg.com/@ladle/react/-/react-2.12.2.tgz#3349e66bcc0d2d8b55bc6c22bb69064cf5a8edc6"
+  integrity sha512-bETi7UmHIZM9Zzsl6IjJeXZKI4phnH/0l0FWAsKyi6SS/ZMb9CQknHFIAsNFHUtyz7bZyuF7Ms16/yPGbOilaQ==
   dependencies:
     "@babel/code-frame" "^7.21.4"
     "@babel/core" "^7.21.4"
