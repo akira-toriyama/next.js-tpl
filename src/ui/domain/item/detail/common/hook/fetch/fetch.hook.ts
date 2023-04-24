@@ -3,15 +3,28 @@ import type * as commonType from "../../common.type";
 import { queries } from "~/ui/util/graphql/queries";
 import { Prettify } from "~/ui/util/type/Prettify";
 import type * as GQL from "./coLocation/ItemDetail.gql.generated";
+import { useQueryClient } from "@tanstack/react-query";
 
-export const useFetch = (
-  p: Prettify<
-    commonType.OuterProps & {
-      onSuccess?: (data: GQL.ItemDetailQuery) => void;
-    }
-  >
-) =>
+type Param = Prettify<
+  commonType.OuterProps & {
+    onSuccess?: (data: GQL.ItemDetailQuery) => void;
+  }
+>;
+
+export const useFetch = (p: Param) =>
   useQuery({
     ...queries.item.item({ id: p.id }),
     onSuccess: p.onSuccess,
   });
+
+export const useQueryData = (p: Param) => {
+  const queryClient = useQueryClient();
+
+  const queriesData = queryClient
+    .getQueriesData<GQL.ItemDetailQuery>(
+      queries.item.item({ id: p.id }).queryKey
+    )
+    .at(0)?.[1];
+
+  return queriesData;
+};

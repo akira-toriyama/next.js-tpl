@@ -34,6 +34,7 @@
     "graphql-request": "6.0.0",
     "msw": "1.2.1",
     "next": "13.3.0",
+    "nextjs-progressbar": "0.0.16",
     "normalize.css": "8.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
