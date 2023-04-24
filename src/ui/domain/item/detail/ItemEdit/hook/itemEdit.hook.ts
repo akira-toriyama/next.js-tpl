@@ -2,7 +2,11 @@ import { useForm } from "react-hook-form";
 import * as type from "../ItemEdit.type";
 import { useFetch } from "../../common/hook/fetch";
 import { match, P } from "ts-pattern";
-import { useMutation, UseQueryResult } from "@tanstack/react-query";
+import {
+  useMutation,
+  UseQueryResult,
+  useQueryClient,
+} from "@tanstack/react-query";
 import type * as GQL from "../../common/hook/fetch/coLocation/ItemDetail.gql.generated";
 import type * as commonType from "../../common/common.type";
 import { useId, useState } from "react";
@@ -10,7 +14,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as service from "./service";
 import { mutations } from "~/ui/util/graphql/mutations";
 import { useRouter } from "next/router";
-import { useQueryClient } from "@tanstack/react-query";
 import { queries } from "~/ui/util/graphql/queries";
 
 type UseItemEdit = (p: commonType.OuterProps) => type.Props;
@@ -67,6 +70,14 @@ export const useItemEdit: UseItemEdit = (p) => {
                 router.push("/items");
               },
               onError: () => setServerErrorMessage("Update failed."),
+              onSettled: () => {
+                queryClient.resetQueries({
+                  queryKey: queries.item.items.queryKey,
+                });
+                queryClient.resetQueries({
+                  queryKey: queries.item.item({ id: p.id }).queryKey,
+                });
+              },
             }
           ),
       },
