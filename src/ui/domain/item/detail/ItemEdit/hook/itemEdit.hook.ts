@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import * as type from "../ItemEdit.type";
-import { useFetch } from "../../common/hook/fetch";
+import { useFetch, useQueryData } from "../../common/hook/fetch";
 import { match, P } from "ts-pattern";
 import {
   useMutation,
@@ -18,14 +18,23 @@ import { queries } from "~/ui/util/graphql/queries";
 
 type UseItemEdit = (p: commonType.OuterProps) => type.Props;
 export const useItemEdit: UseItemEdit = (p) => {
+  const queryClient = useQueryClient();
   const [serverErrorMessage, setServerErrorMessage] = useState("");
+  const queriesData = useQueryData(p);
+
   const form = useForm<type.FormValue>({
     resolver: zodResolver(service.formSchema),
+    defaultValues: {
+      title: queriesData?.item?.title,
+      body: queriesData?.item?.body,
+    },
   });
+
   const ids = {
     title: useId(),
     body: useId(),
   };
+
   const router = useRouter();
   const mutation = useMutation(mutations.item.itemEdit);
   const r = useFetch({
@@ -36,7 +45,6 @@ export const useItemEdit: UseItemEdit = (p) => {
         body: rr.item?.body,
       }),
   });
-  const queryClient = useQueryClient();
 
   return match<UseQueryResult<GQL.ItemDetailQuery>, type.Props>(r)
     .with({ isError: true }, () => ({ __tag: "failure" }))

@@ -1,1 +1,1 @@
-export { useFetch } from "./fetch.hook";
+export { useFetch, useQueryData } from "./fetch.hook";

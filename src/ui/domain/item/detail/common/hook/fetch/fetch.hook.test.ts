@@ -1,4 +1,4 @@
-import { useFetch } from "./fetch.hook";
+import { useFetch, useQueryData } from "./fetch.hook";
 import { describe, test, expect } from "vitest";
 import * as GQL from "./coLocation/ItemDetail.gql.generated";
 import { graphql } from "msw";
@@ -18,7 +18,16 @@ describe.concurrent("useFetch", () => {
     );
 
     const r = renderHookFn();
-
     await waitFor(() => expect(r.result.current).toBeDefined());
+  });
+});
+
+describe.concurrent("useQueryData", () => {
+  const renderHookFn = () =>
+    renderHook(() => useQueryData({ id: "" }), { wrapper });
+
+  test.concurrent("test", async () => {
+    const r = renderHookFn();
+    expect(r).toBeDefined();
   });
 });
