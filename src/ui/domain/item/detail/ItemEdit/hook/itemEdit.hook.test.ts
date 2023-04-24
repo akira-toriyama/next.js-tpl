@@ -97,6 +97,9 @@ describe.concurrent("useItemEdit", () => {
             updateItem: {
               id: "",
             },
+            publishItem: {
+              id: "",
+            },
           })
         )
       )
