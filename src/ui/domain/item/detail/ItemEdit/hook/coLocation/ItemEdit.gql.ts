@@ -5,5 +5,8 @@ export const ItemEdit = gql`
     updateItem(where: $where, data: $data) {
       id
     }
+    publishItem(where: $where) {
+      id
+    }
   }
 `;
