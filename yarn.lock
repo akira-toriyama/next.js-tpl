@@ -5067,10 +5067,10 @@ graphql-tools@8.3.20:
   optionalDependencies:
     "@apollo/client" "~3.2.5 || ~3.3.0 || ~3.4.0 || ~3.5.0 || ~3.6.0 || ~3.7.0"
 
-graphql-voyager@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/graphql-voyager/-/graphql-voyager-1.0.2.tgz#b9b3c1662df52051bdd1350fca9c1881c499c233"
-  integrity sha512-PYvW7pKbQcIlun37hZ6sWE4bneECM6wDNAkdyW0rpZ3oVA/2INthORIiWd+ol4jSzZLD/fYYo8a6SYLc5btnKQ==
+graphql-voyager@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/graphql-voyager/-/graphql-voyager-1.1.0.tgz#72f6b2f5fc60b5083daeb269482e49d34f00be7b"
+  integrity sha512-gp1AVDPv2UlqBzCCu/+0oB5IOBGBY+XWuOfM9EykMACTc/49zSdHqDBp2hxxM9UqZNtKv5Dh+6ir+6kIFoCQnQ==
   dependencies:
     "@emotion/react" "11.10.5"
     "@emotion/styled" "11.10.5"

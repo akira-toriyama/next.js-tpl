@@ -72,7 +72,7 @@
     "get-graphql-schema": "2.1.2",
     "graphql": "16.6.0",
     "graphql-tools": "8.3.20",
-    "graphql-voyager": "1.0.2",
+    "graphql-voyager": "1.1.0",
     "graphql-yoga": "3.9.1",
     "jscpd": "3.5.4",
     "jsdom": "21.1.1",
