@@ -1276,17 +1276,7 @@
     "@graphql-tools/utils" "^9.2.1"
     tslib "^2.4.0"
 
-"@graphql-tools/schema@^9.0.0", "@graphql-tools/schema@^9.0.18":
-  version "9.0.19"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-9.0.19.tgz#c4ad373b5e1b8a0cf365163435b7d236ebdd06e7"
-  integrity sha512-oBRPoNBtCkk0zbUsyP4GaIzCt8C0aCI4ycIRUL67KK5pOHljKLBBtGT+Jr6hkzA74C8Gco8bpZPe7aWFjiaK2w==
-  dependencies:
-    "@graphql-tools/merge" "^8.4.1"
-    "@graphql-tools/utils" "^9.2.1"
-    tslib "^2.4.0"
-    value-or-promise "^1.0.12"
-
-"@graphql-tools/schema@^9.0.19":
+"@graphql-tools/schema@^9.0.0", "@graphql-tools/schema@^9.0.18", "@graphql-tools/schema@^9.0.19":
   version "9.0.19"
   resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-9.0.19.tgz#c4ad373b5e1b8a0cf365163435b7d236ebdd06e7"
   integrity sha512-oBRPoNBtCkk0zbUsyP4GaIzCt8C0aCI4ycIRUL67KK5pOHljKLBBtGT+Jr6hkzA74C8Gco8bpZPe7aWFjiaK2w==
@@ -5887,9 +5877,9 @@ joi@^17.7.0:
     "@sideway/pinpoint" "^2.0.0"
 
 jose@^4.11.4:
-  version "4.14.1"
-  resolved "https://registry.yarnpkg.com/jose/-/jose-4.14.1.tgz#74f12a621ea2ef850bf0dd8405e2ee4041aea934"
-  integrity sha512-SgjXLpP7jhQkUNKL6RpowoR/IF4QKE+WjLDMpNnh2vmhiFs67NftrNpvFtgbwpvRdtueFliahYYWz9E+XZZQlg==
+  version "4.14.2"
+  resolved "https://registry.yarnpkg.com/jose/-/jose-4.14.2.tgz#f126e2805555882f0d86d1f84bcf00481d5ab3bf"
+  integrity sha512-Fcbi5lskAiSvs8qhdQBusANZWwyATdp7IxgHJTXiaU74sbVjX9uAw+myDPvI8pNo2wXKHECXCR63hqhRkN/SSQ==
 
 js-levenshtein@^1.1.6:
   version "1.1.6"
