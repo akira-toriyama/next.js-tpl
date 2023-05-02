@@ -1466,9 +1466,9 @@
     pug "^3.0.1"
 
 "@jscpd/html-reporter@^3.5.8":
-  version "3.5.8"
-  resolved "https://registry.yarnpkg.com/@jscpd/html-reporter/-/html-reporter-3.5.8.tgz#f6a532a358c41099bf4e84ed6c3201348e4f3750"
-  integrity sha512-yXthIkZRkdzI56alxHgxJULyQ7q30WViB53qEWZ9NIOpe8YZx7v8cl7fim3ck2fq6bvGQFn08HXAkz3AsAaoLw==
+  version "3.5.9"
+  resolved "https://registry.yarnpkg.com/@jscpd/html-reporter/-/html-reporter-3.5.9.tgz#96d5773a5133aa097dc5cfb5eb2d5652c6dce85b"
+  integrity sha512-Q2hu3B2/lCgzQvVHvdZUl2IrmXRKP08zH9xvsaDERPWjaYkWQi6FWNqOnkryMD0cl/hrXBKpx050IUUO7FmACw==
   dependencies:
     "@jscpd/finder" "^3.5.5"
     colors "1.4.0"
