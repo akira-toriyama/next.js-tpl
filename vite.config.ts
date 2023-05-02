@@ -24,7 +24,6 @@ export default defineConfig({
         "**/*.stories.tsx",
         "**/*.gql.generated.ts",
         "**/*.gql.ts",
-        "**/dao.ts",
         "src/infra/graphql/types.ts",
         "src/ui/provider/Wrapper.tsx",
         "src/ui/provider/ReactQuery.tsx",
