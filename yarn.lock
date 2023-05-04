@@ -6581,15 +6581,14 @@ micromark-core-commonmark@^1.0.0, micromark-core-commonmark@^1.0.1:
     uvu "^0.5.0"
 
 micromark-extension-gfm-autolink-literal@^1.0.0:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/micromark-extension-gfm-autolink-literal/-/micromark-extension-gfm-autolink-literal-1.0.3.tgz#dc589f9c37eaff31a175bab49f12290edcf96058"
-  integrity sha512-i3dmvU0htawfWED8aHMMAzAVp/F0Z+0bPh3YrbTPPL1v4YAlCZpy5rBO5p0LPYiZo0zFVkoYh7vDU7yQSiCMjg==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/micromark-extension-gfm-autolink-literal/-/micromark-extension-gfm-autolink-literal-1.0.4.tgz#3a8af48264be47138654ab0b8700a8e22785ef07"
+  integrity sha512-WCssN+M9rUyfHN5zPBn3/f0mIA7tqArHL/EKbv3CZK+LT2rG77FEikIQEqBkv46fOqXQK4NEW/Pc7Z27gshpeg==
   dependencies:
     micromark-util-character "^1.0.0"
     micromark-util-sanitize-uri "^1.0.0"
     micromark-util-symbol "^1.0.0"
     micromark-util-types "^1.0.0"
-    uvu "^0.5.0"
 
 micromark-extension-gfm-footnote@^1.0.0:
   version "1.0.4"
