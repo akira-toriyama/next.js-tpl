@@ -6584,9 +6584,9 @@ micromark-extension-gfm-strikethrough@^1.0.0:
     uvu "^0.5.0"
 
 micromark-extension-gfm-table@^1.0.0:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/micromark-extension-gfm-table/-/micromark-extension-gfm-table-1.0.5.tgz#7b708b728f8dc4d95d486b9e7a2262f9cddbcbb4"
-  integrity sha512-xAZ8J1X9W9K3JTJTUL7G6wSKhp2ZYHrFk5qJgY/4B33scJzE2kpfRL6oiw/veJTbt7jiM/1rngLlOKPWr1G+vg==
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/micromark-extension-gfm-table/-/micromark-extension-gfm-table-1.0.6.tgz#22b2b18dff9db39bdb29d6017e53bdd370672c8e"
+  integrity sha512-92pq7Q+T+4kXH4M6kL+pc8WU23Z9iuhcqmtYFWdFWjm73ZscFpH2xE28+XFpGWlvgq3LUwcN0XC0PGCicYFpgA==
   dependencies:
     micromark-factory-space "^1.0.0"
     micromark-util-character "^1.0.0"
