@@ -2614,9 +2614,9 @@
     tslib "^2.3.0"
 
 "@wry/equality@^0.5.0":
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/@wry/equality/-/equality-0.5.5.tgz#523a15f670e6d15408bf8f67259682e18a5543f0"
-  integrity sha512-tI95+tJlL2LoOY27EHy0V0zKRVgbPp6vk9p6ZqWZOCSVslEhYEGeI+gaskc2rnjQxfszsXhtgYZTQ1xAUrMkOg==
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/@wry/equality/-/equality-0.5.6.tgz#cd4a533c72c3752993ab8cbf682d3d20e3cb601e"
+  integrity sha512-D46sfMTngaYlrH+OspKf8mIJETntFnf6Hsjb0V41jAXJ7Bx2kB8Rv8RCUujuVWYttFtHkUNp7g+FwxNQAr6mXA==
   dependencies:
     tslib "^2.3.0"
 
