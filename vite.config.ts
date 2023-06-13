@@ -11,7 +11,6 @@ export default defineConfig({
   define: {
     "process.env": process.env,
   },
-  // @ts-expect-error -- ???
   plugins: [react()],
   test: {
     environment: "jsdom",
