@@ -19,7 +19,7 @@
     "qualityCheck:findDeadCode": "ts-prune -e",
     "qualityCheck:esLint": "eslint --max-warnings 0 --ignore-path .gitignore .",
     "qualityCheck:fmt": "prettier  --check --ignore-path .gitignore .",
-    "_qualityCheck:snapshotTest": "yarn playwright install chromium && ladle build && ladle preview -p 61000",
+    "_qualityCheck:snapshotTest": "yarn && yarn playwright install chromium && ladle build && ladle preview -p 61000",
     "qualityCheck:snapshotTest": "start-server-and-test _qualityCheck:snapshotTest 61000 'yarn playwright test snapshot/snapshot.test.ts'",
     "// build": "",
     "build:app": "yarn prequalityCheck && yarn next build",
