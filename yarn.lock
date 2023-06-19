@@ -7910,10 +7910,10 @@ react-frame-component@5.2.4:
   resolved "https://registry.yarnpkg.com/react-frame-component/-/react-frame-component-5.2.4.tgz#8282849fe0eb315fb30b00c67e5e979f8f63c01a"
   integrity sha512-4xpZFcLNS6LCEYSlWgsUy81v7LjdgbvB0VHIq7sNSD25PK+e5YYCrdy5557ebGwNLKNLEpYVfAkT3pVzFLPb1g==
 
-react-hook-form@7.44.3:
-  version "7.44.3"
-  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.44.3.tgz#a99e560c6ef2b668db1daaebc4f98267331b6828"
-  integrity sha512-/tHId6p2ViAka1wECMw8FEPn/oz/w226zehHrJyQ1oIzCBNMIJCaj6ZkQcv+MjDxYh9MWR7RQic7Qqwe4a5nkw==
+react-hook-form@7.45.0:
+  version "7.45.0"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.45.0.tgz#df2bbc8cee598855a63ba446e0bb06f7c8120ccf"
+  integrity sha512-AbHeZ4ad+0dEIknSW9dBgIwcvRDfZ1O97sgj75WaMdOX0eg8TBiUf9wxzVkIjZbk76BBIE9lmFOzyD4PN80ZQg==
 
 react-inspector@^6.0.1:
   version "6.0.2"
