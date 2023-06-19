@@ -64,7 +64,7 @@
     "@types/react": "18.2.13",
     "@types/sync-fetch": "0.4.0",
     "@vitest/coverage-istanbul": "0.32.2",
-    "eslint": "8.42.0",
+    "eslint": "8.43.0",
     "eslint-config-next": "13.4.6",
     "eslint-plugin-use-encapsulation": "1.1.0",
     "eslint-plugin-vitest": "0.2.6",
