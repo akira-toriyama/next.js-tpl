@@ -1539,10 +1539,10 @@
     vite "^4.3.9"
     vite-tsconfig-paths "3.6.0"
 
-"@lukemorales/query-key-factory@1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@lukemorales/query-key-factory/-/query-key-factory-1.3.1.tgz#5ba5035b28a31671ae9b570644b726a6ca0ffc4c"
-  integrity sha512-7G6rKf36dVdCzLNBicTi7Oo2Bpb4nTk32QDw6GFcyX/52WTgpKHvFoQUMvxqSnClzukq30Fn9YNu1ON2VQ8i8A==
+"@lukemorales/query-key-factory@1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@lukemorales/query-key-factory/-/query-key-factory-1.3.2.tgz#b3113e3c4d168397842b876554d6c11a61330ec3"
+  integrity sha512-SFOWcB5ec+RhlKjLjZxTAbOPF2uXNED6lqXiMu3TUt2twKzxE/QLhnYkdbxOBMK5Wwc2Ia+WP3yqCPRKWywnwQ==
 
 "@mdx-js/mdx@2.3.0":
   version "2.3.0"
