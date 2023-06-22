@@ -5073,10 +5073,10 @@ graphql-ws@5.13.1:
   resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.13.1.tgz#96ac9963edb1e94c8e7f21af48ce5fcaab91779a"
   integrity sha512-eiX7ES/ZQr0q7hSM5UBOEIFfaAUmAY9/CSDyAnsETuybByU7l/v46drRg9DQoTvVABEHp3QnrvwgTRMhqy7zxQ==
 
-graphql-yoga@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-4.0.1.tgz#61136d96d2a587820509d0ba1d37b960784d8ace"
-  integrity sha512-J/EXfaitY6sm9CXMBSHxQxFGH7Iv2Fg/kiLzpGPYrVtN6dIYeAOl59EHiXS7yv33pWKZ+cE4VyzCDtj8ncuzNw==
+graphql-yoga@4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-4.0.2.tgz#7fa34af1531ddbba144fa1180d701e8d2c0a452d"
+  integrity sha512-frDoqKD+b9JvUY2vgqfeWW5LT1iqibyW4//i7hNBKh7mhA1cSR4eK8C/DT//v0Sado8KQphrVThjDxVH+07wFA==
   dependencies:
     "@envelop/core" "^4.0.0"
     "@graphql-tools/executor" "^1.0.0"
