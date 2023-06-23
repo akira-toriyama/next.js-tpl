@@ -3964,9 +3964,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.431:
-  version "1.4.437"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.437.tgz#d0e73a431a9ade4467f73d48a59d752d91909316"
-  integrity sha512-ZFekRuBOHUXp21wrR5lshT6pZa/KmjkhKBAtmZz4NN5sCWlHOk3kdhiwFINrDBsRLX6FjyBAb1TRN+KBeNlyzQ==
+  version "1.4.440"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.440.tgz#d3b1eeb36b717eb479a240c0406ac1fa67901762"
+  integrity sha512-r6dCgNpRhPwiWlxbHzZQ/d9swfPaEJGi8ekqRBwQYaR3WmA5VkqQfBWSDDjuJU1ntO+W9tHx8OHV/96Q8e0dVw==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
