@@ -2010,10 +2010,10 @@
     mkdirp "^1.0.4"
     path-browserify "^1.0.1"
 
-"@tsconfig/next@1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@tsconfig/next/-/next-1.0.5.tgz#045d4d95839829e31d928404ab43a3c5b5169ee7"
-  integrity sha512-ZpAlWqSGE3ZWFqKmI3FiQEu8WcBF3uii1z1ovedMcALflsRoJnExp3YzWQ/fU7lzGmYtfX1CWFpf1Gl8aEC6GQ==
+"@tsconfig/next@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@tsconfig/next/-/next-2.0.0.tgz#ba6acff6f4b9785691b639e672f158491df722c4"
+  integrity sha512-ip/XpFLWuUrhDkbI8ixpWxPlmWvUhQCLS5rB7nibcZUavA1Ru34Q7a5CniBM7BdHw1YlAXu40HXUn66h/A4EBQ==
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.9"
