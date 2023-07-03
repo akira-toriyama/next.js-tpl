@@ -16,7 +16,7 @@
     "qualityCheck:type": "tsc --project ./tsconfig.json --noEmit",
     "qualityCheck:unitTest": "yarn vitest run --coverage",
     "qualityCheck:redundancy": "jscpd src",
-    "qualityCheck:findDeadCode": "ts-prune -e",
+    "qualityCheck:findDeadCode": "yarn ts-unused-exports tsconfig.json $(find ./src -name '*.ts' -or -name '*.tsx') --excludePathsFromReport='gql.ts;stories.tsx;index.ts;src/ui/provider/Wrapper.tsx'",
     "qualityCheck:esLint": "eslint --max-warnings 0 --ignore-path .gitignore .",
     "qualityCheck:fmt": "prettier  --check --ignore-path .gitignore .",
     "_qualityCheck:snapshotTest": "npx playwright install chromium && ladle build && ladle preview -p 61000",
@@ -82,7 +82,7 @@
     "sync-fetch": "0.5.2",
     "ts-node": "10.9.1",
     "ts-node-dev": "2.0.0",
-    "ts-prune": "0.10.3",
+    "ts-unused-exports": "9.0.5",
     "typescript": "5.1.6",
     "vite": "4.3.9",
     "vitest": "0.32.4"
