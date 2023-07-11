@@ -1181,9 +1181,9 @@
     value-or-promise "^1.0.12"
 
 "@graphql-tools/executor-graphql-ws@^1.0.0":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/executor-graphql-ws/-/executor-graphql-ws-1.0.2.tgz#29890f9370c5bebd4a2380e29904f8eaf9f013ca"
-  integrity sha512-T9lKnweig4+LqS8EmBmyfAVYYUEkzLzoiB/L7CJeoI4dy+U+5fxZcfq8Aq2imVQpeeOldBg54JK89UgBRKv9Qg==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/executor-graphql-ws/-/executor-graphql-ws-1.1.0.tgz#7727159ebaa9df4dc793d0d02e74dd1ca4a7cc60"
+  integrity sha512-yM67SzwE8rYRpm4z4AuGtABlOp9mXXVy6sxXnTJRoYIdZrmDbKVfIY+CpZUJCqS0FX3xf2+GoHlsj7Qswaxgcg==
   dependencies:
     "@graphql-tools/utils" "^10.0.2"
     "@types/ws" "^8.0.0"
