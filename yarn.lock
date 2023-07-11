@@ -1741,9 +1741,9 @@
     react-is "^18.2.0"
 
 "@mui/core-downloads-tracker@^5.11.2":
-  version "5.13.7"
-  resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.13.7.tgz#f4d9af5fe113b80b98b2cb158263d7b8f77e61c7"
-  integrity sha512-/suIo4WoeL/OyO3KUsFVpdOmKiSAr6NpWXmQ4WLSxwKrTiha1FJxM6vwAki5W/5kR9WnVLw5E8JC4oHHsutT8w==
+  version "5.14.0"
+  resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.14.0.tgz#ca394a1c53c215f4c6bf7f7460d8211298d7bbf6"
+  integrity sha512-SYBOVCatVDUf/lbrLGah09bHhX5WfUXg7kSskfLILr6SvKRni0NLp0aonxQ0SMALVVK3Qwa6cW4CdWuwS0gC1w==
 
 "@mui/icons-material@5.11.0":
   version "5.11.0"
