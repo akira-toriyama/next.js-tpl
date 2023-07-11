@@ -19,7 +19,7 @@ describe.concurrent("Success", () => {
       renderFn({
         __tag: "success",
         selectors: { id: "", title: "", body: "" },
-      })
+      }),
     ).toBeDefined();
   });
 });
@@ -45,7 +45,7 @@ describe.concurrent("ItemViewContainer", () => {
       renderFn({
         __tag: "success",
         selectors: { id: "", title: "", body: "" },
-      })
+      }),
     ).toBeDefined();
   });
 });

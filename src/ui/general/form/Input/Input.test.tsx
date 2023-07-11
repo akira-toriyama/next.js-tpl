@@ -20,7 +20,7 @@ describe.concurrent("Card", () => {
             texts: [""],
           },
         },
-      }).getByTestId("required")
+      }).getByTestId("required"),
     ).toBeDefined();
   });
 });

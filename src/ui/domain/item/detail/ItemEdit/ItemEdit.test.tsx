@@ -50,7 +50,7 @@ describe.concurrent("ItemEditContainer", () => {
           // @ts-expect-error -- テストなので
           register: () => null,
         },
-      })
+      }),
     ).toBeDefined();
   });
 });

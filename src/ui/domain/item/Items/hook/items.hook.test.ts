@@ -20,43 +20,43 @@ describe.concurrent("useItem", () => {
                 title: "",
               },
             ],
-          })
-        )
-      )
+          }),
+        ),
+      ),
     );
 
     const r = renderHookFn();
 
     await waitFor(() =>
-      expect(r.result.current).toMatchObject({ __tag: "success" })
+      expect(r.result.current).toMatchObject({ __tag: "success" }),
     );
   });
 
   test.concurrent("loading", async () => {
     server.use(
       graphql.query(GQL.ItemsDocument, (_, res, ctx) =>
-        res.once(ctx.delay("infinite"))
-      )
+        res.once(ctx.delay("infinite")),
+      ),
     );
 
     const r = renderHookFn();
 
     await waitFor(() =>
-      expect(r.result.current).toMatchObject({ __tag: "loading" })
+      expect(r.result.current).toMatchObject({ __tag: "loading" }),
     );
   });
 
   test.concurrent("failure", async () => {
     server.use(
       graphql.query(GQL.ItemsDocument, (_, res, ctx) =>
-        res.once(ctx.errors([]))
-      )
+        res.once(ctx.errors([])),
+      ),
     );
 
     const r = renderHookFn();
 
     await waitFor(() =>
-      expect(r.result.current).toMatchObject({ __tag: "failure" })
+      expect(r.result.current).toMatchObject({ __tag: "failure" }),
     );
   });
 
@@ -66,15 +66,15 @@ describe.concurrent("useItem", () => {
         res.once(
           ctx.data({
             items: [],
-          })
-        )
-      )
+          }),
+        ),
+      ),
     );
 
     const r = renderHookFn();
 
     await waitFor(() =>
-      expect(r.result.current).toMatchObject({ __tag: "empty" })
+      expect(r.result.current).toMatchObject({ __tag: "empty" }),
     );
   });
 });
