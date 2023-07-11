@@ -6,7 +6,7 @@ const item = () =>
     id: faker.datatype.uuid(),
     title: faker.animal.cat(),
     body: "Dummy text",
-  } as const satisfies Partial<type.Item>);
+  }) as const satisfies Partial<type.Item>;
 
 const data = {
   item,

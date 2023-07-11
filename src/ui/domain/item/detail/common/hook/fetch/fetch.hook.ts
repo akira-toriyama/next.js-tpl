@@ -22,7 +22,7 @@ export const useQueryData = (p: Param) => {
 
   const queriesData = queryClient
     .getQueriesData<GQL.ItemDetailQuery>(
-      queries.item.item({ id: p.id }).queryKey
+      queries.item.item({ id: p.id }).queryKey,
     )
     .at(0)?.[1];
 

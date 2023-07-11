@@ -13,8 +13,8 @@ describe.concurrent("useFetch", () => {
   test.concurrent("test", async () => {
     server.use(
       graphql.query(GQL.ItemDetailDocument, (_, res, ctx) =>
-        res.once(ctx.delay("infinite"))
-      )
+        res.once(ctx.delay("infinite")),
+      ),
     );
 
     const r = renderHookFn();

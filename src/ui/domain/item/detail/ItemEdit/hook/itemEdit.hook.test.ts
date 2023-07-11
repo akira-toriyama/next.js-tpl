@@ -100,9 +100,9 @@ describe.concurrent("useItemEdit", () => {
             publishItem: {
               id: "",
             },
-          })
-        )
-      )
+          }),
+        ),
+      ),
     );
     const r = renderHookFn();
 
@@ -123,8 +123,8 @@ describe.concurrent("useItemEdit", () => {
 
     server.use(
       graphql.mutation(ItemEditGQL.ItemEditDocument, (_, res, ctx) =>
-        res.once(ctx.errors([]))
-      )
+        res.once(ctx.errors([])),
+      ),
     );
     const r = renderHookFn();
 

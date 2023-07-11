@@ -7,12 +7,12 @@ function isString(value: unknown, name: string): asserts value is string {
 const validateEnv = () => {
   isString(
     process.env["NEXT_PUBLIC_GRAPHQL_ENDPOINT"],
-    "NEXT_PUBLIC_GRAPHQL_ENDPOINT"
+    "NEXT_PUBLIC_GRAPHQL_ENDPOINT",
   );
 
   isString(
     process.env["NEXT_PUBLIC_GRAPHQL_ENDPOINT_AUTHORIZATION"],
-    "NEXT_PUBLIC_GRAPHQL_ENDPOINT_AUTHORIZATION"
+    "NEXT_PUBLIC_GRAPHQL_ENDPOINT_AUTHORIZATION",
   );
 
   return {

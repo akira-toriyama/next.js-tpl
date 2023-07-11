@@ -4,7 +4,7 @@ import { Success, Items, ItemsContainer } from "./Items";
 
 vi.mock("~/ui/general/List", async () => ({
   ...(await vi.importActual<typeof import("~/ui/general/List")>(
-    "~/ui/general/List"
+    "~/ui/general/List",
   )),
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   Item: (props: any) => <div {...props} />,
@@ -28,9 +28,9 @@ describe.concurrent("Success", () => {
         renderFn({
           __tag: "success",
           selectors: [...Array(n)].map((_, i) => ({ id: `${i}`, title: "" })),
-        }).getAllByTestId(target).length
+        }).getAllByTestId(target).length,
       ).toEqual(3);
-    }
+    },
   );
 });
 
@@ -55,7 +55,7 @@ describe.concurrent("ItemsContainer", () => {
       renderFn({
         __tag: "success",
         selectors: [{ title: "", id: "" }],
-      })
+      }),
     ).toBeDefined();
   });
 });

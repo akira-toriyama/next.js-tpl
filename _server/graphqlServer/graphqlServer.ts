@@ -17,11 +17,11 @@ app.use(
       schema: makeExecutableSchema({
         typeDefs: fs.readFileSync(
           path.join(__dirname, "./schema.graphql"),
-          "utf-8"
+          "utf-8",
         ),
       }),
     }),
-  })
+  }),
 );
 
 app.use("/voyager", voyagerMiddleware({ endpointUrl: "/graphql" }));

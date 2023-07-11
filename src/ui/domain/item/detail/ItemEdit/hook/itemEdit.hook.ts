@@ -86,7 +86,7 @@ export const useItemEdit: UseItemEdit = (p) => {
                   queryKey: queries.item.item({ id: p.id }).queryKey,
                 });
               },
-            }
+            },
           ),
       },
     }))
