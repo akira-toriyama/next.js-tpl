@@ -201,16 +201,13 @@
   integrity sha512-uLls06UVKgFG9QD4OeFYLEGteMIAa5kpTPcFL28yuCIIzsf6ZyKZMllKVOCZFhiZ5ptnwX4mtKdWCBE/uT4amg==
 
 "@babel/helper-replace-supers@^7.22.5":
-  version "7.22.5"
-  resolved "https://registry.yarnpkg.com/@babel/helper-replace-supers/-/helper-replace-supers-7.22.5.tgz#71bc5fb348856dea9fdc4eafd7e2e49f585145dc"
-  integrity sha512-aLdNM5I3kdI/V9xGNyKSF3X/gTyMUBohTZ+/3QdQKAA9vxIiy12E+8E2HoOP1/DjeqU+g6as35QHJNMDDYpuCg==
+  version "7.22.9"
+  resolved "https://registry.yarnpkg.com/@babel/helper-replace-supers/-/helper-replace-supers-7.22.9.tgz#cbdc27d6d8d18cd22c81ae4293765a5d9afd0779"
+  integrity sha512-LJIKvvpgPOPUThdYqcX6IXRuIcTkcAub0IaDRGCZH0p5GPUp7PhRU9QVgFcDDd51BaPkk77ZjqFwh6DZTAEmGg==
   dependencies:
     "@babel/helper-environment-visitor" "^7.22.5"
     "@babel/helper-member-expression-to-functions" "^7.22.5"
     "@babel/helper-optimise-call-expression" "^7.22.5"
-    "@babel/template" "^7.22.5"
-    "@babel/traverse" "^7.22.5"
-    "@babel/types" "^7.22.5"
 
 "@babel/helper-simple-access@^7.22.5":
   version "7.22.5"
@@ -2396,17 +2393,7 @@
   dependencies:
     "@types/node-fetch" "*"
 
-"@types/unist@*":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@types/unist/-/unist-3.0.0.tgz#988ae8af1e5239e89f9fbb1ade4c935f4eeedf9a"
-  integrity sha512-MFETx3tbTjE7Uk6vvnWINA/1iJ7LuMdO4fcq8UfF0pRbj01aGLduVvQcRyswuACJdpnHgg8E3rQLhaRdNEJS0w==
-
 "@types/unist@^2", "@types/unist@^2.0.0":
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.7.tgz#5b06ad6894b236a1d2bd6b2f07850ca5c59cf4d6"
-  integrity sha512-cputDpIbFgLUaGQn6Vqg3/YsJwxUwHLO13v3i5ouxT4lat0khip9AEWxtERujXV9wxIB1EyF97BSJFt6vpdI8g==
-
-"@types/unist@^2":
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.7.tgz#5b06ad6894b236a1d2bd6b2f07850ca5c59cf4d6"
   integrity sha512-cputDpIbFgLUaGQn6Vqg3/YsJwxUwHLO13v3i5ouxT4lat0khip9AEWxtERujXV9wxIB1EyF97BSJFt6vpdI8g==
