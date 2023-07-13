@@ -9031,10 +9031,10 @@ ts-node@10.9.1, ts-node@^10.4.0:
     v8-compile-cache-lib "^3.0.1"
     yn "3.1.1"
 
-ts-pattern@5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/ts-pattern/-/ts-pattern-5.0.1.tgz#340d91647982b90ca6c71645ae438f78518e9842"
-  integrity sha512-ZyNm28Lsg34Co5DS3e9DVyjlX2Y+2exkI4jqTKyU+9/OL6Y2fKOOuL8i+7no71o74C6mVS+UFoP3ekM3iCT1HQ==
+ts-pattern@5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/ts-pattern/-/ts-pattern-5.0.2.tgz#02f5dd1080a6ff5423fcc1ab6e3315bc6c90e2dc"
+  integrity sha512-JYcu4oJ7AGbww1z835AqMhrjwqclhICWhzjib4dp8MrY3UiFHqy1PVegVy+mW6VZ5vHrMeGombCbau2FGGSTJw==
 
 ts-unused-exports@9.0.5:
   version "9.0.5"
