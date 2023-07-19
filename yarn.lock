@@ -1625,9 +1625,9 @@
     react-is "^18.2.0"
 
 "@mui/core-downloads-tracker@^5.11.2":
-  version "5.14.0"
-  resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.14.0.tgz#ca394a1c53c215f4c6bf7f7460d8211298d7bbf6"
-  integrity sha512-SYBOVCatVDUf/lbrLGah09bHhX5WfUXg7kSskfLILr6SvKRni0NLp0aonxQ0SMALVVK3Qwa6cW4CdWuwS0gC1w==
+  version "5.14.1"
+  resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.14.1.tgz#af156cb3e15b202f5c09f66e7d8b71ca86aef525"
+  integrity sha512-mIa1WmDmNr1LoupV1Rbxt9bTFKMbIn10RHG1bnZ/FJCkAYpuU/D4n+R+ttiycgcZNngU++zyh/OQeJblzbQPzg==
 
 "@mui/icons-material@5.11.0":
   version "5.11.0"
@@ -9692,18 +9692,7 @@ which-module@^2.0.0:
   resolved "https://registry.yarnpkg.com/which-module/-/which-module-2.0.1.tgz#776b1fe35d90aebe99e8ac15eb24093389a4a409"
   integrity sha512-iBdZ57RDvnOR9AGBhML2vFZf7h8vmBjhoaZqODJBFWHVtKkDmKuHai3cx5PgVMrX5YDNp27AofYbAwctSS+vhQ==
 
-which-typed-array@^1.1.10, which-typed-array@^1.1.2, which-typed-array@^1.1.9:
-  version "1.1.11"
-  resolved "https://registry.yarnpkg.com/which-typed-array/-/which-typed-array-1.1.11.tgz#99d691f23c72aab6768680805a271b69761ed61a"
-  integrity sha512-qe9UWWpkeG5yzZ0tNYxDmd7vo58HDBc39mZ0xWWpolAGADdFOzkfamWLDxkOWcvHQKVmdTyQdLD4NOfjLWTKew==
-  dependencies:
-    available-typed-arrays "^1.0.5"
-    call-bind "^1.0.2"
-    for-each "^0.3.3"
-    gopd "^1.0.1"
-    has-tostringtag "^1.0.0"
-
-which-typed-array@^1.1.11:
+which-typed-array@^1.1.10, which-typed-array@^1.1.11, which-typed-array@^1.1.2, which-typed-array@^1.1.9:
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/which-typed-array/-/which-typed-array-1.1.11.tgz#99d691f23c72aab6768680805a271b69761ed61a"
   integrity sha512-qe9UWWpkeG5yzZ0tNYxDmd7vo58HDBc39mZ0xWWpolAGADdFOzkfamWLDxkOWcvHQKVmdTyQdLD4NOfjLWTKew==
