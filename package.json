@@ -33,7 +33,7 @@
     "@tanstack/react-query": "4.29.25",
     "graphql-request": "6.1.0",
     "msw": "1.2.3",
-    "next": "13.4.10",
+    "next": "13.4.11",
     "nextjs-progressbar": "0.0.16",
     "normalize.css": "8.0.1",
     "react": "18.2.0",
