@@ -1111,11 +1111,11 @@
     value-or-promise "^1.0.12"
 
 "@graphql-tools/git-loader@^8.0.0":
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/git-loader/-/git-loader-8.0.1.tgz#ca1aed6342d4f636f75aacced48713c5ebdde80d"
-  integrity sha512-ivNtxD+iEfpPONYKip0kbpZMRdMCNR3HrIui8NCURmUdvBYGaGcbB3VrGMhxwZuzc+ybhs2ralPt1F8Oxq2jLA==
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/git-loader/-/git-loader-8.0.2.tgz#d26d87e176ff0cea86e0acfe7c2072f32fd836c3"
+  integrity sha512-AuCB0nlPvsHh8u42zRZdlD/ZMaWP9A44yAkQUVCZir1E/LG63fsZ9svTWJ+CbusW3Hd0ZP9qpxEhlHxnd4Tlsg==
   dependencies:
-    "@graphql-tools/graphql-tag-pluck" "8.0.1"
+    "@graphql-tools/graphql-tag-pluck" "8.0.2"
     "@graphql-tools/utils" "^10.0.0"
     is-glob "4.0.3"
     micromatch "^4.0.4"
