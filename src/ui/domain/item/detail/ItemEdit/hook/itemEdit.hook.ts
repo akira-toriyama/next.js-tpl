@@ -49,8 +49,10 @@ export const useItemEdit: UseItemEdit = (p) => {
   return match<UseQueryResult<GQL.ItemDetailQuery>, type.Props>(r)
     .with({ isError: true }, () => ({ __tag: "failure" }))
     .with({ isLoading: true }, () => ({ __tag: "loading" }))
-    .with({ isSuccess: true, data: { item: null } }, () => ({ __tag: "empty" }))
-    .with({ isSuccess: true, data: { item: P.not(P.nullish) } }, () => ({
+    .with({ isSuccess: true, data: P.when(service.isEmpty) }, () => ({
+      __tag: "empty",
+    }))
+    .with({ isSuccess: true, data: P.when(service.isSuccess) }, () => ({
       __tag: "success",
       form,
       selectors: {
@@ -86,7 +88,7 @@ export const useItemEdit: UseItemEdit = (p) => {
                   queryKey: queries.item.item({ id: p.id }).queryKey,
                 });
               },
-            },
+            }
           ),
       },
     }))
