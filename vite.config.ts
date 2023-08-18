@@ -11,7 +11,7 @@ export default defineConfig({
   define: {
     "process.env": process.env,
   },
-  plugins: [react()],
+  plugins: [react({ fastRefresh: false })],
   test: {
     environment: "jsdom",
     exclude: [...configDefaults.exclude, "snapshot/snapshot.test.ts"],
