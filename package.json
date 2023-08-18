@@ -23,9 +23,7 @@
     "qualityCheck:snapshotTest": "start-server-and-test _qualityCheck:snapshotTest 61000 'pnpm playwright test snapshot/snapshot.test.ts'",
     "// build": "",
     "build:app": "pnpm run prequalityCheck && pnpm next build",
-    "build:designSystem": "pnpm run prequalityCheck && pnpm ladle build",
-    "// other": "",
-    "prepare": "git config --local core.hooksPath .githooks"
+    "build:designSystem": "pnpm run prequalityCheck && pnpm ladle build"
   },
   "dependencies": {
     "@graphql-typed-document-node/core": "3.2.0",
