@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import type * as type from "../Items.type";
 import { match, P } from "ts-pattern";
-import { queries } from "~/ui/util/graphql/queries";
+import { queries } from "~/ui/util/queries";
 import type { UseQueryResult } from "@tanstack/react-query";
 import type * as GQL from "./coLocation/Items.gql.generated";
 
@@ -14,7 +14,7 @@ export const useItems: UseItems = () => {
     .with({ isLoading: true }, () => ({ __tag: "loading" }))
     .with(
       { isSuccess: true, data: { items: P.when((v) => v.length === 0) } },
-      () => ({ __tag: "empty" }),
+      () => ({ __tag: "empty" })
     )
     .with({ isSuccess: true, data: { items: P.not(P.nullish) } }, (rr) => ({
       __tag: "success",
