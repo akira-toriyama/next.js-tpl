@@ -12,9 +12,13 @@ import type * as commonType from "../../common/common.type";
 import { useId, useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as service from "./service";
-import { mutations } from "~/ui/util/graphql/mutations";
+import * as Mutation from "./coLocation/ItemEdit.gql.generated";
 import { useRouter } from "next/router";
-import { queries } from "~/ui/util/graphql/queries";
+import { queries } from "~/ui/util/queries";
+import * as client from "~/infra/graphql/client";
+
+const mutationFn = (p: Mutation.ItemEditMutationVariables) =>
+  client.graphQLClient.request(Mutation.ItemEditDocument, p);
 
 type UseItemEdit = (p: commonType.OuterProps) => type.Props;
 export const useItemEdit: UseItemEdit = (p) => {
@@ -36,7 +40,7 @@ export const useItemEdit: UseItemEdit = (p) => {
   };
 
   const router = useRouter();
-  const mutation = useMutation(mutations.item.itemEdit);
+  const mutation = useMutation({ mutationFn });
   const r = useFetch({
     id: p.id,
     onSuccess: (rr) =>
@@ -73,20 +77,20 @@ export const useItemEdit: UseItemEdit = (p) => {
             {
               onSuccess: () => {
                 queryClient.refetchQueries({
-                  queryKey: queries.item.item({ id: p.id }).queryKey,
+                  queryKey: queries.item.detail({ id: p.id }).queryKey,
                 });
                 router.push("/items");
               },
               onError: () => setServerErrorMessage("Update failed."),
               onSettled: () => {
                 queryClient.resetQueries({
-                  queryKey: queries.item.items.queryKey,
+                  queryKey: queries.item.all.queryKey,
                 });
                 queryClient.resetQueries({
-                  queryKey: queries.item.item({ id: p.id }).queryKey,
+                  queryKey: queries.item.detail({ id: p.id }).queryKey,
                 });
               },
-            },
+            }
           ),
       },
     }))
