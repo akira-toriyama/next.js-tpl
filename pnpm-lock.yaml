@@ -76,6 +76,9 @@ devDependencies:
   '@graphql-tools/mock':
     specifier: 9.0.0
     version: 9.0.0(graphql@16.7.1)
+  '@graphql-tools/schema':
+    specifier: 10.0.0
+    version: 10.0.0(graphql@16.7.1)
   '@ladle/react':
     specifier: 2.16.1
     version: 2.16.1(@types/node@20.5.0)(react-dom@18.2.0)(react@18.2.0)
