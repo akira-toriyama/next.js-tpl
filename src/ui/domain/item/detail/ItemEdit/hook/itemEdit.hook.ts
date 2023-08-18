@@ -77,17 +77,17 @@ export const useItemEdit: UseItemEdit = (p) => {
             {
               onSuccess: () => {
                 queryClient.refetchQueries({
-                  queryKey: queries.item.item({ id: p.id }).queryKey,
+                  queryKey: queries.item.detail({ id: p.id }).queryKey,
                 });
                 router.push("/items");
               },
               onError: () => setServerErrorMessage("Update failed."),
               onSettled: () => {
                 queryClient.resetQueries({
-                  queryKey: queries.item.items.queryKey,
+                  queryKey: queries.item.all.queryKey,
                 });
                 queryClient.resetQueries({
-                  queryKey: queries.item.item({ id: p.id }).queryKey,
+                  queryKey: queries.item.detail({ id: p.id }).queryKey,
                 });
               },
             }

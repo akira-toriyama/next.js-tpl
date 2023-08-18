@@ -7,7 +7,7 @@ import type * as GQL from "./coLocation/Items.gql.generated";
 
 type UseItems = () => type.Props;
 export const useItems: UseItems = () => {
-  const r = useQuery(queries.item.items);
+  const r = useQuery(queries.item.all);
 
   return match<UseQueryResult<GQL.ItemsQuery>, type.Props>(r)
     .with({ isError: true }, () => ({ __tag: "failure" }))

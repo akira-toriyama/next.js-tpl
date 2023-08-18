@@ -13,7 +13,7 @@ type Param = Prettify<
 
 export const useFetch = (p: Param) =>
   useQuery({
-    ...queries.item.item({ id: p.id }),
+    ...queries.item.detail({ id: p.id }),
     onSuccess: p.onSuccess,
   });
 
@@ -22,7 +22,7 @@ export const useQueryData = (p: Param) => {
 
   const queriesData = queryClient
     .getQueriesData<GQL.ItemDetailQuery>(
-      queries.item.item({ id: p.id }).queryKey
+      queries.item.detail({ id: p.id }).queryKey
     )
     .at(0)?.[1];
 
