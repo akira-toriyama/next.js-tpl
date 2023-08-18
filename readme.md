@@ -62,6 +62,23 @@ yarn updateSnapshot
 **main** ブランチにプルリクをだすと、GitHub Actions が実行されます。([例](https://github.com/akira-toriyama/next.js-tpl/pull/883))  
 型チェック, lint, 未使用コードの検出, スナップショットなどを実行します。プルリク単位で、App と Design system も公開されます。
 
+## ディレクトリ構成
+
+src/ 配下 UI以外の処理も配置されます。
+下記のような構成だと、主語がなくわかりづらいです。スケールもしづらいです。
+
+### Bad
+
+- src/style
+  - なんのstyle?
+- src/gql
+  - なぜstyleと、外部通信用のクライアントが並列にあるのか？
+
+### Good
+
+- src/ui/style
+- src/infra/gql
+
 ## 特徴
 
 ### mock server
