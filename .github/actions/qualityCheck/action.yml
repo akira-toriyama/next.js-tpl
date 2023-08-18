@@ -8,8 +8,8 @@ runs:
 
     - name: Install
       shell: bash
-      run: yarn
+      run: pnpm install
 
     - name: Quality check
       shell: bash
-      run: yarn qualityCheck
+      run: pnpm run qualityCheck

@@ -23,7 +23,7 @@
 mv .env.example .env
 mv _server/graphqlServer/schema.graphql.example _server/graphqlServer/schema.graphql
 direnv allow
-yarn
+pnpm install
 ```
 
 ### 開発
@@ -31,9 +31,9 @@ yarn
 開発時は、モックサーバと通信しながら開発します。
 
 ```bash
-yarn mockServer
-yarn generate:fromGQL
-yarn dev
+pnpm run mockServer
+pnpm run generate:fromGQL
+pnpm run dev
 
 open "http://localhost:4000/graphql"
 open "http://localhost:4000/voyager"
@@ -45,7 +45,7 @@ open "http://localhost:3000"
 `storybook` が有名ですが、`ladle` を使用しています。
 
 ```bash
-yarn designSystem
+pnpm run designSystem
 open "http://localhost:6006"
 ```
 
@@ -54,7 +54,7 @@ open "http://localhost:6006"
 `stories.tsx`を追加や更新時時にスナップショットを更新します。
 
 ```bash
-yarn updateSnapshot
+pnpm run updateSnapshot
 ```
 
 ## 開発フロー

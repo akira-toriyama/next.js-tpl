@@ -3,7 +3,7 @@ import type * as type from "../../src/infra/graphql/types";
 
 const item = () =>
   ({
-    id: faker.datatype.uuid(),
+    id: faker.string.uuid(),
     title: faker.animal.cat(),
     body: "Dummy text",
   }) as const satisfies Partial<type.Item>;
