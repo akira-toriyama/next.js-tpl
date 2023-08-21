@@ -1212,7 +1212,7 @@ packages:
       graphql-config: 5.0.2(@types/node@20.5.1)(graphql@16.8.0)
       inquirer: 8.2.6
       is-glob: 4.0.3
-      jiti: 1.19.1
+      jiti: 1.19.3
       json-to-pretty-yaml: 1.2.2
       listr2: 4.0.5
       log-symbols: 4.1.0
@@ -5702,7 +5702,7 @@ packages:
       '@graphql-tools/utils': 10.0.5(graphql@16.8.0)
       cosmiconfig: 8.2.0
       graphql: 16.8.0
-      jiti: 1.19.1
+      jiti: 1.19.3
       minimatch: 4.2.3
       string-env-interpolation: 1.0.1
       tslib: 2.6.1
@@ -6528,8 +6528,8 @@ packages:
       reflect.getprototypeof: 1.0.3
     dev: true
 
-  /jiti@1.19.1:
-    resolution: {integrity: sha512-oVhqoRDaBXf7sjkll95LHVS6Myyyb1zaunVwk4Z0+WPSW4gjS0pl01zYKHScTuyEhQsFxV5L4DR5r+YqSyqyyg==}
+  /jiti@1.19.3:
+    resolution: {integrity: sha512-5eEbBDQT/jF1xg6l36P+mWGGoH9Spuy0PCdSr2dtWRDGC6ph/w9ZCL4lmESW8f8F7MwT3XKescfP0wnZWAKL9w==}
     hasBin: true
     dev: true
 
