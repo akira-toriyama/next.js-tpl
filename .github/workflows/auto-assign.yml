@@ -1,16 +1,21 @@
-name: Auto Assign
+name: auto-assign
 
 on:
   pull_request:
-    types:
-      - opened
-      - reopened
+    types: [opened, unassigned]
 
 jobs:
-  add_labels:
-    runs-on: ubuntu-latest
+  assign:
+    runs-on: ubuntu-20.04
+    timeout-minutes: 1
+
+    if: github.event.pull_request.user.login != 'dependabot[bot]'
     steps:
-      - uses: actions-ecosystem/action-add-assignees@v1
-        with:
-          github_token: ${{ secrets.github_token }}
-          assignees: ${{ github.actor }}
+      - run: cat $GITHUB_EVENT_PATH
+      - run: gh pr edit $NUMBER --add-assignee $ASSIGNEE
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
+          ASSIGNEE: ${{ github.event.pull_request.user.login }}
+        if: ${{ toJSON(github.event.pull_request.assignees) == '[]' }}
