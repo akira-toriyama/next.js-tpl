@@ -622,8 +622,8 @@ packages:
       '@babel/helper-plugin-utils': 7.22.5
     dev: true
 
-  /@babel/plugin-transform-modules-commonjs@7.22.5(@babel/core@7.22.10):
-    resolution: {integrity: sha512-B4pzOXj+ONRmuaQTg05b3y/4DuFz3WcCNAXPLb2Q0GT0TrGKGxNKV4jwsXts+StaM0LQczZbOpj8o1DLPDJIiA==}
+  /@babel/plugin-transform-modules-commonjs@7.22.11(@babel/core@7.22.10):
+    resolution: {integrity: sha512-o2+bg7GDS60cJMgz9jWqRUsWkMzLCxp+jFDeDUT5sjRlAxcJWZ2ylNdI7QQ2+CH5hWu7OnN+Cv3htt7AkSf96g==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -3668,7 +3668,7 @@ packages:
       '@babel/plugin-transform-function-name': 7.22.5(@babel/core@7.22.10)
       '@babel/plugin-transform-literals': 7.22.5(@babel/core@7.22.10)
       '@babel/plugin-transform-member-expression-literals': 7.22.5(@babel/core@7.22.10)
-      '@babel/plugin-transform-modules-commonjs': 7.22.5(@babel/core@7.22.10)
+      '@babel/plugin-transform-modules-commonjs': 7.22.11(@babel/core@7.22.10)
       '@babel/plugin-transform-object-super': 7.22.5(@babel/core@7.22.10)
       '@babel/plugin-transform-parameters': 7.22.5(@babel/core@7.22.10)
       '@babel/plugin-transform-property-literals': 7.22.5(@babel/core@7.22.10)
