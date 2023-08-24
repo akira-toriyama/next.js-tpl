@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-20.04
     timeout-minutes: 1
 
-    if: github.event.pull_request.user.login != 'dependabot[bot]'
     steps:
       - run: cat $GITHUB_EVENT_PATH
       - run: gh pr edit $NUMBER --add-assignee $ASSIGNEE
@@ -18,4 +17,4 @@ jobs:
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.pull_request.number }}
           ASSIGNEE: ${{ github.event.pull_request.user.login }}
-        if: ${{ toJSON(github.event.pull_request.assignees) == '[]' }}
+        if: ${{ github.event.pull_request.user.type != 'Bot' && toJSON(github.event.pull_request.assignees) == '[]' }}
