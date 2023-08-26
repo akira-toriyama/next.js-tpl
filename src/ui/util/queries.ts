@@ -17,5 +17,5 @@ export const queries = mergeQueryKeys(
       queryKey: null,
       queryFn: () => client.graphQLClient.request(Items.ItemsDocument),
     },
-  })
+  }),
 );

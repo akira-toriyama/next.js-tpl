@@ -90,7 +90,7 @@ export const useItemEdit: UseItemEdit = (p) => {
                   queryKey: queries.item.detail({ id: p.id }).queryKey,
                 });
               },
-            }
+            },
           ),
       },
     }))

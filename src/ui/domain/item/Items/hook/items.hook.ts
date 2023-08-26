@@ -14,7 +14,7 @@ export const useItems: UseItems = () => {
     .with({ isLoading: true }, () => ({ __tag: "loading" }))
     .with(
       { isSuccess: true, data: { items: P.when((v) => v.length === 0) } },
-      () => ({ __tag: "empty" })
+      () => ({ __tag: "empty" }),
     )
     .with({ isSuccess: true, data: { items: P.not(P.nullish) } }, (rr) => ({
       __tag: "success",
