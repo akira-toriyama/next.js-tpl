@@ -18,7 +18,7 @@
     "qualityCheck:esLint": "eslint --max-warnings 0 --ignore-path .gitignore .",
     "qualityCheck:fmt": "prettier  --check --ignore-path .gitignore src",
     "_qualityCheck:snapshotTest": "npx playwright install chromium && ladle build && ladle preview -p 61000",
-    "qualityCheck:snapshotTest": "start-server-and-test _qualityCheck:snapshotTest 61000 'pnpm playwright test snapshot/snapshot.test.ts'",
+    "qualityCheck:snapshotTest": "start-server-and-test _qualityCheck:snapshotTest http://localhost:61000 'pnpm playwright test snapshot/snapshot.test.ts'",
     "// build": "",
     "build:app": "pnpm run generate:fromGQL && pnpm next build",
     "build:designSystem": "pnpm run generate:fromGQL && pnpm ladle build",
