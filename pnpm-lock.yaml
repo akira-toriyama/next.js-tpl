@@ -4983,7 +4983,7 @@ packages:
       prop-types: 15.8.1
       resolve: 2.0.0-next.4
       semver: 6.3.1
-      string.prototype.matchall: 4.0.8
+      string.prototype.matchall: 4.0.9
     dev: true
 
   /eslint-plugin-use-encapsulation@1.1.0(eslint@8.48.0):
@@ -9170,8 +9170,8 @@ packages:
       strip-ansi: 7.1.0
     dev: true
 
-  /string.prototype.matchall@4.0.8:
-    resolution: {integrity: sha512-6zOCOcJ+RJAQshcTvXPHoxoQGONa3e/Lqx90wUA+wEzX78sg5Bo+1tQo4N0pohS0erG9qtCqJDjNCQBjeWVxyg==}
+  /string.prototype.matchall@4.0.9:
+    resolution: {integrity: sha512-6i5hL3MqG/K2G43mWXWgP+qizFW/QH/7kCNN13JrJS5q48FN5IKksLDscexKP3dnmB6cdm9jlNgAsWNLpSykmA==}
     dependencies:
       call-bind: 1.0.2
       define-properties: 1.2.0
