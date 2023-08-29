@@ -11,7 +11,7 @@
     "mockServer": "pnpm run downloadSchema && ts-node-dev --project _server/graphqlServer/tsconfig.json --respawn --transpile-only _server/graphqlServer/graphqlServer.ts",
     "_updateSnapshot": "pnpm && start-server-and-test _qualityCheck:snapshotTest 61000 'pnpm playwright test snapshot/snapshot.test.ts -u'",
     "updateSnapshot": "docker run --env-file='.env' --rm --network host -v $(pwd):/work/ -w /work/ -it mcr.microsoft.com/playwright /bin/bash -c 'pnpm run _updateSnapshot'",
-    "downloadSchema": "pnpm run --silent get-graphql-schema ${SCHEMA_DOWNLOAD_URL} > _server/graphqlServer/schema.graphql",
+    "downloadSchema": "pnpm get-graphql-schema ${SCHEMA_DOWNLOAD_URL} > _server/graphqlServer/schema.graphql",
     "// qualityCheck": "",
     "qualityCheck": "pnpm run generate:GQLType && run-s qualityCheck:*",
     "qualityCheck:type": "tsc --project ./tsconfig.json --noEmit",
