@@ -2228,7 +2228,7 @@ packages:
       '@emotion/styled': 11.10.5(@babel/core@7.22.11)(@emotion/react@11.10.5)(@types/react@18.2.20)(react@18.2.0)
       '@mui/base': 5.0.0-alpha.112(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)
       '@mui/material': 5.11.2(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)
-      '@mui/system': 5.14.6(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.20)(react@18.2.0)
+      '@mui/system': 5.14.7(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.20)(react@18.2.0)
       '@mui/types': 7.2.4(@types/react@18.2.20)
       '@mui/utils': 5.14.7(react@18.2.0)
       '@types/react': 18.2.20
@@ -2261,7 +2261,7 @@ packages:
       '@emotion/styled': 11.10.5(@babel/core@7.22.11)(@emotion/react@11.10.5)(@types/react@18.2.20)(react@18.2.0)
       '@mui/base': 5.0.0-alpha.112(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)
       '@mui/core-downloads-tracker': 5.14.7
-      '@mui/system': 5.14.6(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.20)(react@18.2.0)
+      '@mui/system': 5.14.7(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.20)(react@18.2.0)
       '@mui/types': 7.2.4(@types/react@18.2.20)
       '@mui/utils': 5.14.7(react@18.2.0)
       '@types/react': 18.2.20
@@ -2275,8 +2275,8 @@ packages:
       react-transition-group: 4.4.5(react-dom@18.2.0)(react@18.2.0)
     dev: true
 
-  /@mui/private-theming@5.14.6(@types/react@18.2.20)(react@18.2.0):
-    resolution: {integrity: sha512-3VBLFGizBXfofyk33bwRg6t9L648aKnLmOKPfY1wFuiXq3AEYwobK65iDci/tHKxm/VKbZ6A7PFjLejvB3EvRQ==}
+  /@mui/private-theming@5.14.7(@types/react@18.2.20)(react@18.2.0):
+    resolution: {integrity: sha512-Y86+hmDnJab2Ka42PgxKpK3oL7EiacbeeX3X/lG9LGO0wSc45wZjHeTfIlVSkkUCkexiMKEJp5NlSjZhr27NRQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@types/react': ^17.0.0 || ^18.0.0
@@ -2292,8 +2292,8 @@ packages:
       react: 18.2.0
     dev: true
 
-  /@mui/styled-engine@5.14.6(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(react@18.2.0):
-    resolution: {integrity: sha512-I6zeu/OP1Hk4NsX1Oj85TiYl1dER0JMsLJVn76J1Ihl24A5EbiZQKJp3Mn+ufA79ypkdAvM9aQCAQyiVBFcUHg==}
+  /@mui/styled-engine@5.14.7(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(react@18.2.0):
+    resolution: {integrity: sha512-hKBETEDsIAkL8/mBwPiQj/vw28OeIhMXC3Tvj4J2bb9snxAKpiZioR1PwqP+6P41twsC/GKBd0Vr9oaWYaHuMg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.4.1
@@ -2314,8 +2314,8 @@ packages:
       react: 18.2.0
     dev: true
 
-  /@mui/system@5.14.6(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.20)(react@18.2.0):
-    resolution: {integrity: sha512-/n0ae1MegWjiV1BpRU8jgg4E0zBjeB2VYsT/68ag/xaDuq3/TaDKJeT9REIvyBvwlG3CI3S2O+tRELktxCD1kg==}
+  /@mui/system@5.14.7(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.20)(react@18.2.0):
+    resolution: {integrity: sha512-jeZtHglc+Pi6qjGoopT6O4RqYXVBMqHVOsjMGP0hxGSSPm1T4gsAu7jU8eqGx9YwwjvvJ0eotTjFqw7iJ6qE2Q==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.5.0
@@ -2333,8 +2333,8 @@ packages:
       '@babel/runtime': 7.22.10
       '@emotion/react': 11.10.5(@babel/core@7.22.11)(@types/react@18.2.20)(react@18.2.0)
       '@emotion/styled': 11.10.5(@babel/core@7.22.11)(@emotion/react@11.10.5)(@types/react@18.2.20)(react@18.2.0)
-      '@mui/private-theming': 5.14.6(@types/react@18.2.20)(react@18.2.0)
-      '@mui/styled-engine': 5.14.6(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(react@18.2.0)
+      '@mui/private-theming': 5.14.7(@types/react@18.2.20)(react@18.2.0)
+      '@mui/styled-engine': 5.14.7(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(react@18.2.0)
       '@mui/types': 7.2.4(@types/react@18.2.20)
       '@mui/utils': 5.14.7(react@18.2.0)
       '@types/react': 18.2.20
