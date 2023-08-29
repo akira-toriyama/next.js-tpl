@@ -4896,7 +4896,7 @@ packages:
       is-glob: 4.0.3
       minimatch: 3.1.2
       object.fromentries: 2.0.6
-      object.groupby: 1.0.0
+      object.groupby: 1.0.1
       object.values: 1.1.6
       semver: 6.3.1
       tsconfig-paths: 3.14.2
@@ -7878,8 +7878,8 @@ packages:
       es-abstract: 1.22.1
     dev: true
 
-  /object.groupby@1.0.0:
-    resolution: {integrity: sha512-70MWG6NfRH9GnbZOikuhPPYzpUpof9iW2J9E4dW7FXTqPNb6rllE6u39SKwwiNh8lCwX3DDb5OgcKGiEBrTTyw==}
+  /object.groupby@1.0.1:
+    resolution: {integrity: sha512-HqaQtqLnp/8Bn4GL16cj+CUYbnpe1bh0TtEaWvybszDG4tgxCJuRpV8VGuvNaI1fAnI4lUJzDG55MXcOH4JZcQ==}
     dependencies:
       call-bind: 1.0.2
       define-properties: 1.2.0
