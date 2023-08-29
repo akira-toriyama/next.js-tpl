@@ -110,8 +110,8 @@ devDependencies:
     specifier: 0.4.0
     version: 0.4.0
   '@vitest/coverage-istanbul':
-    specifier: 0.34.2
-    version: 0.34.2(vitest@0.34.2)
+    specifier: 0.34.3
+    version: 0.34.3(vitest@0.34.2)
   eslint:
     specifier: 8.48.0
     version: 8.48.0
@@ -200,7 +200,7 @@ packages:
       '@babel/generator': 7.22.10
       '@babel/parser': 7.22.13
       '@babel/runtime': 7.22.10
-      '@babel/traverse': 7.22.10
+      '@babel/traverse': 7.22.11
       '@babel/types': 7.22.11
       babel-preset-fbjs: 3.4.0(@babel/core@7.22.11)
       chalk: 4.1.2
@@ -1632,7 +1632,7 @@ packages:
       '@babel/core': 7.22.11
       '@babel/parser': 7.22.13
       '@babel/plugin-syntax-import-assertions': 7.22.5(@babel/core@7.22.11)
-      '@babel/traverse': 7.22.10
+      '@babel/traverse': 7.22.11
       '@babel/types': 7.22.11
       '@graphql-tools/utils': 10.0.5(graphql@16.8.0)
       graphql: 16.8.0
@@ -3226,8 +3226,8 @@ packages:
       - supports-color
     dev: false
 
-  /@vitest/coverage-istanbul@0.34.2(vitest@0.34.2):
-    resolution: {integrity: sha512-rf6nY80ieYDGBg+50Sm1XTeYkrAF2sJu3pqL4IddBakxddTNUjEWY90Bv3LvspII6Bd/fiVcestozShQ/NVDtQ==}
+  /@vitest/coverage-istanbul@0.34.3(vitest@0.34.2):
+    resolution: {integrity: sha512-RdEGzydbbalyDLmmJ5Qm+T3Lrubw/U9iCnhzM2B1V57t4cVa1t6uyfIHdv68d1au4PRzkLhY7Xouwuhb7BeG+Q==}
     peerDependencies:
       vitest: '>=0.32.0 <1'
     dependencies:
