@@ -3334,8 +3334,8 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /@whatwg-node/server@0.9.11:
-    resolution: {integrity: sha512-G7OXKRqSeXsq9cDJubRfrLMvkxmIVm4CuZQTYSq5N/jr8apDo7HpEv+AYq2NN1jwoiYXhtVotcsAau+a+0J7bQ==}
+  /@whatwg-node/server@0.9.13:
+    resolution: {integrity: sha512-S4wL2RiAelX2gTE+jLRwd2Ep9v3qLai4LhRbw5TCLuquHh7CIqdpNhFDTHdEqE/OIgfy1OKOkRDYIhtCZqgLTQ==}
     engines: {node: '>=16.0.0'}
     dependencies:
       '@whatwg-node/fetch': 0.9.9
@@ -5804,7 +5804,7 @@ packages:
       '@graphql-yoga/logger': 1.0.0
       '@graphql-yoga/subscription': 4.0.0
       '@whatwg-node/fetch': 0.9.9
-      '@whatwg-node/server': 0.9.11
+      '@whatwg-node/server': 0.9.13
       dset: 3.1.2
       graphql: 16.8.0
       lru-cache: 10.0.1
