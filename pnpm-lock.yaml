@@ -787,15 +787,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@babel/types@7.22.10:
-    resolution: {integrity: sha512-obaoigiLrlDZ7TUQln/8m4mSqIW2QFeOrCQc9r+xsaHGNoplVNYlRVpsfE8Vj35GEm2ZH4ZhrNYogs/3fj85kg==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/helper-string-parser': 7.22.5
-      '@babel/helper-validator-identifier': 7.22.5
-      to-fast-properties: 2.0.0
-    dev: true
-
   /@babel/types@7.22.11:
     resolution: {integrity: sha512-siazHiGuZRz9aB9NpHy9GOs9xiQPKnMzgdr493iI1M67vRXpnEq8ZOOKzezC5q7zwuQ6sDhdSp4SD9ixKSqKZg==}
     engines: {node: '>=6.9.0'}
@@ -1217,7 +1208,7 @@ packages:
     dependencies:
       '@babel/generator': 7.22.10
       '@babel/template': 7.22.5
-      '@babel/types': 7.22.10
+      '@babel/types': 7.22.11
       '@graphql-codegen/core': 4.0.0(graphql@16.8.0)
       '@graphql-codegen/plugin-helpers': 5.0.1(graphql@16.8.0)
       '@graphql-tools/apollo-engine-loader': 8.0.0(graphql@16.8.0)
@@ -2045,7 +2036,7 @@ packages:
       '@babel/parser': 7.22.13
       '@babel/template': 7.22.5
       '@babel/traverse': 7.22.10
-      '@babel/types': 7.22.10
+      '@babel/types': 7.22.11
       '@ladle/react-context': 1.0.1(react-dom@18.2.0)(react@18.2.0)
       '@mdx-js/mdx': 2.3.0
       '@mdx-js/react': 2.3.0(react@18.2.0)
