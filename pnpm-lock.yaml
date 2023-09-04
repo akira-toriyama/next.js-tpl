@@ -282,7 +282,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/compat-data': 7.22.9
-      '@babel/helper-validator-option': 7.22.5
+      '@babel/helper-validator-option': 7.22.15
       browserslist: 4.21.10
       lru-cache: 5.1.1
       semver: 6.3.1
@@ -411,11 +411,6 @@ packages:
 
   /@babel/helper-validator-option@7.22.15:
     resolution: {integrity: sha512-bMn7RmyFjY/mdECUbgn9eoSY4vqvacUnS9i9vGAGttgFWesO6B4CYWA7XlpbWgBt71iv/hfbPlynohStqnu5hA==}
-    engines: {node: '>=6.9.0'}
-    dev: true
-
-  /@babel/helper-validator-option@7.22.5:
-    resolution: {integrity: sha512-R3oB6xlIVKUnxNUxbmgq7pKjxpru24zlimpE8WK47fACIlM0II/Hm1RS8IaOI7NgCr6LNS+jl5l75m20npAziw==}
     engines: {node: '>=6.9.0'}
 
   /@babel/helpers@7.22.11:
