@@ -2,6 +2,8 @@
 import { configDefaults, defineConfig } from "vitest/config";
 
 import react from "@vitejs/plugin-react";
+import KumaUI from "@kuma-ui/vite";
+
 import * as path from "path";
 
 export default defineConfig({
@@ -12,7 +14,7 @@ export default defineConfig({
     "process.env": process.env,
   },
   // @ts-expect-error -- ???
-  plugins: [react({ fastRefresh: false })],
+  plugins: [react({ fastRefresh: false }), KumaUI()],
   test: {
     environment: "jsdom",
     exclude: [...configDefaults.exclude, "snapshot/snapshot.test.ts"],
