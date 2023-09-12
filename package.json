@@ -30,17 +30,17 @@
     "@graphql-typed-document-node/core": "3.2.0",
     "@hookform/resolvers": "3.3.1",
     "@lukemorales/query-key-factory": "1.3.2",
-    "@tanstack/react-query": "4.33.0",
+    "@tanstack/react-query": "4.35.0",
     "@vitejs/plugin-react": "4.0.4",
     "graphql-request": "6.1.0",
-    "msw": "1.2.5",
+    "msw": "1.3.0",
     "next": "13.4.19",
     "nextjs-progressbar": "0.0.16",
     "normalize.css": "8.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-error-boundary": "4.0.11",
-    "react-hook-form": "7.45.4",
+    "react-hook-form": "7.46.1",
     "ts-pattern": "5.0.5",
     "zod": "3.22.2"
   },
@@ -64,7 +64,7 @@
     "@types/react": "18.2.21",
     "@types/sync-fetch": "0.4.0",
     "@vitest/coverage-istanbul": "0.34.3",
-    "eslint": "8.48.0",
+    "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "eslint-plugin-use-encapsulation": "1.1.0",
     "eslint-plugin-vitest": "0.3.1",
@@ -84,7 +84,7 @@
     "ts-unused-exports": "10.0.0",
     "typescript": "5.2.2",
     "vite": "4.4.9",
-    "vitest": "0.34.3"
+    "vitest": "0.34.4"
   },
   "msw": {
     "workerDirectory": "public"
