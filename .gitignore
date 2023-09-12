@@ -45,3 +45,5 @@ _server/graphqlServer/schema.graphql
 /test-results
 
 /public/mockServiceWorker.js
+
+.pnpm-store
