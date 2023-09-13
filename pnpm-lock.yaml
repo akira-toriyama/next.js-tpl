@@ -2128,7 +2128,7 @@ packages:
       '@types/debug': 4.1.8
       '@xmldom/xmldom': 0.8.10
       debug: 4.3.4
-      headers-polyfill: 3.2.3
+      headers-polyfill: 3.3.0
       outvariant: 1.4.0
       strict-event-emitter: 0.2.8
       web-encoding: 1.1.5
@@ -6046,8 +6046,8 @@ packages:
       tslib: 2.5.3
     dev: true
 
-  /headers-polyfill@3.2.3:
-    resolution: {integrity: sha512-oj6MO8sdFQ9gQQedSVdMGh96suxTNp91vPQu7C4qx/57FqYsA5TiNr92nhIZwVQq8zygn4nu3xS1aEqpakGqdw==}
+  /headers-polyfill@3.3.0:
+    resolution: {integrity: sha512-5e57etwBpNcDc0b6KCVWEh/Ro063OxPvzVimUdM0/tsYM/T7Hfy3kknIGj78SFTOhNd8AZY41U8mOHoO4LzmIQ==}
     dev: false
 
   /history@5.3.0:
@@ -7756,7 +7756,7 @@ packages:
       chokidar: 3.5.3
       cookie: 0.4.2
       graphql: 16.8.0
-      headers-polyfill: 3.2.3
+      headers-polyfill: 3.3.0
       inquirer: 8.2.6
       is-node-process: 1.2.0
       js-levenshtein: 1.1.6
