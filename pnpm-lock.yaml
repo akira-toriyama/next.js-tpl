@@ -13,10 +13,10 @@ dependencies:
     version: 3.3.1(react-hook-form@7.46.1)
   '@lukemorales/query-key-factory':
     specifier: 1.3.2
-    version: 1.3.2(@tanstack/query-core@4.35.2)(@tanstack/react-query@4.35.0)
+    version: 1.3.2(@tanstack/query-core@4.35.2)(@tanstack/react-query@4.35.3)
   '@tanstack/react-query':
-    specifier: 4.35.0
-    version: 4.35.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: 4.35.3
+    version: 4.35.3(react-dom@18.2.0)(react@18.2.0)
   '@vitejs/plugin-react':
     specifier: 4.0.4
     version: 4.0.4(vite@4.4.9)
@@ -2067,7 +2067,7 @@ packages:
       - terser
     dev: true
 
-  /@lukemorales/query-key-factory@1.3.2(@tanstack/query-core@4.35.2)(@tanstack/react-query@4.35.0):
+  /@lukemorales/query-key-factory@1.3.2(@tanstack/query-core@4.35.2)(@tanstack/react-query@4.35.3):
     resolution: {integrity: sha512-SFOWcB5ec+RhlKjLjZxTAbOPF2uXNED6lqXiMu3TUt2twKzxE/QLhnYkdbxOBMK5Wwc2Ia+WP3yqCPRKWywnwQ==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -2075,7 +2075,7 @@ packages:
       '@tanstack/react-query': '>= 4.0.0'
     dependencies:
       '@tanstack/query-core': 4.35.2
-      '@tanstack/react-query': 4.35.0(react-dom@18.2.0)(react@18.2.0)
+      '@tanstack/react-query': 4.35.3(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /@mdx-js/mdx@2.3.0:
@@ -2652,16 +2652,16 @@ packages:
     resolution: {integrity: sha512-z/G02d+59gyyUb7KYhKi9jOhicek6QD2oMaotUyG+lUkybpXoV49dY9bj7Ah5Q+y7knK2jU67UTX9FyfGzaxQg==}
     dev: true
 
-  /@tanstack/query-core@4.35.0:
-    resolution: {integrity: sha512-4GMcKQuLZQi6RFBiBZNsLhl+hQGYScRZ5ZoVq8QAzfqz9M7vcGin/2YdSESwl7WaV+Qzsb5CZOAbMBes4lNTnA==}
-    dev: false
-
   /@tanstack/query-core@4.35.2:
     resolution: {integrity: sha512-IJYT+VVx0SGe3QWqL6XUgzEY1re3szCdGMSGD1VRdEej6Uq3O+qELR2Ypw1/a4bUYKXiDUpK4BAcBynWb6nbkQ==}
     dev: false
 
-  /@tanstack/react-query@4.35.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-LLYDNnM9ewYHgjm2rzhk4KG/puN2rdoqCUD+N9+V7SwlsYwJk5ypX58rpkoZAhFyZ+KmFUJ7Iv2lIEOoUqydIg==}
+  /@tanstack/query-core@4.35.3:
+    resolution: {integrity: sha512-PS+WEjd9wzKTyNjjQymvcOe1yg8f3wYc6mD+vb6CKyZAKvu4sIJwryfqfBULITKCla7P9C4l5e9RXePHvZOZeQ==}
+    dev: false
+
+  /@tanstack/react-query@4.35.3(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-UgTPioip/rGG3EQilXfA2j4BJkhEQsR+KAbF+KIuvQ7j4MkgnTCJF01SfRpIRNtQTlEfz/+IL7+jP8WA8bFbsw==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -2672,7 +2672,7 @@ packages:
       react-native:
         optional: true
     dependencies:
-      '@tanstack/query-core': 4.35.0
+      '@tanstack/query-core': 4.35.3
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       use-sync-external-store: 1.2.0(react@18.2.0)
