@@ -164,8 +164,8 @@ devDependencies:
     specifier: 2.0.0
     version: 2.0.0(@types/node@20.6.0)(typescript@5.2.2)
   ts-unused-exports:
-    specifier: 10.0.0
-    version: 10.0.0(typescript@5.2.2)
+    specifier: 10.0.1
+    version: 10.0.1(typescript@5.2.2)
   typescript:
     specifier: 5.2.2
     version: 5.2.2
@@ -9692,8 +9692,8 @@ packages:
     resolution: {integrity: sha512-tL0w8U/pgaacOmkb9fRlYzWEUDCfVjjv9dD4wHTgZ61MjhuMt46VNWTG747NqW6vRzoWIKABVhFSOJ82FvXrfA==}
     dev: false
 
-  /ts-unused-exports@10.0.0(typescript@5.2.2):
-    resolution: {integrity: sha512-SFRQEBJ/2kUXdt/XAzjXsd2gcWOjYViR1zkXeqI0nPL4r6wyyayZCh/++nlFxNjCkdeGar3cPDHq9K/NBOzTZA==}
+  /ts-unused-exports@10.0.1(typescript@5.2.2):
+    resolution: {integrity: sha512-nWG8Y96pKem01Hw4j4+Mwuy+L0/9sKT7D61Q+OS3cii9ocQACuV6lu00B9qpiPhF4ReVWw3QYHDqV8+to2wbsg==}
     hasBin: true
     peerDependencies:
       typescript: '>=3.8.3'
