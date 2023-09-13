@@ -13,7 +13,7 @@ dependencies:
     version: 3.3.1(react-hook-form@7.46.1)
   '@lukemorales/query-key-factory':
     specifier: 1.3.2
-    version: 1.3.2(@tanstack/query-core@4.35.2)(@tanstack/react-query@4.35.3)
+    version: 1.3.2(@tanstack/query-core@4.35.3)(@tanstack/react-query@4.35.3)
   '@tanstack/react-query':
     specifier: 4.35.3
     version: 4.35.3(react-dom@18.2.0)(react@18.2.0)
@@ -2067,14 +2067,14 @@ packages:
       - terser
     dev: true
 
-  /@lukemorales/query-key-factory@1.3.2(@tanstack/query-core@4.35.2)(@tanstack/react-query@4.35.3):
+  /@lukemorales/query-key-factory@1.3.2(@tanstack/query-core@4.35.3)(@tanstack/react-query@4.35.3):
     resolution: {integrity: sha512-SFOWcB5ec+RhlKjLjZxTAbOPF2uXNED6lqXiMu3TUt2twKzxE/QLhnYkdbxOBMK5Wwc2Ia+WP3yqCPRKWywnwQ==}
     engines: {node: '>=14'}
     peerDependencies:
       '@tanstack/query-core': '>= 4.0.0'
       '@tanstack/react-query': '>= 4.0.0'
     dependencies:
-      '@tanstack/query-core': 4.35.2
+      '@tanstack/query-core': 4.35.3
       '@tanstack/react-query': 4.35.3(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
@@ -2674,10 +2674,6 @@ packages:
   /@swc/types@0.1.4:
     resolution: {integrity: sha512-z/G02d+59gyyUb7KYhKi9jOhicek6QD2oMaotUyG+lUkybpXoV49dY9bj7Ah5Q+y7knK2jU67UTX9FyfGzaxQg==}
     dev: true
-
-  /@tanstack/query-core@4.35.2:
-    resolution: {integrity: sha512-IJYT+VVx0SGe3QWqL6XUgzEY1re3szCdGMSGD1VRdEej6Uq3O+qELR2Ypw1/a4bUYKXiDUpK4BAcBynWb6nbkQ==}
-    dev: false
 
   /@tanstack/query-core@4.35.3:
     resolution: {integrity: sha512-PS+WEjd9wzKTyNjjQymvcOe1yg8f3wYc6mD+vb6CKyZAKvu4sIJwryfqfBULITKCla7P9C4l5e9RXePHvZOZeQ==}
@@ -4502,7 +4498,7 @@ packages:
       object-is: 1.1.5
       object-keys: 1.1.1
       object.assign: 4.1.4
-      regexp.prototype.flags: 1.5.0
+      regexp.prototype.flags: 1.5.1
       side-channel: 1.0.4
       which-boxed-primitive: 1.0.2
       which-collection: 1.0.1
@@ -4766,7 +4762,7 @@ packages:
       object-inspect: 1.12.3
       object-keys: 1.1.1
       object.assign: 4.1.4
-      regexp.prototype.flags: 1.5.0
+      regexp.prototype.flags: 1.5.1
       safe-array-concat: 1.0.1
       safe-regex-test: 1.0.0
       string.prototype.trim: 1.2.8
@@ -8767,13 +8763,13 @@ packages:
   /regenerator-runtime@0.14.0:
     resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
 
-  /regexp.prototype.flags@1.5.0:
-    resolution: {integrity: sha512-0SutC3pNudRKgquxGoRGIz946MZVHqbNfPjBdxeOhBrdgDKlRoXmYLQN9xRbrR09ZXWeGAdPuif7egofn6v5LA==}
+  /regexp.prototype.flags@1.5.1:
+    resolution: {integrity: sha512-sy6TXMN+hnP/wMy+ISxg3krXx7BAtWVO4UouuCN/ziM9UEne0euamVNafDfvC83bRNr95y0V5iijeDQFUNpvrg==}
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
       define-properties: 1.2.1
-      functions-have-names: 1.2.3
+      set-function-name: 2.0.1
     dev: true
 
   /rehype-raw@6.1.1:
@@ -9338,7 +9334,7 @@ packages:
       get-intrinsic: 1.2.1
       has-symbols: 1.0.3
       internal-slot: 1.0.5
-      regexp.prototype.flags: 1.5.0
+      regexp.prototype.flags: 1.5.1
       set-function-name: 2.0.1
       side-channel: 1.0.4
     dev: true
