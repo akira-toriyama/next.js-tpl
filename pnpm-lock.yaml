@@ -98,8 +98,8 @@ devDependencies:
     specifier: 2.0.0
     version: 2.0.0
   '@tsconfig/node18':
-    specifier: 18.2.1
-    version: 18.2.1
+    specifier: 18.2.2
+    version: 18.2.2
   '@types/express':
     specifier: 4.17.17
     version: 4.17.17
@@ -2731,8 +2731,8 @@ packages:
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
     dev: true
 
-  /@tsconfig/node18@18.2.1:
-    resolution: {integrity: sha512-RDDZFuofwkcKpl8Vpj5wFbY+H53xOtqK7ckEL1sXsbPwvKwDdjQf3LkHbtt9sxIHn9nWIEwkmCwBRZ6z5TKU2A==}
+  /@tsconfig/node18@18.2.2:
+    resolution: {integrity: sha512-d6McJeGsuoRlwWZmVIeE8CUA27lu6jLjvv1JzqmpsytOYYbVi1tHZEnwCNVOXnj4pyLvneZlFlpXUK+X9wBWyw==}
     dev: true
 
   /@types/acorn@4.0.6:
