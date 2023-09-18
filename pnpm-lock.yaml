@@ -1965,6 +1965,21 @@ packages:
       eventemitter3: 4.0.7
     dev: true
 
+  /@jscpd/finder@3.5.10:
+    resolution: {integrity: sha512-zyafUsTB2xDySho3wKMSoZuiMw2XvkdYW72kI7bLdz9M+ERyTMRfUnX1RgoGldXyylyZPF1FSflmfsppkV4Wuw==}
+    dependencies:
+      '@jscpd/core': 3.5.4
+      '@jscpd/tokenizer': 3.5.4
+      blamer: 1.0.4
+      bytes: 3.1.2
+      cli-table3: 0.6.3
+      colors: 1.4.0
+      fast-glob: 3.3.1
+      fs-extra: 9.1.0
+      markdown-table: 2.0.0
+      pug: 3.0.2
+    dev: true
+
   /@jscpd/finder@3.5.5:
     resolution: {integrity: sha512-RAaSnqZWe66JnYsUABvXBPfS9Z8U4GmLLa/IQkxZIOWxlt7g4ohs3FxJNv61bQdBbD0NQ6Xxvd4jntac8FKftg==}
     dependencies:
@@ -1980,10 +1995,10 @@ packages:
       pug: 3.0.2
     dev: true
 
-  /@jscpd/html-reporter@3.5.9:
-    resolution: {integrity: sha512-Q2hu3B2/lCgzQvVHvdZUl2IrmXRKP08zH9xvsaDERPWjaYkWQi6FWNqOnkryMD0cl/hrXBKpx050IUUO7FmACw==}
+  /@jscpd/html-reporter@3.5.10:
+    resolution: {integrity: sha512-EPee/YSy/12UboUOoOD+vFvU8/Bi/CAKnjTDnAdPnJlSh68jog/BNhHKrXiiJKZS2CLn1WzjUaefJrn8VcWo+A==}
     dependencies:
-      '@jscpd/finder': 3.5.5
+      '@jscpd/finder': 3.5.10
       colors: 1.4.0
       fs-extra: 9.1.0
       pug: 3.0.2
@@ -3830,6 +3845,14 @@ packages:
 
   /blamer@1.0.3:
     resolution: {integrity: sha512-JalDFXndGCrTkKakC7C0H5I09ognGQrl3xJZ6wPwtiuX+9h/qcH1PbTnW+MD6mJku1ISmOAwzeWaXT79D3kg3g==}
+    engines: {node: '>=8.9'}
+    dependencies:
+      execa: 4.1.0
+      which: 2.0.2
+    dev: true
+
+  /blamer@1.0.4:
+    resolution: {integrity: sha512-wKUEcMmhVUVjrpXKMROJY/O7EUNzQVAcE4jrVwLw/EcMVRS+xzgRpLOEQ/LRXBp1WGtl7uDMHcNzSeJWCRg0Tg==}
     engines: {node: '>=8.9'}
     dependencies:
       execa: 4.1.0
@@ -6727,7 +6750,7 @@ packages:
     dependencies:
       '@jscpd/core': 3.5.4
       '@jscpd/finder': 3.5.5
-      '@jscpd/html-reporter': 3.5.9
+      '@jscpd/html-reporter': 3.5.10
       '@jscpd/tokenizer': 3.5.4
       colors: 1.4.0
       commander: 5.1.0
