@@ -23,15 +23,11 @@ import { use } from "react";
 const Page: NextPage = () => {
   const r = use(repository.fetchAll());
 
-  // if (r.items == null) {
-  //   return <presenter.Empty />;
-  // }
+  if (r.items == null) {
+    return <presenter.Empty />;
+  }
 
-  return (
-    <>
-      <presenter.Items {...r} />
-    </>
-  );
+  return <presenter.Items {...r} />;
 };
 
 export default Page;
