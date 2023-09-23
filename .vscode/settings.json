@@ -7,5 +7,7 @@
     {
       "mode": "auto"
     }
-  ]
+  ],
+  // https://zenn.dev/link/comments/03aa5750716d00
+  "prettier.trailingComma": "all"
 }
