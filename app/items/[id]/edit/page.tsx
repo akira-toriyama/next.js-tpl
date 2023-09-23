@@ -3,6 +3,10 @@ import type { NextPage } from "next";
 import * as presenter from "~/ui/domain/item/edit/presenter";
 import * as repository from "~/ui/domain/item/_/repository";
 
+// export const dynamic = "force-dynamic";
+export const revalidate = 0;
+// export const fetchCache = "force-no-store";
+
 // const Page: NextPage<{ params: { id: string } }> = async (props) =>
 //   repository.fetchBy({ id: props.params.id }).then((r) =>
 //     match(r)
@@ -25,7 +29,3 @@ const Page: NextPage<{ params: { id: string } }> = async (props) => {
 };
 
 export default Page;
-
-export const dynamic = "force-dynamic";
-export const revalidate = 1;
-// export const fetchCache = "force-no-store";
