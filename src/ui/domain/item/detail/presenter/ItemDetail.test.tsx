@@ -18,7 +18,7 @@ describe.concurrent("Loading", () => {
 describe.concurrent("ItemDetail", () => {
   test.concurrent("test", () => {
     expect(
-      render(<c.ItemDetail {...mock.makeItemDetailProps()} />)
+      render(<c.ItemDetail {...mock.makeItemDetailProps()} />),
     ).toBeDefined();
   });
 });

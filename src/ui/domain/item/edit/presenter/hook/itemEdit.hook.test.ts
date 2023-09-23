@@ -19,11 +19,11 @@ describe.concurrent("useItemEdit", () => {
     });
 
     const r = renderHook(() =>
-      useItemEdit({ item: { id: "", title: "", body: "" } })
+      useItemEdit({ item: { id: "", title: "", body: "" } }),
     );
 
     await act(
-      async () => await r.result.current.onSubmit({ title: "", body: "" })
+      async () => await r.result.current.onSubmit({ title: "", body: "" }),
     );
 
     expect(mock).toBeCalledTimes(1);
@@ -39,13 +39,13 @@ describe.concurrent("useItemEdit", () => {
     });
 
     const r = renderHook(() =>
-      useItemEdit({ item: { id: "", title: "", body: "" } })
+      useItemEdit({ item: { id: "", title: "", body: "" } }),
     );
 
     expect(r.result.current.serverErrorMessage).toEqual("");
 
     await act(
-      async () => await r.result.current.onSubmit({ title: "", body: "" })
+      async () => await r.result.current.onSubmit({ title: "", body: "" }),
     );
 
     expect(mock).toBeCalledTimes(0);

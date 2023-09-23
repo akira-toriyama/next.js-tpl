@@ -26,7 +26,7 @@ describe.concurrent("Items", () => {
   test.concurrent("has item", () => {
     const props = mock.makeItemsProps();
     expect(renderFn(props).getAllByTestId("data").length).toEqual(
-      props.items.length
+      props.items.length,
     );
   });
 });

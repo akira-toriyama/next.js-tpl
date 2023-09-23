@@ -18,7 +18,7 @@ describe.concurrent("Loading", () => {
 describe.concurrent("ItemEditComponent", () => {
   test.concurrent("test", () => {
     expect(
-      render(<c.ItemEditComponent {...mock.makeItemEditProps()} />)
+      render(<c.ItemEditComponent {...mock.makeItemEditProps()} />),
     ).toBeDefined();
   });
 });
