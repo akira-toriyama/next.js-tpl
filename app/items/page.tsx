@@ -1,7 +1,10 @@
+"use client";
+
 import type { NextPage } from "next";
 // import { match, P } from "ts-pattern";
 import * as presenter from "~/ui/domain/items/presenter";
 import * as repository from "~/ui/domain/items/repository";
+import { use } from "react";
 
 // export const dynamic = "force-dynamic";
 // export const revalidate = 0;
@@ -17,8 +20,8 @@ import * as repository from "~/ui/domain/items/repository";
 
 // export default Page;
 
-const Page: NextPage = async () => {
-  const r = await repository.fetchAll();
+const Page: NextPage = () => {
+  const r = use(repository.fetchAll());
 
   // if (r.items == null) {
   //   return <presenter.Empty />;
