@@ -20,10 +20,11 @@ import * as repository from "~/ui/domain/item/_/repository";
 const Page: NextPage<{ params: { id: string } }> = async (props) => {
   const r = await repository.fetchBy({ id: props.params.id });
 
-  if (r.item == null) {
-    return <presenter.Empty />;
-  }
+  // if (r.item == null) {
+  //   return <presenter.Empty />;
+  // }
 
+  // @ts-expect-error - x
   return <presenter.ItemEdit {...{ item: r.item }} />;
 };
 

@@ -20,9 +20,9 @@ import * as repository from "~/ui/domain/items/repository";
 const Page: NextPage = async () => {
   const r = await repository.fetchAll();
 
-  if (r.items == null) {
-    return <presenter.Empty />;
-  }
+  // if (r.items == null) {
+  //   return <presenter.Empty />;
+  // }
 
   return <presenter.Items {...r} />;
 };
