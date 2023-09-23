@@ -1,6 +1,6 @@
-export const dynamic = "force-dynamic";
-export const revalidate = "force-cache";
-export const fetchCache = "force-no-store";
+// export const dynamic = "force-dynamic";
+// export const revalidate = "force-cache";
+// export const fetchCache = "force-no-store";
 
 import type { NextPage } from "next";
 // import { match, P } from "ts-pattern";
