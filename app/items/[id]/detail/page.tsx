@@ -12,7 +12,7 @@ const Page: NextPage<{
       .with({ item: P.not(P.nullish) }, (rr) => (
         <presenter.ItemDetail {...rr} />
       ))
-      .exhaustive()
+      .exhaustive(),
   );
 
 export default Page;
