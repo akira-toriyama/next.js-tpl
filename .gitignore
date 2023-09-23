@@ -38,7 +38,6 @@ npm-debug.log*
 # codegen
 *.gql.generated.ts
 gql.generated.ts
-/src/infra/graphql/types.ts
 
 _server/graphqlServer/schema.graphql
 /snapshotReport

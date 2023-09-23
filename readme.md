@@ -89,7 +89,7 @@ src/ 配下 UI以外の処理も配置されます。
 
 ### tsx
 
-テスト不能なコンポーネントを実装しないでください。
+テストしやすいコンポーネントにしてください。
 [eslint-plugin-use-encapsulation](https://github.com/kyleshevlin/eslint-plugin-use-encapsulation)を参考にしてください。
 
 ```tsx
