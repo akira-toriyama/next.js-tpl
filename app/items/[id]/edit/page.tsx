@@ -1,7 +1,3 @@
-export const dynamic = "force-dynamic";
-export const revalidate = "force-cache";
-export const fetchCache = "force-no-store";
-
 import type { NextPage } from "next";
 // import { match, P } from "ts-pattern";
 import * as presenter from "~/ui/domain/item/edit/presenter";
@@ -29,3 +25,7 @@ const Page: NextPage<{ params: { id: string } }> = async (props) => {
 };
 
 export default Page;
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+export const fetchCache = "force-no-store";
