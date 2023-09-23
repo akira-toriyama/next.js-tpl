@@ -1,4 +1,4 @@
-nodejs 18.14.2
-direnv 2.32.1
-deno 1.31.1
-pnpm 8.7.0-1
+nodejs 18.9.0
+direnv 2.32.3
+deno 1.37.0
+pnpm 8.7.6
