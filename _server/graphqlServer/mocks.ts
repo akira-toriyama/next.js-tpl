@@ -20,7 +20,7 @@ export const mocks = {
     item: data.item,
     // items: () => [...Array(10)].map(data.item),
     items: () => [
-      { id: 1, title: "1" },
+      { id: 1, title: "1bb" },
       { id: 2, title: "2" },
     ],
   },
