@@ -12,10 +12,12 @@ describe.concurrent("useItemEdit", () => {
     // @ts-expect-error
     vi.mocked(repository).save.mockResolvedValueOnce(null);
 
-    const mock = vi.fn();
+    const mockPush = vi.fn();
+    const mockRefresh = vi.fn();
     // @ts-expect-error
     vi.mocked(useRouter).mockReturnValue({
-      push: mock,
+      push: mockPush,
+      refresh: mockRefresh,
     });
 
     const r = renderHook(() =>
@@ -26,7 +28,8 @@ describe.concurrent("useItemEdit", () => {
       async () => await r.result.current.onSubmit({ title: "", body: "" }),
     );
 
-    expect(mock).toBeCalledTimes(1);
+    expect(mockPush).toBeCalledTimes(1);
+    expect(mockRefresh).toBeCalledTimes(1);
   });
 
   test.concurrent("mutation error", async () => {
