@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
-import NextTopLoader from "nextjs-toploader";
+// import NextTopLoader from "nextjs-toploader";
+import { headers } from "next/headers";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -13,13 +14,17 @@ export const metadata = {
 type Props = {
   children: React.ReactNode;
 };
-const Layout: NextPage<Props> = (props) => (
-  <html lang="ja">
-    <body>
-      <NextTopLoader />
-      {props.children}
-    </body>
-  </html>
-);
+const Layout: NextPage<Props> = (props) => {
+  headers();
+
+  return (
+    <html lang="ja">
+      <body>
+        {/* <NextTopLoader /> */}
+        {props.children}
+      </body>
+    </html>
+  );
+};
 
 export default Layout;
