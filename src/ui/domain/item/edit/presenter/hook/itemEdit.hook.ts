@@ -28,7 +28,10 @@ export const useItemEdit: UseItemEdit = (p) => {
           where: { id: p.item.id },
           data: pp,
         })
-        .then(() => router.push("/items"))
+        .then(() => {
+          router.refresh();
+          router.push("/items");
+        })
         // FIXME サーバのエラーレスポンスを考慮して、適切に扱うようにすべき
         .catch(() => setServerErrorMessage("処理に失敗しました。")),
   };
