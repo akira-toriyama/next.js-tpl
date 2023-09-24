@@ -9,7 +9,6 @@ vi.mock("../../repository");
 
 describe.concurrent("useItemEdit", () => {
   test.concurrent("mutation success", async () => {
-    // @ts-expect-error
     vi.mocked(repository).save.mockResolvedValueOnce(null);
 
     const mockPush = vi.fn();
