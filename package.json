@@ -16,6 +16,7 @@
     "qualityCheck": "pnpm run generate:GQLType && run-s qualityCheck:*",
     "qualityCheck:type": "tsc --project ./tsconfig.json --noEmit",
     "qualityCheck:unitTest": "pnpm vitest run --coverage",
+    "qualityCheck:e2eTest": "pnpm playwright test app -c playwright.e2e.config.ts",
     "qualityCheck:redundancy": "jscpd src",
     "qualityCheck:findDeadCode": "pnpm ts-unused-exports tsconfig.json $(find ./src -name '*.ts' -or -name '*.tsx') --excludePathsFromReport='gql.ts;stories.tsx;index.ts;src/ui/provider/Wrapper.tsx'",
     "qualityCheck:esLint": "eslint --max-warnings 0 --ignore-path .gitignore .",
