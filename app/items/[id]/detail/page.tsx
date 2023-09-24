@@ -4,9 +4,9 @@ import * as presenter from "~/ui/domain/item/detail/presenter";
 import * as repository from "~/ui/domain/item/_/repository";
 import { headers } from "next/headers";
 
-// export const dynamic = "force-dynamic";
-// export const revalidate = 0;
-// export const fetchCache = "force-no-store";
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+export const fetchCache = "force-no-store";
 
 // const Page: NextPage<{
 //   params: { id: string };
