@@ -6,7 +6,8 @@ import { headers } from "next/headers";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
-export const fetchCache = "force-no-store";
+// export const fetchCache = "force-no-store";
+export const fetchCache = "only-no-store";
 
 // const Page: NextPage<{ params: { id: string } }> = async (props) =>
 //   repository.fetchBy({ id: props.params.id }).then((r) =>
@@ -23,8 +24,8 @@ type Props = {
 };
 
 const f = async (props: Props) => {
-  "use server";
-  headers();
+  // "use server";
+  // headers();
   const r = await repository.fetchBy({ id: props.params.id });
   return r;
 };

@@ -6,7 +6,8 @@ import { headers } from "next/headers";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
-export const fetchCache = "force-no-store";
+// export const fetchCache = "force-no-store";
+export const fetchCache = "only-no-store";
 
 // const Page: NextPage = () =>
 //   repository.fetchAll().then((r) =>
@@ -20,8 +21,8 @@ export const fetchCache = "force-no-store";
 
 // const f = cache(() => repository.fetchAll());
 const f = async () => {
-  "use server";
-  headers();
+  // "use server";
+  // headers();
   const r = await repository.fetchAll();
   return r;
 };
