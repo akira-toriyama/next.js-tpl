@@ -29,7 +29,7 @@ export const useItemEdit: UseItemEdit = (p) => {
           data: pp,
         })
         .then(() => {
-          router.refresh();
+          // router.refresh();
           router.push("/items");
         })
         // FIXME サーバのエラーレスポンスを考慮して、適切に扱うようにすべき
