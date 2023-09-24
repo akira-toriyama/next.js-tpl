@@ -41,7 +41,6 @@ export default defineConfig({
       lines: 100,
       thresholdAutoUpdate: true,
     },
-    setupFiles: ["./vitestSetup.ts"],
   },
   resolve: {
     alias: {
