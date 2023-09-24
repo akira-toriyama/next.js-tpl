@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 // import { match, P } from "ts-pattern";
 import * as presenter from "~/ui/domain/item/detail/presenter";
 import * as repository from "~/ui/domain/item/_/repository";
-import { headers } from "next/headers";
+// import { headers } from "next/headers";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
