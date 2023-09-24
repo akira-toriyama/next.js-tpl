@@ -10,7 +10,7 @@
     "generate:GQLType": "graphql-codegen --config codegen.ts",
     "// util": "",
     "downloadSchema": "pnpm get-graphql-schema ${SCHEMA_DOWNLOAD_URL} > _server/graphqlServer/schema.graphql",
-    "_updateSnapshot": "pnpm i && start-server-and-test _qualityCheck:snapshotTest http://localhost:61000 'pnpm playwright test snapshot/snapshot.test.ts -u'",
+    "_updateSnapshot": "pnpm i && start-server-and-test _qualityCheck:snapshotTest http://localhost:61000 'pnpm playwright test snapshot/snapshot.test.ts -u -c playwright.snapshot.config.ts'",
     "updateSnapshot": "rm -rf snapshot/snapshot.test.ts-snapshots && mkdir snapshot/snapshot.test.ts-snapshots && docker run --env-file='.env' --rm --network host -v $(pwd):/work/ -w /work/ -it mcr.microsoft.com/playwright /bin/bash -c 'npm i -g pnpm && pnpm run _updateSnapshot'",
     "// qualityCheck": "",
     "qualityCheck": "pnpm run generate:GQLType && run-s qualityCheck:*",
@@ -21,7 +21,7 @@
     "qualityCheck:esLint": "eslint --max-warnings 0 --ignore-path .gitignore .",
     "qualityCheck:fmt": "prettier  --check --ignore-path .gitignore src",
     "_qualityCheck:snapshotTest": "npx playwright install chromium && ladle build && ladle preview -p 61000",
-    "qualityCheck:snapshotTest": "start-server-and-test _qualityCheck:snapshotTest http://localhost:61000 'pnpm playwright test snapshot/snapshot.test.ts'",
+    "qualityCheck:snapshotTest": "start-server-and-test _qualityCheck:snapshotTest http://localhost:61000 'pnpm playwright test snapshot/snapshot.test.ts -c playwright.snapshot.config.ts'",
     "// build": "",
     "build:app": "pnpm run generate:GQLType && pnpm next build",
     "build:designSystem": "pnpm run generate:GQLType && pnpm ladle build"
