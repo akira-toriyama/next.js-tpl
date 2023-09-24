@@ -4,4 +4,7 @@ module.exports = {
   compiler: {
     reactRemoveProperties: true,
   },
+  experimental: {
+    serverActions: true,
+  },
 };

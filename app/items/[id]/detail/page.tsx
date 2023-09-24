@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 // import { match, P } from "ts-pattern";
 import * as presenter from "~/ui/domain/item/detail/presenter";
 import * as repository from "~/ui/domain/item/_/repository";
+import { headers } from "next/headers";
 
 // export const dynamic = "force-dynamic";
 // export const revalidate = 0;
@@ -25,8 +26,12 @@ type Props = {
   params: { id: string };
 };
 
-// const f = cache((props: Props) => repository.fetchBy({ id: props.params.id }));
-const f = (props: Props) => repository.fetchBy({ id: props.params.id });
+const f = async (props: Props) => {
+  "use server";
+  headers();
+  const r = await repository.fetchBy({ id: props.params.id });
+  return r;
+};
 
 const Page: NextPage<Props> = async (props) => {
   const r = await f(props);

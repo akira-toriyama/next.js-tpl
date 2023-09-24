@@ -19,11 +19,14 @@ export const fetchCache = "force-no-store";
 // export default Page;
 
 // const f = cache(() => repository.fetchAll());
-const f = () => repository.fetchAll();
+const f = async () => {
+  "use server";
+  headers();
+  const r = await repository.fetchAll();
+  return r;
+};
 
 const Page: NextPage = async () => {
-  headers();
-
   const r = await f();
 
   if (r.items == null) {
