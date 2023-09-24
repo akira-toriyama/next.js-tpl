@@ -18,14 +18,7 @@ const data = {
 export const mocks = {
   Query: {
     item: data.item,
-    // items: () => [...Array(10)].map(data.item),
-    items: () => [
-      // { id: 11, title: "11" },
-      // { id: 22, title: "22" },
-
-      { id: 1, title: "1" },
-      { id: 22, title: "22" },
-    ],
+    items: () => [...Array(10)].map(data.item),
   },
   Mutation: {
     // updateItem: () => {
