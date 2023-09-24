@@ -24,7 +24,7 @@ export const mocks = {
       // { id: 22, title: "22" },
 
       { id: 1, title: "1" },
-      { id: 2, title: "2" },
+      { id: 22, title: "22" },
     ],
   },
   Mutation: {

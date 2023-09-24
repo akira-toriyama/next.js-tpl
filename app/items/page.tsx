@@ -6,9 +6,7 @@ import * as repository from "~/ui/domain/items/repository";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
-// export const fetchCache = "force-no-store";
-// export const fetchCache = "only-no-store";
-export const fetchCache = "default-no-store";
+export const fetchCache = "force-no-store";
 
 // const Page: NextPage = () =>
 //   repository.fetchAll().then((r) =>
@@ -20,7 +18,6 @@ export const fetchCache = "default-no-store";
 
 // export default Page;
 
-// const f = cache(() => repository.fetchAll());
 const f = async () => {
   // "use server";
   // headers();
@@ -30,7 +27,6 @@ const f = async () => {
 
 const Page: NextPage = async () => {
   const r = await f();
-
   if (r.items == null) {
     return <presenter.Empty />;
   }
