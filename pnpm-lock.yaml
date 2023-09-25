@@ -552,8 +552,8 @@ packages:
       '@babel/template': 7.22.15
     dev: true
 
-  /@babel/plugin-transform-destructuring@7.22.15(@babel/core@7.22.20):
-    resolution: {integrity: sha512-HzG8sFl1ZVGTme74Nw+X01XsUTqERVQ6/RLHo3XjGRzm7XD6QTtfS3NJotVgCGy8BzkDqRjRBD8dAyJn5TuvSQ==}
+  /@babel/plugin-transform-destructuring@7.23.0(@babel/core@7.22.20):
+    resolution: {integrity: sha512-vaMdgNXFkYrB+8lbgniSYWHsgqK5gjaMNcc84bMIOMRLH0L9AqYq3hwMdvnyqj1OPqea8UtjPEuS/DCenah1wg==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -3717,7 +3717,7 @@ packages:
       '@babel/plugin-transform-block-scoping': 7.22.15(@babel/core@7.22.20)
       '@babel/plugin-transform-classes': 7.22.15(@babel/core@7.22.20)
       '@babel/plugin-transform-computed-properties': 7.22.5(@babel/core@7.22.20)
-      '@babel/plugin-transform-destructuring': 7.22.15(@babel/core@7.22.20)
+      '@babel/plugin-transform-destructuring': 7.23.0(@babel/core@7.22.20)
       '@babel/plugin-transform-flow-strip-types': 7.22.5(@babel/core@7.22.20)
       '@babel/plugin-transform-for-of': 7.22.15(@babel/core@7.22.20)
       '@babel/plugin-transform-function-name': 7.22.5(@babel/core@7.22.20)
