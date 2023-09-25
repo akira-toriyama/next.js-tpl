@@ -9,6 +9,7 @@ const Page: NextPage = () => (
           items
         </NextLink>
       </li>
+      {/* TODO 復活させる */}
       {/* <li>
         <NextLink href="/parallel-routes">parallel-routes</NextLink>
       </li> */}
