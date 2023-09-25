@@ -535,8 +535,8 @@ packages:
       '@babel/helper-plugin-utils': 7.22.5
     dev: true
 
-  /@babel/plugin-transform-block-scoping@7.22.15(@babel/core@7.23.0):
-    resolution: {integrity: sha512-G1czpdJBZCtngoK1sJgloLiOHUnkb/bLZwqVZD8kXmq0ZnVfTTWUcs9OWtp0mBtYJ+4LQY1fllqBkOIPhXmFmw==}
+  /@babel/plugin-transform-block-scoping@7.23.0(@babel/core@7.23.0):
+    resolution: {integrity: sha512-cOsrbmIOXmf+5YbL99/S49Y3j46k/T16b9ml8bm9lP6N9US5iQ2yBK7gpui1pg0V/WMcXdkfKbTb7HXq9u+v4g==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -3745,7 +3745,7 @@ packages:
       '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.23.0)
       '@babel/plugin-transform-arrow-functions': 7.22.5(@babel/core@7.23.0)
       '@babel/plugin-transform-block-scoped-functions': 7.22.5(@babel/core@7.23.0)
-      '@babel/plugin-transform-block-scoping': 7.22.15(@babel/core@7.23.0)
+      '@babel/plugin-transform-block-scoping': 7.23.0(@babel/core@7.23.0)
       '@babel/plugin-transform-classes': 7.22.15(@babel/core@7.23.0)
       '@babel/plugin-transform-computed-properties': 7.22.5(@babel/core@7.23.0)
       '@babel/plugin-transform-destructuring': 7.23.0(@babel/core@7.23.0)
