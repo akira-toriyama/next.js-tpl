@@ -326,20 +326,6 @@ packages:
     dependencies:
       '@babel/types': 7.23.0
 
-  /@babel/helper-module-transforms@7.22.20(@babel/core@7.23.0):
-    resolution: {integrity: sha512-dLT7JVWIUUxKOs1UnJUBR3S70YK+pKX6AbJgB2vMIvEkZkrfJDbYDJesnPshtKV4LhDOR3Oc5YULeDizRek+5A==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0
-    dependencies:
-      '@babel/core': 7.23.0
-      '@babel/helper-environment-visitor': 7.22.20
-      '@babel/helper-module-imports': 7.22.15
-      '@babel/helper-simple-access': 7.22.5
-      '@babel/helper-split-export-declaration': 7.22.6
-      '@babel/helper-validator-identifier': 7.22.20
-    dev: true
-
   /@babel/helper-module-transforms@7.23.0(@babel/core@7.23.0):
     resolution: {integrity: sha512-WhDWw1tdrlT0gMgUJSlX0IQvoO1eN279zrAUbVB+KpV2c3Tylz8+GnKOLllCS6Z/iZQEyVYxhZVUdPTqs2YYPw==}
     engines: {node: '>=6.9.0'}
@@ -644,7 +630,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.23.0
-      '@babel/helper-module-transforms': 7.22.20(@babel/core@7.23.0)
+      '@babel/helper-module-transforms': 7.23.0(@babel/core@7.23.0)
       '@babel/helper-plugin-utils': 7.22.5
       '@babel/helper-simple-access': 7.22.5
     dev: true
