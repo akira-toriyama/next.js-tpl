@@ -9,12 +9,12 @@ const Page: NextPage = () => (
           items
         </NextLink>
       </li>
-      {/* <li>
+      <li>
         <NextLink href="/parallel-routes">parallel-routes</NextLink>
-      </li> */}
-      {/* <li>
+      </li>
+      <li>
         <NextLink href="/template/a">template</NextLink>
-      </li> */}
+      </li>
     </ul>
   </>
 );
