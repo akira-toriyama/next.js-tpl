@@ -188,7 +188,7 @@ packages:
       graphql: '*'
     dependencies:
       '@babel/core': 7.22.20
-      '@babel/generator': 7.22.15
+      '@babel/generator': 7.23.0
       '@babel/parser': 7.22.16
       '@babel/runtime': 7.22.15
       '@babel/traverse': 7.22.20
@@ -236,7 +236,7 @@ packages:
     dependencies:
       '@ampproject/remapping': 2.2.1
       '@babel/code-frame': 7.22.13
-      '@babel/generator': 7.22.15
+      '@babel/generator': 7.23.0
       '@babel/helper-compilation-targets': 7.22.15
       '@babel/helper-module-transforms': 7.22.20(@babel/core@7.22.20)
       '@babel/helpers': 7.22.15
@@ -252,11 +252,11 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@babel/generator@7.22.15:
-    resolution: {integrity: sha512-Zu9oWARBqeVOW0dZOjXc3JObrzuqothQ3y/n1kUtrjCoCPLkXUwMvOo/F/TCfoHMbWIFlWwpZtkZVb9ga4U2pA==}
+  /@babel/generator@7.23.0:
+    resolution: {integrity: sha512-lN85QRR+5IbYrMWM6Y4pE/noaQtg4pNiqeNGX60eqOfo6gtEj6uw/JagelB8vVztSd7R6M5n1+PQkDbHbBRU4g==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/types': 7.22.19
+      '@babel/types': 7.23.0
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.19
       jsesc: 2.5.2
@@ -751,7 +751,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/code-frame': 7.22.13
-      '@babel/generator': 7.22.15
+      '@babel/generator': 7.23.0
       '@babel/helper-environment-visitor': 7.22.20
       '@babel/helper-function-name': 7.22.5
       '@babel/helper-hoist-variables': 7.22.5
@@ -765,6 +765,14 @@ packages:
 
   /@babel/types@7.22.19:
     resolution: {integrity: sha512-P7LAw/LbojPzkgp5oznjE6tQEIWbp4PkkfrZDINTro9zgBRtI324/EYsiSI7lhPbpIQ+DCeR2NNmMWANGGfZsg==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      '@babel/helper-string-parser': 7.22.5
+      '@babel/helper-validator-identifier': 7.22.20
+      to-fast-properties: 2.0.0
+
+  /@babel/types@7.23.0:
+    resolution: {integrity: sha512-0oIyUfKoI3mSqMvsxBdclDwxXKXAUA8v/apZbc+iSyARYou1o8ZGDxbUYyLFoW2arqS2jDGqJuZvv1d/io1axg==}
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/helper-string-parser': 7.22.5
@@ -1182,7 +1190,7 @@ packages:
       '@parcel/watcher':
         optional: true
     dependencies:
-      '@babel/generator': 7.22.15
+      '@babel/generator': 7.23.0
       '@babel/template': 7.22.15
       '@babel/types': 7.22.19
       '@graphql-codegen/core': 4.0.0(graphql@16.8.1)
@@ -2009,7 +2017,7 @@ packages:
     dependencies:
       '@babel/code-frame': 7.22.13
       '@babel/core': 7.22.20
-      '@babel/generator': 7.22.15
+      '@babel/generator': 7.23.0
       '@babel/parser': 7.22.16
       '@babel/template': 7.22.15
       '@babel/traverse': 7.22.20
