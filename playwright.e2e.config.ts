@@ -21,8 +21,12 @@ export default defineConfig({
   // Run your local dev server before starting the tests:
   // https://playwright.dev/docs/test-advanced#launching-a-development-web-server-during-the-tests
   webServer: {
-    command: "pnpm dev",
-    url: baseURL,
+    // command: "pnpm dev",
+    // url: baseURL,
+
+    command: "pnpm dev -- --experimental-test-proxy",
+    url: "http://localhost:3000",
+
     timeout: 120 * 1000,
     reuseExistingServer: !process.env.CI,
   },
