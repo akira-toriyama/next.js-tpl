@@ -2,7 +2,6 @@ import {
   test,
   expect,
   graphql,
-  rest,
 } from "next/experimental/testmode/playwright/msw";
 import * as ItemQ from "~/ui/domain/item/_/repository/query/Item.gql.generated";
 
