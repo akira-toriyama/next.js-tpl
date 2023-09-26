@@ -46,3 +46,5 @@ _server/graphqlServer/schema.graphql
 /public/mockServiceWorker.js
 
 .pnpm-store
+
+/playwright-report
