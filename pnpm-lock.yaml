@@ -3304,7 +3304,7 @@ packages:
     dependencies:
       '@vitest/spy': 0.34.5
       '@vitest/utils': 0.34.5
-      chai: 4.3.8
+      chai: 4.3.9
     dev: true
 
   /@vitest/runner@0.34.5:
@@ -3977,8 +3977,8 @@ packages:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
     dev: true
 
-  /chai@4.3.8:
-    resolution: {integrity: sha512-vX4YvVVtxlfSZ2VecZgFUTU5qPCYsobVI2O9FmwEXBhDigYGQA6jRXCycIs1yJnnWbZ6/+a2zNIF5DfVCcJBFQ==}
+  /chai@4.3.9:
+    resolution: {integrity: sha512-tH8vhfA1CfuYMkALXj+wmZcqiwqOfshU9Gry+NYiiLqIddrobkBhALv6XD4yDz68qapphYI4vSaqhqAdThCAAA==}
     engines: {node: '>=4'}
     dependencies:
       assertion-error: 1.1.0
@@ -10338,7 +10338,7 @@ packages:
       acorn: 8.10.0
       acorn-walk: 8.2.0
       cac: 6.7.14
-      chai: 4.3.8
+      chai: 4.3.9
       debug: 4.3.4
       jsdom: 22.1.0
       local-pkg: 0.4.3
