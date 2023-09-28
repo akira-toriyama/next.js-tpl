@@ -1963,7 +1963,7 @@ packages:
     dependencies:
       '@jscpd/core': 3.5.4
       '@jscpd/tokenizer': 3.5.4
-      blamer: 1.0.4
+      blamer: 1.0.6
       bytes: 3.1.2
       cli-table3: 0.6.3
       colors: 1.4.0
@@ -3804,8 +3804,8 @@ packages:
       readable-stream: 3.6.2
     dev: true
 
-  /blamer@1.0.4:
-    resolution: {integrity: sha512-wKUEcMmhVUVjrpXKMROJY/O7EUNzQVAcE4jrVwLw/EcMVRS+xzgRpLOEQ/LRXBp1WGtl7uDMHcNzSeJWCRg0Tg==}
+  /blamer@1.0.6:
+    resolution: {integrity: sha512-fv7QToPS87oD1m1bDDTf29zC/bVKJxj2Nqh1r/v4NhMtbnzDIbWOHBYIfxCjlmkVGu3FGOjKgdNG3SFm7TkvBQ==}
     engines: {node: '>=8.9'}
     dependencies:
       execa: 4.1.0
