@@ -13,7 +13,7 @@ test("go to /items/id/edit", async ({ page, msw }) => {
           item: {
             id: "1",
             title: "t1",
-            body: "t1",
+            body: "b1",
           },
         }),
       ),

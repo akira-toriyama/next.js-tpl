@@ -1,9 +1,8 @@
-import type { NextPage } from "next";
 import { match, P } from "ts-pattern";
 import * as presenter from "~/ui/domain/items/presenter";
 import * as repository from "~/ui/domain/items/repository";
 
-const Page: NextPage = () =>
+const Page = () =>
   repository.fetchAll().then((r) =>
     match(r)
       .with({ items: P.nullish }, () => <presenter.Empty />)

@@ -7,7 +7,7 @@ import * as repository from "../../repository";
 import { useRouter } from "next/navigation";
 
 /**
- * FIXME `refresh`を使用せずになんとかしたい
+ * TODO `refresh`を使用せずになんとかしたい
  * Next.js のバグっぽい？
  *
  * ```ts
