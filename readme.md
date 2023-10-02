@@ -102,6 +102,7 @@ const Cat: React.FC = () => {
 
 ```tsx
 # Good
+
 type Props = {
   name: string
 };
