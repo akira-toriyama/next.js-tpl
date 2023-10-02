@@ -1,4 +1,4 @@
-import { Link as LinkBase } from "@chakra-ui/react";
+import * as c from "@chakra-ui/react";
 import NextLink from "next/link";
 
 type Props = {
@@ -6,12 +6,12 @@ type Props = {
   children: string;
 };
 export const Link: React.FC<Props> = (props) => (
-  <LinkBase
+  <c.Link
     {...{
       ...props,
       as: NextLink,
     }}
   >
     {props.children}
-  </LinkBase>
+  </c.Link>
 );
