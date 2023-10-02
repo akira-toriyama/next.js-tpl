@@ -1,22 +1,37 @@
 import type { NextPage } from "next";
-import NextLink from "next/link";
+import { Link } from "~/ui/general/Link";
+import { ListItem, UnorderedList } from "@chakra-ui/react";
 
 const Page: NextPage = () => (
-  <>
-    <ul>
-      <li>
-        <NextLink data-pw="items" href="/items">
-          items
-        </NextLink>
-      </li>
-      <li>
-        <NextLink href="/parallel-routes">parallel-routes</NextLink>
-      </li>
-      <li>
-        <NextLink href="/template/a">template</NextLink>
-      </li>
-    </ul>
-  </>
+  <UnorderedList>
+    <ListItem>
+      <Link
+        {...{
+          href: "/items",
+        }}
+      >
+        items
+      </Link>
+    </ListItem>
+    <ListItem>
+      <Link
+        {...{
+          href: "/parallel-routes",
+        }}
+      >
+        parallel-routes
+      </Link>
+    </ListItem>
+    <ListItem>
+      <Link
+        {...{
+          href: "/template",
+        }}
+      >
+        template
+      </Link>
+    </ListItem>
+  </UnorderedList>
 );
 
 export default Page;

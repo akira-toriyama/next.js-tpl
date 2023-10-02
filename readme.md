@@ -3,9 +3,7 @@
 [App](https://next-js-tpl-app.vercel.app/)  
 **Hygraph**に登録しているデータを表示しています。
 
-[Design system](https://next-js-tpl.vercel.app/)  
-**React**は、**css in js**, **css module**, **コンポート ライブラリ**, など様々なスタイル適用方法があります。
-必要に応じて適切なスタイルを適用してください。
+[Design system](https://next-js-tpl.vercel.app/)
 
 ## 使用方法
 
