@@ -17,6 +17,9 @@ dependencies:
   '@emotion/styled':
     specifier: 11.11.0
     version: 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.24)(react@18.2.0)
+  '@fontsource/noto-sans-jp':
+    specifier: 5.0.12
+    version: 5.0.12
   '@graphql-typed-document-node/core':
     specifier: 3.2.0
     version: 3.2.0(graphql@16.8.1)
@@ -2320,6 +2323,10 @@ packages:
     resolution: {integrity: sha512-38DT60rumHfBYynif3lmtxMqMqmsOQIxQgEuPZxCk2yUYN0eqWpTACgxi0VpidvsJB8CRxCpvP7B3anK85FjtQ==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0, npm: '>=6.14.13'}
     dev: true
+
+  /@fontsource/noto-sans-jp@5.0.12:
+    resolution: {integrity: sha512-nTU1hGFY8MoiMeLl9+wbl38NJyX3VcU9c9ITCMRUGxHHGruqmcolYRc5sOM1AoAqA81kJltpa7zOzEu/0jQa+g==}
+    dev: false
 
   /@graphql-codegen/add@3.2.3(graphql@16.8.1):
     resolution: {integrity: sha512-sQOnWpMko4JLeykwyjFTxnhqjd/3NOG2OyMuvK76Wnnwh8DRrNf2VEs2kmSvLl7MndMlOj7Kh5U154dVcvhmKQ==}
