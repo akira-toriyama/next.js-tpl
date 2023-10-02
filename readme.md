@@ -104,8 +104,12 @@ const Cat: React.FC = () => {
 
 ```tsx
 # Good
+type Props = {
+  name: string
+};
 
-const useCat = () => {
+type UseCat = () => Props;
+const useCat: UseCat = () => {
   const [v, setV] = useState("たま");
 
   return {
@@ -113,11 +117,11 @@ const useCat = () => {
   };
 };
 
-const Cat: React.FC = () => {
-  const cat = useCat();
-
-  return <>猫の名前{cat.name}</>;
+const CatComponent: React.FC<Props> = (props) => {
+  return <>猫の名前{props.name}</>;
 };
+
+const Cat: React.FC = () => <CatComponent {...useCat()} />
 ```
 
 ### テスト
