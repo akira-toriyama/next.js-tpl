@@ -16,9 +16,19 @@ describe.concurrent("Loading", () => {
 });
 
 describe.concurrent("ItemEditComponent", () => {
-  test.concurrent("test", () => {
+  test.concurrent("normal", () => {
     expect(
       render(<c.ItemEditComponent {...mock.makeItemEditProps()} />),
+    ).toBeDefined();
+  });
+
+  test.concurrent("has error", () => {
+    expect(
+      render(
+        <c.ItemEditComponent
+          {...mock.makeItemEditProps({ type: "hasError" })}
+        />,
+      ),
     ).toBeDefined();
   });
 });
