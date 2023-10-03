@@ -15,18 +15,10 @@ const normal: Props = {
     register: () => null,
     // @ts-expect-error -- mock
     handleSubmit: () => null,
+    // @ts-expect-error -- mock
     formState: {
       isSubmitting: false,
-      errors: {
-        // @ts-expect-error -- mock
-        body: {
-          message: "",
-        },
-        // @ts-expect-error -- mock
-        title: {
-          message: "",
-        },
-      },
+      errors: {},
     },
   },
 };
