@@ -1,8 +1,7 @@
-import type { NextPage } from "next";
 import { Link } from "~/ui/general/Link";
 import { ListItem, UnorderedList } from "@chakra-ui/react";
 
-const Page: NextPage = () => (
+const Page = () => (
   <UnorderedList>
     <ListItem>
       <Link
