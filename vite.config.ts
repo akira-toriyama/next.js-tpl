@@ -33,6 +33,7 @@ export default defineConfig({
         "src/infra/graphql/types.ts",
         "src/infra/graphql/client.ts",
         "src/env.ts",
+        "src/ui/provider/Provider.tsx",
       ],
       provider: "v8",
       statements: 100,
