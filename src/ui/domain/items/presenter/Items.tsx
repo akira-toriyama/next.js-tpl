@@ -1,4 +1,5 @@
-import NextLink from "next/link";
+import { ListItem, UnorderedList } from "@chakra-ui/react";
+import { Link } from "~/ui/general/Link";
 
 export const Empty: React.FC = () => <>items: Empty</>;
 
@@ -7,11 +8,17 @@ export const Loading: React.FC = () => <>items: Loading</>;
 export const Items: React.FC<{
   items: ReadonlyArray<{ title: string; id: string }>;
 }> = (props) => (
-  <ul>
+  <UnorderedList>
     {props.items.map((v) => (
-      <li data-testid="data" key={v.id}>
-        <NextLink href={`/items/${v.id}/detail`}>{v.title}</NextLink>
-      </li>
+      <ListItem data-testid="data" key={v.id}>
+        <Link
+          {...{
+            href: `/items/${v.id}/detail`,
+          }}
+        >
+          {v.title}
+        </Link>
+      </ListItem>
     ))}
-  </ul>
+  </UnorderedList>
 );

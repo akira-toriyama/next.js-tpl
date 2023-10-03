@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import NextTopLoader from "nextjs-toploader";
-import { Providers } from "./providers";
+import { Provider } from "~/ui/provider";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -17,7 +17,7 @@ const Layout: NextPage<Props> = (props) => (
   <html lang="ja">
     <body>
       <NextTopLoader />
-      <Providers>{props.children}</Providers>
+      <Provider>{props.children}</Provider>
     </body>
   </html>
 );
