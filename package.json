@@ -44,7 +44,7 @@
     "react-dom": "18.2.0",
     "react-hook-form": "7.46.2",
     "ts-pattern": "5.0.5",
-    "zod": "3.22.2"
+    "zod": "3.22.4"
   },
   "devDependencies": {
     "@bird-studio/eslint-config": "1.4.3",
