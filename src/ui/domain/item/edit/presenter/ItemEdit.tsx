@@ -86,7 +86,11 @@ export const ItemEditComponent: React.FC<type.Props> = (props) => (
         </FormControl>
 
         <Center m="5">
-          <Button colorScheme="blue" type="submit">
+          <Button
+            colorScheme="blue"
+            type="submit"
+            isDisabled={props.form.formState.isSubmitting}
+          >
             submit
           </Button>
         </Center>
