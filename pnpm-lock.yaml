@@ -89,8 +89,8 @@ devDependencies:
     specifier: 10.0.0
     version: 10.0.0(graphql@16.8.1)
   '@ladle/react':
-    specifier: 3.1.0
-    version: 3.1.0(@types/node@20.8.2)(encoding@0.1.13)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
+    specifier: 3.2.1
+    version: 3.2.1(@types/node@20.8.2)(encoding@0.1.13)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
   '@playwright/test':
     specifier: 1.38.1
     version: 1.38.1
@@ -3166,8 +3166,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: true
 
-  /@ladle/react@3.1.0(@types/node@20.8.2)(encoding@0.1.13)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-FvpIyL3n+Fg9jDsBin9fzCoFfG5sJrCO9BwvutsJ6HKjDWnggOeRTt4jef0DMoF6hT5sVN22SYeVgPiQ3c7muQ==}
+  /@ladle/react@3.2.1(@types/node@20.8.2)(encoding@0.1.13)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-XX/Kgxd9YCAor51Xn2+ScrgXJcwWP6DEkNZRO2vF9t/qadIJ9Mr1jxqF6t2OaKtdCvQML6JMgerzruY17Gv2Ug==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:

@@ -57,7 +57,7 @@
     "@graphql-codegen/typescript-operations": "4.0.1",
     "@graphql-tools/mock": "9.0.0",
     "@graphql-tools/schema": "10.0.0",
-    "@ladle/react": "3.1.0",
+    "@ladle/react": "3.2.1",
     "@playwright/test": "1.38.1",
     "@testing-library/react": "14.0.0",
     "@tsconfig/next": "2.0.0",
