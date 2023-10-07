@@ -34,7 +34,6 @@ export default defineConfig({
     trace: "on-first-retry",
     video: "on",
     baseURL: "http://localhost:3000",
-    testIdAttribute: "data-pw",
   },
 
   /* Configure projects for major browsers */
