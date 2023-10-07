@@ -45,3 +45,14 @@ test("go to /items/id/detail", async ({ page, msw }) => {
   await page.getByText("t1").first().click();
   await expect(page).toHaveURL("/items/1/detail");
 });
+
+test("go to /items/id/detail (empty", async ({ page, msw }) => {
+  msw.use(
+    graphql.query(ItemsQ.ItemsDocument, (_, res, ctx) =>
+      res.once(ctx.data({ items: [] })),
+    ),
+  );
+
+  await page.goto("/items");
+  await expect(page.getByText("Empty")).toBeVisible();
+});
