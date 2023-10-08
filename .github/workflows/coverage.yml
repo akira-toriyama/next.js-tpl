@@ -29,10 +29,17 @@ jobs:
           NEXT_PUBLIC_GRAPHQL_ENDPOINT_AUTHORIZATION: ${{ secrets.NEXT_PUBLIC_GRAPHQL_ENDPOINT_AUTHORIZATION }}
 
       - uses: actions/upload-artifact@v3
-        if: failure()
+        # if: failure()
         with:
-          name: playwright-report
+          name: playwright-snapshot-report
           path: snapshotReport/
+          retention-days: 1
+
+      - uses: actions/upload-artifact@v3
+        # if: failure()
+        with:
+          name: playwright-e2e-report
+          path: playwright-report/
           retention-days: 1
 
       - name: Upload coverage to Codecov
