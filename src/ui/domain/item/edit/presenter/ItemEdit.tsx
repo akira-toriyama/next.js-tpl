@@ -35,10 +35,10 @@ export const ItemEditComponent: React.FC<type.Props> = (props) => (
       <ListItem>
         <Link
           {...{
-            href: `/items/${props.item.id}/edit`,
+            href: `/items/${props.item.id}/detail`,
           }}
         >
-          編集へ
+          詳細へ
         </Link>
       </ListItem>
     </UnorderedList>
