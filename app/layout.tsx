@@ -1,6 +1,14 @@
 import type { NextPage } from "next";
 import NextTopLoader from "nextjs-toploader";
 import { Provider } from "~/ui/provider";
+import { Noto_Sans_JP } from "@next/font/google";
+
+const notojp = Noto_Sans_JP({
+  weight: ["400", "500"],
+  subsets: ["latin"],
+  variable: "--font-notojp",
+  display: "swap",
+});
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -14,7 +22,7 @@ type Props = {
   children: React.ReactNode;
 };
 const Layout: NextPage<Props> = (props) => (
-  <html lang="ja">
+  <html lang="ja" className={notojp.variable}>
     <body>
       <NextTopLoader />
       <Provider>{props.children}</Provider>

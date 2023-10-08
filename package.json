@@ -35,7 +35,6 @@
     "@fontsource/noto-sans-jp": "5.0.13",
     "@graphql-typed-document-node/core": "3.2.0",
     "@hookform/resolvers": "3.3.1",
-    "@next/font": "13.5.4",
     "@vitejs/plugin-react": "4.1.0",
     "framer-motion": "10.16.4",
     "graphql-request": "6.1.0",
