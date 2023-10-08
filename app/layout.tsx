@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import NextTopLoader from "nextjs-toploader";
 import { Provider } from "~/ui/provider";
-import { Noto_Sans_JP } from "@next/font/google";
+import { Noto_Sans_JP } from "next/font/google";
 
 const notojp = Noto_Sans_JP({
   weight: ["400", "500"],
