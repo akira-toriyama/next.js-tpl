@@ -11,7 +11,7 @@ import {
   Box,
   Text,
 } from "@chakra-ui/react";
-// import { formParam } from "../../_/presenter";
+import { formParam } from "../../_/presenter";
 
 export const Empty: React.FC = () => <>detail: Empty</>;
 
