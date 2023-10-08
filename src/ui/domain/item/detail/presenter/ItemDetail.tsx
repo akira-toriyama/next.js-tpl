@@ -54,22 +54,14 @@ export const ItemDetail: React.FC<{
       <CardBody>
         <Stack divider={<StackDivider />} spacing="4">
           <Box>
-            <Heading size="xs">
-              Title
-              {/* TODO snapshot で失敗する */}
-              {/* {formParam.title.label} */}
-            </Heading>
+            <Heading size="xs">{formParam.title.label}</Heading>
             <Text pt="2" fontSize="sm">
               {props.item.title}
             </Text>
           </Box>
 
           <Box>
-            <Heading size="xs">
-              Body
-              {/* TODO snapshot で失敗する */}
-              {/* {formParam.body.label} */}
-            </Heading>
+            <Heading size="xs">{formParam.body.label}</Heading>
             <Text pt="2" fontSize="sm">
               {props.item.body}
             </Text>
