@@ -6,6 +6,7 @@ import {
 import * as ItemsQ from "~/ui/domain/items/repository/query/Items.gql.generated";
 import * as ItemQ from "~/ui/domain/item/_/repository/query/Item.gql.generated";
 import * as ItemM from "~/ui/domain/item/edit/repository/mutation/ItemEdit.gql.generated";
+import * as service from "~/ui/domain/item/_/service";
 
 test("fill in the form", async ({ page, msw }) => {
   msw.use(
@@ -51,8 +52,12 @@ test("fill in the form", async ({ page, msw }) => {
   );
 
   await page.goto(`/items/1/edit`);
-  await page.locator('input[name="title"]').fill("abc");
-  await page.locator('input[name="body"]').fill("efg");
+  await page
+    .getByLabel(service.formParam.title.label)
+    .fill(service.formParam.title.placeholder);
+  await page
+    .getByLabel(service.formParam.body.label)
+    .fill(service.formParam.body.placeholder);
   await page.getByRole("button", { name: "submit" }).click();
 
   // TODO
