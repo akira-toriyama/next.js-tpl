@@ -14,7 +14,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { Link } from "~/ui/general/Link";
-import * as service from "../../_/service";
+import { formParam } from "../../_/presenter";
 
 export const Empty: React.FC = () => <>edit: 対象データ無し</>;
 
@@ -35,10 +35,10 @@ export const ItemEditComponent: React.FC<type.Props> = (props) => (
       <ListItem>
         <Link
           {...{
-            href: `/items/${props.item.id}/edit`,
+            href: `/items/${props.item.id}/detail`,
           }}
         >
-          編集へ
+          詳細へ
         </Link>
       </ListItem>
     </UnorderedList>
@@ -48,19 +48,17 @@ export const ItemEditComponent: React.FC<type.Props> = (props) => (
 
         <FormControl
           {...{
-            isRequired: !!service.formParam.title.minLength,
+            isRequired: !!formParam.title.minLength,
             isInvalid: !!props.form.formState.errors.title,
           }}
         >
-          <FormLabel htmlFor={"title"}>
-            {service.formParam.title.label}
-          </FormLabel>
+          <FormLabel htmlFor={"title"}>{formParam.title.label}</FormLabel>
           <Input
             {...{
               ...props.form.register("title"),
               id: "title",
-              maxLength: service.formParam.title.maxLength,
-              placeholder: service.formParam.title.placeholder,
+              maxLength: formParam.title.maxLength,
+              placeholder: formParam.title.placeholder,
             }}
           />
           <FormErrorMessage>
@@ -70,17 +68,17 @@ export const ItemEditComponent: React.FC<type.Props> = (props) => (
 
         <FormControl
           {...{
-            isRequired: !!service.formParam.body.minLength,
+            isRequired: !!formParam.body.minLength,
             isInvalid: !!props.form.formState.errors.body,
           }}
         >
-          <FormLabel htmlFor={"body"}>{service.formParam.body.label}</FormLabel>
+          <FormLabel htmlFor={"body"}>{formParam.body.label}</FormLabel>
           <Input
             {...{
               ...props.form.register("body"),
               id: "body",
-              maxLength: service.formParam.body.maxLength,
-              placeholder: service.formParam.body.placeholder,
+              maxLength: formParam.body.maxLength,
+              placeholder: formParam.body.placeholder,
             }}
           />
           <FormErrorMessage>

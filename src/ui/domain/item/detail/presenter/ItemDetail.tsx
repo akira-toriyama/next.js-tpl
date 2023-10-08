@@ -11,6 +11,7 @@ import {
   Box,
   Text,
 } from "@chakra-ui/react";
+// import { formParam } from "../../_/presenter";
 
 export const Empty: React.FC = () => <>detail: Empty</>;
 
@@ -53,8 +54,10 @@ export const ItemDetail: React.FC<{
       <CardBody>
         <Stack divider={<StackDivider />} spacing="4">
           <Box>
-            <Heading size="xs" textTransform="uppercase">
+            <Heading size="xs">
               Title
+              {/* TODO snapshot で失敗する */}
+              {/* {formParam.title.label} */}
             </Heading>
             <Text pt="2" fontSize="sm">
               {props.item.title}
@@ -62,8 +65,10 @@ export const ItemDetail: React.FC<{
           </Box>
 
           <Box>
-            <Heading size="xs" textTransform="uppercase">
+            <Heading size="xs">
               Body
+              {/* TODO snapshot で失敗する */}
+              {/* {formParam.body.label} */}
             </Heading>
             <Text pt="2" fontSize="sm">
               {props.item.body}
