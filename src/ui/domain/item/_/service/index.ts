@@ -1,0 +1,1 @@
+export { formParam } from "./service";

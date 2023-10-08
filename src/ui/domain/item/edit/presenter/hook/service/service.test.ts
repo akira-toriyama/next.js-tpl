@@ -1,9 +1,10 @@
 import { formSchema } from "./service";
 import { describe, test, expect } from "vitest";
+import * as service from "../../../../_/service";
 
 describe.concurrent("formSchema", () => {
-  const l20 = "".padStart(20, "v");
-  const l15 = "".padStart(15, "v");
+  const validTitle = "".padStart(service.formParam.title.maxLength, "o");
+  const validBody = "".padStart(service.formParam.body.maxLength, "o");
 
   type TestData = {
     param: unknown;
@@ -23,8 +24,8 @@ describe.concurrent("formSchema", () => {
     },
     {
       param: {
-        title: l20,
-        body: l15,
+        title: validTitle,
+        body: validBody,
       },
       expected: {
         success: true,
@@ -70,8 +71,8 @@ describe.concurrent("formSchema", () => {
     },
     {
       param: {
-        title: `${l20}-`,
-        body: l15,
+        title: `${validTitle}-`,
+        body: validBody,
       },
       expected: {
         success: false,
@@ -80,8 +81,8 @@ describe.concurrent("formSchema", () => {
     },
     {
       param: {
-        title: l20,
-        body: `${l15}-`,
+        title: validTitle,
+        body: `${validBody}-`,
       },
       expected: {
         success: false,
@@ -90,7 +91,7 @@ describe.concurrent("formSchema", () => {
     },
   ];
 
-  test.each(testData)("No.%#: %o", ({ param, expected }) => {
+  test.each(testData)("I/O %o", ({ param, expected }) => {
     expect(formSchema.safeParse(param)).toEqual(expected);
   });
 });

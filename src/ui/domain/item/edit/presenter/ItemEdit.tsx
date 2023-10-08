@@ -14,6 +14,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { Link } from "~/ui/general/Link";
+import * as service from "../../_/service";
 
 export const Empty: React.FC = () => <>edit: 対象データ無し</>;
 
@@ -47,17 +48,19 @@ export const ItemEditComponent: React.FC<type.Props> = (props) => (
 
         <FormControl
           {...{
-            isRequired: true,
+            isRequired: !!service.formParam.title.minLength,
             isInvalid: !!props.form.formState.errors.title,
           }}
         >
-          <FormLabel htmlFor={"title"}>タイトル</FormLabel>
+          <FormLabel htmlFor={"title"}>
+            {service.formParam.title.label}
+          </FormLabel>
           <Input
             {...{
               ...props.form.register("title"),
               id: "title",
-              // placeholder: '',
-              // maxLength: 10,
+              maxLength: service.formParam.title.maxLength,
+              placeholder: service.formParam.title.placeholder,
             }}
           />
           <FormErrorMessage>
@@ -67,17 +70,17 @@ export const ItemEditComponent: React.FC<type.Props> = (props) => (
 
         <FormControl
           {...{
-            isRequired: true,
+            isRequired: !!service.formParam.body.minLength,
             isInvalid: !!props.form.formState.errors.body,
           }}
         >
-          <FormLabel htmlFor={"body"}>body</FormLabel>
+          <FormLabel htmlFor={"body"}>{service.formParam.body.label}</FormLabel>
           <Input
             {...{
               ...props.form.register("body"),
               id: "body",
-              // placeholder: '',
-              // maxLength: 10,
+              maxLength: service.formParam.body.maxLength,
+              placeholder: service.formParam.body.placeholder,
             }}
           />
           <FormErrorMessage>
