@@ -1,7 +1,7 @@
 import { z } from "zod";
 import * as type from "../../ItemEdit.type";
 import * as service from "../../../../_/service";
-import * as message from "~/ui/_/message";
+import * as message from "~/ui/domain/_/message";
 
 export const formSchema: z.ZodSchema<type.FormValue> = z.object({
   title: z
