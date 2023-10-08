@@ -26,6 +26,9 @@ dependencies:
   '@hookform/resolvers':
     specifier: 3.3.1
     version: 3.3.1(react-hook-form@7.47.0)
+  '@next/font':
+    specifier: 13.5.4
+    version: 13.5.4
   '@vitejs/plugin-react':
     specifier: 4.1.0
     version: 4.1.0(vite@4.4.11)
@@ -3561,6 +3564,10 @@ packages:
     dependencies:
       glob: 7.1.7
     dev: true
+
+  /@next/font@13.5.4:
+    resolution: {integrity: sha512-rOMki1/9BP9N93RZABiiF0EidMGgyCvNVSKvLLAnMkVh/IYk4Z827+NRuxCyRQCeT3vv/AeCiP5SFPAP10SPrQ==}
+    dev: false
 
   /@next/swc-darwin-arm64@13.5.4:
     resolution: {integrity: sha512-Df8SHuXgF1p+aonBMcDPEsaahNo2TCwuie7VXED4FVyECvdXfRT9unapm54NssV9tF3OQFKBFOdlje4T43VO0w==}
