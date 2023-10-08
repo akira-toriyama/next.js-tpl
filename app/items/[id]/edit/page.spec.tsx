@@ -60,7 +60,7 @@ test("fill in the form", async ({ page, msw }) => {
     .fill(service.formParam.body.placeholder);
   await page.getByRole("button", { name: "submit" }).click();
 
-  // TODO
+  // TODO テスト不能
   // await expect(page).toHaveURL("/items");
 });
 
