@@ -55,7 +55,8 @@ export const ItemDetail: React.FC<{
         <Stack divider={<StackDivider />} spacing="4">
           <Box>
             <Heading size="xs">
-              Title
+              タイトル
+              {/* Title */}
               {/* TODO snapshot で失敗する */}
               {/* {formParam.title.label} */}
             </Heading>
@@ -65,11 +66,12 @@ export const ItemDetail: React.FC<{
           </Box>
 
           <Box>
-            <Heading size="xs">
-              Body
-              {/* TODO snapshot で失敗する */}
-              {/* {formParam.body.label} */}
-            </Heading>
+            {/* <Heading size="xs"> */}
+            {/* Body */}
+            {/* TODO snapshot で失敗する */}
+            {/* {formParam.body.label} */}
+            {/* </Heading> */}
+            本文
             <Text pt="2" fontSize="sm">
               {props.item.body}
             </Text>

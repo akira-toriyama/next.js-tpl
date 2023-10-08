@@ -7,6 +7,7 @@ export const Provider: GlobalProvider = (props) => (
   <ChakraProvider
     theme={extendTheme({
       fonts: {
+        heading: `'Noto Sans JP', sans-serif`,
         body: `'Noto Sans JP', sans-serif`,
       },
     })}
