@@ -1,6 +1,6 @@
 import { formSchema } from "./service";
 import { describe, test, expect } from "vitest";
-import * as service from "../../../../_/service";
+import { formParam } from "../../../../_/presenter";
 
 describe.concurrent("formSchema", () => {
   const validTitle = "".padStart(formParam.title.maxLength, "o");

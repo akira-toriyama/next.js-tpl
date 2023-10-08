@@ -64,7 +64,7 @@ export const ItemDetail: React.FC<{
 
           <Box>
             <Heading size="xs" textTransform="uppercase">
-              {formParam.body}
+              {formParam.body.label}
             </Heading>
             <Text pt="2" fontSize="sm">
               {props.item.body}
