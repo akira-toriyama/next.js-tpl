@@ -62,7 +62,6 @@ export const ItemDetail: React.FC<{
 
           <Box>
             <Heading size="xs">{formParam.body.label}</Heading>
-            本文
             <Text pt="2" fontSize="sm">
               {props.item.body}
             </Text>
