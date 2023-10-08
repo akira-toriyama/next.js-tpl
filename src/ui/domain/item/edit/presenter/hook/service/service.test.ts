@@ -3,8 +3,8 @@ import { describe, test, expect } from "vitest";
 import * as service from "../../../../_/service";
 
 describe.concurrent("formSchema", () => {
-  const validTitle = "".padStart(service.formParam.title.maxLength, "o");
-  const validBody = "".padStart(service.formParam.body.maxLength, "o");
+  const validTitle = "".padStart(formParam.title.maxLength, "o");
+  const validBody = "".padStart(formParam.body.maxLength, "o");
 
   type TestData = {
     param: unknown;

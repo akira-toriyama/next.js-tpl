@@ -6,7 +6,7 @@ import {
 import * as ItemsQ from "~/ui/domain/items/repository/query/Items.gql.generated";
 import * as ItemQ from "~/ui/domain/item/_/repository/query/Item.gql.generated";
 import * as ItemM from "~/ui/domain/item/edit/repository/mutation/ItemEdit.gql.generated";
-import * as service from "~/ui/domain/item/_/service";
+import { formParam } from "~/ui/domain/item/_/presenter";
 
 test("fill in the form", async ({ page, msw }) => {
   msw.use(
@@ -53,11 +53,9 @@ test("fill in the form", async ({ page, msw }) => {
 
   await page.goto(`/items/1/edit`);
   await page
-    .getByLabel(service.formParam.title.label)
-    .fill(service.formParam.title.placeholder);
-  await page
-    .getByLabel(service.formParam.body.label)
-    .fill(service.formParam.body.placeholder);
+    .getByLabel(formParam.title.label)
+    .fill(formParam.title.placeholder);
+  await page.getByLabel(formParam.body.label).fill(formParam.body.placeholder);
   await page.getByRole("button", { name: "submit" }).click();
 
   // TODO テスト不能

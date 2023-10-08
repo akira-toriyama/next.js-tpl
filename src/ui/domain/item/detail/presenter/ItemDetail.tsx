@@ -11,7 +11,7 @@ import {
   Box,
   Text,
 } from "@chakra-ui/react";
-import * as service from "../../_/service";
+import { formParam } from "../../_/presenter";
 
 export const Empty: React.FC = () => <>detail: Empty</>;
 
@@ -55,7 +55,7 @@ export const ItemDetail: React.FC<{
         <Stack divider={<StackDivider />} spacing="4">
           <Box>
             <Heading size="xs" textTransform="uppercase">
-              {service.formParam.title.label}
+              {formParam.title.label}
             </Heading>
             <Text pt="2" fontSize="sm">
               {props.item.title}
@@ -64,7 +64,7 @@ export const ItemDetail: React.FC<{
 
           <Box>
             <Heading size="xs" textTransform="uppercase">
-              {service.formParam.body}
+              {formParam.body}
             </Heading>
             <Text pt="2" fontSize="sm">
               {props.item.body}
