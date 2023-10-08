@@ -23,3 +23,5 @@ const Layout: NextPage<Props> = (props) => (
 );
 
 export default Layout;
+
+// TODO チャクラ 適用
