@@ -12,6 +12,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { formParam } from "../../_/presenter";
+import NextLink from "next/link";
 
 export const Empty: React.FC = () => <>detail: Empty</>;
 
@@ -36,14 +37,14 @@ export const ItemDetail: React.FC<{
         </Link>
       </ListItem>
       <ListItem>
-        <Link
+        {/* <Link
           {...{
-            // href: `/items/${props.item.id}/edit`,
-            href: `/items/1/edit`,
+            href: `/items/${props.item.id}/edit`,
           }}
         >
           編集へ
-        </Link>
+        </Link> */}
+        <NextLink href={`/items/${props.item.id}/edit`}>編集へ</NextLink>
       </ListItem>
     </UnorderedList>
 
