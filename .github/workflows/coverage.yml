@@ -21,6 +21,9 @@ jobs:
         with:
           version: 8
 
+      - name: Install native dependencies
+        run: sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
+
       - name: Quality check
         uses: ./.github/actions/qualityCheck
         env:
