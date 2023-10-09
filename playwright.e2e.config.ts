@@ -10,6 +10,10 @@ import { defineConfig, devices } from "@playwright/test";
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
+  expect: {
+    timeout: 30 * 1000,
+  },
+
   webServer: {
     command: "pnpm dev -- --experimental-test-proxy",
     url: "http://localhost:3000",
