@@ -41,8 +41,7 @@ export const ItemDetail: React.FC<{
             href: `/items/${props.item.id}/edit`,
           }}
         >
-          {/* 編集へ */}
-          xxx
+          編集へ
         </Link>
       </ListItem>
     </UnorderedList>
