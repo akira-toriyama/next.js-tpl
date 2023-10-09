@@ -16,6 +16,10 @@ test("go to /items/id/edit", async ({ page, msw }) => {
             body: "b1",
           },
         }),
+      ),
+    ),
+    graphql.query(ItemQ.ItemDocument, (_, res, ctx) =>
+      res(
         ctx.data({
           item: {
             id: "1",
