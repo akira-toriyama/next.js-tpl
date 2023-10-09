@@ -38,7 +38,8 @@ export const ItemDetail: React.FC<{
       <ListItem>
         <Link
           {...{
-            href: `/items/${props.item.id}/edit`,
+            // href: `/items/${props.item.id}/edit`,
+            href: `/items/1/edit`,
           }}
         >
           編集へ
