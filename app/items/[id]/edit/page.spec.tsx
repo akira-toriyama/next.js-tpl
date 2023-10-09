@@ -58,8 +58,7 @@ test("fill in the form", async ({ page, msw }) => {
   await page.getByLabel(formParam.body.label).fill(formParam.body.placeholder);
   await page.getByRole("button", { name: "submit" }).click();
 
-  // TODO テスト不能
-  // await expect(page).toHaveURL("/items");
+  await expect(page).toHaveURL("/items");
 });
 
 test("go to /items/id/edit (empty", async ({ page, msw }) => {
