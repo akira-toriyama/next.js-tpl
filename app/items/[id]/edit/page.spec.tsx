@@ -10,8 +10,19 @@ import { formParam } from "~/ui/domain/item/_/presenter";
 
 test("fill in the form", async ({ page, msw }) => {
   msw.use(
+    graphql.query(ItemQ.ItemDocument, (_, res, ctx) =>
+      res(
+        ctx.data({
+          item: {
+            id: "1",
+            title: "t1",
+            body: "b1",
+          },
+        }),
+      ),
+    ),
     graphql.mutation(ItemM.ItemEditDocument, (_, res, ctx) =>
-      res.once(
+      res(
         ctx.data({
           updateItem: { id: "" },
           publishItem: { id: "" },
@@ -19,7 +30,7 @@ test("fill in the form", async ({ page, msw }) => {
       ),
     ),
     graphql.query(ItemsQ.ItemsDocument, (_, res, ctx) =>
-      res.once(
+      res(
         ctx.data({
           items: [
             {
@@ -38,17 +49,6 @@ test("fill in the form", async ({ page, msw }) => {
         }),
       ),
     ),
-    graphql.query(ItemQ.ItemDocument, (_, res, ctx) => {
-      return res.once(
-        ctx.data({
-          item: {
-            id: "1",
-            title: "t1",
-            body: "b1",
-          },
-        }),
-      );
-    }),
   );
 
   await page.goto(`/items/1/edit`);
@@ -58,8 +58,7 @@ test("fill in the form", async ({ page, msw }) => {
   await page.getByLabel(formParam.body.label).fill(formParam.body.placeholder);
   await page.getByRole("button", { name: "submit" }).click();
 
-  // TODO テスト不能
-  // await expect(page).toHaveURL("/items");
+  await expect(page).toHaveURL("/items");
 });
 
 test("go to /items/id/edit (empty", async ({ page, msw }) => {

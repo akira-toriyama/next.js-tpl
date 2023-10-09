@@ -8,7 +8,7 @@ import * as ItemQ from "~/ui/domain/item/_/repository/query/Item.gql.generated";
 test("go to /items/id/edit", async ({ page, msw }) => {
   msw.use(
     graphql.query(ItemQ.ItemDocument, (_, res, ctx) =>
-      res.once(
+      res(
         ctx.data({
           item: {
             id: "1",
@@ -21,7 +21,7 @@ test("go to /items/id/edit", async ({ page, msw }) => {
   );
 
   await page.goto("/items/1/detail");
-  await page.getByText("編集へ").first().click();
+  await page.getByRole("link", { name: "編集へ" }).click();
   await expect(page).toHaveURL("/items/1/edit");
 });
 
