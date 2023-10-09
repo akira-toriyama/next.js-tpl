@@ -8,7 +8,7 @@ import * as ItemQ from "~/ui/domain/item/_/repository/query/Item.gql.generated";
 test("go to /items/id/edit", async ({ page, msw }) => {
   msw.use(
     graphql.query(ItemQ.ItemDocument, (_, res, ctx) =>
-      res.once(
+      res(
         ctx.data({
           item: {
             id: "1",
