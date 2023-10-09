@@ -13,7 +13,6 @@ export default defineConfig({
   expect: {
     timeout: 30 * 1000,
   },
-
   webServer: {
     command: "pnpm dev -- --experimental-test-proxy",
     url: "http://localhost:3000",
