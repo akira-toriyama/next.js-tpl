@@ -4087,8 +4087,8 @@ packages:
     resolution: {integrity: sha512-xPSg0jm4mqgEkNhowKgZFBNtwoEwF6gJ4Dhww+GFpm3IgtNseHQZ5IqdNwnquZEoANxyDAKDRAdVo4Z72VvD/g==}
     dev: true
 
-  /@types/node-fetch@2.6.6:
-    resolution: {integrity: sha512-95X8guJYhfqiuVVhRFxVQcf4hW/2bCuoPwDasMf/531STFoNoWTT7YDnWdXHEZKqAGUigmpG31r2FE70LwnzJw==}
+  /@types/node-fetch@2.6.7:
+    resolution: {integrity: sha512-lX17GZVpJ/fuCjguZ5b3TjEbSENxmEk1B2z02yoXSK9WMEWRivhdSY73wWMn6bpcCDAOh6qAdktpKHIlkDk2lg==}
     dependencies:
       '@types/node': 20.8.6
       form-data: 4.0.0
@@ -4179,7 +4179,7 @@ packages:
   /@types/sync-fetch@0.4.1:
     resolution: {integrity: sha512-M6YXEkVtFtKlDk9uu3PYNFQ2x4yACR0c86x1kzONJrRdGotKDSp1+33IbNYat65OEonRs7zSttIa3SFNkYw1Ng==}
     dependencies:
-      '@types/node-fetch': 2.6.6
+      '@types/node-fetch': 2.6.7
     dev: true
 
   /@types/unist@2.0.8:
