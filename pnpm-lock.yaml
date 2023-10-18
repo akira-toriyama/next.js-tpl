@@ -3933,7 +3933,7 @@ packages:
       '@babel/parser': 7.23.0
       '@babel/types': 7.23.0
       '@types/babel__generator': 7.6.5
-      '@types/babel__template': 7.4.2
+      '@types/babel__template': 7.4.3
       '@types/babel__traverse': 7.20.2
 
   /@types/babel__generator@7.6.5:
@@ -3941,8 +3941,8 @@ packages:
     dependencies:
       '@babel/types': 7.23.0
 
-  /@types/babel__template@7.4.2:
-    resolution: {integrity: sha512-/AVzPICMhMOMYoSx9MoKpGDKdBRsIXMNByh1PXSZoa+v6ZoLa8xxtsT/uLQ/NJm0XVAWl/BvId4MlDeXJaeIZQ==}
+  /@types/babel__template@7.4.3:
+    resolution: {integrity: sha512-ciwyCLeuRfxboZ4isgdNZi/tkt06m8Tw6uGbBSBgWrnnZGNXiEyM27xc/PjXGQLqlZ6ylbgHMnm7ccF9tCkOeQ==}
     dependencies:
       '@babel/parser': 7.23.0
       '@babel/types': 7.23.0
