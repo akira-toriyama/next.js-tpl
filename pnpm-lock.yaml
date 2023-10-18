@@ -110,8 +110,8 @@ devDependencies:
     specifier: 18.2.28
     version: 18.2.28
   '@types/sync-fetch':
-    specifier: 0.4.1
-    version: 0.4.1
+    specifier: 0.4.2
+    version: 0.4.2
   '@vitest/coverage-v8':
     specifier: 0.34.6
     version: 0.34.6(vitest@0.34.6)
@@ -4176,8 +4176,8 @@ packages:
     resolution: {integrity: sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==}
     dev: true
 
-  /@types/sync-fetch@0.4.1:
-    resolution: {integrity: sha512-M6YXEkVtFtKlDk9uu3PYNFQ2x4yACR0c86x1kzONJrRdGotKDSp1+33IbNYat65OEonRs7zSttIa3SFNkYw1Ng==}
+  /@types/sync-fetch@0.4.2:
+    resolution: {integrity: sha512-G7HLt0pajELA+8u/p/mZ2eYKdPl3lqDjq4E9BKvP5bonGmQAJgU71SwNEjA9o7RcWfITTeAEnS6tD99h8FpRrQ==}
     dependencies:
       '@types/node-fetch': 2.6.6
     dev: true
