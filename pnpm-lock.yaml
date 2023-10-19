@@ -4106,8 +4106,8 @@ packages:
   /@types/parse-json@4.0.1:
     resolution: {integrity: sha512-3YmXzzPAdOTVljVMkTMBdBEvlOLg2cDQaDhnnhT3nT9uDbnJzjWhKlzb+desT12Y7tGqaN6d+AbozcKzyL36Ng==}
 
-  /@types/prismjs@1.26.1:
-    resolution: {integrity: sha512-Q7jDsRbzcNHIQje15CS/piKhu6lMLb9jwjxSfEIi4KcFKXW23GoJMkwQiJ8VObyfx+VmUaDcJxXaWN+cTCjVog==}
+  /@types/prismjs@1.26.2:
+    resolution: {integrity: sha512-/r7Cp7iUIk7gts26mHXD66geUC+2Fo26TZYjQK6Nr4LDfi6lmdRmMqM0oPwfiMhUwoBAOFe8GstKi2pf6hZvwA==}
     dev: true
 
   /@types/prop-types@15.7.9:
@@ -9803,7 +9803,7 @@ packages:
     peerDependencies:
       react: '>=16.0.0'
     dependencies:
-      '@types/prismjs': 1.26.1
+      '@types/prismjs': 1.26.2
       clsx: 1.2.1
       react: 18.2.0
     dev: true
