@@ -3995,8 +3995,8 @@ packages:
     resolution: {integrity: sha512-VeiPZ9MMwXjO32/Xu7+OwflfmeoRwkE/qzndw42gGtgJwZopBnzy2gD//NN1+go1mADzkDcqf/KnFRSjTJ8xJA==}
     dev: true
 
-  /@types/express-serve-static-core@4.17.38:
-    resolution: {integrity: sha512-hXOtc0tuDHZPFwwhuBJXPbjemWtXnJjbvuuyNH2Y5Z6in+iXc63c4eXYDc7GGGqHy+iwYqAJMdaItqdnbcBKmg==}
+  /@types/express-serve-static-core@4.17.39:
+    resolution: {integrity: sha512-BiEUfAiGCOllomsRAZOiMFP7LAnrifHpt56pc4Z7l9K6ACyN06Ns1JLMBxwkfLOjJRlSf06NwWsT7yzfpaVpyQ==}
     dependencies:
       '@types/node': 20.8.7
       '@types/qs': 6.9.8
@@ -4008,7 +4008,7 @@ packages:
     resolution: {integrity: sha512-rOaqlkgEvOW495xErXMsmyX3WKBInbhG5eqojXYi3cGUaLoRDlXa5d52fkfWZT963AZ3v2eZ4MbKE6WpDAGVsw==}
     dependencies:
       '@types/body-parser': 1.19.4
-      '@types/express-serve-static-core': 4.17.38
+      '@types/express-serve-static-core': 4.17.39
       '@types/qs': 6.9.8
       '@types/serve-static': 1.15.3
     dev: true
