@@ -4099,8 +4099,8 @@ packages:
     dependencies:
       undici-types: 5.25.3
 
-  /@types/nprogress@0.2.1:
-    resolution: {integrity: sha512-TYuyVnp+nOnimgdOydDIDYIxv2kSeuJZw4tF0p/KG7hpzcMF1WkHaREwM8O4blqfT1F7rq0nht6Ko2KVUfWzBA==}
+  /@types/nprogress@0.2.2:
+    resolution: {integrity: sha512-2wLrSJXLztGmr7wXwM0hA/wuIOY9DznVdd+ZFofHOiXcj9JnVt+2ZeLRJ7v5ZVlmheSkUOSg3Q3O4Ce7yji79A==}
     dev: false
 
   /@types/parse-json@4.0.1:
@@ -9251,7 +9251,7 @@ packages:
       react: '>= 16.0.0'
       react-dom: '>= 16.0.0'
     dependencies:
-      '@types/nprogress': 0.2.1
+      '@types/nprogress': 0.2.2
       next: 13.5.6(@babel/core@7.23.2)(react-dom@18.2.0)(react@18.2.0)
       nprogress: 0.2.0
       prop-types: 15.8.1
