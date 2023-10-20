@@ -87,7 +87,7 @@
     "ts-node-dev": "2.0.0",
     "ts-unused-exports": "10.0.1",
     "typescript": "5.2.2",
-    "vite": "4.4.11",
+    "vite": "4.5.0",
     "vitest": "0.34.6"
   },
   "msw": {
