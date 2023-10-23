@@ -3866,7 +3866,7 @@ packages:
     dependencies:
       '@babel/code-frame': 7.22.13
       '@babel/runtime': 7.23.2
-      '@types/aria-query': 5.0.2
+      '@types/aria-query': 5.0.3
       aria-query: 5.1.3
       chalk: 4.1.2
       dom-accessibility-api: 0.5.16
@@ -3923,8 +3923,8 @@ packages:
       '@types/estree': 1.0.2
     dev: true
 
-  /@types/aria-query@5.0.2:
-    resolution: {integrity: sha512-PHKZuMN+K5qgKIWhBodXzQslTo5P+K/6LqeKXS6O/4liIDdZqaX5RXrCK++LAw+y/nptN48YmUMFiQHRSWYwtQ==}
+  /@types/aria-query@5.0.3:
+    resolution: {integrity: sha512-0Z6Tr7wjKJIk4OUEjVUQMtyunLDy339vcMaj38Kpj6jM2OE1p3S4kXExKZ7a3uXQAPCoy3sbrP1wibDKaf39oA==}
     dev: true
 
   /@types/babel__core@7.20.2:
