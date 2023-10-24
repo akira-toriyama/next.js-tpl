@@ -2,15 +2,16 @@ import {
   test,
   expect,
   graphql,
+  HttpResponse,
 } from "next/experimental/testmode/playwright/msw";
 import * as ItemsQ from "~/ui/domain/items/repository/query/Items.gql.generated";
 import * as ItemQ from "~/ui/domain/item/_/repository/query/Item.gql.generated";
 
 test("go to /items/id/detail", async ({ page, msw }) => {
   msw.use(
-    graphql.query(ItemsQ.ItemsDocument, (_, res, ctx) =>
-      res.once(
-        ctx.data({
+    graphql.query(ItemsQ.ItemsDocument, () =>
+      HttpResponse.json({
+        data: {
           items: [
             {
               id: "1",
@@ -25,19 +26,19 @@ test("go to /items/id/detail", async ({ page, msw }) => {
               title: "t3",
             },
           ],
-        }),
-      ),
+        },
+      }),
     ),
-    graphql.query(ItemQ.ItemDocument, (_, res, ctx) =>
-      res.once(
-        ctx.data({
+    graphql.query(ItemQ.ItemDocument, () =>
+      HttpResponse.json({
+        data: {
           item: {
             id: "1",
             title: "t1",
             body: "b1",
           },
-        }),
-      ),
+        },
+      }),
     ),
   );
 
@@ -48,8 +49,10 @@ test("go to /items/id/detail", async ({ page, msw }) => {
 
 test("go to /items/id/detail (empty", async ({ page, msw }) => {
   msw.use(
-    graphql.query(ItemsQ.ItemsDocument, (_, res, ctx) =>
-      res.once(ctx.data({ items: [] })),
+    graphql.query(ItemsQ.ItemsDocument, () =>
+      HttpResponse.json({
+        data: { items: [] },
+      }),
     ),
   );
 

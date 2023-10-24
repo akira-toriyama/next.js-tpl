@@ -2,21 +2,22 @@ import {
   test,
   expect,
   graphql,
+  HttpResponse,
 } from "next/experimental/testmode/playwright/msw";
 import * as ItemQ from "~/ui/domain/item/_/repository/query/Item.gql.generated";
 
 test("go to /items/id/edit", async ({ page, msw }) => {
   msw.use(
-    graphql.query(ItemQ.ItemDocument, (_, res, ctx) =>
-      res(
-        ctx.data({
+    graphql.query(ItemQ.ItemDocument, () =>
+      HttpResponse.json({
+        data: {
           item: {
             id: "1",
             title: "t1",
             body: "b1",
           },
-        }),
-      ),
+        },
+      }),
     ),
   );
 
@@ -27,12 +28,12 @@ test("go to /items/id/edit", async ({ page, msw }) => {
 
 test("go to /items/id/edit (empty", async ({ page, msw }) => {
   msw.use(
-    graphql.query(ItemQ.ItemDocument, (_, res, ctx) =>
-      res.once(
-        ctx.data({
+    graphql.query(ItemQ.ItemDocument, () =>
+      HttpResponse.json({
+        data: {
           item: null,
-        }),
-      ),
+        },
+      }),
     ),
   );
 

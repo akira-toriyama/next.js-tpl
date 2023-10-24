@@ -2,6 +2,7 @@ import {
   test,
   graphql,
   expect,
+  HttpResponse,
 } from "next/experimental/testmode/playwright/msw";
 import * as ItemsQ from "~/ui/domain/items/repository/query/Items.gql.generated";
 import * as ItemQ from "~/ui/domain/item/_/repository/query/Item.gql.generated";
@@ -10,28 +11,28 @@ import { formParam } from "~/ui/domain/item/_/presenter";
 
 test("fill in the form", async ({ page, msw }) => {
   msw.use(
-    graphql.query(ItemQ.ItemDocument, (_, res, ctx) =>
-      res(
-        ctx.data({
+    graphql.query(ItemQ.ItemDocument, () =>
+      HttpResponse.json({
+        data: {
           item: {
             id: "1",
             title: "t1",
             body: "b1",
           },
-        }),
-      ),
+        },
+      }),
     ),
-    graphql.mutation(ItemM.ItemEditDocument, (_, res, ctx) =>
-      res(
-        ctx.data({
+    graphql.mutation(ItemM.ItemEditDocument, () =>
+      HttpResponse.json({
+        data: {
           updateItem: { id: "" },
           publishItem: { id: "" },
-        }),
-      ),
+        },
+      }),
     ),
-    graphql.query(ItemsQ.ItemsDocument, (_, res, ctx) =>
-      res(
-        ctx.data({
+    graphql.query(ItemsQ.ItemsDocument, () =>
+      HttpResponse.json({
+        data: {
           items: [
             {
               id: "1",
@@ -46,8 +47,8 @@ test("fill in the form", async ({ page, msw }) => {
               title: "t3",
             },
           ],
-        }),
-      ),
+        },
+      }),
     ),
   );
 
@@ -63,12 +64,12 @@ test("fill in the form", async ({ page, msw }) => {
 
 test("go to /items/id/edit (empty", async ({ page, msw }) => {
   msw.use(
-    graphql.query(ItemQ.ItemDocument, (_, res, ctx) =>
-      res.once(
-        ctx.data({
+    graphql.query(ItemQ.ItemDocument, () =>
+      HttpResponse.json({
+        data: {
           item: null,
-        }),
-      ),
+        },
+      }),
     ),
   );
 
