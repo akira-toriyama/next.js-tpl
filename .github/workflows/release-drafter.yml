@@ -24,7 +24,7 @@ jobs:
         # label が x.x.x, x.x.o する
         # label が 空 しない
 
-        if: steps.get-merged-pull-request.outputs.labels != 'x.x.x' && steps.get-merged-pull-request.outputs.labels != ''
+        # if: steps.get-merged-pull-request.outputs.labels != 'x.x.x' && steps.get-merged-pull-request.outputs.labels != ''
         uses: release-drafter/release-drafter@v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
