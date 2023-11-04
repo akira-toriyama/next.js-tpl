@@ -1,26 +1,107 @@
-import { z } from "zod";
+"use client";
 
-export function isValidZodLiteralUnion<T extends z.ZodLiteral<unknown>>(
-  literals: T[],
-): literals is [T, T, ...T[]] {
-  return literals.length >= 2;
-}
-export function constructZodLiteralUnionType<T extends z.ZodLiteral<unknown>>(
-  literals: T[],
-) {
-  if (!isValidZodLiteralUnion(literals)) {
-    throw new Error(
-      "Literals passed do not meet the criteria for constructing a union schema, the minimum length is 2",
-    );
-  }
-  return z.union(literals);
-}
-// Example:
-const literalValues = ["a", "b", "c"] as const;
-// ERROR: Argument of type 'ZodLiteral<"a" | "b" | "c">[]' is not assignable
-// to parameter of type 'readonly [ZodTypeAny, ZodTypeAny, ...ZodTypeAny[]]'
-z.union(literalValues.map((literal) => z.literal(literal)));
-// Valid!
-constructZodLiteralUnionType(
-  literalValues.map((literal) => z.literal(literal)),
+import type * as type from "./ItemEdit.type";
+import { useItemEdit } from "./hook";
+import {
+  ListItem,
+  UnorderedList,
+  FormErrorMessage,
+  FormLabel,
+  FormControl,
+  Input,
+  Box,
+  Button,
+  Center,
+} from "@chakra-ui/react";
+import { Link } from "~/ui/general/Link";
+import { formParam } from "../../_/presenter";
+
+export const Empty: React.FC = () => <>edit: 対象データ無し</>;
+
+export const Loading: React.FC = () => <>edit: Loading</>;
+
+export const ItemEditComponent: React.FC<type.Props> = (props) => (
+  <>
+    <UnorderedList>
+      <ListItem>
+        <Link
+          {...{
+            href: `/items`,
+          }}
+        >
+          一覧へ
+        </Link>
+      </ListItem>
+      <ListItem>
+        <Link
+          {...{
+            href: `/items/${props.item.id}/detail`,
+          }}
+        >
+          詳細へ
+        </Link>
+      </ListItem>
+    </UnorderedList>
+    <Box w="80" m="5">
+      <form onSubmit={props.form.handleSubmit(props.onSubmit)}>
+        <p>{props.serverErrorMessage}</p>
+
+        <FormControl
+          {...{
+            isRequired: !!formParam.title.minLength,
+            isInvalid: !!props.form.formState.errors.title,
+          }}
+        >
+          <FormLabel htmlFor={"title"}>{formParam.title.label}</FormLabel>
+          <Input
+            {...{
+              ...props.form.register("title"),
+              id: "title",
+              maxLength: formParam.title.maxLength,
+              placeholder: formParam.title.placeholder,
+            }}
+          />
+          <FormErrorMessage>
+            {props.form.formState.errors.title?.message}
+          </FormErrorMessage>
+        </FormControl>
+
+        <FormControl
+          {...{
+            isRequired: !!formParam.body.minLength,
+            isInvalid: !!props.form.formState.errors.body,
+          }}
+        >
+          <FormLabel htmlFor={"body"}>{formParam.body.label}</FormLabel>
+          <Input
+            {...{
+              ...props.form.register("body"),
+              id: "body",
+              maxLength: formParam.body.maxLength,
+              placeholder: formParam.body.placeholder,
+            }}
+          />
+          <FormErrorMessage>
+            {props.form.formState.errors.body?.message}
+          </FormErrorMessage>
+        </FormControl>
+
+        <Center m="5">
+          <Button
+            colorScheme="blue"
+            type="submit"
+            isDisabled={props.form.formState.isSubmitting}
+          >
+            submit
+          </Button>
+        </Center>
+      </form>
+    </Box>
+  </>
 );
+
+/* c8 ignore start */
+export const ItemEdit: React.FC<type.OuterProps> = (props) => (
+  <ItemEditComponent {...useItemEdit(props)} />
+);
+/* c8 ignore stop */
