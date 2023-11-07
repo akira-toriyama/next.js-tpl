@@ -1,20 +1,12 @@
-name: auto-assign
-
 on:
   pull_request:
-    types: [opened, unassigned]
+    types: [opened]
+  issues:
+    types: [opened]
 
 jobs:
-  assign:
-    runs-on: ubuntu-20.04
-    timeout-minutes: 1
-
+  autoAssing:
+    runs-on: ubuntu-latest
     steps:
-      - run: cat $GITHUB_EVENT_PATH
-      - run: gh pr edit $NUMBER --add-assignee $ASSIGNEE
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPO: ${{ github.repository }}
-          NUMBER: ${{ github.event.pull_request.number }}
-          ASSIGNEE: ${{ github.event.pull_request.user.login }}
-        if: ${{ github.event.pull_request.user.type != 'Bot' && toJSON(github.event.pull_request.assignees) == '[]' }}
+      - name: Auto assing
+        uses: technote-space/assign-author@v1
