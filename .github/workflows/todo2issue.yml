@@ -1,11 +1,21 @@
-on: ["push"]
+on:
+  pull_request:
+    branches:
+      - main
+    types: [closed]
+
 jobs:
   build:
     runs-on: "ubuntu-latest"
+
+    if: github.event.pull_request.merged == true
+
     steps:
-      - uses: "actions/checkout@master"
+      - name: Checkout
+        uses: "actions/checkout@v4"
+
       - name: "TODO to Issue"
-        uses: "alstr/todo-to-issue-action@master"
+        uses: "alstr/todo-to-issue-action@v4"
         id: "todo"
         with:
           AUTO_ASSIGN: true
