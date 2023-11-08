@@ -110,8 +110,8 @@ devDependencies:
     specifier: 18.2.36
     version: 18.2.36
   '@types/sync-fetch':
-    specifier: 0.4.2
-    version: 0.4.2
+    specifier: 0.4.3
+    version: 0.4.3
   '@vitest/coverage-v8':
     specifier: 0.34.6
     version: 0.34.6(vitest@0.34.6)
@@ -4137,7 +4137,7 @@ packages:
   /@types/node-fetch@2.6.7:
     resolution: {integrity: sha512-lX17GZVpJ/fuCjguZ5b3TjEbSENxmEk1B2z02yoXSK9WMEWRivhdSY73wWMn6bpcCDAOh6qAdktpKHIlkDk2lg==}
     dependencies:
-      '@types/node': 20.8.7
+      '@types/node': 20.8.10
       form-data: 4.0.0
     dev: true
 
@@ -4148,12 +4148,6 @@ packages:
 
   /@types/node@20.8.7:
     resolution: {integrity: sha512-21TKHHh3eUHIi2MloeptJWALuCu5H7HQTdTrWIFReA8ad+aggoX+lRes3ex7/FtpC+sVUpFMQ+QTfYr74mruiQ==}
-    dependencies:
-      undici-types: 5.25.3
-    dev: true
-
-  /@types/node@20.8.8:
-    resolution: {integrity: sha512-YRsdVxq6OaLfmR9Hy816IMp33xOBjfyOgUd77ehqg96CFywxAPbDbXvAsuN2KVg2HOT8Eh6uAfU+l4WffwPVrQ==}
     dependencies:
       undici-types: 5.25.3
     dev: true
@@ -4228,7 +4222,7 @@ packages:
   /@types/set-cookie-parser@2.4.5:
     resolution: {integrity: sha512-ZPmztaAQ4rbnW/WTUnT1dwSENQo4bjGqxCSeyK+gZxmd+zJl/QAeF6dpEXcS5UEJX22HwiggFSaY8nE1nRmkbg==}
     dependencies:
-      '@types/node': 20.8.8
+      '@types/node': 20.8.10
     dev: true
 
   /@types/strip-bom@3.0.0:
@@ -4239,8 +4233,8 @@ packages:
     resolution: {integrity: sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==}
     dev: true
 
-  /@types/sync-fetch@0.4.2:
-    resolution: {integrity: sha512-G7HLt0pajELA+8u/p/mZ2eYKdPl3lqDjq4E9BKvP5bonGmQAJgU71SwNEjA9o7RcWfITTeAEnS6tD99h8FpRrQ==}
+  /@types/sync-fetch@0.4.3:
+    resolution: {integrity: sha512-RfwkmWFd7yi6tRaDcR7KNrxyp6LpO2oXrT6tYkXBLNfp4xf4EKRX7IlLexbtd5X26g34+G6HDD2pMhOZ5srUmQ==}
     dependencies:
       '@types/node-fetch': 2.6.7
     dev: true
@@ -4256,7 +4250,7 @@ packages:
   /@types/ws@8.5.7:
     resolution: {integrity: sha512-6UrLjiDUvn40CMrAubXuIVtj2PEfKDffJS7ychvnPU44j+KVeXmdHHTgqcM/dxLUTHxlXHiFM8Skmb8ozGdTnQ==}
     dependencies:
-      '@types/node': 20.8.7
+      '@types/node': 20.8.10
     dev: true
 
   /@typescript-eslint/eslint-plugin@6.4.0(@typescript-eslint/parser@6.4.0)(eslint@8.53.0)(typescript@5.2.2):
