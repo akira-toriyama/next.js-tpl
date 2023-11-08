@@ -3301,7 +3301,7 @@ packages:
       '@babel/runtime': 7.23.2
       '@emotion/is-prop-valid': 1.2.1
       '@mui/types': 7.2.6(@types/react@18.2.36)
-      '@mui/utils': 5.14.14(@types/react@18.2.36)(react@18.2.0)
+      '@mui/utils': 5.14.17(@types/react@18.2.36)(react@18.2.0)
       '@popperjs/core': 2.11.8
       '@types/react': 18.2.36
       clsx: 1.2.1
@@ -3357,7 +3357,7 @@ packages:
       '@mui/material': 5.11.2(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.36)(react-dom@18.2.0)(react@18.2.0)
       '@mui/system': 5.14.17(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.36)(react@18.2.0)
       '@mui/types': 7.2.6(@types/react@18.2.36)
-      '@mui/utils': 5.14.14(@types/react@18.2.36)(react@18.2.0)
+      '@mui/utils': 5.14.17(@types/react@18.2.36)(react@18.2.0)
       '@types/react': 18.2.36
       clsx: 1.2.1
       prop-types: 15.8.1
@@ -3390,7 +3390,7 @@ packages:
       '@mui/core-downloads-tracker': 5.14.14
       '@mui/system': 5.14.17(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.36)(react@18.2.0)
       '@mui/types': 7.2.6(@types/react@18.2.36)
-      '@mui/utils': 5.14.14(@types/react@18.2.36)(react@18.2.0)
+      '@mui/utils': 5.14.17(@types/react@18.2.36)(react@18.2.0)
       '@types/react': 18.2.36
       '@types/react-transition-group': 4.4.8
       clsx: 1.2.1
@@ -3543,24 +3543,6 @@ packages:
         optional: true
     dependencies:
       '@types/react': 18.2.36
-    dev: true
-
-  /@mui/utils@5.14.14(@types/react@18.2.36)(react@18.2.0):
-    resolution: {integrity: sha512-3AKp8uksje5sRfVrtgG9Q/2TBsHWVBUtA0NaXliZqGcXo8J+A+Agp0qUW2rJ+ivgPWTCCubz9FZVT2IQZ3bGsw==}
-    engines: {node: '>=12.0.0'}
-    peerDependencies:
-      '@types/react': ^17.0.0 || ^18.0.0
-      react: ^17.0.0 || ^18.0.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@types/prop-types': 15.7.9
-      '@types/react': 18.2.36
-      prop-types: 15.8.1
-      react: 18.2.0
-      react-is: 18.2.0
     dev: true
 
   /@mui/utils@5.14.17(@types/react@18.2.36)(react@18.2.0):
