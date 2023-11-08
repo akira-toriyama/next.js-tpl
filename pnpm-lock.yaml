@@ -3267,7 +3267,7 @@ packages:
     resolution: {integrity: sha512-mlN83YSrcFgk7Dm1Mys40DLssI1KdJji2CMKN8eOlBqsTADYzj2+jWzsANsUTFbxDMWPD5e9bfA1RGqBpS3O1g==}
     engines: {node: '>=14'}
     dependencies:
-      '@types/set-cookie-parser': 2.4.5
+      '@types/set-cookie-parser': 2.4.6
       set-cookie-parser: 2.6.0
     dev: true
 
@@ -4213,8 +4213,8 @@ packages:
       '@types/node': 20.9.0
     dev: true
 
-  /@types/set-cookie-parser@2.4.5:
-    resolution: {integrity: sha512-ZPmztaAQ4rbnW/WTUnT1dwSENQo4bjGqxCSeyK+gZxmd+zJl/QAeF6dpEXcS5UEJX22HwiggFSaY8nE1nRmkbg==}
+  /@types/set-cookie-parser@2.4.6:
+    resolution: {integrity: sha512-tjIRMxGztGfIbW2/d20MdJmAPZbabtdW051cKfU+nvZXUnKKifHbY2CyL/C0EGabUB8ahIRjanYzTqJUQR8TAQ==}
     dependencies:
       '@types/node': 20.9.0
     dev: true
