@@ -6,5 +6,6 @@ jobs:
   labeler:
     name: Labeler
     runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' }}
     steps:
       - uses: fuxingloh/multi-labeler@main
