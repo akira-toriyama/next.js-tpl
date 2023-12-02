@@ -27,7 +27,7 @@ export type Aggregate = {
 };
 
 /** Asset system model */
-export type Asset = Node & {
+export type Asset = Entity & Node & {
   /** The time the document was created */
   readonly createdAt: Scalars['DateTime']['output'];
   /** User that created this document */
@@ -774,6 +774,37 @@ export type DocumentVersion = {
   readonly stage: Stage;
 };
 
+/** An object with an ID */
+export type Entity = {
+  /** The id of the object. */
+  readonly id: Scalars['ID']['output'];
+  /** The Stage of an object */
+  readonly stage: Stage;
+};
+
+/** This enumeration holds all typenames that implement the Entity interface. Components and models implement the Entity interface. */
+export const EntityTypeName = {
+  /** Asset system model */
+  Asset: 'Asset',
+  Item: 'Item',
+  /** Scheduled Operation system model */
+  ScheduledOperation: 'ScheduledOperation',
+  /** Scheduled Release system model */
+  ScheduledRelease: 'ScheduledRelease',
+  /** User system model */
+  User: 'User'
+} as const;
+
+export type EntityTypeName = typeof EntityTypeName[keyof typeof EntityTypeName];
+/** Allows to specify input to query models and components directly */
+export type EntityWhereInput = {
+  /** The ID of an object */
+  readonly id: Scalars['ID']['input'];
+  readonly stage: Stage;
+  /** The Type name of an object */
+  readonly typename: EntityTypeName;
+};
+
 export const ImageFit = {
   /** Resizes the image to fit within the specified parameters without distorting, cropping, or changing the aspect ratio. */
   Clip: 'clip',
@@ -801,7 +832,7 @@ export type ImageTransformationInput = {
   readonly resize?: InputMaybe<ImageResizeInput>;
 };
 
-export type Item = Node & {
+export type Item = Entity & Node & {
   readonly body: Maybe<Scalars['String']['output']>;
   /** The time the document was created */
   readonly createdAt: Scalars['DateTime']['output'];
@@ -1716,6 +1747,8 @@ export type Query = {
   readonly assets: ReadonlyArray<Asset>;
   /** Retrieve multiple assets using the Relay connection interface */
   readonly assetsConnection: AssetConnection;
+  /** Fetches an object given its ID */
+  readonly entities: Maybe<ReadonlyArray<Entity>>;
   /** Retrieve a single item */
   readonly item: Maybe<Item>;
   /** Retrieve document version */
@@ -1782,6 +1815,11 @@ export type QueryAssetsConnectionArgs = {
   skip: InputMaybe<Scalars['Int']['input']>;
   stage?: Stage;
   where: InputMaybe<AssetWhereInput>;
+};
+
+
+export type QueryEntitiesArgs = {
+  where: ReadonlyArray<EntityWhereInput>;
 };
 
 
@@ -1957,7 +1995,7 @@ export type RichText = {
 };
 
 /** Scheduled Operation system model */
-export type ScheduledOperation = Node & {
+export type ScheduledOperation = Entity & Node & {
   readonly affectedDocuments: ReadonlyArray<ScheduledOperationAffectedDocument>;
   /** The time the document was created */
   readonly createdAt: Scalars['DateTime']['output'];
@@ -2391,7 +2429,7 @@ export type ScheduledOperationWhereUniqueInput = {
 };
 
 /** Scheduled Release system model */
-export type ScheduledRelease = Node & {
+export type ScheduledRelease = Entity & Node & {
   /** The time the document was created */
   readonly createdAt: Scalars['DateTime']['output'];
   /** User that created this document */
@@ -2993,7 +3031,7 @@ export type UnpublishLocaleInput = {
 };
 
 /** User system model */
-export type User = Node & {
+export type User = Entity & Node & {
   /** The time the document was created */
   readonly createdAt: Scalars['DateTime']['output'];
   /** Get the document in other stages */
