@@ -4,7 +4,7 @@ import {
   HttpResponse,
 } from "next/experimental/testmode/playwright/msw";
 
-test("go to /items", async ({ page, next, msw }) => {
+test("go to /items", async ({ page, next }) => {
   // FIXME
   // import * as Q from "~/ui/domain/items/repository/query/Items.gql.generated";
   // TypeError: _msw.MockedRequest is not a constructor
