@@ -3346,7 +3346,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.5
       '@emotion/is-prop-valid': 1.2.1
-      '@mui/types': 7.2.8(@types/react@18.2.41)
+      '@mui/types': 7.2.10(@types/react@18.2.41)
       '@mui/utils': 5.14.17(@types/react@18.2.41)(react@18.2.0)
       '@popperjs/core': 2.11.8
       '@types/react': 18.2.41
@@ -3402,7 +3402,7 @@ packages:
       '@mui/base': 5.0.0-alpha.112(@types/react@18.2.41)(react-dom@18.2.0)(react@18.2.0)
       '@mui/material': 5.11.2(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.41)(react-dom@18.2.0)(react@18.2.0)
       '@mui/system': 5.14.19(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.41)(react@18.2.0)
-      '@mui/types': 7.2.8(@types/react@18.2.41)
+      '@mui/types': 7.2.10(@types/react@18.2.41)
       '@mui/utils': 5.14.17(@types/react@18.2.41)(react@18.2.0)
       '@types/react': 18.2.41
       clsx: 1.2.1
@@ -3435,7 +3435,7 @@ packages:
       '@mui/base': 5.0.0-alpha.112(@types/react@18.2.41)(react-dom@18.2.0)(react@18.2.0)
       '@mui/core-downloads-tracker': 5.14.19
       '@mui/system': 5.14.19(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.41)(react@18.2.0)
-      '@mui/types': 7.2.8(@types/react@18.2.41)
+      '@mui/types': 7.2.10(@types/react@18.2.41)
       '@mui/utils': 5.14.17(@types/react@18.2.41)(react@18.2.0)
       '@types/react': 18.2.41
       '@types/react-transition-group': 4.4.9
@@ -3571,17 +3571,6 @@ packages:
 
   /@mui/types@7.2.10(@types/react@18.2.41):
     resolution: {integrity: sha512-wX1vbDC+lzF7FlhT6A3ffRZgEoKWPF8VqRoTu4lZwouFX2t90KyCMsgepMw5DxLak1BSp/KP86CmtZttikb/gQ==}
-    peerDependencies:
-      '@types/react': ^17.0.0 || ^18.0.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@types/react': 18.2.41
-    dev: true
-
-  /@mui/types@7.2.8(@types/react@18.2.41):
-    resolution: {integrity: sha512-9u0ji+xspl96WPqvrYJF/iO+1tQ1L5GTaDOeG3vCR893yy7VcWwRNiVMmPdPNpMDqx0WV1wtEW9OMwK9acWJzQ==}
     peerDependencies:
       '@types/react': ^17.0.0 || ^18.0.0
     peerDependenciesMeta:
