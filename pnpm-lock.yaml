@@ -538,8 +538,8 @@ packages:
       '@babel/helper-plugin-utils': 7.22.5
     dev: true
 
-  /@babel/plugin-transform-classes@7.23.3(@babel/core@7.23.5):
-    resolution: {integrity: sha512-FGEQmugvAEu2QtgtU0uTASXevfLMFfBeVCIIdcQhn/uBQsMTjBajdnAtanQlOcuihWh10PZ7+HWvc7NtBwP74w==}
+  /@babel/plugin-transform-classes@7.23.5(@babel/core@7.23.5):
+    resolution: {integrity: sha512-jvOTR4nicqYC9yzOHIhXG5emiFEOpappSJAl73SDSEDcybD+Puuze8Tnpb9p9qEyYup24tq891gkaygIFvWDqg==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -5103,7 +5103,7 @@ packages:
       '@babel/plugin-transform-arrow-functions': 7.23.3(@babel/core@7.23.5)
       '@babel/plugin-transform-block-scoped-functions': 7.23.3(@babel/core@7.23.5)
       '@babel/plugin-transform-block-scoping': 7.23.3(@babel/core@7.23.5)
-      '@babel/plugin-transform-classes': 7.23.3(@babel/core@7.23.5)
+      '@babel/plugin-transform-classes': 7.23.5(@babel/core@7.23.5)
       '@babel/plugin-transform-computed-properties': 7.23.3(@babel/core@7.23.5)
       '@babel/plugin-transform-destructuring': 7.23.3(@babel/core@7.23.5)
       '@babel/plugin-transform-flow-strip-types': 7.23.3(@babel/core@7.23.5)
