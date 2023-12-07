@@ -36,11 +36,12 @@ export default defineConfig({
         "src/ui/provider/Provider.tsx",
       ],
       provider: "v8",
-      statements: 100,
-      branches: 100,
-      functions: 100,
-      lines: 100,
-      thresholdAutoUpdate: true,
+      thresholds: {
+        statements: 100,
+        branches: 100,
+        functions: 100,
+        lines: 100,
+      },
     },
   },
   resolve: {
