@@ -32,7 +32,7 @@
     "@chakra-ui/react": "2.8.2",
     "@emotion/react": "11.11.1",
     "@emotion/styled": "11.11.0",
-    "@fontsource/noto-sans-jp": "5.0.16",
+    "@fontsource/noto-sans-jp": "5.0.17",
     "@graphql-typed-document-node/core": "3.2.0",
     "@hookform/resolvers": "3.3.2",
     "@vitejs/plugin-react": "4.2.1",
