@@ -113,8 +113,8 @@ devDependencies:
     specifier: 0.4.3
     version: 0.4.3
   '@vitest/coverage-v8':
-    specifier: 1.0.2
-    version: 1.0.2(vitest@1.0.2)
+    specifier: 1.0.4
+    version: 1.0.4(vitest@1.0.2)
   encoding:
     specifier: 0.1.13
     version: 0.1.13
@@ -4613,8 +4613,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@vitest/coverage-v8@1.0.2(vitest@1.0.2):
-    resolution: {integrity: sha512-WCTbfnvFPqH8TGVPNnPXcLBK/tbMX5GGZ/Lc9EuYvVX4xbO0ULKLzWDbVU37C2Y2YIlNu/VP1kp7QKUZolUDgA==}
+  /@vitest/coverage-v8@1.0.4(vitest@1.0.2):
+    resolution: {integrity: sha512-xD6Yuql6RW0Ir/JJIs6rVrmnG2/KOWJF+IRX1oJQk5wGKGxbtdrYPbl+WTUn/4ICCQ2G20zbE1e8/nPNyAG5Vg==}
     peerDependencies:
       vitest: ^1.0.0
     dependencies:

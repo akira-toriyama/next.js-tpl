@@ -65,7 +65,7 @@
     "@types/express": "4.17.21",
     "@types/react": "18.2.42",
     "@types/sync-fetch": "0.4.3",
-    "@vitest/coverage-v8": "1.0.2",
+    "@vitest/coverage-v8": "1.0.4",
     "encoding": "0.1.13",
     "eslint": "8.55.0",
     "eslint-config-next": "14.0.4",
