@@ -3351,8 +3351,8 @@ packages:
       react-is: 18.2.0
     dev: true
 
-  /@mui/core-downloads-tracker@5.14.20:
-    resolution: {integrity: sha512-fXoGe8VOrIYajqALysFuyal1q1YmBARqJ3tmnWYDVl0scu8f6h6tZQbS2K8BY28QwkWNGyv4WRfuUkzN5HR3Ow==}
+  /@mui/core-downloads-tracker@5.15.0:
+    resolution: {integrity: sha512-NpGtlHwuyLfJtdrlERXb8qRqd279O0VnuGaZAor1ehdNhUJOD1bSxHDeXKZkbqNpvi50hasFj7lsbTpluworTQ==}
     dev: true
 
   /@mui/icons-material@5.11.0(@mui/material@5.11.2)(@types/react@18.2.43)(react@18.2.0):
@@ -3427,7 +3427,7 @@ packages:
       '@emotion/react': 11.11.1(@types/react@18.2.43)(react@18.2.0)
       '@emotion/styled': 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.43)(react@18.2.0)
       '@mui/base': 5.0.0-alpha.112(@types/react@18.2.43)(react-dom@18.2.0)(react@18.2.0)
-      '@mui/core-downloads-tracker': 5.14.20
+      '@mui/core-downloads-tracker': 5.15.0
       '@mui/system': 5.15.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.43)(react@18.2.0)
       '@mui/types': 7.2.10(@types/react@18.2.43)
       '@mui/utils': 5.14.20(@types/react@18.2.43)(react@18.2.0)
