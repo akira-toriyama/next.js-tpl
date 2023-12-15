@@ -2666,9 +2666,9 @@ packages:
       '@types/ws': 8.5.10
       graphql: 16.8.1
       graphql-ws: 5.14.2(graphql@16.8.1)
-      isomorphic-ws: 5.0.0(ws@8.14.2)
+      isomorphic-ws: 5.0.0(ws@8.15.1)
       tslib: 2.6.2
-      ws: 8.14.2
+      ws: 8.15.1
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -2701,9 +2701,9 @@ packages:
       '@graphql-tools/utils': 10.0.11(graphql@16.8.1)
       '@types/ws': 8.5.10
       graphql: 16.8.1
-      isomorphic-ws: 5.0.0(ws@8.15.0)
+      isomorphic-ws: 5.0.0(ws@8.15.1)
       tslib: 2.6.2
-      ws: 8.15.0
+      ws: 8.15.1
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -2964,10 +2964,10 @@ packages:
       '@types/ws': 8.5.10
       '@whatwg-node/fetch': 0.9.14
       graphql: 16.8.1
-      isomorphic-ws: 5.0.0(ws@8.14.2)
+      isomorphic-ws: 5.0.0(ws@8.15.1)
       tslib: 2.6.2
       value-or-promise: 1.0.12
-      ws: 8.14.2
+      ws: 8.15.1
     transitivePeerDependencies:
       - '@types/node'
       - bufferutil
@@ -8110,20 +8110,12 @@ packages:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
     dev: true
 
-  /isomorphic-ws@5.0.0(ws@8.14.2):
+  /isomorphic-ws@5.0.0(ws@8.15.1):
     resolution: {integrity: sha512-muId7Zzn9ywDsyXgTIafTry2sV3nySZeUDe6YedVd1Hvuuep5AsIlqK+XefWpYTyJG5e503F2xIuT2lcU6rCSw==}
     peerDependencies:
       ws: '*'
     dependencies:
-      ws: 8.14.2
-    dev: true
-
-  /isomorphic-ws@5.0.0(ws@8.15.0):
-    resolution: {integrity: sha512-muId7Zzn9ywDsyXgTIafTry2sV3nySZeUDe6YedVd1Hvuuep5AsIlqK+XefWpYTyJG5e503F2xIuT2lcU6rCSw==}
-    peerDependencies:
-      ws: '*'
-    dependencies:
-      ws: 8.15.0
+      ws: 8.15.1
     dev: true
 
   /istanbul-lib-coverage@3.2.2:
@@ -8253,7 +8245,7 @@ packages:
       whatwg-encoding: 3.1.1
       whatwg-mimetype: 4.0.0
       whatwg-url: 14.0.0
-      ws: 8.14.2
+      ws: 8.15.1
       xml-name-validator: 5.0.0
     transitivePeerDependencies:
       - bufferutil
@@ -11940,21 +11932,8 @@ packages:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: true
 
-  /ws@8.14.2:
-    resolution: {integrity: sha512-wEBG1ftX4jcglPxgFCMJmZ2PLtSbJ2Peg6TmpJFTbe9GZYOQCDPdMYu/Tm0/bGZkw8paZnJY45J4K2PZrLYq8g==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: '>=5.0.2'
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
-    dev: true
-
-  /ws@8.15.0:
-    resolution: {integrity: sha512-H/Z3H55mrcrgjFwI+5jKavgXvwQLtfPCUEp6pi35VhoB0pfcHnSoyuTzkBEZpzq49g1193CUEwIvmsjcotenYw==}
+  /ws@8.15.1:
+    resolution: {integrity: sha512-W5OZiCjXEmk0yZ66ZN82beM5Sz7l7coYxpRkzS+p9PP+ToQry8szKh+61eNktr7EA9DOwvFGhfC605jDHbP6QQ==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
