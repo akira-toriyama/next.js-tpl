@@ -5765,8 +5765,8 @@ packages:
       tiny-invariant: 1.3.1
     dev: false
 
-  /css-selector-parser@3.0.3:
-    resolution: {integrity: sha512-HAcgYSBFKo1jnglINdHeBPIscPOCOh8vCDCaOV5xkwMSlGPEnfdynxBuWkgZMwXltMKgFbDcr4EPmDpSWi34MA==}
+  /css-selector-parser@3.0.4:
+    resolution: {integrity: sha512-pnmS1dbKsz6KA4EW4BznyPL2xxkNDRg62hcD0v8g6DEw2W7hxOln5M953jsp9hmw5Dg57S6o/A8GOn37mbAgcQ==}
     dev: true
 
   /cssstyle@3.0.0:
@@ -7478,7 +7478,7 @@ packages:
       '@types/unist': 3.0.2
       bcp-47-match: 2.0.3
       comma-separated-tokens: 2.0.3
-      css-selector-parser: 3.0.3
+      css-selector-parser: 3.0.4
       devlop: 1.1.0
       direction: 2.0.1
       hast-util-has-property: 3.0.0
