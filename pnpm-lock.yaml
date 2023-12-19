@@ -3449,8 +3449,8 @@ packages:
       react: 18.2.0
     dev: true
 
-  /@mui/styled-engine@5.15.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(react@18.2.0):
-    resolution: {integrity: sha512-6NysIsHkuUS2lF+Lzv1jiK3UjBJk854/vKVcJQVGKlPiqNEVZJNlwaSpsaU5xYXxWEZYfbVFSAomLOS/LV/ovQ==}
+  /@mui/styled-engine@5.15.1(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(react@18.2.0):
+    resolution: {integrity: sha512-7WDZTJLqGexWDjqE9oAgjU8ak6hEtUw2yQU7SIYID5kLVO2Nj/Wi/KicbLsXnTsJNvSqePIlUIWTBSXwWJCPZw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.4.1
@@ -3471,8 +3471,8 @@ packages:
       react: 18.2.0
     dev: true
 
-  /@mui/styled-engine@5.15.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(react@18.2.0):
-    resolution: {integrity: sha512-6NysIsHkuUS2lF+Lzv1jiK3UjBJk854/vKVcJQVGKlPiqNEVZJNlwaSpsaU5xYXxWEZYfbVFSAomLOS/LV/ovQ==}
+  /@mui/styled-engine@5.15.1(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(react@18.2.0):
+    resolution: {integrity: sha512-7WDZTJLqGexWDjqE9oAgjU8ak6hEtUw2yQU7SIYID5kLVO2Nj/Wi/KicbLsXnTsJNvSqePIlUIWTBSXwWJCPZw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.4.1
@@ -3513,7 +3513,7 @@ packages:
       '@emotion/react': 11.10.5(@babel/core@7.23.6)(@types/react@18.2.45)(react@18.2.0)
       '@emotion/styled': 11.10.5(@babel/core@7.23.6)(@emotion/react@11.10.5)(@types/react@18.2.45)(react@18.2.0)
       '@mui/private-theming': 5.15.0(@types/react@18.2.45)(react@18.2.0)
-      '@mui/styled-engine': 5.15.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(react@18.2.0)
+      '@mui/styled-engine': 5.15.1(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(react@18.2.0)
       '@mui/types': 7.2.11(@types/react@18.2.45)
       '@mui/utils': 5.15.0(@types/react@18.2.45)(react@18.2.0)
       '@types/react': 18.2.45
@@ -3543,7 +3543,7 @@ packages:
       '@emotion/react': 11.11.1(@types/react@18.2.45)(react@18.2.0)
       '@emotion/styled': 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.45)(react@18.2.0)
       '@mui/private-theming': 5.15.0(@types/react@18.2.45)(react@18.2.0)
-      '@mui/styled-engine': 5.15.0(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(react@18.2.0)
+      '@mui/styled-engine': 5.15.1(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(react@18.2.0)
       '@mui/types': 7.2.11(@types/react@18.2.45)
       '@mui/utils': 5.15.0(@types/react@18.2.45)(react@18.2.0)
       '@types/react': 18.2.45
