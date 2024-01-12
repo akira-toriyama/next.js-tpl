@@ -7,8 +7,8 @@ import { useRouter } from "next/navigation";
 vi.mock("next/navigation");
 vi.mock("../../repository");
 
-describe.concurrent("useItemEdit", () => {
-  test.concurrent("mutation success", async () => {
+describe("useItemEdit", () => {
+  test("mutation success", async () => {
     // @ts-expect-error
     vi.mocked(repository).save.mockResolvedValueOnce(null);
 
@@ -32,7 +32,7 @@ describe.concurrent("useItemEdit", () => {
     expect(mockRefresh).toBeCalledTimes(1);
   });
 
-  test.concurrent("mutation error", async () => {
+  test("mutation error", async () => {
     vi.mocked(repository).save.mockRejectedValueOnce(null);
 
     const mock = vi.fn();
