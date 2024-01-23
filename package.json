@@ -55,7 +55,7 @@
     "@graphql-codegen/typed-document-node": "5.0.1",
     "@graphql-codegen/typescript": "4.0.1",
     "@graphql-codegen/typescript-operations": "4.0.1",
-    "@graphql-tools/mock": "9.0.0",
+    "@graphql-tools/mock": "9.0.1",
     "@graphql-tools/schema": "10.0.2",
     "@ladle/react": "4.0.2",
     "@playwright/test": "1.41.0",
