@@ -3784,15 +3784,15 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /@peculiar/webcrypto@1.4.4:
-    resolution: {integrity: sha512-VETlZgJqOP3OLRC7AcEYfb6/u05evqsW0Vgs9DyCBATp3FSx7D30Z8ALuDJHsmXCsMblfyTwvB9PLR6IfdlRhg==}
+  /@peculiar/webcrypto@1.4.5:
+    resolution: {integrity: sha512-oDk93QCDGdxFRM8382Zdminzs44dg3M2+E5Np+JWkpqLDyJC9DviMh8F8mEJkYuUcUOGA5jHO5AJJ10MFWdbZw==}
     engines: {node: '>=10.12.0'}
     dependencies:
       '@peculiar/asn1-schema': 2.3.8
       '@peculiar/json-schema': 1.1.12
       pvtsutils: 1.3.5
       tslib: 2.6.2
-      webcrypto-core: 1.7.7
+      webcrypto-core: 1.7.8
     dev: true
 
   /@playwright/test@1.41.0:
@@ -4751,7 +4751,7 @@ packages:
   /@whatwg-node/fetch@0.8.8:
     resolution: {integrity: sha512-CdcjGC2vdKhc13KKxgsc6/616BQ7ooDIgPeTuAiE8qfCnS0mGzcfCOoZXypQSz73nxI+GWc7ZReIAVhxoE1KCg==}
     dependencies:
-      '@peculiar/webcrypto': 1.4.4
+      '@peculiar/webcrypto': 1.4.5
       '@whatwg-node/node-fetch': 0.3.6
       busboy: 1.6.0
       urlpattern-polyfill: 8.0.2
@@ -11860,8 +11860,8 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
-  /webcrypto-core@1.7.7:
-    resolution: {integrity: sha512-7FjigXNsBfopEj+5DV2nhNpfic2vumtjjgPmeDKk45z+MJwXKKfhPB7118Pfzrmh4jqOMST6Ch37iPAHoImg5g==}
+  /webcrypto-core@1.7.8:
+    resolution: {integrity: sha512-eBR98r9nQXTqXt/yDRtInszPMjTaSAMJAFDg2AHsgrnczawT1asx9YNBX6k5p+MekbPF4+s/UJJrr88zsTqkSg==}
     dependencies:
       '@peculiar/asn1-schema': 2.3.8
       '@peculiar/json-schema': 1.1.12
