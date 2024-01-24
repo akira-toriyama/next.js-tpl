@@ -58,7 +58,7 @@
     "@graphql-tools/mock": "9.0.1",
     "@graphql-tools/schema": "10.0.2",
     "@ladle/react": "4.0.2",
-    "@playwright/test": "1.41.0",
+    "@playwright/test": "1.41.1",
     "@testing-library/react": "14.1.2",
     "@tsconfig/next": "2.0.1",
     "@tsconfig/node18": "18.2.2",
