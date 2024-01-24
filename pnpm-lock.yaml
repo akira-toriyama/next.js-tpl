@@ -1053,7 +1053,7 @@ packages:
     dependencies:
       '@chakra-ui/dom-utils': 2.1.0
       react: 18.2.0
-      react-focus-lock: 2.9.6(@types/react@18.2.48)(react@18.2.0)
+      react-focus-lock: 2.9.7(@types/react@18.2.48)(react@18.2.0)
     transitivePeerDependencies:
       - '@types/react'
     dev: false
@@ -10147,8 +10147,8 @@ packages:
     resolution: {integrity: sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==}
     dev: false
 
-  /react-focus-lock@2.9.6(@types/react@18.2.48)(react@18.2.0):
-    resolution: {integrity: sha512-B7gYnCjHNrNYwY2juS71dHbf0+UpXXojt02svxybj8N5bxceAkzPChKEncHuratjUHkIFNCn06k2qj1DRlzTug==}
+  /react-focus-lock@2.9.7(@types/react@18.2.48)(react@18.2.0):
+    resolution: {integrity: sha512-EfhX040SELLqnQ9JftqsmQCG49iByg8F5X5m19Er+n371OaETZ35dlNPZrLOOTlnnwD4c2Zv0KDgabDTc7dPHw==}
     peerDependencies:
       '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
