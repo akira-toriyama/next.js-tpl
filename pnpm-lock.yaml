@@ -62,8 +62,8 @@ devDependencies:
     specifier: 1.4.3
     version: 1.4.3(eslint@8.56.0)(typescript@5.3.3)
   '@faker-js/faker':
-    specifier: 8.3.1
-    version: 8.3.1
+    specifier: 8.4.0
+    version: 8.4.0
   '@graphql-codegen/cli':
     specifier: 5.0.0
     version: 5.0.0(@types/node@20.11.5)(encoding@0.1.13)(graphql@16.8.1)(typescript@5.3.3)
@@ -2345,8 +2345,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@faker-js/faker@8.3.1:
-    resolution: {integrity: sha512-FdgpFxY6V6rLZE9mmIBb9hM0xpfvQOSNOLnzolzKwsE1DH+gC7lEKV1p1IbR0lAYyvYd5a4u3qWJzowUkw1bIw==}
+  /@faker-js/faker@8.4.0:
+    resolution: {integrity: sha512-htW87352wzUCdX1jyUQocUcmAaFqcR/w082EC8iP/gtkF0K+aKcBp0hR5Arb7dzR8tQ1TrhE9DNa5EbJELm84w==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0, npm: '>=6.14.13'}
     dev: true
 
