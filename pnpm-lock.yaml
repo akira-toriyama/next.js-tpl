@@ -152,8 +152,8 @@ devDependencies:
     specifier: 24.0.0
     version: 24.0.0
   msw:
-    specifier: 2.1.4
-    version: 2.1.4(typescript@5.3.3)
+    specifier: 2.1.5
+    version: 2.1.5(typescript@5.3.3)
   prettier:
     specifier: 3.2.4
     version: 3.2.4
@@ -3280,7 +3280,7 @@ packages:
       koa: 2.15.0
       koa-connect: 2.1.0
       lodash.merge: 4.6.2
-      msw: 2.1.4(typescript@5.3.3)
+      msw: 2.1.5(typescript@5.3.3)
       open: 9.1.0
       prism-react-renderer: 2.3.0(react@18.2.0)
       prop-types: 15.8.1
@@ -9275,8 +9275,8 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
-  /msw@2.1.4(typescript@5.3.3):
-    resolution: {integrity: sha512-YyIQpfLqAJf/O1kYPWBSbDqjgv71kRBmEbGLxkkai1Btcs/LcxKiAwT1My3COa9J/vTh9Ua41B/ReuiW9cXmkw==}
+  /msw@2.1.5(typescript@5.3.3):
+    resolution: {integrity: sha512-r39AZk4taMmUEYwtzDAgFy38feqJy1yaKykvo0QE8q7H7c28yH/WIlOmE7oatjkC3dMgpTYfND8MaxeywgU+Yg==}
     engines: {node: '>=18'}
     hasBin: true
     requiresBuild: true
