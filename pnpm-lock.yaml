@@ -4752,7 +4752,7 @@ packages:
       istanbul-lib-report: 3.0.1
       istanbul-lib-source-maps: 4.0.1
       istanbul-reports: 3.1.6
-      magic-string: 0.30.5
+      magic-string: 0.30.6
       magicast: 0.3.3
       picocolors: 1.0.0
       std-env: 3.7.0
@@ -4782,7 +4782,7 @@ packages:
   /@vitest/snapshot@1.2.2:
     resolution: {integrity: sha512-SmGY4saEw1+bwE1th6S/cZmPxz/Q4JWsl7LvbQIky2tKE35US4gd0Mjzqfr84/4OD0tikGWaWdMja/nWL5NIPA==}
     dependencies:
-      magic-string: 0.30.5
+      magic-string: 0.30.6
       pathe: 1.1.2
       pretty-format: 29.7.0
     dev: true
@@ -8669,8 +8669,8 @@ packages:
     hasBin: true
     dev: true
 
-  /magic-string@0.30.5:
-    resolution: {integrity: sha512-7xlpfBaQaP/T6Vh8MO/EqXSW5En6INHEvEXQiuff7Gku0PWjU3uf6w/j9o7O+SpB5fOAkrI5HeoNgwjEO0pFsA==}
+  /magic-string@0.30.6:
+    resolution: {integrity: sha512-n62qCLbPjNjyo+owKtveQxZFZTBm+Ms6YoGD23Wew6Vw337PElFNifQpknPruVRQV57kVShPnLGo9vWxVhpPvA==}
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
@@ -11853,7 +11853,7 @@ packages:
       execa: 8.0.1
       jsdom: 24.0.0
       local-pkg: 0.5.0
-      magic-string: 0.30.5
+      magic-string: 0.30.6
       pathe: 1.1.2
       picocolors: 1.0.0
       std-env: 3.7.0
