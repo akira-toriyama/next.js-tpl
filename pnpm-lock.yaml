@@ -5167,8 +5167,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /axios@1.6.6(debug@4.3.4):
-    resolution: {integrity: sha512-XZLZDFfXKM9U/Y/B4nNynfCRUqNyVZ4sBC/n9GDRCkq9vd2mIvKjKKsbIh1WPmHmNbg6ND7cTBY3Y2+u1G3/2Q==}
+  /axios@1.6.7(debug@4.3.4):
+    resolution: {integrity: sha512-/hDJGff6/c7u0hDkvkGxR/oy6CbCs8ziCsC7SqmhjfozqiJGc8Z11wrv9z9lYfY4K8l+H9TpjcMDX0xOZmx+RA==}
     dependencies:
       follow-redirects: 1.15.5(debug@4.3.4)
       form-data: 4.0.0
@@ -11890,7 +11890,7 @@ packages:
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
-      axios: 1.6.6(debug@4.3.4)
+      axios: 1.6.7(debug@4.3.4)
       joi: 17.12.1
       lodash: 4.17.21
       minimist: 1.2.8
