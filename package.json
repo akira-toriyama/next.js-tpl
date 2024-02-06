@@ -52,7 +52,7 @@
     "@graphql-codegen/cli": "5.0.0",
     "@graphql-codegen/introspection": "4.0.0",
     "@graphql-codegen/near-operation-file-preset": "3.0.0",
-    "@graphql-codegen/typed-document-node": "5.0.1",
+    "@graphql-codegen/typed-document-node": "5.0.4",
     "@graphql-codegen/typescript": "4.0.1",
     "@graphql-codegen/typescript-operations": "4.0.1",
     "@graphql-tools/mock": "9.0.1",
