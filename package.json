@@ -50,7 +50,7 @@
     "@bird-studio/eslint-config": "1.4.3",
     "@faker-js/faker": "8.4.0",
     "@graphql-codegen/cli": "5.0.2",
-    "@graphql-codegen/introspection": "4.0.0",
+    "@graphql-codegen/introspection": "4.0.2",
     "@graphql-codegen/near-operation-file-preset": "3.0.0",
     "@graphql-codegen/typed-document-node": "5.0.4",
     "@graphql-codegen/typescript": "4.0.1",
