@@ -78,7 +78,7 @@
     "graphql-yoga": "5.1.1",
     "jscpd": "3.5.10",
     "jsdom": "24.0.0",
-    "msw": "2.1.5",
+    "msw": "2.1.7",
     "prettier": "3.2.4",
     "start-server-and-test": "2.0.3",
     "sync-fetch": "0.5.2",
