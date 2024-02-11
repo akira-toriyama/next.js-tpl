@@ -6,24 +6,11 @@ import * as service from "./service";
 import * as repository from "../../repository";
 import { useRouter } from "next/navigation";
 
-/**
- * TODO `refresh`を使用せずになんとかしたい
- * Next.js のバグっぽい？
- *
- * ```ts
- * // これらが効かない？
- * export const dynamic = "force-dynamic";
- * export const revalidate = 0;
- * ```
- */
 const useTransition = () => {
   const router = useRouter();
 
   return {
-    toItems: () => {
-      router.refresh();
-      router.push("/items");
-    },
+    toItems: () => router.push("/items"),
   };
 };
 
