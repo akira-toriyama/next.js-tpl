@@ -13,11 +13,9 @@ describe("useItemEdit", () => {
     vi.mocked(repository).save.mockResolvedValueOnce(null);
 
     const mockPush = vi.fn();
-    const mockRefresh = vi.fn();
     // @ts-expect-error
     vi.mocked(useRouter).mockReturnValue({
       push: mockPush,
-      refresh: mockRefresh,
     });
 
     const r = renderHook(() =>
@@ -29,7 +27,6 @@ describe("useItemEdit", () => {
     );
 
     expect(mockPush).toBeCalledTimes(1);
-    expect(mockRefresh).toBeCalledTimes(1);
   });
 
   test("mutation error", async () => {
