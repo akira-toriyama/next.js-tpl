@@ -4,19 +4,19 @@ labels:
   - label: "o.x.x"
     sync: true
     matcher:
-      commits: ":`o.x.x`\\(.\\): .*"
+      commits: ":`o.x.x`\\(.*\\): .*"
 
   - label: "x.o.x"
     sync: true
     matcher:
-      commits: ":`x.o.x`\\(.\\): .*"
+      commits: ":`x.o.x`\\(.*\\): .*"
 
   - label: "x.x.o"
     sync: true
     matcher:
-      commits: ":`x.x.o`\\(.\\): .*"
+      commits: ":`x.x.o`\\(.*\\): .*"
 
   - label: "x.x.x"
     sync: true
     matcher:
-      commits: ":`x.x.x`\\(.\\): .*"
+      commits: ":`x.x.x`\\(.*\\): .*"
