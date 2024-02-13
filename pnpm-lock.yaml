@@ -3417,7 +3417,7 @@ packages:
       hast-util-to-jsx-runtime: 2.3.0
       markdown-extensions: 2.0.0
       periscopic: 3.1.0
-      remark-mdx: 3.0.0
+      remark-mdx: 3.0.1
       remark-parse: 11.0.0
       remark-rehype: 11.1.0
       source-map: 0.7.4
@@ -10531,8 +10531,8 @@ packages:
       - supports-color
     dev: true
 
-  /remark-mdx@3.0.0:
-    resolution: {integrity: sha512-O7yfjuC6ra3NHPbRVxfflafAj3LTwx3b73aBvkEFU5z4PsD6FD4vrqJAkE5iNGLz71GdjXfgRqm3SQ0h0VuE7g==}
+  /remark-mdx@3.0.1:
+    resolution: {integrity: sha512-3Pz3yPQ5Rht2pM5R+0J2MrGoBSrzf+tJG94N+t/ilfdh8YLyyKYtidAYwTveB20BoHAcwIopOUqhcmh2F7hGYA==}
     dependencies:
       mdast-util-mdx: 3.0.0
       micromark-extension-mdxjs: 3.0.0
