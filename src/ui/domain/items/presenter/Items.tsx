@@ -1,5 +1,6 @@
 import { ListItem, UnorderedList } from "@chakra-ui/react";
 import { Link } from "~/ui/general/Link";
+import { pagesPath } from "~/$path";
 
 export const Empty: React.FC = () => <>items: Empty</>;
 
@@ -13,7 +14,7 @@ export const Items: React.FC<{
       <ListItem data-testid="data" key={v.id}>
         <Link
           {...{
-            href: `/items/${v.id}/detail`,
+            href: pagesPath.items._id(v.id).detail.$url().path,
           }}
         >
           {v.title}

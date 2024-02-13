@@ -8,6 +8,7 @@
     "mockServer": "pnpm run downloadSchema && ts-node-dev --project _server/graphqlServer/tsconfig.json --respawn --transpile-only _server/graphqlServer/graphqlServer.ts",
     "// generate": "",
     "generate:GQLType": "graphql-codegen --config codegen.ts",
+    "generate:pagePath": "pathpida --ignorePath .gitignore --output src",
     "// util": "",
     "downloadSchema": "pnpm get-graphql-schema ${SCHEMA_DOWNLOAD_URL} > _server/graphqlServer/schema.graphql",
     "_updateSnapshot": "pnpm i && start-server-and-test _qualityCheck:snapshotTest http://localhost:61000 'pnpm playwright test snapshot/snapshot.test.ts -u -c playwright.snapshot.config.ts'",
@@ -24,7 +25,7 @@
     "_qualityCheck:snapshotTest": "pnpm exec playwright install chromium && ladle build && ladle preview -p 61000",
     "qualityCheck:snapshotTest": "start-server-and-test _qualityCheck:snapshotTest http://localhost:61000 'pnpm playwright test snapshot/snapshot.test.ts -c playwright.snapshot.config.ts'",
     "// build": "",
-    "build:app": "pnpm run generate:GQLType && pnpm next build",
+    "build:app": "pnpm run generate:GQLType && pnpm run generate:pagePath && pnpm next build",
     "build:designSystem": "pnpm run generate:GQLType && pnpm ladle build"
   },
   "dependencies": {
@@ -40,6 +41,7 @@
     "graphql-request": "6.1.0",
     "next": "14.1.0",
     "nextjs-toploader": "1.6.6",
+    "pathpida": "0.22.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "7.50.1",
