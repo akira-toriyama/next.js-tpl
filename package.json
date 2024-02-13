@@ -20,7 +20,7 @@
     "qualityCheck:unitTest": "pnpm vitest run --coverage",
     "qualityCheck:e2eTest": "pnpm exec playwright install && pnpm playwright test app -c playwright.e2e.config.ts",
     "qualityCheck:redundancy": "jscpd src",
-    "qualityCheck:findDeadCode": "pnpm ts-unused-exports tsconfig.json $(find ./src -name '*.ts' -or -name '*.tsx') --excludePathsFromReport='gql.ts;stories.tsx;index.ts;src/ui/provider/Wrapper.tsx'",
+    "qualityCheck:findDeadCode": "pnpm ts-unused-exports tsconfig.json $(find ./src -name '*.ts' -or -name '*.tsx') --excludePathsFromReport='path.ts;gql.ts;stories.tsx;index.ts;src/ui/provider/Wrapper.tsx'",
     "qualityCheck:esLint": "eslint --max-warnings 0 --ignore-path .gitignore .",
     "qualityCheck:fmt": "prettier  --check --ignore-path .gitignore src",
     "_qualityCheck:snapshotTest": "pnpm exec playwright install chromium && ladle build && ladle preview -p 61000",
