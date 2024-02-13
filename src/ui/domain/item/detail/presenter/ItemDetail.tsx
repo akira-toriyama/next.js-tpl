@@ -12,6 +12,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { formParam } from "../../_/presenter";
+import { pagesPath } from "~/$path";
 
 export const Empty: React.FC = () => <>detail: Empty</>;
 
@@ -29,7 +30,7 @@ export const ItemDetail: React.FC<{
       <ListItem>
         <Link
           {...{
-            href: `/items`,
+            href: pagesPath.items.$url().path,
           }}
         >
           一覧へ
@@ -38,7 +39,7 @@ export const ItemDetail: React.FC<{
       <ListItem>
         <Link
           {...{
-            href: `/items/${props.item.id}/edit`,
+            href: pagesPath.items._id(props.item.id).edit.$url().path,
           }}
         >
           編集へ

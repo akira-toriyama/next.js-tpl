@@ -34,6 +34,7 @@ export default defineConfig({
         "src/infra/graphql/client.ts",
         "src/env.ts",
         "src/ui/provider/Provider.tsx",
+        "src/$path.ts",
       ],
       provider: "v8",
       thresholds: {

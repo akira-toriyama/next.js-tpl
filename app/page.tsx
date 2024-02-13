@@ -1,12 +1,13 @@
 import { Link } from "~/ui/general/Link";
 import { ListItem, UnorderedList } from "@chakra-ui/react";
+import { pagesPath } from "~/$path";
 
 const Page = () => (
   <UnorderedList>
     <ListItem>
       <Link
         {...{
-          href: "/items",
+          href: pagesPath.items.$url().path,
         }}
       >
         items
@@ -15,7 +16,7 @@ const Page = () => (
     <ListItem>
       <Link
         {...{
-          href: "/parallel-routes",
+          href: pagesPath.parallel_routes.$url().path,
         }}
       >
         parallel-routes
@@ -24,10 +25,10 @@ const Page = () => (
     <ListItem>
       <Link
         {...{
-          href: "/template",
+          href: pagesPath.template.a.$url().path,
         }}
       >
-        template
+        template a
       </Link>
     </ListItem>
   </UnorderedList>

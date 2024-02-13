@@ -5,13 +5,14 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as service from "./service";
 import * as repository from "../../repository";
 import { useRouter } from "next/navigation";
+import { pagesPath } from "~/$path";
 
 const useTransition = () => {
   const router = useRouter();
 
   return {
     toItems: () => {
-      router.push("/items");
+      router.push(pagesPath.items.$url().path);
       router.refresh();
     },
   };

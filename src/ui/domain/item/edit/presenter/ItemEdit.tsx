@@ -15,6 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "~/ui/general/Link";
 import { formParam } from "../../_/presenter";
+import { pagesPath } from "~/$path";
 
 export const Empty: React.FC = () => <>edit: 対象データ無し</>;
 
@@ -26,7 +27,7 @@ export const ItemEditComponent: React.FC<type.Props> = (props) => (
       <ListItem>
         <Link
           {...{
-            href: `/items`,
+            href: pagesPath.items.$url().path,
           }}
         >
           一覧へ
@@ -35,7 +36,7 @@ export const ItemEditComponent: React.FC<type.Props> = (props) => (
       <ListItem>
         <Link
           {...{
-            href: `/items/${props.item.id}/detail`,
+            href: pagesPath.items._id(props.item.id).detail.$url().path,
           }}
         >
           詳細へ
